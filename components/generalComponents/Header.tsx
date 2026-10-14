@@ -120,7 +120,7 @@ export default function Header() {
         </div>
 
         {/* CENTER LOGO */}
-        <Image src={logo} width={80} height={80} alt="logo"/>
+        <Link href="/"><Image src={logo} width={80} height={80} alt="logo"/></Link>
 
         {/* RIGHT */}
         <div className="flex items-center justify-end gap-5">

@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import ParticleLogo from "./ParticleLogo";
 import sunsetImage from "@/public/images/gunbatimi.webp";
+import { IoLogoFacebook } from "react-icons/io";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 const corporateLinks = [
   { label: "İletişim", href: "/iletisim" },
@@ -15,10 +17,12 @@ const socialLinks = [
   {
     label: "Facebook",
     href: "https://www.facebook.com/",
+    icon: IoLogoFacebook
   },
   {
     label: "Instagram",
     href: "https://www.instagram.com/",
+    icon: AiOutlineInstagram
   },
 ];
 
@@ -43,10 +47,10 @@ export default function Footer() {
         />
       </div>
 
-      <div className="relative z-10">
+      <div className="flex flex-col relative z-10 items-center justify-center text-center lg:text-start">
 
         {/* Particle Logo */}
-        <div className="flex h-[290px] items-start justify-center pt-15 md:h-[310px] md:pt-16">
+        <div className="flex h-[290px] items-center justify-center pt-15 md:h-[310px] md:pt-16">
         <ParticleLogo
   src="/logo/logo_favicon1.webp"
   width={140}
@@ -60,14 +64,13 @@ export default function Footer() {
         </div>
 
         {/* Footer information */}
-        <div className="mx-auto grid max-w-[1450px] grid-cols-1 gap-x-12 gap-y-10 px-7 pt-5 pb-12 sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
+        <div className="gap-2 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-[1650px] gap-x-12 xl:gap-x-32 2xl:gap-x-44 gap-y-10 px-7 pt-5 pb-12 lg:px-10">
 
           {/* Corporate */}
           <div>
-            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em]">
+            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em] underline underline-offset-4 decoration-[#ba9b74] decoration-2">
               KURUMSAL
             </h3>
-
             <ul className="space-y-2 text-[13px] font-light">
               {corporateLinks.map((link) => (
                 <li key={link.href}>
@@ -84,7 +87,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em]">
+            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em] underline underline-offset-4 decoration-[#ba9b74] decoration-2">
               İLETİŞİM
             </h3>
 
@@ -120,7 +123,7 @@ export default function Footer() {
 
           {/* Address */}
           <div>
-            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em]">
+            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em] underline underline-offset-4 decoration-[#ba9b74] decoration-2">
               ADRES
             </h3>
 
@@ -144,24 +147,28 @@ export default function Footer() {
 
           {/* Social Media */}
           <div>
-            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em]">
+            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em] underline underline-offset-4 decoration-[#ba9b74] decoration-2">
               SOSYAL MEDYA
             </h3>
 
             <div className="flex items-center gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="text-[13px] font-light hover:opacity-70"
-                >
-                  {social.label}
-                </a>
-              ))}
-            </div>
+    {socialLinks.map((social) => {
+      const Icon = social.icon;
+
+      return (
+        <a
+          key={social.label}
+          href={social.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={social.label}
+          className="group flex items-center gap-2 text-[13px]font-light transition-opacity duration-300 hover:opacity-70"
+        >
+          <Icon className="text-[25px] transition-transform duration-500 ease-out group-hover:scale-110" />
+        </a>
+      );
+    })}
+  </div>
           </div>
         </div>
 

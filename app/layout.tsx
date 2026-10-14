@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Header from "./generalComponents/Header";
-import Footer from "./generalComponents/Footer";
+import Header from "../components/generalComponents/Header";
+import Footer from "../components/generalComponents/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin", "latin-ext"],
@@ -23,6 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
+       <head>
+        <link
+          rel="stylesheet"
+          href="/fonts/flaticon/flaticon_hotel.min.css"
+        />
+      </head>
       <body className={montserrat.variable}>
          <Header />
         {children}

@@ -1,16 +1,16 @@
 "use client"
 import Image from "next/image";
-import MainBanner from "./HomeComponents/MainBanner";
+import MainBanner from "../components/HomeComponents/MainBanner";
 import backgroundImageSpa from "@/public/images/homepage/spa-1.webp"
 import backgroundImagePools from "@/public/images/homepage/acik-havuz.webp"
 import backgroundImageAquapark from "@/public/images/homepage/aquapark-1.webp"
 import backgroundImageShows from "@/public/images/homepage/aksam-sovlari.webp"
-import ParticleLogo from "./generalComponents/ParticleLogo"
-import TextBanner from "./generalComponents/TextBanner"
-import RoomsSection from "./HomeComponents/RoomsSection";
-import { rooms } from "@/src/data/rooms";
-import GastronomySection from "./HomeComponents/GastronomySection";
-import { gastronomyItems } from "@/src/data/gastronomy";
+import ParticleLogo from "../components/generalComponents/ParticleLogo"
+import TextBanner from "../components/generalComponents/TextBanner"
+import RoomsSection from "../components/HomeComponents/RoomsSection";
+import { rooms } from "@/data/roomsCard";
+import GastronomySection from "../components/HomeComponents/GastronomySection";
+import { gastronomyItems } from "@/data/gastronomy";
 import backgroundImageKids from "@/public/images/kids/mini-kulup-1.webp"
 import backgroundImageKids2 from "@/public/images/kids/mini-kulup-2.webp"
 import backgroundImageKids3 from "@/public/images/kids/mini-kulup-4.webp"

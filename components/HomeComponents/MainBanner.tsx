@@ -2,10 +2,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 type Slide = {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
 };
 
@@ -18,15 +18,21 @@ export default function MainBanner({
 }: MainBannerProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
-useEffect(() => {
-  if (slides.length <= 1) return;
+  useEffect(() => {
+    if (slides.length <= 1) return;
 
-  const interval = window.setInterval(() => {
-    setActiveIndex((prev) => (prev + 1) % slides.length);
-  }, 6000);
+    const interval = window.setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % slides.length);
+    }, 6000);
 
-  return () => window.clearInterval(interval);
-}, [slides.length]);
+    return () => window.clearInterval(interval);
+  }, [slides.length]);
+
+  // Prevent an invalid index if the slide count changes
+  const currentIndex =
+    slides.length > 0 ? activeIndex % slides.length : 0;
+
+  if (slides.length === 0) return null;
 
   return (
     <section
@@ -35,10 +41,14 @@ useEffect(() => {
     >
       {slides.map((slide, index) => (
         <div
-          key={slide.src}
-          aria-hidden={index !== activeIndex}
+          key={
+            typeof slide.src === "string"
+              ? slide.src
+              : slide.src.src
+          }
+          aria-hidden={index !== currentIndex}
           className={`absolute inset-0 transition-opacity duration-[1200ms] ease-in-out ${
-            index === activeIndex
+            index === currentIndex
               ? "z-10 opacity-100"
               : "z-0 opacity-0"
           }`}

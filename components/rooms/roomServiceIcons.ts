@@ -1,0 +1,41 @@
+import {
+  LuWifi,
+  LuRefrigerator,
+  LuSprayCan,
+  LuBath,
+  LuDoorOpen,
+  LuBox,
+  LuVault,
+  LuTv,
+  LuCoffee,
+  LuAirVent,
+  LuMaximize2,
+  LuPhone,
+  LuShirt,
+  LuConciergeBell,
+  LuWaves,
+  LuFlower2,
+  LuCircleHelp,
+} from "react-icons/lu";
+
+export const roomServiceIcons = {
+  wifi: LuWifi,
+  minibar: LuRefrigerator,
+  housekeeping: LuSprayCan,
+  hairdryer: LuWaves,
+  bathroom: LuBath,
+  balcony: LuDoorOpen,
+  amenities: LuBox,
+  safe: LuVault,
+  tv: LuTv,
+  coffee: LuCoffee,
+  airConditioner: LuAirVent,
+  mirror: LuFlower2,
+  floor: LuMaximize2,
+  roomService: LuConciergeBell,
+  phone: LuPhone,
+  laundry: LuShirt,
+  default: LuCircleHelp,
+};
+
+export type RoomServiceIconName = keyof typeof roomServiceIcons;

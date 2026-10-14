@@ -1,5 +1,5 @@
 
-import type { GastronomyItem } from "@/app/HomeComponents/GastronomyCard";
+import type { GastronomyItem } from "@/components/HomeComponents/GastronomyCard";
 
 export const gastronomyItems: GastronomyItem[] = [
   {

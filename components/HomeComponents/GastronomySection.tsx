@@ -3,6 +3,8 @@ import GastronomyCard, {
   type GastronomyItem,
 } from "./GastronomyCard";
 
+import Reveal from "./Reveal";
+
 type GastronomySectionProps = {
   items: GastronomyItem[];
   title?: string;
@@ -31,11 +33,13 @@ export default function GastronomySection({
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map((item) => (
-            <GastronomyCard key={item.id} item={item} />
-          ))}
-        </div>
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-2 lg:grid-cols-4">
+  {items.map((item, index) => (
+    <Reveal key={item.id} delay={index % 2 === 0 ? 0 : 200}>
+      <GastronomyCard item={item} />
+    </Reveal>
+  ))}
+</div>
       </div>
     </section>
   );

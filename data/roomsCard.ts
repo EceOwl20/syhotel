@@ -1,5 +1,5 @@
 
-import type { Room } from "@/app/HomeComponents/RoomCard";
+import type { Room } from "@/components/HomeComponents/RoomCard";
 
 export const rooms: Room[] = [
   {

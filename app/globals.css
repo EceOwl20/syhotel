@@ -7,3 +7,22 @@
 body {
   font-family: var(--font-montserrat), Arial, sans-serif;
 }
+
+@font-face {
+  font-family: "flaticon_hotel";
+  src: url("/fonts/flaticon/flaticon_hotel.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
+}
+
+i[class^="flaticon-"]::before,
+i[class*=" flaticon-"]::before {
+  font-family: "flaticon_hotel" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}

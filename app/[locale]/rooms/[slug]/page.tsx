@@ -1,9 +1,12 @@
 import { notFound } from "next/navigation";
-import { rooms } from "@/data/rooms"
+
+import { rooms } from "@/data/rooms";
+import { getRoomDetail } from "@/lib/getRoomDetail";
 import RoomDetailSection from "@/components/rooms/RoomDetailSection";
 
 type PageProps = {
   params: Promise<{
+    locale: string;
     slug: string;
   }>;
 };
@@ -17,9 +20,9 @@ export function generateStaticParams() {
 export default async function RoomDetailPage({
   params,
 }: PageProps) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
 
-  const room = rooms.find((room) => room.slug === slug);
+  const room = await getRoomDetail(slug, locale);
 
   if (!room) {
     notFound();

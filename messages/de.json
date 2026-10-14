@@ -1,0 +1,157 @@
+
+{
+  "Header": {
+    "reservation": "JETZT BUCHEN",
+    "home": "Startseite",
+    "callUs": "Rufen Sie uns an",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "languageSelection": "Sprachauswahl",
+    "logoAlt": "SY Hotels Logo"
+  },
+
+  "Footer": {
+    "corporate": "UNTERNEHMEN",
+    "contact": "KONTAKT",
+    "address": "ADRESSE",
+    "socialMedia": "SOZIALE MEDIEN",
+    "corporateLinks": {
+      "contact": "Kontakt",
+      "privacy": "Schutz personenbezogener Daten",
+      "sustainability": "Nachhaltigkeit",
+      "exploreRegion": "Region entdecken"
+    },
+    "reservation": "Reservierung",
+    "hotelContact": "Hotelkontakt",
+    "addressLines": {
+      "line1": "Kadriye, Kır Mevkii, Atatürk Straße",
+      "line2": "07500 – Belek / Antalya / Türkei",
+      "line3": "(Gegenüber von The Land of Legends)"
+    },
+    "getDirections": "Route anzeigen"
+  },
+
+  "HomePage": {
+    "rooms": {
+      "title": "UNTERKUNFT",
+      "description": "Mit großzügig und elegant gestalteten Zimmern bietet SY Hotels seinen Gästen einen Wohnbereich, der weit über gewöhnlichen Komfort hinausgeht. Genießen Sie die stilvolle Atmosphäre moderner Einrichtung und fühlen Sie sich wie zu Hause. Alle Zimmer sind mit moderner Technologie ausgestattet und bis ins kleinste Detail durchdacht, um den Bedürfnissen unserer Gäste gerecht zu werden.",
+      "discover": "Entdecken"
+    },
+    "gastronomy": {
+      "title": "GASTRONOMIE",
+      "description": "Entdecken Sie ein außergewöhnliches kulinarisches Erlebnis in unseren Restaurants, die erlesene Spezialitäten aus aller Welt anbieten. Vom reichhaltigen Frühstücksbuffet im Hauptrestaurant bis hin zu lokalen und internationalen Köstlichkeiten können unsere Gäste den ganzen Tag über eine vielfältige Auswahl genießen."
+    },
+    "pools": {
+      "span": "",
+      "title": "SWIMMINGPOOLS",
+      "description": "Entdecken Sie unsere vielfältigen Swimmingpools, die Entspannung, Erfrischung und unvergessliche Momente voller Spaß bieten. Ob Sie sich erholen, abkühlen oder gemeinsam mit Ihren Kindern eine schöne Zeit verbringen möchten – unsere Pools bieten für jeden das passende Erlebnis.",
+      "button": "Entdecken"
+    },
+    "spa": {
+      "span": "",
+      "title": "SPA & WELLNESS",
+      "description": "Entdecken Sie unser umfangreiches Spa- und Wellnesscenter. Lassen Sie bei wohltuenden Massagen den Alltagsstress hinter sich, entspannen Sie im türkischen Bad, in der Sauna oder im Dampfbad und genießen Sie eine erfrischende Auszeit im Innenpool. Unser modernes Fitnesscenter ist mit hochmodernen Geräten ausgestattet.",
+      "button": "Entdecken"
+    },
+    "entertainment": {
+      "span": "",
+      "title": "AKTIVITÄTEN & UNTERHALTUNG",
+      "description": "Mit abwechslungsreichen Tagesaktivitäten, spannenden Sportveranstaltungen und beeindruckenden Live-Shows am Abend möchte SY Hotels Belek seinen Gästen unvergessliche Erlebnisse bieten. Genießen Sie die perfekte Kombination aus Erholung und grenzenloser Unterhaltung.",
+      "button": "Entdecken"
+    },
+    "aquapark": {
+      "span": "Für alle, die Abenteuer lieben",
+      "title": "Mega Splash Aquapark",
+      "description": "Mit 16 verschiedenen Wasserrutschen ist der Mega Splash Aquapark ein ideales Erlebnis für Abenteuerlustige und alle, die Spaß lieben. Dank separater Bereiche für Kinder und Erwachsene können Gäste jeden Alters in eine aufregende Wasserwelt eintauchen.",
+      "button": "Entdecken"
+    },
+    "kids": {
+      "span": "",
+      "title": "FÜR KINDER",
+      "description": "Unser speziell für Kinder von 4 bis 12 Jahren gestalteter Kinderclub bietet den ganzen Tag über abwechslungsreiche Spiele, kreative Bastelaktivitäten und Gruppenspiele unter der Betreuung erfahrener und freundlicher Animateure.",
+      "button": "Entdecken"
+    }
+  },
+
+    "Rooms": {
+    "freeTitle": "KOSTENLOSE LEISTUNGEN",
+    "paidTitle": "KOSTENPFLICHTIGE LEISTUNGEN",
+    "details": {
+      "deluxe": {
+        "title": "DELUXE ZIMMER",
+        "subtitle": "EIN NEUES LEBENSGEFÜHL ERWARTET SIE",
+        "description": "Mit ihrer großzügigen und eleganten Gestaltung bieten unsere Deluxe Zimmer einen Wohnbereich, der weit über gewöhnlichen Komfort hinausgeht.",
+        "galleryAlt": "Foto des Deluxe Zimmers",
+        "features": {
+          "area": "23 m²",
+          "guests": "2+1+1 (Baby)",
+          "bed": "1 Doppelbett",
+          "sofa": "1 Tagesbett",
+          "bath": "Badezimmer, WC"
+        }
+      }
+    },
+    "services": {
+      "wifi": {
+        "title": "WLAN & Internet",
+        "description": "Highspeed-Internetzugang in den Zimmern"
+      },
+      "minibar": {
+        "title": "Minibar",
+        "description": "Softdrinks, Wasser und Bier werden täglich aufgefüllt"
+      },
+      "housekeeping": {
+        "title": "Zimmerreinigung",
+        "description": "Tägliche Zimmerreinigung"
+      },
+      "hairdryer": {
+        "title": "Haartrockner"
+      },
+      "bathroom": {
+        "title": "Badezimmer & Dusche"
+      },
+      "balcony": {
+        "title": "Balkon",
+        "description": "Tisch und Stühle"
+      },
+      "amenities": {
+        "title": "Pflegeprodukte",
+        "description": "Badezimmer- und Körperpflegeprodukte"
+      },
+      "safe": {
+        "title": "Zimmersafe",
+        "description": "Safe in Laptopgröße"
+      },
+      "tv": {
+        "title": "LCD-Fernseher",
+        "description": "Nationale und internationale Sender sowie Musikprogramme"
+      },
+      "coffee": {
+        "title": "Tee- & Kaffeezubereitung",
+        "description": "Auswahl an Tee und Kaffee"
+      },
+      "airConditioner": {
+        "title": "Klimaanlage",
+        "description": "Zentrales System mit Regelung im Zimmer"
+      },
+      "mirror": {
+        "title": "Kosmetikspiegel"
+      },
+      "floor": {
+        "title": "Keramikboden",
+        "description": "In Holzoptik"
+      },
+      "roomService": {
+        "title": "Zimmerservice",
+        "description": "24 Stunden verfügbar mit vielfältiger Speisekarte"
+      },
+      "phone": {
+        "title": "Telefon"
+      },
+      "laundry": {
+        "title": "Wäscheservice",
+        "description": "Waschen, chemische Reinigung und Bügelservice"
+      }
+    }
+  }
+}

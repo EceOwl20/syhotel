@@ -1,5 +1,6 @@
 
-import type { RoomDetail } from "@/data/rooms";
+import { getTranslations } from "next-intl/server";
+import type { RoomDetail } from "@/data/roomTypes";
 import RoomGallery from "./RoomGallery";
 import RoomServices from "./RoomServices";
 import RoomFeatures from "./RoomFeatures";
@@ -9,11 +10,13 @@ type Props = {
   room: RoomDetail;
 };
 
-export default function RoomDetailSection({ room }: Props) {
+export default async function RoomDetailSection({ room }: Props) {
   const slides = room.gallery.map((image) => ({
     src: image.src,
     alt: image.alt,
   }));
+
+   const t = await getTranslations("Rooms");
 
   return (
     <main className="w-full bg-[#f7f7f5]">
@@ -54,10 +57,12 @@ export default function RoomDetailSection({ room }: Props) {
       </section>
 
       {/* Room services */}
-      <RoomServices
-        freeServices={room.freeServices}
-        paidServices={room.paidServices}
-      />
+     <RoomServices
+  freeServices={room.freeServices}
+  paidServices={room.paidServices}
+  freeTitle={t("freeTitle")}
+  paidTitle={t("paidTitle")}
+/>
 
     </main>
   );

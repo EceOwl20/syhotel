@@ -1,0 +1,158 @@
+
+{
+  "Header": {
+    "reservation": "BOOK NOW",
+    "home": "Home",
+    "callUs": "Call Us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageSelection": "Language selection",
+    "logoAlt": "SY Hotels logo"
+  },
+
+  "Footer": {
+    "corporate": "CORPORATE",
+    "contact": "CONTACT",
+    "address": "ADDRESS",
+    "socialMedia": "SOCIAL MEDIA",
+    "corporateLinks": {
+      "contact": "Contact Us",
+      "privacy": "Personal Data Protection",
+      "sustainability": "Sustainability",
+      "exploreRegion": "Explore the Region"
+    },
+    "reservation": "Reservations",
+    "hotelContact": "Hotel Contact",
+    "addressLines": {
+      "line1": "Kadriye, Kır Mevkii, Atatürk Street",
+      "line2": "07500 – Belek / Antalya / Türkiye",
+      "line3": "(Opposite The Land of Legends)"
+    },
+    "getDirections": "Get Directions"
+  },
+
+  "HomePage": {
+    "rooms": {
+      "title": "ACCOMMODATION",
+      "description": "With spacious and elegantly designed rooms, SY Hotels offers guests a living space that goes beyond comfort. Feel at home in the sophisticated atmosphere created by modern interiors. Every room is equipped with advanced technology and thoughtfully designed with every detail in mind to meet guests' needs.",
+      "discover": "Discover"
+    },
+    "gastronomy": {
+      "title": "GASTRONOMY",
+      "description": "Discover an exceptional culinary experience with restaurants offering exquisite flavors from around the world. From buffet breakfasts in the main restaurant to local and international specialties throughout the day, guests can enjoy a wide variety of dining experiences."
+    },
+    "pools": {
+      "span": "",
+      "title": "SWIMMING POOLS",
+      "description": "Discover a variety of swimming pools designed for relaxation, refreshment and unforgettable moments of fun. Whether you want to unwind, cool off or spend quality time with your children, our pools offer something for everyone.",
+      "button": "Discover"
+    },
+    "spa": {
+      "span": "",
+      "title": "SPA & WELLNESS",
+      "description": "Discover our comprehensive spa and wellness center. Release stress with relaxing massage therapies, unwind in the Turkish bath, sauna and steam room, or enjoy a refreshing swim in the indoor pool. Our modern fitness center features state-of-the-art equipment for guests who enjoy staying active.",
+      "button": "Discover"
+    },
+    "entertainment": {
+      "span": "",
+      "title": "ACTIVITIES & ENTERTAINMENT",
+      "description": "With activities throughout the day, exciting sports events and spectacular live performances every evening, SY Hotels Belek aims to create unforgettable experiences for all guests. Enjoy the perfect combination of relaxation and endless entertainment.",
+      "button": "Discover"
+    },
+    "aquapark": {
+      "span": "For thrill seekers",
+      "title": "Mega Splash Aquapark",
+      "description": "Featuring 16 different water slides, Mega Splash Aquapark is the perfect destination for adventure seekers and fun lovers. With dedicated areas for both children and adults, guests of all ages can dive into an exciting world of water-filled adventures.",
+      "button": "Discover"
+    },
+    "kids": {
+      "span": "",
+      "title": "FOR CHILDREN",
+      "description": "Specially designed for children aged 4 to 12, our kids' club offers a variety of games, arts and crafts activities, and group entertainment throughout the day under the supervision of experienced and friendly entertainers.",
+      "button": "Discover"
+    }
+  },
+
+
+  "Rooms": {
+    "freeTitle": "COMPLIMENTARY SERVICES",
+    "paidTitle": "PAID SERVICES",
+    "details": {
+      "deluxe": {
+        "title": "DELUXE ROOMS",
+        "subtitle": "A NEW LIFESTYLE AWAITS YOU",
+        "description": "With their spacious and elegantly designed interiors, our Deluxe rooms offer guests a living space that goes beyond comfort.",
+        "galleryAlt": "Deluxe room photo",
+        "features": {
+          "area": "23 m²",
+          "guests": "2+1+1 (Infant)",
+          "bed": "1 Double Bed",
+          "sofa": "1 Daybed",
+          "bath": "Bathroom, WC"
+        }
+      }
+    },
+    "services": {
+      "wifi": {
+        "title": "Wi-Fi & Internet",
+        "description": "High-speed internet access in the rooms"
+      },
+      "minibar": {
+        "title": "Mini Bar",
+        "description": "Soft drinks, water and beer replenished daily"
+      },
+      "housekeeping": {
+        "title": "Housekeeping",
+        "description": "Daily room cleaning"
+      },
+      "hairdryer": {
+        "title": "Hair Dryer"
+      },
+      "bathroom": {
+        "title": "Bathroom & Shower"
+      },
+      "balcony": {
+        "title": "Balcony",
+        "description": "Table and chairs"
+      },
+      "amenities": {
+        "title": "Bathroom Amenities",
+        "description": "Bathroom and personal care products"
+      },
+      "safe": {
+        "title": "In-Room Safe",
+        "description": "Laptop-sized safe"
+      },
+      "tv": {
+        "title": "LCD TV",
+        "description": "Local and international channels and music broadcasts"
+      },
+      "coffee": {
+        "title": "Tea & Coffee Set",
+        "description": "Selection of tea and coffee"
+      },
+      "airConditioner": {
+        "title": "Air Conditioning",
+        "description": "Centrally operated system with in-room controls"
+      },
+      "mirror": {
+        "title": "Makeup Mirror"
+      },
+      "floor": {
+        "title": "Ceramic Flooring",
+        "description": "Wood-look finish"
+      },
+      "roomService": {
+        "title": "Room Service",
+        "description": "24-hour service with an extensive menu"
+      },
+      "phone": {
+        "title": "Telephone"
+      },
+      "laundry": {
+        "title": "Laundry Services",
+        "description": "Washing, dry cleaning and ironing services"
+      }
+    }
+  }
+}

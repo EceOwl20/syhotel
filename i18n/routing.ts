@@ -82,10 +82,22 @@ export const routing = defineRouting({
 
   // General pages
   "/reservation": "/reservation",
-  "/spa": "/spa",
-  "/pools": "/pools",
+  "/pools": {
+  tr: "/havuzlar",
+  en: "/pools",
+  de: "/schwimmbader",
+  ru: "/pools",
+},
+
+"/aquapark": {
+  tr: "/aquapark",
+  en: "/aquapark",
+  de: "/aquapark",
+  ru: "/aquapark",
+},
+
   "/beach": "/beach",
-  "/aquapark": "/aquapark",
+
   "/entertainment": "/entertainment",
   "/kids": "/kids",
 
@@ -108,10 +120,16 @@ export const routing = defineRouting({
   "/bolgeyi-kesfedin": "/bolgeyi-kesfedin",
 
   // Other links used on the homepage
-  "/spa-wellness": "/spa-wellness",
   "/shows": "/shows",
   "/bars/[slug]": "/bars/[slug]",
   "/restaurants/[slug]": "/restaurants/[slug]",
+
+  "/spa-wellness": {
+  tr: "/spa-wellness",
+  en: "/spa-wellness",
+  de: "/spa-wellness",
+  ru: "/spa-wellness",
+},
 
   },
 });

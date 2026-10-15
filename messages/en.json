@@ -368,6 +368,68 @@
       "subtitle": "BEACH BAR & RESTAURANT",
       "description": "It stands out with its professional and friendly service approach that makes every guest feel special. You will have an unforgettable experience with carefully prepared meals and personalized service."
     }
+  },
+
+  "SpaWellness": {
+    "intro": {
+      "subtitle": "BEAUTY, CARE",
+      "title": "SPA & WELLNESS",
+      "description": "It has a comprehensive spa and wellness center. You can relieve your stress with massage therapies offered by expert therapists, relax in the Turkish bath, sauna and steam room, and cool off in the indoor and outdoor pools. In addition, the hotel's modern fitness center is equipped with the latest technology equipment for those who love to do sports."
+    },
+    "spa": {
+      "title": "Spa",
+      "description": "The reception, which has an elegant and peaceful atmosphere, welcomes guests with calming music and refreshing aromas."
+    },
+    "massageRooms": {
+      "title": "Massage Rooms",
+      "description": "In these peaceful rooms, where every detail is carefully decorated and considered, guests can relieve all their stress with relaxing music and aromatic scents."
+    },
+    "fitnessCenter": {
+      "title": "Fitness Center",
+      "description": "It is equipped with the latest technology sports equipment and is designed to appeal to athletes of all levels."
+    },
+    "turkishBath": {
+      "title": "Turkish Bath",
+      "description": "With its authentic architecture inspired by Turkish culture and specially prepared scrub and foam rituals, it offers guests a true sense of purification and revitalization."
+    },
+    "sauna": {
+      "title": "Sauna",
+      "description": "It is a unique place decorated with modern and natural textures where you can relax your body and purify your mind during your holiday."
+    }
+  },
+
+  "Pools": {
+    "intro": {
+      "subtitle": "THE MOST FUN PLACE OF YOUR HOLIDAY",
+      "title": "POOLS",
+      "description": "Our hotel offers a variety of swimming pools for enjoyable moments and relaxation. Whether you want to unwind, cool off or have fun with your children, our pools cater to different needs and offer an unforgettable holiday experience."
+    },
+    "discover": "Discover",
+    "maldives": {
+      "title": "Maldives Pool",
+      "subtitle": "",
+      "description": "Surrounded by white sand and decorated with natural stone details, this pool offers an exotic atmosphere with palm trees and tropical plants."
+    },
+    "outdoor": {
+      "title": "Outdoor Pool",
+      "subtitle": "(Heating & Cooling)",
+      "description": ""
+    },
+    "blockB": {
+      "title": "Block B Outdoor Pool",
+      "subtitle": "",
+      "description": ""
+    },
+    "aquapark": {
+      "title": "Mega Splash Aquapark",
+      "subtitle": "14 Water Slides",
+      "description": ""
+    },
+    "indoor": {
+      "title": "Indoor Pool",
+      "subtitle": "",
+      "description": ""
+    }
   }
 
 }

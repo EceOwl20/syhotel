@@ -45,7 +45,7 @@ const gastronomyLinks = [
 
 // Additional main navigation
 const mainLinks = [
-  { key: "spa", href: "/spa" },
+  { key: "spa", href: "/spa-wellness" },
   { key: "pools", href: "/pools" },
   { key: "beach", href: "/beach" },
   { key: "aquapark", href: "/aquapark" },

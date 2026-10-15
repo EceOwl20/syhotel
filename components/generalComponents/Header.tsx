@@ -65,7 +65,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 z-50 h-24 w-full">
+      <header className="fixed top-0 left-0 z-50 h-20 w-full">
         {/* Header background */}
         <div
           aria-hidden="true"
@@ -99,7 +99,7 @@ export default function Header() {
           {/* LEFT */}
           <div className="flex items-center gap-5">
             <Link href="/" aria-label={t("home")}>
-              <HomeIcon className="h-6 w-7.25" />
+              <HomeIcon className="h-5 w-6.50" />
             </Link>
 
             <button
@@ -139,7 +139,7 @@ export default function Header() {
               href="tel:+902423404706"
               aria-label={t("callUs")}
             >
-              <PhoneIcon className="h-5 w-5" />
+              <PhoneIcon className="h-4.5 w-4.5" />
             </a>
           </div>
 
@@ -147,22 +147,39 @@ export default function Header() {
           <Link href="/">
             <Image
               src={logo}
-              width={80}
-              height={80}
+              width={70}
+              height={70}
               alt={t("logoAlt")}
             />
           </Link>
 
           {/* RIGHT */}
           <div className="flex items-center justify-end gap-5">
-            <a
-              href="https://syhotels.platformeva.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-md bg-linear-to-r from-[#8e7d6c] to-[#cdb3a4] px-1.75 py-1 text-sm font-medium tracking-wide text-white transition-all duration-300 hover:brightness-110"
-            >
-              {t("reservation")}
-            </a>
+            
+<a
+  href="https://syhotels.platformeva.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-hidden={isMenuOpen}
+  tabIndex={isMenuOpen ? -1 : 0}
+  className={`
+    rounded-md
+    bg-linear-to-r from-[#8e7d6c] to-[#cdb3a4]
+    px-1.25 py-0.75
+    text-[14px] font-medium tracking-wide text-white
+    transition-[opacity,transform,visibility]
+    duration-300 ease-in-out
+    hover:brightness-110
+    ${
+      isMenuOpen
+        ? "pointer-events-none invisible -translate-y-2 opacity-0"
+        : "visible translate-y-0 opacity-100"
+    }
+  `}
+>
+  {t("reservation")}
+</a>
+
 
             {/* Language selector */}
             <nav

@@ -369,6 +369,68 @@
       "subtitle": "STRANDBAR & RESTAURANT",
       "description": "Mit professionellem und herzlichem Service sorgt das Larimar dafür, dass sich jeder Gast besonders fühlt. Liebevoll zubereitete Speisen und persönlicher Service machen Ihren Besuch zu einem unvergesslichen Erlebnis."
     }
+  },
+
+   "SpaWellness": {
+    "intro": {
+      "subtitle": "SCHÖNHEIT, PFLEGE",
+      "title": "SPA & WELLNESS",
+      "description": "Unser Hotel verfügt über ein umfassendes Spa- und Wellnesscenter. Lassen Sie Ihren Stress bei Massagen durch erfahrene Therapeuten hinter sich, entspannen Sie sich im türkischen Bad, in der Sauna und im Dampfbad oder genießen Sie die Innen- und Außenpools. Darüber hinaus ist unser modernes Fitnesscenter mit modernsten Trainingsgeräten ausgestattet."
+    },
+    "spa": {
+      "title": "Spa",
+      "description": "Der Empfangsbereich mit seiner eleganten und ruhigen Atmosphäre begrüßt die Gäste mit entspannender Musik und erfrischenden Düften."
+    },
+    "massageRooms": {
+      "title": "Massageräume",
+      "description": "In diesen ruhigen Räumen, in denen jedes Detail sorgfältig gestaltet wurde, können unsere Gäste bei entspannender Musik und aromatischen Düften ihren gesamten Stress hinter sich lassen."
+    },
+    "fitnessCenter": {
+      "title": "Fitnesscenter",
+      "description": "Unser Fitnesscenter ist mit modernsten Trainingsgeräten ausgestattet und wurde für Sportbegeisterte aller Leistungsstufen konzipiert."
+    },
+    "turkishBath": {
+      "title": "Türkisches Bad",
+      "description": "Mit seiner authentischen, von der türkischen Kultur inspirierten Architektur und speziell abgestimmten Peeling- und Schaumritualen bietet das türkische Bad ein besonderes Erlebnis der Reinigung und Erholung."
+    },
+    "sauna": {
+      "title": "Sauna",
+      "description": "Unsere mit modernen und natürlichen Materialien gestaltete Sauna ist ein einzigartiger Ort, an dem Sie während Ihres Urlaubs Ihren Körper entspannen und Ihren Geist zur Ruhe bringen können."
+    }
+  },
+
+   "Pools": {
+    "intro": {
+      "subtitle": "DER UNTERHALTSAMSTE ORT IHRES URLAUBS",
+      "title": "POOLS",
+      "description": "Unser Hotel bietet verschiedene Pools für Badespaß und erholsame Momente. Ob Sie entspannen, sich abkühlen oder mit Ihren Kindern Spaß haben möchten – unsere Poolanlagen bieten für unterschiedliche Wünsche ein unvergessliches Urlaubserlebnis."
+    },
+    "discover": "Entdecken",
+    "maldives": {
+      "title": "Malediven-Pool",
+      "subtitle": "",
+      "description": "Umgeben von weißem Sand und natürlichen Steinelementen bietet dieser Pool mit Palmen und tropischen Pflanzen eine exotische Atmosphäre."
+    },
+    "outdoor": {
+      "title": "Außenpool",
+      "subtitle": "(Heizung & Kühlung)",
+      "description": ""
+    },
+    "blockB": {
+      "title": "Außenpool Block B",
+      "subtitle": "",
+      "description": ""
+    },
+    "aquapark": {
+      "title": "Mega Splash Aquapark",
+      "subtitle": "14 Wasserrutschen",
+      "description": ""
+    },
+    "indoor": {
+      "title": "Innenpool",
+      "subtitle": "",
+      "description": ""
+    }
   }
 
 }

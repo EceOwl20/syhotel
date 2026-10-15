@@ -365,5 +365,67 @@
       "subtitle": "SAHİL BAR & RESTORAN",
       "description": "Her misafirin kendisini özel hissetmesini sağlayan profesyonel ve güler yüzlü hizmet anlayışıyla öne çıkıyor. Özenle hazırlanan yemekleri ve kişiye özel hizmetiyle unutulmaz bir deneyim sunuyor."
     }
+  },
+
+  "SpaWellness": {
+    "intro": {
+      "subtitle": "GÜZELLİK, BAKIM",
+      "title": "SPA & WELLNESS",
+      "description": "Otelimiz kapsamlı bir spa ve wellness merkezine sahiptir. Uzman terapistler tarafından sunulan masaj terapileriyle stresinizi atabilir; Türk hamamı, sauna ve buhar odasında rahatlayabilir, kapalı ve açık havuzlarda serinleyebilirsiniz. Ayrıca otelimizin modern fitness merkezi, spor yapmayı seven misafirlerimiz için en son teknoloji ekipmanlarla donatılmıştır."
+    },
+    "spa": {
+      "title": "Spa",
+      "description": "Zarif ve huzurlu bir atmosfere sahip resepsiyonumuz, misafirlerini dinlendirici müzikler ve ferahlatıcı aromalar eşliğinde karşılar."
+    },
+    "massageRooms": {
+      "title": "Masaj Odaları",
+      "description": "Her detayın özenle tasarlandığı ve düşünüldüğü bu huzurlu odalarda misafirlerimiz, rahatlatıcı müzikler ve aromatik kokular eşliğinde tüm streslerinden arınabilir."
+    },
+    "fitnessCenter": {
+      "title": "Fitness Merkezi",
+      "description": "En son teknoloji spor ekipmanlarıyla donatılmış olan fitness merkezimiz, her seviyeden sporcuya hitap edecek şekilde tasarlanmıştır."
+    },
+    "turkishBath": {
+      "title": "Türk Hamamı",
+      "description": "Türk kültüründen ilham alan otantik mimarisi ve özel olarak hazırlanan kese ve köpük ritüelleriyle misafirlerimize gerçek bir arınma ve yenilenme deneyimi sunar."
+    },
+    "sauna": {
+      "title": "Sauna",
+      "description": "Modern ve doğal dokularla dekore edilmiş saunamız, tatiliniz boyunca bedeninizi dinlendirebileceğiniz ve zihninizi arındırabileceğiniz eşsiz bir ortam sunar."
+    }
+  },
+
+  "Pools": {
+    "intro": {
+      "subtitle": "TATİLİN EN EĞLENCELİ YERİ",
+      "title": "HAVUZLAR",
+      "description": "Yüzme keyfi ve eğlenceli anlar sunmak için birbirinden farklı havuz seçenekleriyle hizmet vermektedir. İster dinlenmek, ister serinlemek ya da çocuklarınızla eğlenmek için her ihtiyaca hitap eden havuzlarıyla unutulmaz bir tatil deneyimi yaşatıyor."
+    },
+    "discover": "Keşfet",
+    "maldives": {
+      "title": "Maldivler Havuz",
+      "subtitle": "",
+      "description": "Bembeyaz kumlarla çevrili ve doğal taş detaylarıyla süslenmiş, palmiye ağaçları ve tropikal bitkilerle egzotik bir atmosfere sahiptir."
+    },
+    "outdoor": {
+      "title": "Açık Havuz",
+      "subtitle": "(Isıtma & Soğutma)",
+      "description": ""
+    },
+    "blockB": {
+      "title": "Açık Havuz B Blok",
+      "subtitle": "",
+      "description": ""
+    },
+    "aquapark": {
+      "title": "Mega Splash Aquapark",
+      "subtitle": "14 Kaydırak",
+      "description": ""
+    },
+    "indoor": {
+      "title": "Kapalı Havuz",
+      "subtitle": "",
+      "description": ""
+    }
   }
 }

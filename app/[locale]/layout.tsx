@@ -12,6 +12,7 @@ import Header from "@/components/generalComponents/Header";
 import Footer from "@/components/generalComponents/Footer";
 
 import "../globals.css";
+import BackToTop from "@/components/generalComponents/BackToTop";
 
 const montserrat = Montserrat({
   subsets: ["latin", "latin-ext"],
@@ -21,8 +22,16 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "SY Hotels",
-  description: "SY Hotels",
+  title: "SY Hotels Belek",
+  description: "SY Hotels Belek - Luxury Hotel Experience",
+ icons: {
+  icon: [
+    {
+      url: "/icon.webp",
+      type: "image/webp",
+    },
+  ],
+},
 };
 
 export function generateStaticParams() {
@@ -58,6 +67,7 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <Footer />
+           <BackToTop />
         </NextIntlClientProvider>
       </body>
     </html>

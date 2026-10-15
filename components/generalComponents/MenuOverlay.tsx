@@ -37,10 +37,10 @@ const barLinks = [
 
 // Gastronomy navigation
 const gastronomyLinks = [
-  { key: "sirius", href: "/restaurants" },
-  { key: "nova", href: "/court" },
-  { key: "larimar", href: "/restoran" },
-  { key: "bettelglow", href: "/pastane" },
+  { key: "sirius", slug: "sirius-restaurant" },
+  { key: "nova", slug: "nova-food-court" },
+  { key: "larimar", slug: "larimar-beach-restaurant" },
+  { key: "bettelglow", slug: "bettelglow-patisserie" },
 ] as const;
 
 // Additional main navigation
@@ -225,18 +225,21 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               >
                 <div className="overflow-hidden">
                   <ul className="space-y-1 py-1 pl-4">
-                    {gastronomyLinks.map((item) => (
-                      <li key={item.key}>
-                        <Link
-                          href={item.href}
-                          onClick={onClose}
-                          tabIndex={isExpanded("gastronomy") ? 0 : -1}
-                          className={submenuLinkClass}
-                        >
-                          {t(`gastronomyLinks.${item.key}`)}
-                        </Link>
-                      </li>
-                    ))}
+                   {gastronomyLinks.map((item) => (
+  <li key={item.slug}>
+    <Link
+      href={{
+        pathname: "/restaurants/[slug]",
+        params: { slug: item.slug },
+      }}
+      onClick={onClose}
+      tabIndex={isExpanded("gastronomy") ? 0 : -1}
+      className={submenuLinkClass}
+    >
+      {t(`gastronomyLinks.${item.key}`)}
+    </Link>
+  </li>
+))}
                   </ul>
                 </div>
               </div>

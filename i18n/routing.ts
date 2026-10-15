@@ -111,6 +111,7 @@ export const routing = defineRouting({
   "/spa-wellness": "/spa-wellness",
   "/shows": "/shows",
   "/bars/[slug]": "/bars/[slug]",
+  "/restaurants/[slug]": "/restaurants/[slug]",
 
   },
 });

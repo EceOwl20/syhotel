@@ -14,13 +14,22 @@ type ParticleLogoProps = {
   color?: string;
   className?: string;
   detectionMode?: "brown" | "alpha";
+
+  // New animation options
+  entranceAnimation?: boolean;
+  entranceDuration?: number;
 };
 
 type Particle = {
   x: number;
   y: number;
+
   originX: number;
   originY: number;
+
+  startX: number;
+  startY: number;
+
   vx: number;
   vy: number;
   size: number;
@@ -32,15 +41,18 @@ type Particle = {
 
 export default function ParticleLogo({
   src,
-  width = 180,
-  height = 180,
-  padding = 90,
-  particleGap = 1,
-  particleSize = 0.85,
+  width = 300,
+  height = 150,
+  padding = 20,
+  particleGap = 3,
+  particleSize = 1,
   mouseRadius = 50,
-  color = "#877565",
+  color = "#ffffff",
   className = "",
   detectionMode = "brown",
+
+  entranceAnimation = false,
+  entranceDuration = 2400,
 }: ParticleLogoProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -54,6 +66,11 @@ export default function ParticleLogo({
     let particles: Particle[] = [];
     let animationId = 0;
     let destroyed = false;
+
+    let entranceStartTime: number | null = null;
+
+const easeOutCubic = (t: number) =>
+  1 - Math.pow(1 - t, 3);
 
     const mouse = {
       x: -10000,
@@ -111,23 +128,70 @@ const draw = (time = 0) => {
 
   
 
+
 const animate = (timestamp: number) => {
   if (destroyed) return;
 
   const time = timestamp * 0.001;
 
+  // Entrance animation progress
+  if (entranceStartTime === null) {
+    entranceStartTime = timestamp;
+  }
+
+  const duration = Math.max(entranceDuration, 1);
+
+  const progress = entranceAnimation
+    ? Math.min(
+        (timestamp - entranceStartTime) / duration,
+        1,
+      )
+    : 1;
+
+const easedProgress = easeOutCubic(progress);
+
+  const isEntering =
+    entranceAnimation && progress < 1;
+
   for (const p of particles) {
+
+    // Phase 1: Particles assemble the logo
+    if (isEntering) {
+      p.x =
+        p.startX +
+        (p.originX - p.startX) * easedProgress;
+
+      p.y =
+        p.startY +
+        (p.originY - p.startY) * easedProgress;
+
+      continue;
+    }
+
+    // Ensure exact final positions after entrance
+    if (
+      entranceAnimation &&
+      p.x !== p.originX &&
+      p.vx === 0 &&
+      p.vy === 0
+    ) {
+      p.x = p.originX;
+      p.y = p.originY;
+    }
+
+    // Phase 2: Existing mouse interaction
     if (mouse.active) {
       const dx = p.x - mouse.x;
       const dy = p.y - mouse.y;
+
       const distance = Math.hypot(dx, dy);
 
       if (distance < mouseRadius) {
         const safeDistance = Math.max(distance, 0.1);
 
-        const influence = 1 - distance / mouseRadius;
+        const influence =
+          1 - distance / mouseRadius;
 
-        // Kum gibi güçlü ama kısa mesafeli itme
         const force = influence * 4.5;
 
         p.vx += (dx / safeDistance) * force;
@@ -135,27 +199,28 @@ const animate = (timestamp: number) => {
       }
     }
 
-    // Sürtünme: parçacıklar savrulduktan sonra yavaşlar
+    // Friction
     p.vx *= 0.82;
     p.vy *= 0.82;
 
     p.x += p.vx;
     p.y += p.vy;
 
-    // Konuma yavaş dönüş, yay veya jöle etkisi yok
-if (
-  Math.abs(p.vx) < 0.25 &&
-  Math.abs(p.vy) < 0.25
-) {
-  p.x += (p.originX - p.x) * 0.045; //parcaciklarin yerlerine geri donme hizi
-  p.y += (p.originY - p.y) * 0.045;  
-}
+    // Return to original position
+    if (
+      Math.abs(p.vx) < 0.25 &&
+      Math.abs(p.vy) < 0.25
+    ) {
+      p.x += (p.originX - p.x) * 0.045;
+      p.y += (p.originY - p.y) * 0.045;
+    }
   }
 
   draw(time);
 
   animationId = window.requestAnimationFrame(animate);
 };
+
 
 
 
@@ -232,16 +297,36 @@ if (!shouldCreateParticle) continue;
           const jitterX = (Math.random() - 0.5) * 1.2;
           const jitterY = (Math.random() - 0.5) * 1.2;
 
-          const originX = x + jitterX + padding;
+
+const originX = x + jitterX + padding;
 const originY = y + jitterY + padding;
 
+// Particles enter from the left and right sides
+const fromLeft = originX < canvasWidth / 2;
+
+const startX = entranceAnimation
+  ? fromLeft
+    ? -50 - Math.random() * canvasWidth * 0.5
+    : canvasWidth + 50 + Math.random() * canvasWidth * 0.5
+  : originX;
+
+const startY = entranceAnimation
+  ? originY + (Math.random() - 0.5) * 100
+  : originY;
+
 particles.push({
-  x: originX,
-  y: originY,
+  x: startX,
+  y: startY,
+
   originX,
   originY,
+
+  startX,
+  startY,
+
   vx: 0,
   vy: 0,
+
   size: particleSize * (0.8 + Math.random() * 0.4),
   alpha: 0.85 + Math.random() * 0.15,
 
@@ -249,18 +334,29 @@ particles.push({
   speed: 12 + Math.random() * 18,
   amplitude: 0.12 + Math.random() * 0.18,
 });
+
         }
       }
 
-      draw(0);
+const reducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+).matches;
 
-      const reducedMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)",
-      ).matches;
+entranceStartTime = null;
 
-      if (!reducedMotion) {
-        animationId = window.requestAnimationFrame(animate);
-      }
+if (reducedMotion) {
+  // Immediately display the completed logo
+  for (const p of particles) {
+    p.x = p.originX;
+    p.y = p.originY;
+  }
+
+  draw(0);
+} else {
+  // Start from the entrance positions
+  draw(0);
+  animationId = window.requestAnimationFrame(animate);
+}
     };
 
     image.onload = createParticles;
@@ -312,6 +408,8 @@ mouse.y =
   mouseRadius,
   color,
   detectionMode,
+  entranceAnimation,
+  entranceDuration,
 ]);
 
 return (

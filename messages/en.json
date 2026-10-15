@@ -343,6 +343,31 @@
     "subtitle": "BEACH BAR & RESTAURANT",
     "description": "It stands out with its professional and friendly service approach that makes every guest feel special. You will have an unforgettable experience with carefully prepared meals and personalized service."
   }
-}
+},
+
+ "Restaurants": {
+    "slogan": "Adding Flavor to Your Holiday",
+    "openBuffet": "OPEN BUFFET",
+    "sirius-restaurant": {
+      "title": "SIRIUS",
+      "subtitle": "RESTAURANT",
+      "description": "Offering fresh, delicious and healthy alternatives to its guests from breakfast to dinner, the restaurant makes your holiday special with carefully selected dishes from international and Turkish cuisine. In addition, it offers its guests a different taste experience every evening with different theme nights."
+    },
+    "nova-food-court": {
+      "title": "NOVA",
+      "subtitle": "FOOD COURT",
+      "description": "Located by the pool and beach, the Food Court is the address for quick and delicious snacks. With hot and cold sandwiches, pizza varieties, fresh salads and ice cream options, this area adds energy to your holiday throughout the day and offers guests a pleasant and practical eating and drinking experience."
+    },
+    "bettelglow-patisserie": {
+      "title": "BETTELGLOW",
+      "subtitle": "PATISSERIE",
+      "description": "For guests who want to have a sweet escape, it serves freshly prepared cakes, cookies, cupcakes and chocolates throughout the day. Desserts served with handmade ice creams and Turkish coffee allow guests to take delicious breaks while relaxing."
+    },
+    "larimar-beach-restaurant": {
+      "title": "LARIMAR",
+      "subtitle": "BEACH BAR & RESTAURANT",
+      "description": "It stands out with its professional and friendly service approach that makes every guest feel special. You will have an unforgettable experience with carefully prepared meals and personalized service."
+    }
+  }
 
 }

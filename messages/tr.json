@@ -340,5 +340,30 @@
     "subtitle": "SAHİL BAR & RESTORAN",
     "description": "Her misafirin kendisini özel hissetmesini sağlayan profesyonel ve güler yüzlü hizmet anlayışıyla öne çıkıyor. Özenle hazırlanan yemekleri ve kişiye özel hizmetiyle unutulmaz bir deneyim sunuyor."
   }
+  },
+
+  "Restaurants": {
+    "slogan": "Tatilinize Tat Katıyoruz",
+    "openBuffet": "AÇIK BÜFE",
+    "sirius-restaurant": {
+      "title": "SIRIUS",
+      "subtitle": "RESTORAN",
+      "description": "Kahvaltıdan akşam yemeğine kadar misafirlerine taze, lezzetli ve sağlıklı alternatifler sunan restoranımız, dünya ve Türk mutfağından özenle seçilmiş yemekleriyle tatilinize ayrıcalık katıyor. Ayrıca farklı tema geceleriyle her akşam misafirlerine yeni lezzet deneyimleri sunuyor."
+    },
+    "nova-food-court": {
+      "title": "NOVA",
+      "subtitle": "FOOD COURT",
+      "description": "Havuz ve sahil kenarında bulunan Food Court, hızlı ve lezzetli atıştırmalıkların adresidir. Sıcak ve soğuk sandviçler, pizza çeşitleri, taze salatalar ve dondurma seçenekleriyle gün boyu tatilinize enerji katarak keyifli ve pratik bir yeme içme deneyimi sunar."
+    },
+    "bettelglow-patisserie": {
+      "title": "BETTELGLOW",
+      "subtitle": "PASTANE",
+      "description": "Tatlı bir mola vermek isteyen misafirlerimiz için gün boyu taze hazırlanmış kekler, kurabiyeler, cupcake'ler ve çikolatalar sunar. El yapımı dondurmalar ve Türk kahvesi eşliğinde servis edilen tatlılar, dinlenirken lezzetli molalar vermenizi sağlar."
+    },
+    "larimar-beach-restaurant": {
+      "title": "LARIMAR",
+      "subtitle": "SAHİL BAR & RESTORAN",
+      "description": "Her misafirin kendisini özel hissetmesini sağlayan profesyonel ve güler yüzlü hizmet anlayışıyla öne çıkıyor. Özenle hazırlanan yemekleri ve kişiye özel hizmetiyle unutulmaz bir deneyim sunuyor."
+    }
   }
 }

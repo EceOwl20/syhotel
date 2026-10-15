@@ -344,6 +344,31 @@
     "subtitle": "STRANDBAR & RESTAURANT",
     "description": "Mit professionellem und herzlichem Service sorgt das Larimar dafür, dass sich jeder Gast besonders fühlt. Liebevoll zubereitete Speisen und persönlicher Service machen Ihren Besuch zu einem unvergesslichen Erlebnis."
   }
-}
+},
+
+"Restaurants": {
+    "slogan": "Wir verleihen Ihrem Urlaub Geschmack",
+    "openBuffet": "OFFENES BUFFET",
+    "sirius-restaurant": {
+      "title": "SIRIUS",
+      "subtitle": "RESTAURANT",
+      "description": "Von morgens bis abends bietet das Sirius Restaurant seinen Gästen frische, köstliche und gesunde Speisen. Mit sorgfältig ausgewählten Spezialitäten der internationalen und türkischen Küche wird Ihr Urlaub zu einem besonderen Erlebnis. Verschiedene Themenabende sorgen jeden Abend für neue kulinarische Entdeckungen."
+    },
+    "nova-food-court": {
+      "title": "NOVA",
+      "subtitle": "FOOD COURT",
+      "description": "Direkt am Pool und Strand gelegen, ist der Nova Food Court die ideale Adresse für schnelle und köstliche Snacks. Mit warmen und kalten Sandwiches, verschiedenen Pizzen, frischen Salaten und Eiscreme bietet er den ganzen Tag über eine praktische und genussvolle Verpflegung."
+    },
+    "bettelglow-patisserie": {
+      "title": "BETTELGLOW",
+      "subtitle": "KONDITOREI",
+      "description": "Für Gäste, die sich eine süße Auszeit gönnen möchten, bietet die Bettelglow Konditorei den ganzen Tag über frisch zubereitete Kuchen, Kekse, Cupcakes und Pralinen. Handgemachtes Eis und türkischer Kaffee machen jede entspannte Pause zu einem besonderen Genuss."
+    },
+    "larimar-beach-restaurant": {
+      "title": "LARIMAR",
+      "subtitle": "STRANDBAR & RESTAURANT",
+      "description": "Mit professionellem und herzlichem Service sorgt das Larimar dafür, dass sich jeder Gast besonders fühlt. Liebevoll zubereitete Speisen und persönlicher Service machen Ihren Besuch zu einem unvergesslichen Erlebnis."
+    }
+  }
 
 }

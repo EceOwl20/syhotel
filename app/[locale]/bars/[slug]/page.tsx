@@ -77,16 +77,18 @@ export default async function BarDetailPage({
     "
   >
     <ParticleLogo
-      src={bar.logo}
-      width={460}
-      height={300}
-      padding={20}
-      particleGap={1}
-      particleSize={0.85}
-      mouseRadius={50}
-      color="#ffffff"
-      detectionMode="alpha"
-    />
+  src={bar.logo}
+  width={460}
+  height={300}
+  padding={20}
+  particleGap={1}
+  particleSize={0.85}
+  mouseRadius={50}
+  color="#ffffff"
+  detectionMode="alpha"
+  entranceAnimation
+  entranceDuration={1800}
+/>
   </div>
 
 </div>

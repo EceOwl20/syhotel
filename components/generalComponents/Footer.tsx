@@ -31,12 +31,12 @@ const corporateLinks = [
 const socialLinks = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/syhotels",
     icon: IoLogoFacebook,
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/syhotels",
     icon: AiOutlineInstagram,
   },
 ];
@@ -171,7 +171,7 @@ export default async function Footer() {
               {t("socialMedia")}
             </h3>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center text-center justify-center lg:justify-start gap-3">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
 

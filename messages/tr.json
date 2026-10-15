@@ -10,6 +10,50 @@
     "logoAlt": "SY Hotels logosu"
   },
 
+   "MenuOverlay": {
+    "navigationLabel": "Ana menü",
+    "home": "Ana Sayfa",
+    "reservation": "Online Rezervasyon",
+    "rooms": "Konaklama",
+    "bars": "Barlar",
+    "gastronomy": "Gastronomi",
+    "spa": "Spa & Wellness",
+    "pools": "Havuzlar",
+    "beach": "Sahil",
+    "aquapark": "Mega Splash Aquapark",
+    "entertainment": "Aktivite & Eğlence",
+    "kids": "Çocuklar İçin",
+    "information": "Genel Bilgilendirme",
+    "agencies": "Acentalar İçin",
+    "contact": "İletişim",
+    "privacy": "Kişisel Verileri Koruma Kanunu",
+    "sustainability": "Sürdürülebilirlik",
+    "discoverRegion": "Bölgeyi Keşfedin",
+    "roomLinks": {
+      "deluxe": "Deluxe Odalar",
+      "deluxeFamily": "Deluxe Aile Odaları",
+      "deluxeSuperior": "Deluxe Superior Odalar",
+      "swimUpFamily": "Deluxe Swim-Up Aile Odaları",
+      "swimUp": "Deluxe Swim-Up Odalar",
+      "shallowPool": "Deluxe Sığ Havuzlu Odalar",
+      "duplexFamily": "Deluxe Dubleks Aile Odaları",
+      "accessible": "Deluxe Engelli Odalar"
+    },
+    "barLinks": {
+      "ruby": "Ruby Lobi Bar",
+      "lal": "Lal Teras Bar",
+      "marin": "Marin Sığ Su Bar",
+      "aquarius": "Aquarius Havuz Bar",
+      "larimar": "Larimar Sahil Bar"
+    },
+    "gastronomyLinks": {
+      "sirius": "Sirius Restoran",
+      "nova": "Nova Food Court",
+      "larimar": "Larimar Sahil Restoran",
+      "bettelglow": "Bettelglow Pastane"
+    }
+  },
+
   "Footer": {
     "corporate": "KURUMSAL",
     "contact": "İLETİŞİM",
@@ -73,11 +117,12 @@
     }
   },
 
-   "Rooms": {
+"Rooms": {
     "freeTitle": "ÜCRETSİZ HİZMETLER",
     "paidTitle": "ÜCRETLİ HİZMETLER",
     "details": {
-      "deluxe": {
+      
+      "deluxe-Rooms": {
         "title": "DELUXE ODALAR",
         "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
         "description": "Geniş ve zarif tasarımlı odaları ile misafirlerine konforun ötesinde bir yaşam alanı sunuyor.",
@@ -89,7 +134,121 @@
           "sofa": "1 Daybed",
           "bath": "Banyo, WC"
         }
-      }
+      },
+
+      "deluxe-family-rooms": {
+  "title": "DELUXE AİLE ODALARI",
+  "subtitle": "SEVDİKLERİNİZLE BİRLİKTE",
+  "description": "Ara kapılı 2 odadan oluşmakta olup rahat bir yaşam alanı sunar. Aileler ve arkadaş grupları için ideal olan bu odalar, hem özel alanınızı koruyup hem de sevdiklerinizle bir arada olmanızı sağlar.",
+  "galleryAlt": "Deluxe Aile Odası fotoğrafı",
+  "features": {
+    "area": "43 m²",
+    "guests": "4+1 Bebek",
+    "doubleBed": "1 Çift Kişilik",
+    "singleBed": "2 Tek Kişilik",
+    "rooms": "2 Oda",
+    "balconies": "2 Balkon",
+    "bath": "Banyo, WC"
+  }
+},
+
+"deluxe-superior-rooms": {
+  "title": "DELUXE SUPERIOR ODALAR",
+  "subtitle": "",
+  "description": "Geniş ve ferah tasarımıyla ailelerin konforlu bir tatil geçirmesi için özel olarak hazırlanmıştır. Her yaştan misafirin ihtiyaçlarını karşılamak üzere tasarlanan bu odalar, modern dekorasyonu ve fonksiyonel alanlarıyla rahat bir yaşam alanı sunar.",
+  "galleryAlt": "Deluxe Superior oda fotoğrafı",
+  "features": {
+    "area": "41 m²",
+    "guests": "3+1+1 Bebek",
+    "doubleBed": "1 Çift Kişilik",
+    "singleBed": "1 Tek Kişilik",
+    "sofa": "1 Daybed",
+    "bath": "Banyo, WC"
+  }
+},
+
+
+"deluxe-swimup-family-rooms": {
+  "title": "DELUXE SWIM-UP AİLE ODALARI",
+  "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
+  "description": "Odanızdan çıkar çıkmaz suya adım atabilirsiniz! Swim-Up özelliği sayesinde hiçbir yere gitmeden havuzun keyfini çıkarmak mümkün. Özellikle çocuklu aileler için havuz başında geçirilen anlar daha keyifli ve güvenli hale geliyor.",
+  "galleryAlt": "Deluxe Swim-Up Aile Odası fotoğrafı",
+  "features": {
+    "area": "57 m²",
+    "guests": "4+2+1 Bebek",
+    "doubleBed": "1 Çift Kişilik",
+    "singleBed": "2 Tek Kişilik",
+    "daybeds": "2 Daybed",
+    "rooms": "2 Oda",
+    "bath": "Banyo, WC",
+    "swimUp": "Swim-Up",
+    "sunbeds": "2 Şezlong"
+  }
+},
+
+
+"deluxe-swimup-rooms": {
+  "title": "DELUXE SWIM-UP ODALAR",
+  "subtitle": "RÜYA GİBİ",
+  "description": "Odanızın terasından havuza doğrudan erişim sunarak tatilinize ayrıcalık katıyor. Konfor ve huzuru bir arada yaşayarak günün dilediğiniz saatinde serinleyebileceğiniz özel bir konaklama deneyimi sunuyor.",
+  "galleryAlt": "Deluxe Swim-Up oda fotoğrafı",
+  "features": {
+    "area": "23 m²",
+    "guests": "2+1+1 Bebek",
+    "doubleBed": "1 Çift Kişilik",
+    "daybed": "1 Daybed",
+    "bath": "Banyo, WC",
+    "swimUp": "Swim-Up",
+    "sunbeds": "2 Şezlong"
+  }
+},
+
+
+"deluxe-shallow-pool-rooms": {
+  "title": "DELUXE SIĞ HAVUZLU ODALAR",
+  "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
+  "description": "Sığ havuza doğrudan erişim imkânıyla konforlu ve keyifli bir konaklama deneyimi sunuyor. Özellikle çocuklu aileler ve huzurlu bir tatil arayan misafirler için ideal bir seçenektir.",
+  "galleryAlt": "Deluxe Sığ Havuzlu Oda fotoğrafı",
+  "features": {
+    "area": "23 m²",
+    "guests": "2+1+1 Bebek",
+    "doubleBed": "1 Çift Kişilik",
+    "daybed": "1 Daybed",
+    "bath": "Banyo, WC"
+  }
+},
+
+"deluxe-duplex-family-rooms": {
+  "title": "DELUXE DUBLEKS AİLE ODALARI",
+  "subtitle": "SEVDİKLERİNİZLE BİRLİKTE",
+  "description": "İç merdivenli tasarımıyla ailelere geniş ve konforlu bir yaşam alanı sunar. Alt ve üst kata yayılan yerleşimi sayesinde hem birlikte vakit geçirebileceğiniz hem de özel alanınızı koruyabileceğiniz ideal bir konaklama deneyimi sağlar.",
+  "galleryAlt": "Deluxe Dubleks Aile Odası fotoğrafı",
+  "features": {
+    "area": "39 m²",
+    "guests": "4+1 Bebek",
+    "doubleBed": "1 Çift Kişilik",
+    "singleBed": "2 Tek Kişilik",
+    "rooms": "2 Oda",
+    "bath": "Banyo, WC"
+  }
+},
+
+
+"deluxe-handicap-rooms": {
+  "title": "ENGELLİ MİSAFİRLER İÇİN DELUXE ODALAR",
+  "subtitle": "ENGELLERİ KALDIRDIK",
+  "description": "Bu odalar yalnızca bir konaklama alanı değil, engelli misafirlerimizin bağımsızlıklarını ve özgürlüklerini koruyarak tatillerinin keyfini çıkarabilmeleri için tasarlanmış yaşam alanlarıdır. Herkes için eşit tatil hakkı anlayışını hayata geçiriyoruz.",
+  "galleryAlt": "Erişilebilir Deluxe oda fotoğrafı",
+  "features": {
+    "area": "23 m²",
+    "guests": "2 Kişilik",
+    "doubleBed": "1 Çift Kişilik",
+    "bath": "Banyo, WC"
+  }
+}
+
+
+
     },
     "services": {
       "wifi": {
@@ -153,5 +312,33 @@
         "description": "Yıkama, kuru temizleme ve ütü hizmeti"
       }
     }
+  },
+
+   "Bars": {
+    "ruby-lobby-bar": {
+  "title": "RUBY",
+  "subtitle": "LOBİ BAR",
+  "description": "Modern ve zarif bir atmosfer, sıcak-soğuk içecekler, özel kokteyller, çay ve özel kahve seçenekleriyle gün boyu hizmet verir."
+},
+    "lal-terrace-bar": {
+    "title": "LAL",
+    "subtitle": "TERAS BAR",
+    "description": "Yenilikçi kokteylleri, geniş içecek seçenekleri ve özel atıştırmalıklarıyla romantik anlar yaşamak, arkadaşlarıyla sohbet etmek veya huzurlu bir akşam geçirmek isteyenlerin favori buluşma noktasıdır."
+  },
+  "marin-shallow-bar": {
+    "title": "MARİN",
+    "subtitle": "SIĞ SU BAR (+16)",
+    "description": "Şık ve huzurlu atmosferinde farklı aromalara sahip kokteylleri ve zengin içecek menüsüyle Marin Sığ Su Bar, akşam saatlerinde keyifli vakit geçirmek isteyen misafirlerine hitap ediyor."
+  },
+  "aquarius-pool-bar": {
+    "title": "AQUARIUS",
+    "subtitle": "HAVUZ BAR",
+    "description": "Havuz kenarındaki muhteşem konumuyla, serin sularda vakit geçirirken lezzetli bir içeceğin keyfini çıkarabilirsiniz."
+  },
+  "larimar-beach-restaurant": {
+    "title": "LARIMAR",
+    "subtitle": "SAHİL BAR & RESTORAN",
+    "description": "Her misafirin kendisini özel hissetmesini sağlayan profesyonel ve güler yüzlü hizmet anlayışıyla öne çıkıyor. Özenle hazırlanan yemekleri ve kişiye özel hizmetiyle unutulmaz bir deneyim sunuyor."
+  }
   }
 }

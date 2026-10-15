@@ -9,6 +9,50 @@
     "languageSelection": "Sprachauswahl",
     "logoAlt": "SY Hotels Logo"
   },
+  
+  "MenuOverlay": {
+    "navigationLabel": "Hauptnavigation",
+    "home": "Startseite",
+    "reservation": "Online-Reservierung",
+    "rooms": "Unterkunft",
+    "bars": "Bars",
+    "gastronomy": "Gastronomie",
+    "spa": "Spa & Wellness",
+    "pools": "Swimmingpools",
+    "beach": "Strand",
+    "aquapark": "Mega Splash Aquapark",
+    "entertainment": "Aktivitäten & Unterhaltung",
+    "kids": "Für Kinder",
+    "information": "Allgemeine Informationen",
+    "agencies": "Für Reisebüros",
+    "contact": "Kontakt",
+    "privacy": "Schutz personenbezogener Daten",
+    "sustainability": "Nachhaltigkeit",
+    "discoverRegion": "Region entdecken",
+    "roomLinks": {
+      "deluxe": "Deluxe Zimmer",
+      "deluxeFamily": "Deluxe Familienzimmer",
+      "deluxeSuperior": "Deluxe Superior Zimmer",
+      "swimUpFamily": "Deluxe Swim-Up Familienzimmer",
+      "swimUp": "Deluxe Swim-Up Zimmer",
+      "shallowPool": "Deluxe Zimmer mit Flachwasserpool",
+      "duplexFamily": "Deluxe Duplex-Familienzimmer",
+      "accessible": "Barrierefreie Deluxe Zimmer"
+    },
+    "barLinks": {
+      "ruby": "Ruby Lobbybar",
+      "lal": "Lal Terrassenbar",
+      "marin": "Marin Flachwasserbar",
+      "aquarius": "Aquarius Poolbar",
+      "larimar": "Larimar Strandbar"
+    },
+    "gastronomyLinks": {
+      "sirius": "Sirius Restaurant",
+      "nova": "Nova Food Court",
+      "larimar": "Larimar Strandrestaurant",
+      "bettelglow": "Bettelglow Konditorei"
+    }
+  },
 
   "Footer": {
     "corporate": "UNTERNEHMEN",
@@ -89,7 +133,125 @@
           "sofa": "1 Tagesbett",
           "bath": "Badezimmer, WC"
         }
-      }
+      },
+
+
+"deluxe-family-rooms": {
+  "title": "DELUXE FAMILIENZIMMER",
+  "subtitle": "GEMEINSAM MIT IHREN LIEBSTEN",
+  "description": "Unsere Deluxe Familienzimmer bestehen aus zwei Zimmern mit Verbindungstür und bieten einen komfortablen Wohnbereich. Sie sind ideal für Familien und Freundesgruppen und ermöglichen es Ihnen, gemeinsam Zeit mit Ihren Liebsten zu verbringen, ohne auf Ihre Privatsphäre verzichten zu müssen.",
+  "galleryAlt": "Foto des Deluxe Familienzimmers",
+  "features": {
+    "area": "43 m²",
+    "guests": "4+1 (Baby)",
+    "doubleBed": "1 Doppelbett",
+    "singleBed": "2 Einzelbetten",
+    "rooms": "2 Zimmer",
+    "balconies": "2 Balkone",
+    "bath": "Badezimmer, WC"
+  }
+},
+
+
+"deluxe-superior-rooms": {
+  "title": "DELUXE SUPERIOR ZIMMER",
+  "subtitle": "",
+  "description": "Mit ihrer großzügigen und geräumigen Gestaltung wurden diese Zimmer speziell für einen komfortablen Familienurlaub konzipiert. Sie sind auf die Bedürfnisse von Gästen jeden Alters abgestimmt und bieten mit ihrer modernen Einrichtung und funktionalen Raumaufteilung ein angenehmes Wohnambiente.",
+  "galleryAlt": "Foto des Deluxe Superior Zimmers",
+  "features": {
+    "area": "41 m²",
+    "guests": "3+1+1 (Baby)",
+    "doubleBed": "1 Doppelbett",
+    "singleBed": "1 Einzelbett",
+    "sofa": "1 Tagesbett",
+    "bath": "Badezimmer, WC"
+  }
+},
+
+
+"deluxe-swimup-family-rooms": {
+  "title": "DELUXE SWIM-UP FAMILIENZIMMER",
+  "subtitle": "EIN NEUES LEBENSGEFÜHL ERWARTET SIE",
+  "description": "Direkt von Ihrem Zimmer aus können Sie ins Wasser steigen! Dank des Swim-Up-Konzepts genießen Sie den Pool, ohne weite Wege zurücklegen zu müssen. Besonders für Familien mit Kindern wird die gemeinsame Zeit am Pool dadurch noch angenehmer und sicherer.",
+  "galleryAlt": "Foto des Deluxe Swim-Up Familienzimmers",
+  "features": {
+    "area": "57 m²",
+    "guests": "4+2+1 (Baby)",
+    "doubleBed": "1 Doppelbett",
+    "singleBed": "2 Einzelbetten",
+    "daybeds": "2 Tagesbetten",
+    "rooms": "2 Zimmer",
+    "bath": "Badezimmer, WC",
+    "swimUp": "Swim-Up",
+    "sunbeds": "2 Sonnenliegen"
+  }
+},
+
+
+"deluxe-swimup-rooms": {
+  "title": "DELUXE SWIM-UP ZIMMER",
+  "subtitle": "WIE IM TRAUM",
+  "description": "Mit direktem Zugang zum Pool von Ihrer privaten Zimmerterrasse aus wird Ihr Urlaub zu einem besonderen Erlebnis. Genießen Sie eine exklusive Unterkunft, in der Sie sich jederzeit erfrischen und gleichzeitig Komfort und Ruhe erleben können.",
+  "galleryAlt": "Foto des Deluxe Swim-Up Zimmers",
+  "features": {
+    "area": "23 m²",
+    "guests": "2+1+1 (Baby)",
+    "doubleBed": "1 Doppelbett",
+    "daybed": "1 Tagesbett",
+    "bath": "Badezimmer, WC",
+    "swimUp": "Swim-Up",
+    "sunbeds": "2 Sonnenliegen"
+  }
+},
+
+
+"deluxe-shallow-pool-rooms": {
+  "title": "DELUXE ZIMMER MIT FLACHWASSERPOOL",
+  "subtitle": "EIN NEUES LEBENSGEFÜHL ERWARTET SIE",
+  "description": "Mit direktem Zugang zum flachen Pool bieten diese Zimmer ein komfortables und erholsames Urlaubserlebnis. Sie eignen sich besonders für Familien mit Kindern sowie für Gäste, die einen ruhigen und entspannten Aufenthalt suchen.",
+  "galleryAlt": "Foto des Deluxe Zimmers mit Flachwasserpool",
+  "features": {
+    "area": "23 m²",
+    "guests": "2+1+1 (Baby)",
+    "doubleBed": "1 Doppelbett",
+    "daybed": "1 Tagesbett",
+    "bath": "Badezimmer, WC"
+  }
+},
+
+
+"deluxe-duplex-family-rooms": {
+  "title": "DELUXE DUPLEX-FAMILIENZIMMER",
+  "subtitle": "GEMEINSAM MIT IHREN LIEBSTEN",
+  "description": "Dank der innenliegenden Treppe bieten diese Zimmer Familien einen großzügigen und komfortablen Wohnbereich. Die Raumaufteilung auf zwei Etagen ermöglicht es Ihnen, gemeinsame Zeit zu genießen und gleichzeitig Ihre Privatsphäre zu bewahren.",
+  "galleryAlt": "Foto des Deluxe Duplex-Familienzimmers",
+  "features": {
+    "area": "39 m²",
+    "guests": "4+1 (Baby)",
+    "doubleBed": "1 Doppelbett",
+    "singleBed": "2 Einzelbetten",
+    "rooms": "2 Zimmer",
+    "bath": "Badezimmer, WC"
+  }
+},
+
+
+"deluxe-handicap-rooms": {
+  "title": "BARRIEREFREIE DELUXE ZIMMER",
+  "subtitle": "WIR BAUEN BARRIEREN AB",
+  "description": "Diese Zimmer sind mehr als nur Unterkünfte. Sie wurden speziell gestaltet, damit Gäste mit Behinderungen ihren Urlaub genießen können, ohne auf Selbstständigkeit und persönliche Freiheit verzichten zu müssen. Damit verwirklichen wir den Gedanken gleicher Urlaubsmöglichkeiten für alle.",
+  "galleryAlt": "Foto des barrierefreien Deluxe Zimmers",
+  "features": {
+    "area": "23 m²",
+    "guests": "2 Personen",
+    "doubleBed": "1 Doppelbett",
+    "bath": "Badezimmer, WC"
+  }
+}
+
+
+
+
     },
     "services": {
       "wifi": {
@@ -153,5 +315,35 @@
         "description": "Waschen, chemische Reinigung und Bügelservice"
       }
     }
+  },
+
+  "Bars":
+{
+  "ruby-lobby-bar": {
+    "title": "RUBY",
+    "subtitle": "Lobbybar",
+    "description": "Die Ruby Lobbybar empfängt ihre Gäste den ganzen Tag über in einer modernen und eleganten Atmosphäre mit warmen und kalten Getränken, besonderen Cocktails, Tee und ausgewählten Kaffeespezialitäten."
+  },
+  "lal-terrace-bar": {
+    "title": "LAL",
+    "subtitle": "TERRASSENBAR",
+    "description": "Mit innovativen Cocktails, einer großen Auswahl an Getränken und besonderen Snacks ist die Lal Terrassenbar der ideale Treffpunkt für romantische Momente, Gespräche mit Freunden oder einen entspannten Abend."
+  },
+  "marin-shallow-bar": {
+    "title": "MARIN",
+    "subtitle": "FLACHWASSERBAR (+16)",
+    "description": "In stilvoller und entspannter Atmosphäre bietet die Marin Flachwasserbar Cocktails mit vielfältigen Aromen und eine umfangreiche Getränkekarte. Sie ist der ideale Ort für Gäste, die einen angenehmen Abend verbringen möchten."
+  },
+  "aquarius-pool-bar": {
+    "title": "AQUARIUS",
+    "subtitle": "POOLBAR",
+    "description": "Dank der herrlichen Lage direkt am Pool können Sie ein köstliches Getränk genießen, während Sie sich im erfrischenden Wasser aufhalten."
+  },
+  "larimar-beach-restaurant": {
+    "title": "LARIMAR",
+    "subtitle": "STRANDBAR & RESTAURANT",
+    "description": "Mit professionellem und herzlichem Service sorgt das Larimar dafür, dass sich jeder Gast besonders fühlt. Liebevoll zubereitete Speisen und persönlicher Service machen Ihren Besuch zu einem unvergesslichen Erlebnis."
   }
+}
+
 }

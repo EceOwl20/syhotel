@@ -13,6 +13,7 @@ type ParticleLogoProps = {
   mouseRadius?: number;
   color?: string;
   className?: string;
+  detectionMode?: "brown" | "alpha";
 };
 
 type Particle = {
@@ -39,6 +40,7 @@ export default function ParticleLogo({
   mouseRadius = 50,
   color = "#877565",
   className = "",
+  detectionMode = "brown",
 }: ParticleLogoProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -209,15 +211,22 @@ if (
           const alpha = imageData.data[index + 3];
 
           // Detect brown areas of the logo
-          const isBrown =
-            red >= 90 &&
-            red <= 180 &&
-            green >= 75 &&
-            green <= 165 &&
-            blue >= 60 &&
-            blue <= 150;
 
-          if (alpha <= 110 || !isBrown) continue;
+const isBrown =
+  red >= 90 &&
+  red <= 180 &&
+  green >= 75 &&
+  green <= 165 &&
+  blue >= 60 &&
+  blue <= 150;
+
+const shouldCreateParticle =
+  detectionMode === "alpha"
+    ? alpha > 110
+    : alpha > 110 && isBrown;
+
+if (!shouldCreateParticle) continue;
+
 
           // Slight random offset to avoid a perfect grid
           const jitterX = (Math.random() - 0.5) * 1.2;
@@ -293,15 +302,17 @@ mouse.y =
       image.onload = null;
       image.onerror = null;
     };
-  }, [
-    src,
-    width,
-    height,
-    particleGap,
-    particleSize,
-    mouseRadius,
-    color,
-  ]);
+}, [
+  src,
+  width,
+  height,
+  padding,
+  particleGap,
+  particleSize,
+  mouseRadius,
+  color,
+  detectionMode,
+]);
 
 return (
   <canvas

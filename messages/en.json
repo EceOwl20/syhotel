@@ -10,6 +10,50 @@
     "logoAlt": "SY Hotels logo"
   },
 
+  "MenuOverlay": {
+    "navigationLabel": "Main navigation",
+    "home": "Home",
+    "reservation": "Online Reservation",
+    "rooms": "Accommodation",
+    "bars": "Bars",
+    "gastronomy": "Gastronomy",
+    "spa": "Spa & Wellness",
+    "pools": "Swimming Pools",
+    "beach": "Beach",
+    "aquapark": "Mega Splash Aquapark",
+    "entertainment": "Activities & Entertainment",
+    "kids": "For Children",
+    "information": "General Information",
+    "agencies": "For Travel Agencies",
+    "contact": "Contact",
+    "privacy": "Personal Data Protection",
+    "sustainability": "Sustainability",
+    "discoverRegion": "Explore the Region",
+    "roomLinks": {
+      "deluxe": "Deluxe Rooms",
+      "deluxeFamily": "Deluxe Family Rooms",
+      "deluxeSuperior": "Deluxe Superior Rooms",
+      "swimUpFamily": "Deluxe Swim-Up Family Rooms",
+      "swimUp": "Deluxe Swim-Up Rooms",
+      "shallowPool": "Deluxe Shallow Pool Rooms",
+      "duplexFamily": "Deluxe Duplex Family Rooms",
+      "accessible": "Deluxe Accessible Rooms"
+    },
+    "barLinks": {
+      "ruby": "Ruby Lobby Bar",
+      "lal": "Lal Terrace Bar",
+      "marin": "Marin Shallow Water Bar",
+      "aquarius": "Aquarius Pool Bar",
+      "larimar": "Larimar Beach Bar"
+    },
+    "gastronomyLinks": {
+      "sirius": "Sirius Restaurant",
+      "nova": "Nova Food Court",
+      "larimar": "Larimar Beach Restaurant",
+      "bettelglow": "Bettelglow Patisserie"
+    }
+  },
+
   "Footer": {
     "corporate": "CORPORATE",
     "contact": "CONTACT",
@@ -90,7 +134,124 @@
           "sofa": "1 Daybed",
           "bath": "Bathroom, WC"
         }
-      }
+      },
+
+
+"deluxe-family-rooms": {
+  "title": "DELUXE FAMILY ROOMS",
+  "subtitle": "TOGETHER WITH YOUR LOVED ONES",
+  "description": "Consisting of two connecting rooms, our Deluxe Family Rooms offer a comfortable living space. Ideal for families and groups of friends, these rooms allow you to enjoy time together with your loved ones while maintaining your privacy.",
+  "galleryAlt": "Deluxe Family Room photo",
+  "features": {
+    "area": "43 m²",
+    "guests": "4+1 (Infant)",
+    "doubleBed": "1 Double Bed",
+    "singleBed": "2 Single Beds",
+    "rooms": "2 Rooms",
+    "balconies": "2 Balconies",
+    "bath": "Bathroom, WC"
+  }
+},
+
+
+"deluxe-superior-rooms": {
+  "title": "DELUXE SUPERIOR ROOMS",
+  "subtitle": "",
+  "description": "Specially designed for families to enjoy a comfortable holiday, these rooms feature a spacious and airy layout. Created to meet the needs of guests of all ages, they offer a comfortable living space with modern decor and functional areas.",
+  "galleryAlt": "Deluxe Superior room photo",
+  "features": {
+    "area": "41 m²",
+    "guests": "3+1+1 (Infant)",
+    "doubleBed": "1 Double Bed",
+    "singleBed": "1 Single Bed",
+    "sofa": "1 Daybed",
+    "bath": "Bathroom, WC"
+  }
+},
+
+
+"deluxe-swimup-family-rooms": {
+  "title": "DELUXE SWIM-UP FAMILY ROOMS",
+  "subtitle": "A NEW LIFESTYLE AWAITS YOU",
+  "description": "You can step into the water as soon as you leave your room! Thanks to the swim-up feature, you can enjoy the pool without having to go anywhere. Especially for families with children, spending time by the pool becomes even more enjoyable and safer.",
+  "galleryAlt": "Deluxe Swim-Up Family Room photo",
+  "features": {
+    "area": "57 m²",
+    "guests": "4+2+1 (Infant)",
+    "doubleBed": "1 Double Bed",
+    "singleBed": "2 Single Beds",
+    "daybeds": "2 Daybeds",
+    "rooms": "2 Rooms",
+    "bath": "Bathroom, WC",
+    "swimUp": "Swim-Up",
+    "sunbeds": "2 Sunbeds"
+  }
+},
+
+
+"deluxe-swimup-rooms": {
+  "title": "DELUXE SWIM-UP ROOMS",
+  "subtitle": "LIKE A DREAM",
+  "description": "It adds exclusivity to your holiday by offering direct access to the pool from your room’s terrace. It provides a special accommodation experience where you can cool off at any time of the day while enjoying comfort and tranquility together.",
+  "galleryAlt": "Deluxe Swim-Up room photo",
+  "features": {
+    "area": "23 m²",
+    "guests": "2+1+1 (Infant)",
+    "doubleBed": "1 Double Bed",
+    "daybed": "1 Daybed",
+    "bath": "Bathroom, WC",
+    "swimUp": "Swim-Up",
+    "sunbeds": "2 Sunbeds"
+  }
+},
+
+
+"deluxe-shallow-pool-rooms": {
+  "title": "DELUXE ROOMS WITH SHALLOW POOLS",
+  "subtitle": "A NEW LIFESTYLE AWAITS YOU",
+  "description": "It offers a comfortable and enjoyable accommodation experience with direct access to the shallow pool. It is an ideal option especially for families with children and guests seeking a peaceful holiday.",
+  "galleryAlt": "Deluxe Shallow Pool room photo",
+  "features": {
+    "area": "23 m²",
+    "guests": "2+1+1 (Infant)",
+    "doubleBed": "1 Double Bed",
+    "daybed": "1 Daybed",
+    "bath": "Bathroom, WC"
+  }
+},
+
+
+"deluxe-duplex-family-rooms": {
+  "title": "DELUXE DUPLEX FAMILY ROOMS",
+  "subtitle": "WITH YOUR LOVED ONES",
+  "description": "With its internal staircase design, it offers families a spacious and comfortable living area. Its layout spread over upper and lower floors provides an ideal accommodation experience where you can enjoy time together while also preserving your private space.",
+  "galleryAlt": "Deluxe Duplex Family Room photo",
+  "features": {
+    "area": "39 m²",
+    "guests": "4+1 (Infant)",
+    "doubleBed": "1 Double Bed",
+    "singleBed": "2 Single Beds",
+    "rooms": "2 Rooms",
+    "bath": "Bathroom, WC"
+  }
+},
+
+
+"deluxe-handicap-rooms": {
+  "title": "DELUXE ACCESSIBLE ROOMS",
+  "subtitle": "BREAKING DOWN BARRIERS",
+  "description": "These rooms are more than just accommodation spaces. They are thoughtfully designed living areas that allow guests with disabilities to enjoy their holidays while maintaining their independence and freedom. They bring the principle of equal holiday opportunities for everyone to life.",
+  "galleryAlt": "Deluxe Accessible Room photo",
+  "features": {
+    "area": "23 m²",
+    "guests": "2 Guests",
+    "doubleBed": "1 Double Bed",
+    "bath": "Bathroom, WC"
+  }
+}
+
+
+
     },
     "services": {
       "wifi": {
@@ -154,5 +315,34 @@
         "description": "Washing, dry cleaning and ironing services"
       }
     }
+  },
+
+  "Bars":{
+    "ruby-lobby-bar": {
+    "title": "RUBY",
+    "subtitle": "Lobby BAR",
+    "description": "Ruby Lobby Bar welcomes guests throughout the day in a modern and elegant atmosphere, offering hot and cold beverages, signature cocktails, tea and specialty coffees."
+  },
+  "lal-terrace-bar": {
+    "title": "LAL",
+    "subtitle": "TERRACE BAR",
+    "description": "It is the favorite spot of those who want to spend romantic moments, chat with friends or enjoy a peaceful evening with innovative cocktails, a wide range of drinks and special snacks."
+  },
+  "marin-shallow-bar": {
+    "title": "MARIN",
+    "subtitle": "SHALLOW BAR (+16)",
+    "description": "With its cocktails of different flavours and extensive beverage menu in a stylish and relaxing atmosphere, Marin Shallow Bar appeals to those who like to have a pleasant time in the evenings."
+  },
+  "aquarius-pool-bar": {
+    "title": "AQUARIUS",
+    "subtitle": "POOL BAR",
+    "description": "With its magnificent location by the pool, you can enjoy a delicious drink while spending time in the cool waters."
+  },
+  "larimar-beach-restaurant": {
+    "title": "LARIMAR",
+    "subtitle": "BEACH BAR & RESTAURANT",
+    "description": "It stands out with its professional and friendly service approach that makes every guest feel special. You will have an unforgettable experience with carefully prepared meals and personalized service."
   }
+}
+
 }

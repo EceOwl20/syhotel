@@ -99,7 +99,7 @@ export default function Header() {
           {/* LEFT */}
           <div className="flex items-center gap-5">
             <Link href="/" aria-label={t("home")}>
-              <HomeIcon className="h-5 w-6.25" />
+              <HomeIcon className="h-6 w-7.25" />
             </Link>
 
             <button

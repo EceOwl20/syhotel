@@ -22,7 +22,7 @@ export default function RoomsSection({
 
         {/* Section heading */}
         <div className="mb-14 flex flex-col items-center text-center text-[#8B7C6A]">
-          <h2 className="text-[30px] font-extralight tracking-[0.04em] md:text-[36px] lg:text-[40px]">
+          <h2 className="text-[26px] font-extralight tracking-[0.04em] md:text-[32px] lg:text-[40px]">
             {title}
           </h2>
 
@@ -34,7 +34,7 @@ export default function RoomsSection({
         </div>
 
         {/* Dynamic room grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:gap-10">
   {rooms.map((room, index) => (
     <Reveal key={room.id} delay={0}>
       <RoomCard room={room} discoverText={discoverText} />

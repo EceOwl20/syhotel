@@ -37,7 +37,7 @@ export default function RoomCard({
       {/* Dark gradient overlay */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/15 via-black/10 to-transparent"
+        className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/25 via-black/10 to-transparent"
       />
 
       {/* Inner frame */}
@@ -50,7 +50,7 @@ export default function RoomCard({
       <div className="absolute inset-x-0 bottom-0 z-10 px-8 pb-10 text-white md:px-10">
         <div className="flex flex-col items-end transition-transform duration-500 ease-in-out group-hover:-translate-y-5 group-focus-visible:-translate-y-5">
 
-          <h3 className="w-full text-right text-[24px] leading-[1.3] font-light md:text-[30px]">
+          <h3 className="w-full text-right text-[18px] sm:text-[20px] leading-[1.3] font-light lg:text-[30px]">
             {room.title}
           </h3>
 

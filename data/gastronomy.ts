@@ -6,24 +6,24 @@ export const gastronomyItems: GastronomyItem[] = [
     id: "bars",
     title: "Barlar",
     image: "/images/homepage/gastronomy/bars.jpg",
-    href: "/bars",
+    href: "/bars/ruby-lobby-bar",
   },
   {
     id: "snack",
     title: "Snack",
     image: "/images/homepage/gastronomy/snack.jpg",
-    href: "/snack",
+    href: "/restaurants/nova-food-court",
   },
   {
     id: "restaurants",
     title: "Restoranlar",
     image: "/images/homepage/gastronomy/restaurants.jpg",
-    href: "/restaurants",
+    href: "/restaurants/sirius-restaurant",
   },
   {
     id: "alacarte",
     title: "Alakartlar",
     image: "/images/homepage/gastronomy/alacarte.jpg",
-    href: "/alacarte",
+    href: "",
   },
 ];

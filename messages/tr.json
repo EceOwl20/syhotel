@@ -21,7 +21,7 @@
     "pools": "Havuzlar",
     "beach": "Sahil",
     "aquapark": "Mega Splash Aquapark",
-    "entertainment": "Aktivite & Eğlence",
+    "activities": "Aktivite & Eğlence",
     "kids": "Çocuklar İçin",
     "information": "Genel Bilgilendirme",
     "agencies": "Acentalar İçin",
@@ -122,7 +122,7 @@
     "paidTitle": "ÜCRETLİ HİZMETLER",
     "details": {
       
-      "deluxe-Rooms": {
+      "deluxe-rooms": {
         "title": "DELUXE ODALAR",
         "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
         "description": "Geniş ve zarif tasarımlı odaları ile misafirlerine konforun ötesinde bir yaşam alanı sunuyor.",
@@ -427,5 +427,237 @@
       "subtitle": "",
       "description": ""
     }
+  },
+
+   "Beach": {
+    "title": "SAHİL",
+    "description": "Otelin sahile uzaklığı 2 km olup, her 15 dakikada bir shuttle servisi ile yaklaşık 4 dakikada ulaşılabilmektedir."
+  },
+
+  "Aquapark": {
+    "title": "MEGA SPLASH AQUAPARK",
+    "description": "14 farklı kaydırak seçeneğiyle adrenalin tutkunları ve eğlence severler için vazgeçilmez bir deneyim sunuyor. Hem çocuklar hem de yetişkinler için ayrı alanları bulunan aquaparkta, her yaştan misafir suyun heyecan verici dünyasına kendini bırakabilir. Hızlı kaydıraklar, dalga havuzu ve özel etkinlik alanları ile aquapark, aileniz ve sevdiklerinizle gün boyu keyif dolu saatler geçirmenizi sağlar.",
+    "slides": [
+      "Hill Slide – 1 adet / 35,96 m",
+      "Body Slide – Combo – 1 adet / 36,90 m",
+      "Kids Slide Str – 1 adet / 19,37 m",
+      "Body Slide – Combo – 1 adet / 60,82 m",
+      "Body Slide – 1 adet / 36,33 m",
+      "Kids Slide Crv – 1 adet / 18,62 m",
+      "Body Slide – Combo – 1 adet / 61,15 m",
+      "Kids Slide Str – 1 adet / 9,11 m",
+      "Body Slide Combo – 1 adet / 62 m",
+      "Body Slide – Combo – 1 adet / 50,14 m",
+      "Body Slide – Combo – 1 adet / 27,95 m",
+      "Body Slide – Combo – 1 adet / 66,29 m",
+      "Body Slide – Combo – 1 adet / 61,64 m",
+      "Kids Slide Crv – 1 adet / 12,15 m",
+      "Body Slide – 1 adet / 54,88 m",
+      "Body Slide – Combo – 1 adet / 80,90 m"
+    ]
+  },
+
+  "Activities": {
+    "bannerTitle": "Aktiviteler ve Eğlencelerle Dolu Bir Tatil",
+    "subtitle": "YENİ BİR EĞLENCE TARZI SİZLERİ BEKLİYOR",
+    "title": "AKTİVİTELER, EĞLENCELER",
+    "description": "Gün boyu aktiviteler ve eğlencelerle her yaştan misafirin beklentilerini karşılıyor. Dinlendirici bir tatil arayanlar için olduğu kadar, eğlenceli ve aktif bir tatil geçirmek isteyenler için de mükemmel ortamlar hazırlandı.",
+    "activitiesTitle": "Aktiviteler",
+    "dailyTitle": "Günlük Aktiviteler",
+    "dailyDescription": "Enerjik, eğlenceli ve dolu dolu bir tatil deneyimi için günlük aktivitelerden oluşan zengin bir program hazırlamıştır. İster sporsever, ister eğlence arayan biri olun, otelin geniş aktivite seçenekleri tatilinizi hareketlendirecek ve otelde düzenlenen dostluk maçları ve turnuvalarla, tatilinizi biraz daha heyecanlı hale getirin. Boccia, dart, basketbol, masa tenisi, okçuluk ve havalı tüfek gibi birçok sporlarla düzenlenen turnuvalara katılarak hem rekabetin hem de sosyalleşmenin tadını çıkarın.",
+    "eveningTitle": "Akşam Şovları",
+    "eveningDescription": "Tatilinize renk katacak ve eğlencenizi zirveye taşıyacak benzersiz akşam şovları ve etkinlikleri ile her gece unutulmaz anlar yaşatmaya hazırlanıyor. Profesyonel ekipler tarafından hazırlanan gösteriler, temalı partiler ve sürpriz dolu etkinliklerle akşamlarınız hareketli ve keyif dolu geçecek."
+  },
+
+  "KidsPage": {
+  "subtitle": "DOYASIYA EĞLENCE",
+  "title": "ÇOCUKLAR İÇİN",
+  "description": "Çocukların güvenli ve eğlenceli vakit geçirmeleri için her detayın düşünüldüğü bu özel alan, tatil boyunca çocuklara keyif dolu anlar yaşatırken, ailelere de huzurlu bir tatil fırsatı sunar.",
+  "kidsClub": {
+    "title": "Çocuk Kulübü, Aktiviteler",
+    "miniTitle": "Mini Kulüp (4-7 Yaş)",
+    "miniDescription": "Bu yaş grubu için yüz boyama, el sanatları, masal saatleri ve yaratıcı oyunlar ile deneyimli eğitmenler eşliğinde minikler, hem eğlenir hem de öğrenirken sosyalleşirler.",
+    "juniorTitle": "Junior Kulüp (8-12 Yaş)",
+    "juniorDescription": "8-12 yaş arası çocuklara hitap eder ve daha hareketli ve sosyal oyunlarla doludur."
+  },
+  "aquapark": {
+    "title": "Mega Splash Aquapark",
+    "description": "16 farklı kaydırak seçeneğiyle adrenalin tutkunları ve eğlence severler için vazgeçilmez bir deneyim sunuyor. Hem çocuklar hem de yetişkinler için ayrı alanları bulunan aquaparkta, her yaştan misafir suyun heyecan verici dünyasına kendini bırakabilir. Hızlı kaydıraklar, dalga havuzu ve özel etkinlik alanları ile aquapark, aileniz ve sevdiklerinizle gün boyu keyif dolu saatler geçirmenizi sağlar."
   }
+},
+
+
+"HomeRooms": {
+  "title": "KONAKLAMA",
+  "description": "SY Hotels Belek'te konfor ve şıklığın bir araya geldiği konaklama seçeneklerini keşfedin.",
+  "discover": "Keşfet",
+  "roomNames": {
+    "deluxe-standard": "Deluxe Standart Odalar",
+    "deluxe-family": "Deluxe Aile Odaları",
+    "deluxe-superior": "Deluxe Superior Odalar",
+    "deluxe-swim-up-aile": "Deluxe Swim-up Aile Odaları",
+    "deluxe-swim-up": "Deluxe Swim-up Odalar",
+    "deluxe-sig-havuzlu": "Deluxe Sığ Havuzlu Odalar",
+    "deluxe-dubleks-aile-standard": "Deluxe Dubleks Aile Odaları",
+    "deluxe-engelli": "Deluxe Engelli Odaları"
+  }
+},
+
+"GeneralInformation": {
+    "title": "GENEL BİLGİLENDİRME",
+    "description": "Geniş ve zarif tasarımlı odaları ile misafirlerine konforun ötesinde bir yaşam alanı sunuyor. Modern dekorasyonun sunduğu şıklıkla kendinizi evinizde hissedebilirsiniz. Tüm odalar, üstün teknoloji ile donatılmış olup, misafirlerin ihtiyaç duyabileceği her türlü detay düşünülerek tasarlanmıştır.",
+    "details": {
+      "title": "DETAYLAR",
+      "blocks": [
+        {
+          "lines": [
+            {"label": "Hotel Adı", "text": "SY Hotels Belek"},
+            {"label": "Kategori", "text": "Boutique Luxury"}
+          ]
+        },
+        {
+          "lines": [
+            {"label": "Açılış Tarihi", "text": "Haziran 2025"},
+            {"label": "Konsept", "text": "Ultra Her Şey Dahil"},
+            {"label": "Sezon", "text": "12 Ay"},
+            {"label": "Toplam Alan", "text": "24.000 m²"},
+            {"label": "Toplam Blok ve Kat Sayısı", "text": "A Blok 7 kat, B Blok 4 kat"},
+            {"label": "Konum", "text": "Kadriye / Belek (The Land Of Legend Karşısı)"},
+            {"label": "Sahile Mesafe", "text": "2 km (Shuttle Servis 4 dk)"}
+          ]
+        },
+        {
+          "lines": [
+            {"label": "Web Sitesi", "text": "www.syhotels.com"},
+            {"label": "E-Mail", "text": "info@syhotels.com"},
+            {"label": "Satış", "text": "sales@syhotels.com"},
+            {"label": "Adres", "text": "Kadriye Mah. Kır Mevkii Atatürk Cad. Belek – Antalya / Türkiye"},
+            {"label": "Telefon", "text": "+90 242 205 47 80"}
+          ]
+        },
+        {
+          "lines": [
+            {"label": "Diller", "text": "İngilizce, Almanca, Rusça, Türkçe"},
+            {"label": "Wireless Internet", "text": "Genel alanlarda odalarda ve sahilde"},
+            {"label": "Evcil Hayvan", "text": "Kabul edilmiyor"},
+            {"label": "Geçerli Kartlar", "text": "Visacard, Mastercard"},
+            {"label": "Klima", "text": "Isıtma ve soğutma merkezi sistem"}
+          ]
+        },
+        {
+          "lines": [
+            {"label": "Antalya Havaalanı", "text": "25 km"},
+            {"label": "Antalya Şehir Merkezi", "text": "27 km"},
+            {"label": "Belek Şehir Merkezi", "text": "4 km"}
+          ]
+        },
+        {
+          "lines": [
+            {"label": "Otele Giriş Saati", "text": "14:00"},
+            {"label": "Otelden Ayrılış Saati", "text": "12:00"}
+          ]
+        },
+        {
+          "title": "Odalar & Suitler",
+          "lines": [
+            {"text": "• Deluxe Odalar – 23 m²"},
+            {"text": "• Deluxe Aile Odaları – 43 m²"},
+            {"text": "• Deluxe Superior Odalar – 41 m²"},
+            {"text": "• Deluxe Swim-Up Odalar – 23 m²"},
+            {"text": "• Deluxe Swim-Up Aile Odaları – 57 m²"},
+            {"text": "• Deluxe Dubleks Aile Odaları – 39 m²"},
+            {"text": "• Deluxe Sığ Havuzlu Odalar – 23 m²"},
+            {"text": "• Deluxe Engelli Odalar – 23 m²"}
+          ]
+        },
+        {
+          "title": "Barlar",
+          "lines": [
+            {"text": "• Ruby Lobby Bar"},
+            {"text": "• Lal Terrace Bar"},
+            {"text": "• Aquarius Pool Bar"},
+            {"text": "• Larimar Beach Bar"},
+            {"text": "• Marin Shallow Bar"},
+            {"text": "• Nova Snack Bar"}
+          ]
+        },
+        {
+          "title": "Restoranlar & Alakart Restoranlar",
+          "lines": [
+            {"text": "• Sirius Restaurant"},
+            {"text": "(Türkiye Tema, İtalyan Tema, Asya Tema, Gala Star Tema, Meksika Tema, Balık Tema, World Tema)"},
+            {"text": "• Kahvaltı"},
+            {"text": "• Öğle Yemeği"},
+            {"text": "• Çocuk Büfesi (Öğle) / Mini Club"},
+            {"text": "• Akşam Yemeği"},
+            {"text": "• Bistro Yemek Servisi"},
+            {"text": "• Nova Food Court"},
+            {"text": "• Bettelglow Patisserie"},
+            {"text": "• Larimar Beach Bar & Restaurant"},
+            {"text": "• Carina International A'la Carte"},
+            {"text": "• Altair Ottoman A'la Carte"},
+            {"text": "(7 gece ve üzeri konaklamalarda, iki A'la Carte restoranımızdan birinden 1 kez ücretsiz yararlanabilirsiniz.)"}
+          ]
+        },
+        {
+          "title": "Havuzlar",
+          "lines": [
+            {"text": "• Maldivler Havuz (Beyaz Kumlu)"},
+            {"text": "• Açık Havuz A Blok (+16) (Isıtma & Soğutma)"},
+            {"text": "• Açık Havuz (B Blok)"},
+            {"text": "• Çocuk Havuzu"},
+            {"text": "• Kapalı Havuz"}
+          ]
+        },
+        {
+          "title": "Mega Splash Aquapark",
+          "lines": [
+            {"text": "4.000 m² alan üzerine kurulu, tam 14 kaydıraktan oluşan ve farklı yaş gruplarına ve zevklere hitap eden kaydıraklarıyla adrenalin tutkunları, çocuklar ve aileler için ideal bir eğlence merkezi."}
+          ]
+        }
+      ]
+    },
+    "serviceGroups": {
+      "roomFree": "ODA (ÜCRETSİZ HİZMETLER)",
+      "roomPaid": "ODA (ÜCRETLİ HİZMETLER)",
+      "generalFree": "GENEL (ÜCRETSİZ HİZMETLER)",
+      "generalPaid": "GENEL (ÜCRETLİ HİZMETLER)"
+    },
+    "services": {
+      "wifiRoom": {"title": "Wifi & İnternet", "description": "Odalarda yüksek hızlı internet bağlantısı"},
+      "minibar": {"title": "Mini Bar", "description": "Soft içecekler, su ve bira günlük yenilenir"},
+      "housekeeping": {"title": "Housekeeping", "description": "Günlük olarak temizlenir"},
+      "hairdryer": {"title": "Saç Kurutma Makinesi"},
+      "bathroom": {"title": "Banyo & Duş"},
+      "balcony": {"title": "Balkon", "description": "Masa ve sandalye"},
+      "amenities": {"title": "Buklet Malzemeler", "description": "Banyo ve kişisel bakım ürünleri"},
+      "safe": {"title": "Emanet Kasa", "description": "Taşınabilir bilgisayar boyutlarında"},
+      "tv": {"title": "LCD TV", "description": "Yerli ve yabancı kanallar ve müzik yayını"},
+      "coffee": {"title": "Çay, Kahve Setup", "description": "Çay ve kahve seçenekleri"},
+      "airConditioner": {"title": "Klima", "description": "Merkezi sistemi odadan kontrollü"},
+      "mirror": {"title": "Makyaj Aynası"},
+      "floor": {"title": "Seramik Zemin", "description": "Ahşap görünümlü"},
+      "roomService": {"title": "Oda Servisi", "description": "24 saat zengin menü seçenekleriyle"},
+      "laundry": {"title": "Çamaşırhane Hizmetleri", "description": "Yıkama, kuru temizleme ve ütü hizmeti"},
+      "telephone": {"title": "Telefon"},
+      "wifiGeneral": {"title": "Wifi & İnternet", "description": "Genel alanlarda ve sahilde"},
+      "fitness": {"title": "Fitness Merkezi"},
+      "animation": {"title": "Animasyon Oyunları", "description": "Masa tenisi, dart, plaj voleybolu, boccia, aerobik, jimnastik, su jimnastiği"},
+      "miniClub": {"title": "Mini Kulüp", "description": "4–12 yaş arası"},
+      "beachPool": {"title": "Plaj Havlusu", "description": "Sahilde"},
+      "softDrinks": {"title": "Soft ve Alkollü Export İçecekler"},
+      "turkishBath": {"title": "Türk Hamamı, Sauna, Buhar Odası"},
+      "parking": {"title": "Otopark"},
+      "sunbeds": {"title": "Şezlong, Şemsiye", "description": "Havuzda ve sahilde"},
+      "importDrinks": {"title": "Alkollü Import İçecekler"},
+      "spa": {"title": "Spa & Wellness", "description": "Spa bakımları ve uygulamalar"},
+      "photography": {"title": "Fotoğrafçı"},
+      "transfer": {"title": "Transfer Hizmetleri"},
+      "hairdresser": {"title": "Kuaför"},
+      "market": {"title": "Market"},
+      "doctor": {"title": "Doktor"},
+      "carRental": {"title": "Araç Kiralama"}
+    }
+  }
+
 }

@@ -49,13 +49,13 @@ const mainLinks = [
   { key: "pools", href: "/pools" },
   { key: "beach", href: "/beach" },
   { key: "aquapark", href: "/aquapark" },
-  { key: "entertainment", href: "/entertainment" },
+  { key: "activities", href: "/activities" },
   { key: "kids", href: "/kids" },
 ] as const;
 
 // Corporate navigation
 const corporateLinks = [
-  { key: "information", href: "/information" },
+  { key: "information", href: "/general-information" },
   { key: "agencies", href: "/agencies" },
   { key: "contact", href: "/contact" },
   { key: "privacy", href: "/kvkk" },

@@ -74,7 +74,7 @@ export default function ImageTextSection({
               {title}
             </h2>
 
-            <p className="text-[13px] leading-[1.8] font-light md:text-[15px]">
+            <p className="whitespace-pre-line text-[13px] leading-[1.8] font-light md:text-[15px]">
               {description}
             </p>
           </div>

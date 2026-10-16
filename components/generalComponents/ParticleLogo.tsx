@@ -18,6 +18,7 @@ type ParticleLogoProps = {
   // New animation options
   entranceAnimation?: boolean;
   entranceDuration?: number;
+   useOriginalColors?: boolean;
 };
 
 type Particle = {
@@ -37,6 +38,7 @@ type Particle = {
   phase: number;
   speed: number;
   amplitude: number;
+   color: string;
 };
 
 export default function ParticleLogo({
@@ -53,6 +55,8 @@ export default function ParticleLogo({
 
   entranceAnimation = false,
   entranceDuration = 2400,
+  useOriginalColors = false,
+
 }: ParticleLogoProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -94,9 +98,8 @@ ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
 
 const draw = (time = 0) => {
  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-  ctx.fillStyle = color;
-
-  for (const p of particles) {
+for (const p of particles) {
+  ctx.fillStyle = p.color;
     // Hızlı, küçük parlaklık değişimleri
     const flicker =
       Math.sin(time * p.speed + p.phase) * p.amplitude;
@@ -333,6 +336,10 @@ particles.push({
   phase: Math.random() * Math.PI * 2,
   speed: 12 + Math.random() * 18,
   amplitude: 0.12 + Math.random() * 0.18,
+
+  color: useOriginalColors
+    ? `rgb(${red}, ${green}, ${blue})`
+    : color,
 });
 
         }
@@ -408,6 +415,7 @@ mouse.y =
   mouseRadius,
   color,
   detectionMode,
+  useOriginalColors,
   entranceAnimation,
   entranceDuration,
 ]);

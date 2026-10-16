@@ -23,7 +23,32 @@ export async function getRoomDetail(
     namespace: "Rooms",
   });
 
-  const roomKey = `details.${slug}`;
+  // Translation keys match internal room slugs
+  const roomKey = `details.${room.slug}`;
+
+  // Validate required translations
+  const requiredKeys = [
+    `${roomKey}.title`,
+    `${roomKey}.subtitle`,
+    `${roomKey}.description`,
+    `${roomKey}.galleryAlt`,
+    ...room.features.map(
+      (feature) => `${roomKey}.features.${feature.id}`,
+    ),
+  ];
+
+  const missingKeys = requiredKeys.filter(
+    (key) => !t.has(key),
+  );
+
+  if (missingKeys.length > 0) {
+    console.error(
+      `[getRoomDetail] Missing translations for "${room.slug}" (${locale}):`,
+      missingKeys,
+    );
+
+    return null;
+  }
 
   // Translate room services
   const translateServices = (

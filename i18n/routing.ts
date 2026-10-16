@@ -96,10 +96,26 @@ export const routing = defineRouting({
   ru: "/aquapark",
 },
 
-  "/beach": "/beach",
+  "/beach": {
+  tr: "/sahil",
+  en: "/beach",
+  de: "/strand",
+  ru: "/пляж",
+},
 
-  "/entertainment": "/entertainment",
-  "/kids": "/kids",
+ "/activities": {
+  tr: "/aktivite-eglence",
+  en: "/activities-entertainment",
+  de: "/aktivitaeten-unterhaltung",
+  ru: "/razvlecheniya-i-aktivnosti",
+},
+
+  "/kids": {
+  tr: "/cocuklar-icin",
+  en: "/for-children",
+  de: "/fuer-kinder",
+  ru: "/dlya-detey",
+},
 
   // Gastronomy
   "/bars": "/bars",
@@ -129,6 +145,13 @@ export const routing = defineRouting({
   en: "/spa-wellness",
   de: "/spa-wellness",
   ru: "/spa-wellness",
+},
+
+"/general-information": {
+  tr: "/genel-bilgilendirme",
+  en: "/general-information",
+  de: "/allgemeine-informationen",
+  ru: "/общая-информация",
 },
 
   },

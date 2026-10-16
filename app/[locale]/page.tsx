@@ -1,6 +1,6 @@
 
 import { getTranslations } from "next-intl/server";
-
+import { rooms as roomConfigs } from "@/data/roomsCard";
 import MainBanner from "@/components/HomeComponents/MainBanner";
 import ParticleLogo from "@/components/generalComponents/ParticleLogo";
 import TextBanner from "@/components/generalComponents/TextBanner";
@@ -18,6 +18,13 @@ import backgroundImageKids from "@/public/images/kids/mini-kulup-1.webp";
 
 export default async function Home() {
   const t = await getTranslations("HomePage");
+
+  const tRooms = await getTranslations("HomeRooms");
+  
+  const translatedRooms = roomConfigs.map((room) => ({
+  ...room,
+  title: tRooms(`roomNames.${room.id}`),
+}));
 
   const slides = [
     {
@@ -52,12 +59,14 @@ export default async function Home() {
       />
 
       {/* Rooms */}
-      <RoomsSection
-        rooms={rooms}
-        title={t("rooms.title")}
-        description={t("rooms.description")}
-        discoverText={t("rooms.discover")}
-      />
+     
+<RoomsSection
+  rooms={translatedRooms}
+  title={tRooms("title")}
+  description={tRooms("description")}
+  discoverText={tRooms("discover")}
+/>
+
 
       {/* Gastronomy */}
       <GastronomySection

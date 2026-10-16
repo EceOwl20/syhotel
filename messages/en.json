@@ -21,7 +21,7 @@
     "pools": "Swimming Pools",
     "beach": "Beach",
     "aquapark": "Mega Splash Aquapark",
-    "entertainment": "Activities & Entertainment",
+    "activities": "Activities & Entertainment",
     "kids": "For Children",
     "information": "General Information",
     "agencies": "For Travel Agencies",
@@ -122,7 +122,8 @@
     "freeTitle": "COMPLIMENTARY SERVICES",
     "paidTitle": "PAID SERVICES",
     "details": {
-      "deluxe": {
+      
+      "deluxe-rooms": {
         "title": "DELUXE ROOMS",
         "subtitle": "A NEW LIFESTYLE AWAITS YOU",
         "description": "With their spacious and elegantly designed interiors, our Deluxe rooms offer guests a living space that goes beyond comfort.",
@@ -430,6 +431,241 @@
       "subtitle": "",
       "description": ""
     }
+  },
+
+   "Beach": {
+    "title": "BEACH",
+    "description": "The beach is 2 km from the hotel and can be reached in approximately 4 minutes by shuttle service, which operates every 15 minutes."
+  },
+
+  "Aquapark": {
+    "title": "MEGA SPLASH AQUAPARK",
+    "description": "With 14 different water slide options, Mega Splash Aquapark offers an unforgettable experience for thrill seekers and water lovers. Featuring separate areas for children and adults, the aquapark invites guests of all ages to enjoy an exciting world of water attractions. Fast slides, a wave pool and dedicated activity areas provide hours of fun for families and friends.",
+    "slides": [
+      "Hill Slide – 1 slide / 35.96 m",
+      "Body Slide – Combo – 1 slide / 36.90 m",
+      "Kids Slide Str – 1 slide / 19.37 m",
+      "Body Slide – Combo – 1 slide / 60.82 m",
+      "Body Slide – 1 slide / 36.33 m",
+      "Kids Slide Crv – 1 slide / 18.62 m",
+      "Body Slide – Combo – 1 slide / 61.15 m",
+      "Kids Slide Str – 1 slide / 9.11 m",
+      "Body Slide Combo – 1 slide / 62 m",
+      "Body Slide – Combo – 1 slide / 50.14 m",
+      "Body Slide – Combo – 1 slide / 27.95 m",
+      "Body Slide – Combo – 1 slide / 66.29 m",
+      "Body Slide – Combo – 1 slide / 61.64 m",
+      "Kids Slide Crv – 1 slide / 12.15 m",
+      "Body Slide – 1 slide / 54.88 m",
+      "Body Slide – Combo – 1 slide / 80.90 m"
+    ]
+  },
+
+   "Activities": {
+    "bannerTitle": "A Holiday Full of Activities and Entertainment",
+    "subtitle": "A NEW STYLE OF ENTERTAINMENT AWAITS YOU",
+    "title": "ACTIVITIES & ENTERTAINMENT",
+    "description": "Activities and entertainment throughout the day cater to the expectations of guests of all ages. The perfect environment has been created for those seeking a relaxing holiday as well as those who prefer an active and entertaining experience.",
+    "activitiesTitle": "Activities",
+    "dailyTitle": "Daily Activities",
+    "dailyDescription": "Enjoy an exciting holiday with a rich program of daily activities. Whether you love sports or entertainment, a wide variety of activities will make your stay even more enjoyable. Take part in friendly matches and tournaments featuring boccia, darts, basketball, table tennis, archery and air rifle shooting, and experience both competition and social interaction.",
+    "eveningTitle": "Evening Shows",
+    "eveningDescription": "Make every evening unforgettable with spectacular shows and exciting events. Professional performances, themed parties and surprise activities will bring color, energy and entertainment to your holiday."
+  },
+
+
+"KidsPage": {
+  "subtitle": "ENDLESS FUN",
+  "title": "FOR CHILDREN",
+  "description": "Every detail of this special area has been designed to ensure children enjoy safe and entertaining moments throughout their holiday, while offering families the opportunity to relax and unwind.",
+  "kidsClub": {
+    "title": "Kids Club & Activities",
+    "miniTitle": "Mini Club (Ages 4-7)",
+    "miniDescription": "With face painting, arts and crafts, storytelling and creative games guided by experienced instructors, younger children have fun, learn and develop their social skills.",
+    "juniorTitle": "Junior Club (Ages 8-12)",
+    "juniorDescription": "Designed for children aged 8-12, the Junior Club offers more energetic and interactive social games."
+  },
+  "aquapark": {
+    "title": "Mega Splash Aquapark",
+    "description": "With 16 different water slides, Mega Splash Aquapark offers an unforgettable experience for thrill-seekers and fun lovers. Featuring separate areas for children and adults, it invites guests of all ages to discover the excitement of water. Fast slides, a wave pool and dedicated activity areas provide endless opportunities to enjoy the day with family and friends."
   }
+},
+
+
+"HomeRooms": {
+  "title": "ACCOMMODATION",
+  "description": "Discover accommodation options where comfort and elegance come together at SY Hotels Belek.",
+  "discover": "Discover",
+  "roomNames": {
+    "deluxe-standard": "Deluxe Standard Rooms",
+    "deluxe-family": "Deluxe Family Rooms",
+    "deluxe-superior": "Deluxe Superior Rooms",
+    "deluxe-swim-up-aile": "Deluxe Swim-up Family Rooms",
+    "deluxe-swim-up": "Deluxe Swim-up Rooms",
+    "deluxe-sig-havuzlu": "Deluxe Shallow Pool Rooms",
+    "deluxe-dubleks-aile-standard": "Deluxe Duplex Family Rooms",
+    "deluxe-engelli": "Deluxe Accessible Rooms"
+  }
+},
+
+
+"GeneralInformation": {
+  "title": "GENERAL INFORMATION",
+  "description": "With its spacious and elegantly designed rooms, the hotel offers guests a living space beyond comfort. Feel at home surrounded by the elegance of modern décor. All rooms are equipped with advanced technology and thoughtfully designed with every detail guests may need.",
+  "details": {
+    "title": "DETAILS",
+    "blocks": [
+      {
+        "lines": [
+          {"label": "Hotel Name", "text": "SY Hotels Belek"},
+          {"label": "Category", "text": "Boutique Luxury"}
+        ]
+      },
+      {
+        "lines": [
+          {"label": "Opening Date", "text": "June 2025"},
+          {"label": "Concept", "text": "Ultra All Inclusive"},
+          {"label": "Season", "text": "12 Months"},
+          {"label": "Total Area", "text": "24,000 m²"},
+          {"label": "Total Blocks and Floors", "text": "Block A: 7 floors, Block B: 4 floors"},
+          {"label": "Location", "text": "Kadriye / Belek (Opposite The Land of Legends)"},
+          {"label": "Distance to Beach", "text": "2 km (4-minute shuttle service)"}
+        ]
+      },
+      {
+        "lines": [
+          {"label": "Website", "text": "www.syhotels.com"},
+          {"label": "Email", "text": "info@syhotels.com"},
+          {"label": "Sales", "text": "sales@syhotels.com"},
+          {"label": "Address", "text": "Kadriye Mah. Kır Mevkii Atatürk Cad. Belek – Antalya / Türkiye"},
+          {"label": "Telephone", "text": "+90 242 205 47 80"}
+        ]
+      },
+      {
+        "lines": [
+          {"label": "Languages", "text": "English, German, Russian, Turkish"},
+          {"label": "Wireless Internet", "text": "In public areas, rooms and on the beach"},
+          {"label": "Pets", "text": "Not allowed"},
+          {"label": "Accepted Cards", "text": "Visa, Mastercard"},
+          {"label": "Air Conditioning", "text": "Central heating and cooling system"}
+        ]
+      },
+      {
+        "lines": [
+          {"label": "Antalya Airport", "text": "25 km"},
+          {"label": "Antalya City Center", "text": "27 km"},
+          {"label": "Belek Town Center", "text": "4 km"}
+        ]
+      },
+      {
+        "lines": [
+          {"label": "Check-in Time", "text": "14:00"},
+          {"label": "Check-out Time", "text": "12:00"}
+        ]
+      },
+      {
+        "title": "Rooms & Suites",
+        "lines": [
+          {"text": "• Deluxe Rooms – 23 m²"},
+          {"text": "• Deluxe Family Rooms – 43 m²"},
+          {"text": "• Deluxe Superior Rooms – 41 m²"},
+          {"text": "• Deluxe Swim-Up Rooms – 23 m²"},
+          {"text": "• Deluxe Swim-Up Family Rooms – 57 m²"},
+          {"text": "• Deluxe Duplex Family Rooms – 39 m²"},
+          {"text": "• Deluxe Shallow Pool Rooms – 23 m²"},
+          {"text": "• Deluxe Accessible Rooms – 23 m²"}
+        ]
+      },
+      {
+        "title": "Bars",
+        "lines": [
+          {"text": "• Ruby Lobby Bar"},
+          {"text": "• Lal Terrace Bar"},
+          {"text": "• Aquarius Pool Bar"},
+          {"text": "• Larimar Beach Bar"},
+          {"text": "• Marin Shallow Bar"},
+          {"text": "• Nova Snack Bar"}
+        ]
+      },
+      {
+        "title": "Restaurants & À La Carte Restaurants",
+        "lines": [
+          {"text": "• Sirius Restaurant"},
+          {"text": "(Turkish Theme, Italian Theme, Asian Theme, Gala Star Theme, Mexican Theme, Fish Theme, World Theme)"},
+          {"text": "• Breakfast"},
+          {"text": "• Lunch"},
+          {"text": "• Children's Buffet (Lunch) / Mini Club"},
+          {"text": "• Dinner"},
+          {"text": "• Bistro Dining Service"},
+          {"text": "• Nova Food Court"},
+          {"text": "• Bettelglow Patisserie"},
+          {"text": "• Larimar Beach Bar & Restaurant"},
+          {"text": "• Carina International À La Carte"},
+          {"text": "• Altair Ottoman À La Carte"},
+          {"text": "(For stays of 7 nights or more, guests may enjoy one complimentary visit to one of our two à la carte restaurants.)"}
+        ]
+      },
+      {
+        "title": "Pools",
+        "lines": [
+          {"text": "• Maldives Pool (White Sand)"},
+          {"text": "• Outdoor Pool, Block A (16+) (Heated & Cooled)"},
+          {"text": "• Outdoor Pool (Block B)"},
+          {"text": "• Children's Pool"},
+          {"text": "• Indoor Pool"}
+        ]
+      },
+      {
+        "title": "Mega Splash Aquapark",
+        "lines": [
+          {"text": "Spread across 4,000 m² and featuring 14 water slides designed for different age groups and preferences, Mega Splash Aquapark is an ideal entertainment destination for thrill-seekers, children and families."}
+        ]
+      }
+    ]
+  },
+  "serviceGroups": {
+    "roomFree": "ROOM (COMPLIMENTARY SERVICES)",
+    "roomPaid": "ROOM (PAID SERVICES)",
+    "generalFree": "GENERAL (COMPLIMENTARY SERVICES)",
+    "generalPaid": "GENERAL (PAID SERVICES)"
+  },
+  "services": {
+    "wifiRoom": {"title": "Wi-Fi & Internet", "description": "High-speed internet access in rooms"},
+    "minibar": {"title": "Minibar", "description": "Soft drinks, water and beer replenished daily"},
+    "housekeeping": {"title": "Housekeeping", "description": "Daily room cleaning"},
+    "hairdryer": {"title": "Hair Dryer"},
+    "bathroom": {"title": "Bathroom & Shower"},
+    "balcony": {"title": "Balcony", "description": "Table and chairs"},
+    "amenities": {"title": "Bathroom Amenities", "description": "Bath and personal care products"},
+    "safe": {"title": "In-Room Safe", "description": "Large enough for a laptop"},
+    "tv": {"title": "LCD TV", "description": "Local and international channels and music broadcasts"},
+    "coffee": {"title": "Tea & Coffee Facilities", "description": "Selection of tea and coffee"},
+    "airConditioner": {"title": "Air Conditioning", "description": "Individually controlled central system"},
+    "mirror": {"title": "Makeup Mirror"},
+    "floor": {"title": "Ceramic Flooring", "description": "Wood-effect finish"},
+    "roomService": {"title": "Room Service", "description": "Extensive menu available 24 hours"},
+    "laundry": {"title": "Laundry Services", "description": "Washing, dry cleaning and ironing services"},
+    "telephone": {"title": "Telephone"},
+    "wifiGeneral": {"title": "Wi-Fi & Internet", "description": "In public areas and on the beach"},
+    "fitness": {"title": "Fitness Center"},
+    "animation": {"title": "Entertainment Activities", "description": "Table tennis, darts, beach volleyball, boccia, aerobics, gymnastics and aqua gym"},
+    "miniClub": {"title": "Mini Club", "description": "Ages 4–12"},
+    "beachPool": {"title": "Beach Towels", "description": "Available on the beach"},
+    "softDrinks": {"title": "Soft Drinks and Export Alcoholic Beverages"},
+    "turkishBath": {"title": "Turkish Bath, Sauna & Steam Room"},
+    "parking": {"title": "Parking"},
+    "sunbeds": {"title": "Sun Loungers & Parasols", "description": "At the pools and on the beach"},
+    "importDrinks": {"title": "Imported Alcoholic Beverages"},
+    "spa": {"title": "Spa & Wellness", "description": "Spa treatments and services"},
+    "photography": {"title": "Photography Services"},
+    "transfer": {"title": "Transfer Services"},
+    "hairdresser": {"title": "Hairdresser"},
+    "market": {"title": "Market"},
+    "doctor": {"title": "Doctor"},
+    "carRental": {"title": "Car Rental"}
+  }
+}
+
+
 
 }

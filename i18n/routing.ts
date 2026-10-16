@@ -126,10 +126,28 @@ export const routing = defineRouting({
 
   // Corporate
   "/information": "/information",
-  "/agencies": "/agencies",
-  "/contact": "/contact",
-  "/iletisim": "/iletisim",
-  "/kvkk": "/kvkk",
+  
+  "/agencies": {
+  tr: "/acentalar-icin",
+  en: "/for-agencies",
+  de: "/fuer-reisebueros",
+  ru: "/для-турагентств",
+},
+
+ "/contact": {
+  tr: "/iletisim",
+  en: "/contact",
+  de: "/kontakt",
+  ru: "/контакты",
+},
+
+ "/kvkk": {
+  tr: "/kisisel-verilerin-korunmasi",
+  en: "/personal-data-protection",
+  de: "/schutz-personenbezogener-daten",
+  ru: "/защита-персональных-данных",
+},
+
   "/sustainability": "/sustainability",
   "/surdurulebilirlik": "/surdurulebilirlik",
   "/discover": "/discover",

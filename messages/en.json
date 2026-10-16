@@ -664,7 +664,53 @@
     "doctor": {"title": "Doctor"},
     "carRental": {"title": "Car Rental"}
   }
+},
+
+
+"Contact": {
+  "title": "CONTACT",
+  "description": "Feel free to contact us with any questions or inquiries.",
+  "address": "Kadriye Neighborhood, Atatürk Avenue, Kır Mevkii, 07500 Belek / Antalya, Türkiye",
+  "reservation": "Reservations",
+  "hotelPhone": "Hotel Contact",
+  "mapTitle": "SY Hotels Belek Location Map"
+},
+
+
+
+"Agencies": {
+  "title": "FOR TRAVEL AGENCIES",
+  "description1": "To make our cooperation more efficient and help you provide the best possible service to your guests, we are pleased to share resources that give you easy access to our hotel's images, fact sheets and presentation materials.",
+  "description2": "Using the links below, you can access our hotel logos, high-resolution photographs, up-to-date fact sheets and presentation files. Please feel free to contact us if you have any questions or require additional materials.",
+  "signature": "Kind regards,",
+  "team": "SY Hotels Belek\nSales and Marketing Team",
+  "resources": {
+    "logo": "Logo",
+    "factSheet": "Fact Sheet",
+    "video": "Video",
+    "photos": "Photographs"
+  }
+},
+
+
+"KVKK": {
+  "eyebrow": "DATA PROTECTION",
+  "title": "PERSONAL DATA PROTECTION LAW",
+  "intro": "In accordance with Personal Data Protection Law No. 6698 (KVKK), SY Hotels Belek attaches great importance to the security of your personal data.",
+  "explanation": "Accordingly, your personal data is processed, stored and protected in compliance with applicable laws and regulations, in accordance with the principles of fairness, accuracy and, where necessary, keeping data up to date, for specified, explicit and legitimate purposes.",
+  "listIntro": "Your data is processed for purposes including:",
+  "purposes": {
+    "service": "Providing and managing our services,",
+    "contracts": "Fulfilling contractual obligations,",
+    "legal": "Complying with legal obligations,",
+    "operations": "Maintaining internal business operations"
+  },
+  "closing": "Such processing is limited to these purposes and carried out in accordance with the relevant legal provisions.",
+  "policyInfo": "For detailed information about the purposes of processing your personal data, potential recipients, data collection methods and your legal rights, please refer to the Privacy Notice/Data Policy published on syhotels.com."
 }
+
+
+
 
 
 

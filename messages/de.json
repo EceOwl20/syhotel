@@ -665,7 +665,51 @@
     "doctor": {"title": "Arzt"},
     "carRental": {"title": "Autovermietung"}
   }
+},
+
+
+"Contact": {
+  "title": "KONTAKT",
+  "description": "Bei Fragen oder Anliegen können Sie sich jederzeit an uns wenden.",
+  "address": "Kadriye Mah., Atatürk Cad., Kır Mevkii, 07500 Belek / Antalya, Türkei",
+  "reservation": "Reservierung",
+  "hotelPhone": "Hotelkontakt",
+  "mapTitle": "Standortkarte von SY Hotels Belek"
+},
+
+
+"Agencies": {
+  "title": "FÜR REISEBÜROS",
+  "description1": "Um unsere Zusammenarbeit noch effizienter zu gestalten und Sie dabei zu unterstützen, Ihren Gästen den bestmöglichen Service zu bieten, stellen wir Ihnen Materialien zur Verfügung, die einen einfachen Zugang zu Bildern, Fact Sheets und Präsentationsunterlagen unseres Hotels ermöglichen.",
+  "description2": "Über die folgenden Links können Sie unsere Hotellogos, hochauflösende Fotos, aktuelle Fact Sheets und Präsentationsdateien abrufen. Bei Fragen oder wenn Sie weitere Materialien benötigen, können Sie uns jederzeit kontaktieren.",
+  "signature": "Mit freundlichen Grüßen,",
+  "team": "SY Hotels Belek\nVertriebs- und Marketingteam",
+  "resources": {
+    "logo": "Logo",
+    "factSheet": "Fact Sheet",
+    "video": "Video",
+    "photos": "Fotos"
+  }
+},
+
+
+"KVKK": {
+  "eyebrow": "DATENSCHUTZ",
+  "title": "GESETZ ZUM SCHUTZ PERSONENBEZOGENER DATEN",
+  "intro": "Gemäß dem türkischen Gesetz Nr. 6698 zum Schutz personenbezogener Daten (KVKK) legt SY Hotels Belek großen Wert auf die Sicherheit Ihrer personenbezogenen Daten.",
+  "explanation": "Ihre personenbezogenen Daten werden im Einklang mit den geltenden Gesetzen und Vorschriften nach den Grundsätzen der Rechtmäßigkeit, Fairness, Richtigkeit und gegebenenfalls Aktualität für festgelegte, eindeutige und rechtmäßige Zwecke verarbeitet, gespeichert und geschützt.",
+  "listIntro": "Ihre Daten werden insbesondere für folgende Zwecke verarbeitet:",
+  "purposes": {
+    "service": "Durchführung und Verwaltung unserer Dienstleistungen,",
+    "contracts": "Erfüllung vertraglicher Verpflichtungen,",
+    "legal": "Erfüllung gesetzlicher Verpflichtungen,",
+    "operations": "Aufrechterhaltung interner betrieblicher Abläufe"
+  },
+  "closing": "Die Verarbeitung erfolgt ausschließlich im Rahmen dieser Zwecke und gemäß den einschlägigen gesetzlichen Bestimmungen.",
+  "policyInfo": "Ausführliche Informationen über die Zwecke der Verarbeitung Ihrer personenbezogenen Daten, mögliche Empfänger, Erhebungsmethoden und Ihre gesetzlichen Rechte finden Sie in den Datenschutzhinweisen beziehungsweise der Datenrichtlinie auf syhotels.com."
 }
+
+
 
 
 

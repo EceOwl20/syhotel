@@ -658,6 +658,52 @@
       "doctor": {"title": "Doktor"},
       "carRental": {"title": "Araç Kiralama"}
     }
+  },
+  
+
+
+"Contact": {
+  "title": "İLETİŞİM",
+  "description": "Her türlü sorularınız için bize ulaşabilirsiniz",
+  "address": "Kadriye Mah. Atatürk Cad. Kır Mevkii, 07500 Belek / Antalya, Türkiye",
+  "reservation": "Rezervasyon",
+  "hotelPhone": "Otel İletişim",
+  "mapTitle": "SY Hotels Belek Konum Haritası"
+},
+
+
+"Agencies": {
+  "title": "ACENTALAR İÇİN",
+  "description1": "Sizlerle iş birliğimizi daha verimli hale getirebilmek ve misafirlerinize en iyi şekilde hizmet sunmanıza destek olmak adına, otelimize ait görseller, factsheet dosyaları ve sunum materyallerine kolayca erişebilmeniz için gerekli kaynakları sizlerle paylaşıyoruz.",
+  "description2": "Aşağıdaki bağlantılardan otelimize ait logo tipleri, yüksek çözünürlüklü fotoğrafları, güncel factsheet bilgilerini ve sunum dosyalarını indirebilir, her türlü sorunuz veya ihtiyaç duyduğunuz ek materyaller için bizimle iletişime geçebilirsiniz.",
+  "signature": "Saygılarımızla,",
+  "team": "SY Hotels Belek\nSatış ve Pazarlama Ekibi",
+  "resources": {
+    "logo": "Logo",
+    "factSheet": "Fact Sheet",
+    "video": "Video",
+    "photos": "Fotoğraflar"
   }
+},
+
+
+"KVKK": {
+  "eyebrow": "KVKK",
+  "title": "KİŞİSEL VERİLERİN KORUNMA KANUNU",
+  "intro": "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, SY Hotels Belek olarak kişisel verilerinizin güvenliğine büyük önem vermekteyiz.",
+  "explanation": "Bu doğrultuda, sizlere ait kişisel veriler; kanunlara ve ilgili mevzuata uygun olarak, dürüstlük kurallarına bağlı, doğru ve gerektiğinde güncel olacak şekilde, belirli, açık ve meşru amaçlar doğrultusunda işlenmekte, saklanmakta ve korunmaktadır.",
+  "listIntro": "Verileriniz;",
+  "purposes": {
+    "service": "Hizmet süreçlerinin yürütülmesi,",
+    "contracts": "Sözleşmelerin ifası,",
+    "legal": "Yasal yükümlülüklerin yerine getirilmesi,",
+    "operations": "Kurum içi operasyonların sürdürülmesi"
+  },
+  "closing": "amaçlarıyla sınırlı olmak üzere, ilgili kanun hükümleri çerçevesinde işlenmektedir.",
+  "policyInfo": "Kişisel verilerinizin işlenme amaçları, aktarılabileceği taraflar, veri toplama yöntemleri ve yasal haklarınız hakkında detaylı bilgiye syhotels.com web sitesinde yayımlanan Aydınlatma Metni’nden/Veri Politikası’ndan ulaşabilirsiniz."
+}
+
+
+
 
 }

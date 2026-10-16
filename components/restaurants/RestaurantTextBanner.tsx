@@ -55,12 +55,12 @@ export default function RestaurantTextBanner({
 
       {/* Banner text */}
       <div className="relative z-10 mx-auto flex h-full w-full max-w-[1800px] items-center px-6 md:px-12 lg:px-20">
-        <h2
+        <h3
   className={`
     max-w-[1100px]
-    text-[30px] leading-[1.2]
+    text-[24px] leading-[1.2]
     font-extralight tracking-[0.02em] text-white
-    sm:text-[40px] lg:text-[52px]
+    sm:text-[32px] md:text-[36px] lg:text-[52px]
 
     transform-gpu
     transition-[transform,opacity]
@@ -79,7 +79,7 @@ export default function RestaurantTextBanner({
   `}
 >
   {title}
-</h2>
+</h3>
       </div>
     </section>
   );

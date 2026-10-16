@@ -16,18 +16,18 @@ export default function BarDetailSection({
   images,
 }: BarDetailSectionProps) {
   return (
-    <section className="w-full bg-[#f7f7f5] px-3 py-16 text-[#948475] md:px-8 lg:py-20">
+    <section className="w-full bg-[#f7f7f5] px-3 py-8 md:py-12 text-[#948475] md:px-8 lg:py-20">
       <div className="mx-auto grid max-w-[1800px] grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_1fr] lg:gap-0">
 
         {/* LEFT: Text */}
         <div className="flex flex-col items-center text-center lg:items-end lg:pr-6 lg:text-right">
           <div className="max-w-[850px]">
-            <h2 className="text-[32px] font-extralight leading-[1.2] tracking-[0.04em] md:text-[40px]">
+            <h2 className="text-[25px] font-extralight leading-[1.2] tracking-[0.04em] md:text-[32px] lg:text-[36px]">
               {title}
             </h2>
 
             {subtitle && (
-              <h3 className="mt-1 text-[22px] font-extralight leading-[1.3] md:text-[28px]">
+              <h3 className="mt-1 text-[20px] lg:text-[22px] font-extralight leading-[1.3] md:text-[28px]">
                 {subtitle}
               </h3>
             )}

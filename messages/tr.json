@@ -125,7 +125,7 @@
       "deluxe-rooms": {
         "title": "DELUXE ODALAR",
         "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
-        "description": "Geniş ve zarif tasarımlı odaları ile misafirlerine konforun ötesinde bir yaşam alanı sunuyor.",
+        "description": "Geniş ve zarif tasarımlı odaları ile misafirlerine konforun ötesinde bir yaşam alanı sunuyor. Modern dekorasyonun sunduğu şıklıkla kendinizi evinizde hissedebilirsiniz. Tüm odalar, üstün teknoloji ile donatılmış olup, misafirlerin ihtiyaç duyabileceği her türlü detay düşünülerek tasarlanmıştır.",
         "galleryAlt": "Deluxe oda fotoğrafı",
         "features": {
           "area": "23 m²",
@@ -701,8 +701,195 @@
   },
   "closing": "amaçlarıyla sınırlı olmak üzere, ilgili kanun hükümleri çerçevesinde işlenmektedir.",
   "policyInfo": "Kişisel verilerinizin işlenme amaçları, aktarılabileceği taraflar, veri toplama yöntemleri ve yasal haklarınız hakkında detaylı bilgiye syhotels.com web sitesinde yayımlanan Aydınlatma Metni’nden/Veri Politikası’ndan ulaşabilirsiniz."
-}
+},
 
+
+
+"Sustainability": {
+  "title": "SÜRDÜRÜLEBİLİRLİK VE ENTEGRE YÖNETİM SİSTEMİ POLİTİKASI",
+  "introduction": "SY Luxury Belek olarak; tüm otelcilik faaliyetlerimizi kalite, çevre, gıda güvenliği, enerji yönetimi, bilgi güvenliği, yasal uyum ve sosyal sorumluluk ilkeleri doğrultusunda planlayan, uygulayan ve sürekli geliştiren bir Entegre Yönetim Sistemi (EYS) anlayışı benimseriz. Bu politika; misafirlerimizi, çalışanlarımızı, tedarikçilerimizi, iş ortaklarımızı ve otel faaliyetlerinden etkilenen tüm paydaşları kapsar.",
+  "sections": [
+    {
+      "title": "KALİTE YÖNETİMİ",
+      "items": [
+        "Misafir memnuniyetini temel performans göstergesi olarak kabul ederiz.",
+        "Süreç bazlı yönetim yaklaşımı ile hizmet kalitemizi sürekli iyileştiririz.",
+        "Çalışan katılımını, eğitimini ve yetkinliğini destekleyerek hizmet sürekliliğini sağlarız.",
+        "Tedarik zincirinde kalite, süreklilik ve güvenilirliği esas alırız."
+      ]
+    },
+    {
+      "title": "ÇEVRE YÖNETİMİ",
+      "items": [
+        "Çevresel etkilerimizi kontrol altına almayı ve doğal kaynakları korumayı kurumsal sorumluluk olarak görürüz.",
+        "Atıkların azaltılması, geri dönüşümün artırılması ve çevre dostu ürünlerin kullanımı için hedefler belirleriz.",
+        "Çevre mevzuatına ve ilgili diğer yükümlülüklere tam uyum sağlarız.",
+        "Yerel çevre projelerini ve sürdürülebilir turizmi destekleriz."
+      ]
+    },
+    {
+      "title": "GIDA GÜVENLİĞİ YÖNETİMİ",
+      "items": [
+        "Gıda güvenliğini misafir sağlığının ayrılmaz bir parçası olarak kabul ederiz.",
+        "Tüm gıda süreçlerinde hijyen, izlenebilirlik ve risk temelli yaklaşımı esas alırız.",
+        "Yasal gıda mevzuatlarına ve gıda güvenliği standartlarına tam uyum sağlarız.",
+        "Tedarikçilerimizin gıda güvenliği kriterlerine uygunluğunu gözetiriz."
+      ]
+    },
+    {
+      "title": "ENERJİ YÖNETİMİ",
+      "items": [
+        "Doğaya karşı sorumluluklarımız ve yasal yükümlülüklerimiz doğrultusunda ulusal ve uluslararası standartları ve mevzuatı takip eder; enerji kullanımını azaltmaya ve enerji performansımızı sürekli iyileştirmeye yönelik çalışmalar yürütür, enerji performansımızı izler, ölçer ve sürekli iyileştirmeyi hedefleriz.",
+        "Enerji kaynaklarını verimli kullanmayı ve karbon ayak izimizi düşürmeyi taahhüt ederiz.",
+        "Enerji verimliliği projelerini destekler, çalışan farkındalığını artırırız.",
+        "Enerji risklerini ve acil durumları değerlendirir, bu durumlara yönelik alınabilecek önlemleri planlarız."
+      ]
+    },
+    {
+      "title": "SÜRDÜRÜLEBİLİR SATIN ALMA VE TEDARİK YÖNETİMİ",
+      "items": [
+        "Satın alma süreçlerimizde kalite, gıda güvenliği, çevre ve enerji kriterlerini bütüncül olarak değerlendiririz.",
+        "Yerel tedarikçileri ve yerel ürünleri desteklemeyi öncelikli satın alma yaklaşımı olarak benimseriz.",
+        "Tedarikçilerimizi; çevreye duyarlı, etik, yasal gerekliliklere uygun ve sürdürülebilir uygulamalara sahip olmaları yönünde teşvik ederiz.",
+        "Tedarik zincirinde izlenebilirliği ve sürekliliği esas alırız."
+      ]
+    },
+    {
+      "title": "YEREL İSTİHDAM VE YEREL KALKINMANIN DESTEKLENMESİ",
+      "items": [
+        "Yerel istihdamı destekleyerek bölgesel kalkınmaya katkı sağlamayı hedefleriz.",
+        "Yerel üreticilerden ve hizmet sağlayıcılardan temin edilen ürün ve hizmetleri önceliklendiririz.",
+        "Yerel kültürel, sosyal ve ekonomik değerlerin korunmasına katkı sunarız."
+      ]
+    },
+    {
+      "title": "İNSAN HAKLARI VE EŞİTLİK",
+      "items": [
+        "Hiçbir ayrım gözetmeksizin (din, mezhep, dil, ırk, renk, cinsiyet, medeni hal, siyasi düşünce, yaş, fiziksel engel vb.) tüm çalışanlarımıza, misafirlerimize ve paydaşlarımıza eşit ve adil yaklaşırız.",
+        "Farklı inanç, düşünce ve görüşlere sahip kişilerin karşılıklı saygı ve hoşgörü içinde, çatışmaya girmeden bir arada bulunabileceği bir çalışma ve hizmet ortamı oluşturmayı destekleriz."
+      ]
+    },
+    {
+      "title": "ÇOCUKLARIN KORUNMASI VE GÜVENLİĞİ",
+      "items": [
+        "Çocukların fiziksel, duygusal ve psikolojik güvenliğini tüm faaliyetlerimizde öncelik olarak kabul ederiz.",
+        "Çocuklara yönelik her türlü istismar, ihmal ve kötü muameleye karşı sıfır tolerans yaklaşımını benimseriz.",
+        "Çocuk haklarına ilişkin ulusal ve uluslararası yasal düzenlemelere tam uyum sağlarız.",
+        "Çalışanlarımızın çocuk koruma konusunda farkındalığını artırmak amacıyla düzenli eğitimler gerçekleştirir, şüpheli durumların ilgili birimlere ve yetkili mercilere bildirilmesini güvence altına alırız."
+      ]
+    },
+    {
+      "title": "İŞ SAĞLIĞI VE GÜVENLİĞİ",
+      "items": [
+        "Misafirlerimizin, çalışanlarımızın ve tüm iş ortaklarımızın sağlığı ve güvenliği, hizmet kalitemiz kadar öncelikli bir konudur. Aile odaklı tatil anlayışımız doğrultusunda, her yaş grubunun güvenliğini sağlamak amacıyla tesisimizin tüm alanlarında iş sağlığı ve güvenliği risklerini değerlendirir, gerekli önleyici tedbirleri uygularız.",
+        "Çalışanlarımızın iş sağlığı ve güvenliği konusundaki farkındalığını artırmaya yönelik düzenli eğitimler gerçekleştiririz."
+      ]
+    },
+    {
+      "title": "KİŞİSEL VERİLERİN KORUNMASI VE BİLGİ GÜVENLİĞİ",
+      "items": [
+        "Misafirlerimizin, çalışanlarımızın ve tüm paydaşlarımızın kişisel verilerinin gizliliğini korumayı kurumsal sorumluluğumuz olarak kabul ederiz.",
+        "Kişisel verileri, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuata uygun şekilde işler ve süresi dolduğunda güvenli yöntemlerle imha ederiz.",
+        "Kişisel verilere erişimi yetki esasına göre sınırlandırır, teknik ve idari güvenlik tedbirlerini uygularız.",
+        "Bilgi güvenliği risklerini izler, ihlal risklerini önleyici ve düzeltici faaliyetlerle yönetiriz."
+      ]
+    },
+    {
+      "title": "YASAL UYUM, RİSK VE SÜREKLİ İYİLEŞTİRME",
+      "items": [
+        "Tüm faaliyetlerimizi yürürlükteki ulusal ve uluslararası mevzuata uygun şekilde yürütürüz.",
+        "Risk ve fırsatları önceden belirleyerek sistematik bir yönetim yaklaşımı uygularız.",
+        "Entegre Yönetim Sistemimizi düzenli olarak gözden geçirir, performansımızı sürekli iyileştiririz."
+      ]
+    }
+  ],
+  "conclusion": "SY Luxury Belek olarak bu Entegre Sürdürülebilir Yönetim Sistemi Politikası'nı tüm çalışanlarımız ve paydaşlarımızla birlikte uygulamayı, sürdürülebilir, güvenli, kaliteli ve çevreye duyarlı hizmet anlayışını benimsemeyi amaçlarız."
+},
+
+
+"ExploreRegion": {
+  "title": "BÖLGEYİ KEŞFEDİN",
+  "description": "Ülkemizde ve bölgemizde bulunan daha birçok güzelliği keşfetmek, Türk kültürümüzü yakından tanımak isterseniz antalya.goturkiye.com, antalya.ktb.gov.tr ve kulturportali.gov.tr sayfalarını ziyaret etmenizi öneririz.",
+  "places": {
+    "kaleici": {
+      "title": "KALEİÇİ & YAT LİMANI",
+      "description": "Antalya’nın kalbinde yer alan Kaleiçi, dar sokakları, taş evleri ve tarihi yapılarıyla geçmişten günümüze uzanan büyüleyici bir atmosfere sahiptir. Hemen altında bulunan Yat Limanı ise tekneler, kafeler ve gün batımı manzarasıyla şehrin en keyifli noktalarından biridir."
+    },
+    "manavgatWaterfall": {
+      "title": "MANAVGAT ŞELALESİ",
+      "description": "Manavgat ilçesinin yaklaşık 3 km batısında bulunan şelale, ilçe ile aynı adı taşır. Alçak bir yükseklikten geniş bir alan üzerine dökülen suları, görülmeye değer etkileyici bir manzara oluşturur. Manavgat’tan kalkan toplu taşıma araçlarıyla ulaşım sağlanabilir."
+    },
+    "titreyengol": {
+      "title": "TİTREYENGÖL",
+      "description": "Durgun yüzeyinde en hafif rüzgârda bile oluşan titreşimlerden adını alan Titreyengöl, doğal güzelliği ve çevresindeki bitki örtüsüyle dikkat çeker. Gölün adıyla ilgili anlatılan efsaneler de bölgenin kültürel zenginliğinin bir parçasıdır."
+    },
+    "side": {
+      "title": "SİDE",
+      "description": "Antalya’ya yaklaşık 75 km, Manavgat’a 7 km uzaklıkta bulunan Side, denize uzanan bir yarımada üzerinde yer alır. Tarihi Hititlere kadar uzanan bölge, geçmişte birçok medeniyete ev sahipliği yapmıştır."
+    },
+    "sideAncientCity": {
+      "title": "SİDE ANTİK KENTİ",
+      "description": "Side Antik Kenti; antik tiyatrosu, Apollon Tapınağı, anıtsal kapısı, hamamları, agorası ve tarihi limanıyla ziyaretçilerine zengin bir kültürel miras sunar. Akdeniz kıyısında tarih ve doğayı bir arada keşfedebilirsiniz."
+    },
+    "aspendos": {
+      "title": "ASPENDOS TİYATROSU",
+      "description": "Manavgat’a yaklaşık 44 km mesafede bulunan Aspendos Tiyatrosu, MS 2. yüzyılda inşa edilmiştir. Yaklaşık 17.000 kişi kapasiteli antik tiyatro, günümüze oldukça iyi korunmuş şekilde ulaşmıştır. Günümüzde çeşitli konser, festival ve kültürel etkinliklere ev sahipliği yapmaktadır."
+    },
+    "seleukeia": {
+      "title": "SELEUKEİA",
+      "description": "Manavgat’ın kuzeybatısında, Toroslar yönünde bulunan Seleukeia kalıntıları, yaklaşık 300 metre yüksekliğinde bir tepe üzerinde yer alır. Dik yamaçları ve derin vadilerle çevrili konumu, ziyaretçilere tarihi kalıntılarla birlikte etkileyici bir doğa manzarası sunar."
+    },
+    "kopruluCanyon": {
+      "title": "KÖPRÜLÜ KANYON",
+      "description": "Köprülü Kanyon Milli Parkı, Manavgat’a yaklaşık 60 km uzaklıkta bulunur. Türkiye’nin popüler rafting alanlarından biri olan bölge; Köprüçay Nehri, Roma döneminden kalma köprüleri, tarihi yolları ve doğal güzellikleriyle tanınır."
+    },
+    "kursunluWaterfall": {
+      "title": "KURŞUNLU ŞELALESİ",
+      "description": "Kurşunlu Şelalesi, yaklaşık 18 metre yükseklikten dökülen suları ve birbirine bağlanan küçük göletleriyle büyüleyici bir doğal ortam sunar. Mesire alanında yürüyüş yolları, seyir terasları ve piknik alanları bulunmaktadır."
+    },
+    "saklikentCanyon": {
+      "title": "SAKLIKENT KANYONU",
+      "description": "Antalya ve Fethiye sınırları arasında yer alan Saklıkent Kanyonu, yaklaşık 18 kilometre uzunluğundadır. Doğayla iç içe yürüyüş yapmak ve serin suların oluşturduğu etkileyici kanyon manzarasını keşfetmek isteyenler için özel bir yerdir."
+    },
+    "alanyaCastle": {
+      "title": "ALANYA KALESİ",
+      "description": "Alanya’nın simgelerinden biri olan Alanya Kalesi, denizden yaklaşık 250 metre yükseklikte bir yarımada üzerinde yer alır. Yaklaşık 6,5 kilometrelik surları, tarihi kuleleri ve Akdeniz manzarasıyla bölgenin önemli kültürel miraslarından biridir."
+    }
+  },
+  "informationSections": [
+    {
+      "title": "DOĞAL VE KÜLTÜREL ALANLARDA UYULMASI GEREKEN KURALLAR",
+      "items": [
+        "Müzelerde sergilenen eserlere dokunulmamalı ve zarar verilmemelidir. Yasak olan bölümlerde video ve fotoğraf çekimi yapılmamalı, belirtilen kurallara uyulmalıdır.",
+        "Antik kent alanları tahrip edilmemeli, koruma altındaki bölgelere girilmemeli ve çevre kirletilmemelidir.",
+        "Doğal gezi alanlarında ve ormanlarda piknik yapılmamalı, ateş yakılmamalı, yerlere çöp atılmamalı ve uyarı levhalarına dikkat edilmelidir.",
+        "Bu alanlarda yetişkin ve çocuklarla uygun olmayan faaliyetler gerçekleştirilmemeli, insanları rahatsız edici davranışlardan kaçınılmalıdır.",
+        "Avcılık için belirlenen yasa ve kurallara uyulmalı, yaban hayatına saygı gösterilmelidir.",
+        "Tarihi eserlerin izinsiz alım ve satımı yapılmamalıdır.",
+        "Camiye ayakkabı ile girilmemeli, uygun kıyafet kurallarına uyulmalı ve ibadet eden kişiler rahatsız edilmemelidir.",
+        "Doğamızı korumak amacıyla kullanılan kozmetik ve temizlik ürünlerinde doğa dostu seçeneklere özen gösterilmelidir.",
+        "Ziyaret etmek istediğiniz müzelerin açık olduğu saat ve günleri önceden kontrol etmenizi öneririz."
+      ]
+    },
+    {
+      "title": "BİYOÇEŞİTLİLİK",
+      "paragraphs": [
+        "Biyoçeşitlilik, bir ekosistemde ve tüm dünyada bulunan yaşam formlarının çeşitliliğidir. İnsanların yaşamlarını sürdürebilmesi için temiz suya, temiz havaya, verimli topraklara, besin kaynaklarına ve doğal kaynaklara ihtiyacı vardır.",
+        "Biyoçeşitlilik; bitkiler, hayvanlar, mantarlar ve diğer canlılar arasındaki ilişkiler sayesinde ekosistemlerin işleyişini destekler. Türler arasındaki dengeli etkileşim, doğal yaşamın sürdürülebilirliği açısından önemlidir.",
+        "Bitki çeşitliliği havanın temizlenmesine, erozyonun önlenmesine ve toprağın verimliliğine katkı sağlar. Bitkiler diğer canlılara barınma ve beslenme ortamı sunar.",
+        "Hayvan çeşitliliği ekosistemlerin dengesinin korunmasında önemli rol oynar. Pek çok böcek türü bitkilerin tozlaşmasını sağlarken başka türler organik maddelerin ayrışmasına yardımcı olur.",
+        "Ekosistemlerin sürdürülebilirliği, içinde yaşayan türlerin çeşitliliğine ve sağlığına bağlıdır. Biyoçeşitliliği yalnızca insanların ihtiyaçları için değil, tüm canlıların yaşam hakkına saygı göstermek için korumalıyız."
+      ]
+    },
+    {
+      "title": "BÖLGEMİZDE KORUMA ALTINA ALINAN BİTKİ VE HAYVAN TÜRLERİ",
+      "paragraphs": [
+        "Akdeniz foku ve Caretta caretta deniz kaplumbağaları bölgemizde koruma altındaki türler arasında bulunmaktadır. Burçak Çiçeği, Havacıva Çiçeği, İris Çiçeği, Kum Zambağı, Canavar Otu, Nergis ve Çiğdem gibi bitki türleri de bölgenin doğal çeşitliliğine katkı sağlamaktadır.",
+        "Koruma altındaki bitki ve hayvan türlerinden elde edilmiş ürünleri satın almaktan kaçınmalıyız. Yasal avlanma dönemlerine uyulmalıdır. Sirk, hayvanat bahçesi ve yunus gösterileri gibi hayvanları doğal yaşamlarından ayıran etkinliklere katılmamanızı önemle rica ederiz."
+      ]
+    }
+  ]
+}
 
 
 

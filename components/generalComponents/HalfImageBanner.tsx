@@ -25,7 +25,7 @@ export default function HalfImageBanner({
 
   return (
     <section
-      className={`relative h-[50vh] w-full min-h-[320px] overflow-hidden ${className}`}
+      className={`relative h-[60vh] w-full min-h-[320px] overflow-hidden ${className}`}
     >
       {/* BACKGROUND IMAGE */}
       <Image
@@ -45,23 +45,23 @@ export default function HalfImageBanner({
       />
 
       {/* BOTTOM GRADIENT */}
-      <div
+      {/* <div
         aria-hidden="true"
         className="
           pointer-events-none absolute inset-0
           bg-linear-to-b
           from-transparent
           via-transparent
-          to-[#948475]/70
+          to-[#948475]/90
         "
-      />
+      /> */}
 
       {/* PARTICLE LOGO */}
-      <div className="pointer-events-none absolute inset-0 z-10 flex items-end justify-center">
+      <div className="pointer-events-none absolute inset-0 z-10 mt-[11%] flex items-center justify-center">
         <ParticleLogo
   src="/logo/logo_favicon-beyaz.webp"
-  width={140}
-  height={140}
+  width={135}
+  height={135}
   particleGap={1}
   particleSize={0.85}
   mouseRadius={50}

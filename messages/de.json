@@ -125,7 +125,7 @@
       "deluxe-rooms": {
         "title": "DELUXE ZIMMER",
         "subtitle": "EIN NEUES LEBENSGEFÜHL ERWARTET SIE",
-        "description": "Mit ihrer großzügigen und eleganten Gestaltung bieten unsere Deluxe Zimmer einen Wohnbereich, der weit über gewöhnlichen Komfort hinausgeht.",
+        "description": "Mit ihren großzügigen und eleganten Zimmern bietet es den Gästen einen Lebensraum, der über den Komfort hinausgeht. Mit dem Stil der modernen Dekoration können Sie sich wie zu Hause fühlen. Alle Zimmer sind mit modernster Technologie ausgestattet und wurden mit Blick auf jedes Detail entworfen, das die Gäste benötigen könnten",
         "galleryAlt": "Foto des Deluxe Zimmers",
         "features": {
           "area": "23 m²",
@@ -707,11 +707,194 @@
   },
   "closing": "Die Verarbeitung erfolgt ausschließlich im Rahmen dieser Zwecke und gemäß den einschlägigen gesetzlichen Bestimmungen.",
   "policyInfo": "Ausführliche Informationen über die Zwecke der Verarbeitung Ihrer personenbezogenen Daten, mögliche Empfänger, Erhebungsmethoden und Ihre gesetzlichen Rechte finden Sie in den Datenschutzhinweisen beziehungsweise der Datenrichtlinie auf syhotels.com."
+},
+
+
+"Sustainability": {
+  "title": "NACHHALTIGKEITS- UND INTEGRIERTES MANAGEMENTSYSTEM – RICHTLINIE",
+  "introduction": "Wir bei SY Luxury Belek verfolgen einen Ansatz des Integrierten Managementsystems (IMS), mit dem wir sämtliche Hotelaktivitäten nach den Grundsätzen von Qualität, Umweltschutz, Lebensmittelsicherheit, Energiemanagement, Informationssicherheit, Rechtskonformität und sozialer Verantwortung planen, umsetzen und kontinuierlich verbessern. Diese Richtlinie gilt für unsere Gäste, Mitarbeitenden, Lieferanten, Geschäftspartner und alle von unserem Hotelbetrieb betroffenen Interessengruppen.",
+  "sections": [
+    {
+      "title": "QUALITÄTSMANAGEMENT",
+      "items": [
+        "Wir betrachten die Zufriedenheit unserer Gäste als einen wesentlichen Leistungsindikator.",
+        "Wir verbessern unsere Servicequalität kontinuierlich durch einen prozessorientierten Managementansatz.",
+        "Wir gewährleisten die Kontinuität unserer Dienstleistungen durch die Förderung von Mitarbeiterbeteiligung, Schulung und Kompetenz.",
+        "Wir legen in unserer Lieferkette besonderen Wert auf Qualität, Kontinuität und Zuverlässigkeit."
+      ]
+    },
+    {
+      "title": "UMWELTMANAGEMENT",
+      "items": [
+        "Wir betrachten die Kontrolle unserer Umweltauswirkungen und den Schutz natürlicher Ressourcen als unternehmerische Verantwortung.",
+        "Wir setzen Ziele zur Abfallreduzierung, zur Steigerung des Recyclings und zur Verwendung umweltfreundlicher Produkte.",
+        "Wir erfüllen sämtliche geltenden Umweltvorschriften und sonstigen relevanten Verpflichtungen.",
+        "Wir unterstützen lokale Umweltprojekte und nachhaltigen Tourismus."
+      ]
+    },
+    {
+      "title": "LEBENSMITTELSICHERHEITSMANAGEMENT",
+      "items": [
+        "Wir betrachten Lebensmittelsicherheit als wesentlichen Bestandteil der Gesundheit unserer Gäste.",
+        "Wir setzen in allen Lebensmittelprozessen auf Hygiene, Rückverfolgbarkeit und einen risikobasierten Ansatz.",
+        "Wir erfüllen die gesetzlichen Lebensmittelvorschriften und Lebensmittelsicherheitsstandards.",
+        "Wir achten darauf, dass unsere Lieferanten die Anforderungen an die Lebensmittelsicherheit erfüllen."
+      ]
+    },
+    {
+      "title": "ENERGIEMANAGEMENT",
+      "items": [
+        "Im Einklang mit unserer Verantwortung gegenüber der Natur und unseren gesetzlichen Verpflichtungen beachten wir nationale und internationale Standards sowie Vorschriften, arbeiten an der Reduzierung des Energieverbrauchs, überwachen und messen unsere Energiekennzahlen und streben eine kontinuierliche Verbesserung an.",
+        "Wir verpflichten uns zu einem effizienten Einsatz von Energieressourcen und zur Verringerung unseres CO₂-Fußabdrucks.",
+        "Wir unterstützen Energieeffizienzprojekte und stärken das Bewusstsein unserer Mitarbeitenden.",
+        "Wir bewerten energierelevante Risiken und Notfälle und planen geeignete Vorsorgemaßnahmen."
+      ]
+    },
+    {
+      "title": "NACHHALTIGE BESCHAFFUNG UND LIEFERANTENMANAGEMENT",
+      "items": [
+        "Wir berücksichtigen bei unseren Einkaufsprozessen Qualitäts-, Lebensmittelsicherheits-, Umwelt- und Energiekriterien ganzheitlich.",
+        "Wir fördern vorrangig lokale Lieferanten und regionale Produkte.",
+        "Wir ermutigen unsere Lieferanten zu umweltbewusstem, ethischem, rechtskonformem und nachhaltigem Handeln.",
+        "Wir legen großen Wert auf Rückverfolgbarkeit und Kontinuität innerhalb der Lieferkette."
+      ]
+    },
+    {
+      "title": "FÖRDERUNG LOKALER BESCHÄFTIGUNG UND REGIONALER ENTWICKLUNG",
+      "items": [
+        "Wir möchten durch die Förderung lokaler Beschäftigung zur regionalen Entwicklung beitragen.",
+        "Wir bevorzugen Produkte und Dienstleistungen lokaler Hersteller und Dienstleister.",
+        "Wir tragen zum Schutz lokaler kultureller, sozialer und wirtschaftlicher Werte bei."
+      ]
+    },
+    {
+      "title": "MENSCHENRECHTE UND GLEICHBERECHTIGUNG",
+      "items": [
+        "Wir behandeln alle Mitarbeitenden, Gäste und Interessengruppen gleich und gerecht, unabhängig von Religion, Glauben, Sprache, ethnischer Herkunft, Hautfarbe, Geschlecht, Familienstand, politischer Meinung, Alter, Behinderung oder anderen persönlichen Merkmalen.",
+        "Wir fördern ein Arbeits- und Dienstleistungsumfeld, in dem Menschen unterschiedlicher Überzeugungen und Ansichten respektvoll und tolerant miteinander umgehen können."
+      ]
+    },
+    {
+      "title": "KINDERSCHUTZ UND KINDERSICHERHEIT",
+      "items": [
+        "Wir betrachten die körperliche, emotionale und psychische Sicherheit von Kindern als oberste Priorität bei allen unseren Aktivitäten.",
+        "Wir verfolgen eine Null-Toleranz-Politik gegenüber jeder Form von Kindesmissbrauch, Vernachlässigung und Misshandlung.",
+        "Wir halten sämtliche nationalen und internationalen Vorschriften zum Schutz der Kinderrechte ein.",
+        "Wir führen regelmäßig Schulungen zur Sensibilisierung unserer Mitarbeitenden für den Kinderschutz durch und stellen sicher, dass Verdachtsfälle an zuständige Abteilungen und Behörden gemeldet werden."
+      ]
+    },
+    {
+      "title": "ARBEITSSCHUTZ UND ARBEITSSICHERHEIT",
+      "items": [
+        "Die Gesundheit und Sicherheit unserer Gäste, Mitarbeitenden und Geschäftspartner haben ebenso hohe Priorität wie unsere Servicequalität. Im Einklang mit unserem familienorientierten Urlaubskonzept bewerten wir die Arbeitsschutz- und Sicherheitsrisiken in allen Bereichen unserer Anlage und ergreifen die notwendigen Schutzmaßnahmen für alle Altersgruppen.",
+        "Wir bieten regelmäßig Schulungen zur Stärkung des Bewusstseins unserer Mitarbeitenden für Gesundheit und Sicherheit am Arbeitsplatz an."
+      ]
+    },
+    {
+      "title": "SCHUTZ PERSONENBEZOGENER DATEN UND INFORMATIONSSICHERHEIT",
+      "items": [
+        "Wir betrachten den Schutz der personenbezogenen Daten unserer Gäste, Mitarbeitenden und Interessengruppen als unternehmerische Verantwortung.",
+        "Wir verarbeiten personenbezogene Daten gemäß dem türkischen Datenschutzgesetz Nr. 6698 (KVKK) und den geltenden Vorschriften und vernichten sie nach Ablauf der jeweiligen Aufbewahrungsfrist auf sichere Weise.",
+        "Wir beschränken den Zugriff auf personenbezogene Daten entsprechend den jeweiligen Berechtigungen und setzen technische sowie organisatorische Sicherheitsmaßnahmen um.",
+        "Wir überwachen Informationssicherheitsrisiken und begegnen möglichen Sicherheitsverletzungen durch vorbeugende und korrigierende Maßnahmen."
+      ]
+    },
+    {
+      "title": "RECHTSKONFORMITÄT, RISIKOMANAGEMENT UND KONTINUIERLICHE VERBESSERUNG",
+      "items": [
+        "Wir führen sämtliche Aktivitäten in Übereinstimmung mit den geltenden nationalen und internationalen Vorschriften durch.",
+        "Wir identifizieren Risiken und Chancen frühzeitig und wenden einen systematischen Managementansatz an.",
+        "Wir überprüfen unser Integriertes Managementsystem regelmäßig und verbessern unsere Leistung kontinuierlich."
+      ]
+    }
+  ],
+  "conclusion": "Wir bei SY Luxury Belek möchten diese Richtlinie für ein Integriertes Nachhaltiges Managementsystem gemeinsam mit allen Mitarbeitenden und Interessengruppen umsetzen und damit einen nachhaltigen, sicheren, hochwertigen und umweltbewussten Hotelservice gewährleisten."
+},
+
+
+"ExploreRegion": {
+  "title": "ENTDECKEN SIE DIE REGION",
+  "description": "Wenn Sie weitere Naturschönheiten und kulturelle Sehenswürdigkeiten unserer Region entdecken und die türkische Kultur näher kennenlernen möchten, empfehlen wir Ihnen die Webseiten antalya.goturkiye.com, antalya.ktb.gov.tr und kulturportali.gov.tr.",
+  "places": {
+    "kaleici": {
+      "title": "KALEİÇİ & ALTER HAFEN",
+      "description": "Kaleiçi liegt im Herzen von Antalya und begeistert mit engen Gassen, traditionellen Steinhäusern und historischen Gebäuden. Direkt unterhalb der Altstadt befindet sich der Alte Hafen, der mit Booten, Cafés und herrlichen Sonnenuntergängen zu den schönsten Orten der Stadt gehört."
+    },
+    "manavgatWaterfall": {
+      "title": "MANAVGAT-WASSERFALL",
+      "description": "Der Manavgat-Wasserfall liegt etwa 3 km westlich des Stadtzentrums. Das Wasser stürzt über eine breite Kante und bietet trotz der geringen Fallhöhe einen beeindruckenden Anblick. Der Wasserfall ist mit öffentlichen Verkehrsmitteln von Manavgat aus erreichbar."
+    },
+    "titreyengol": {
+      "title": "TİTREYENGÖL",
+      "description": "Der Titreyengöl verdankt seinen Namen den kleinen Wellen, die selbst bei leichtem Wind auf seiner ansonsten ruhigen Oberfläche entstehen. Die natürliche Vegetation und die lokalen Legenden verleihen dem See seinen besonderen Charme."
+    },
+    "side": {
+      "title": "SIDE",
+      "description": "Side liegt etwa 75 km von Antalya und 7 km von Manavgat entfernt auf einer Halbinsel im Mittelmeer. Die Geschichte dieses Ortes reicht bis in die Antike zurück. Im Laufe der Jahrhunderte war die Region Heimat verschiedener Zivilisationen."
+    },
+    "sideAncientCity": {
+      "title": "ANTIKE STADT SIDE",
+      "description": "Die antike Stadt Side beeindruckt mit ihrem Theater, dem Apollontempel, dem monumentalen Stadttor, historischen Bädern, der Agora und dem alten Hafen. Hier können Besucher die kulturelle Geschichte der Mittelmeerküste entdecken."
+    },
+    "aspendos": {
+      "title": "THEATER VON ASPENDOS",
+      "description": "Das etwa 44 km von Manavgat entfernte Theater von Aspendos wurde im 2. Jahrhundert n. Chr. erbaut. Mit einer geschätzten Kapazität von rund 17.000 Zuschauern gehört es zu den am besten erhaltenen antiken Theatern und wird heute für Konzerte und Kulturveranstaltungen genutzt."
+    },
+    "seleukeia": {
+      "title": "SELEUKEIA",
+      "description": "Die Ruinen von Seleukeia befinden sich nordwestlich von Manavgat in Richtung Taurusgebirge auf einem etwa 300 Meter hohen Hügel. Die steilen Hänge und tiefen Täler bieten neben antiken Überresten auch beeindruckende Ausblicke."
+    },
+    "kopruluCanyon": {
+      "title": "KÖPRÜLÜ-CANYON",
+      "description": "Der Nationalpark Köprülü Canyon liegt etwa 60 km von Manavgat entfernt. Er zählt zu den beliebten Raftinggebieten der Türkei und ist für den Fluss Köprüçay, historische römische Brücken, alte Wege und seine eindrucksvolle Natur bekannt."
+    },
+    "kursunluWaterfall": {
+      "title": "KURŞUNLU-WASSERFALL",
+      "description": "Der Kurşunlu-Wasserfall fällt aus ungefähr 18 Metern Höhe in mehrere miteinander verbundene Teiche. Wanderwege, Aussichtsterrassen und Picknickplätze ermöglichen es den Besuchern, diese besondere Naturlandschaft zu genießen."
+    },
+    "saklikentCanyon": {
+      "title": "SAKLIKENT-SCHLUCHT",
+      "description": "Die Saklıkent-Schlucht liegt im Grenzgebiet zwischen Antalya und Fethiye und erstreckt sich über ungefähr 18 Kilometer. Ihre beeindruckenden Felswände und das fließende Wasser machen sie zu einem besonderen Ziel für Naturfreunde."
+    },
+    "alanyaCastle": {
+      "title": "BURG VON ALANYA",
+      "description": "Die Burg von Alanya, eines der Wahrzeichen der Stadt, erhebt sich auf einer Halbinsel etwa 250 Meter über dem Meer. Ihre ungefähr 6,5 Kilometer langen Mauern, historischen Türme und Ausblicke auf das Mittelmeer machen sie zu einer bedeutenden Sehenswürdigkeit."
+    }
+  },
+  "informationSections": [
+    {
+      "title": "VERHALTENSREGELN IN NATUR- UND KULTURSTÄTTEN",
+      "items": [
+        "Berühren oder beschädigen Sie keine Ausstellungsstücke in Museen. Beachten Sie Fotoverbote und alle ausgeschilderten Regeln.",
+        "Beschädigen Sie keine antiken Stätten, betreten Sie keine gesperrten Schutzgebiete und hinterlassen Sie keinen Müll.",
+        "Beachten Sie die Einschränkungen für Picknicks und offenes Feuer in Naturgebieten und Wäldern. Entsorgen Sie Abfälle ordnungsgemäß.",
+        "Vermeiden Sie Aktivitäten, die andere Besucher oder Wildtiere stören könnten.",
+        "Halten Sie die Jagdgesetze ein und respektieren Sie Wildtiere und ihre Lebensräume.",
+        "Kaufen oder verkaufen Sie keine historischen Gegenstände ohne die erforderlichen Genehmigungen.",
+        "Beachten Sie die Kleidervorschriften in Moscheen, ziehen Sie vor dem Betreten der Gebetsräume die Schuhe aus und stören Sie keine Betenden.",
+        "Bevorzugen Sie umweltfreundliche Kosmetik- und Reinigungsprodukte.",
+        "Informieren Sie sich vor dem Besuch über die Öffnungszeiten und Besuchstage von Museen."
+      ]
+    },
+    {
+      "title": "BIODIVERSITÄT",
+      "paragraphs": [
+        "Biodiversität bezeichnet die Vielfalt aller Lebensformen innerhalb eines Ökosystems und auf der ganzen Welt. Für das menschliche Leben sind sauberes Wasser, reine Luft, fruchtbare Böden, Nahrungsmittel und andere natürliche Ressourcen unverzichtbar.",
+        "Das Zusammenspiel von Pflanzen, Tieren, Pilzen und anderen Lebewesen ermöglicht das Funktionieren von Ökosystemen. Ausgewogene Beziehungen zwischen den Arten sind entscheidend für deren Nachhaltigkeit.",
+        "Die Pflanzenvielfalt trägt zur Reinigung der Luft, zur Vermeidung von Erosion und zur Fruchtbarkeit der Böden bei. Pflanzen bieten anderen Lebewesen Nahrung und Lebensraum.",
+        "Die Tierwelt spielt eine wichtige Rolle für das ökologische Gleichgewicht. Viele Insekten bestäuben Pflanzen, während andere Organismen organische Stoffe zersetzen.",
+        "Die Nachhaltigkeit von Ökosystemen hängt von der Vielfalt und Gesundheit ihrer Arten ab. Wir sollten die Biodiversität nicht nur für menschliche Bedürfnisse, sondern auch aus Respekt vor dem Lebensrecht aller Lebewesen schützen."
+      ]
+    },
+    {
+      "title": "GESCHÜTZTE PFLANZEN- UND TIERARTEN UNSERER REGION",
+      "paragraphs": [
+        "Die Mittelmeer-Mönchsrobbe und die Unechte Karettschildkröte (Caretta caretta) gehören zu den geschützten Tierarten unserer Region. Auch zahlreiche heimische Pflanzen wie Strandlilien, Iris, Narzissen und Krokusse tragen zur natürlichen Vielfalt bei.",
+        "Vermeiden Sie den Kauf von Produkten aus geschützten Pflanzen- und Tierarten. Beachten Sie gesetzliche Jagdbeschränkungen. Wir bitten Sie ausdrücklich, nicht an Zirkusveranstaltungen, Delfinshows oder anderen Aktivitäten teilzunehmen, bei denen Tiere ihrer natürlichen Umgebung entzogen werden."
+      ]
+    }
+  ]
 }
-
-
-
-
 
 
 }

@@ -61,7 +61,7 @@ export default async function BarDetailPage({
       absolute inset-x-0 bottom-0 z-20
       h-[40%]
       bg-linear-to-t
-      from-[#887565]/75
+      from-[#887565]/85
       via-[#887565]/30
       via-45%
       to-transparent
@@ -71,9 +71,9 @@ export default async function BarDetailPage({
   {/* Bottom centered particle logo */}
   <div
     className="
-      absolute bottom-5 left-1/2 z-30
-      -translate-x-1/2
-      md:bottom-[-5%] 
+      absolute left-1/2 z-30
+      -translate-x-1/2 bottom-[-7%]
+      lg::bottom-[-5%] 
     "
   >
     <ParticleLogo

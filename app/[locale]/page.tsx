@@ -50,8 +50,8 @@ export default async function Home() {
       {/* Particle Logo */}
       <ParticleLogo
         src="/logo/logo_favicon1.webp"
-        width={140}
-        height={140}
+        width={150}
+        height={150}
         particleGap={1}
         particleSize={0.85}
         mouseRadius={50}

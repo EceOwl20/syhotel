@@ -126,7 +126,7 @@
       "deluxe-rooms": {
         "title": "DELUXE ROOMS",
         "subtitle": "A NEW LIFESTYLE AWAITS YOU",
-        "description": "With their spacious and elegantly designed interiors, our Deluxe rooms offer guests a living space that goes beyond comfort.",
+        "description": "It offers its guests a living space beyond comfort with its spacious and elegantly designed rooms. You can feel at home with the elegance offered by modern decoration. All rooms are equipped with superior technology and designed with every detail that the guests may need in mind.",
         "galleryAlt": "Deluxe room photo",
         "features": {
           "area": "23 m²",
@@ -707,11 +707,194 @@
   },
   "closing": "Such processing is limited to these purposes and carried out in accordance with the relevant legal provisions.",
   "policyInfo": "For detailed information about the purposes of processing your personal data, potential recipients, data collection methods and your legal rights, please refer to the Privacy Notice/Data Policy published on syhotels.com."
+},
+
+
+"Sustainability": {
+  "title": "SUSTAINABILITY AND INTEGRATED MANAGEMENT SYSTEM POLICY",
+  "introduction": "At SY Luxury Belek, we adopt an Integrated Management System (IMS) approach that plans, implements and continuously improves all our hotel operations in line with the principles of quality, environment, food safety, energy management, information security, legal compliance and social responsibility. This policy covers our guests, employees, suppliers, business partners and all stakeholders affected by hotel operations.",
+  "sections": [
+    {
+      "title": "QUALITY MANAGEMENT",
+      "items": [
+        "We consider guest satisfaction a key performance indicator.",
+        "We continuously improve our service quality through a process-based management approach.",
+        "We ensure service continuity by supporting employee participation, training and competence.",
+        "We prioritize quality, continuity and reliability throughout our supply chain."
+      ]
+    },
+    {
+      "title": "ENVIRONMENTAL MANAGEMENT",
+      "items": [
+        "We regard controlling our environmental impacts and protecting natural resources as a corporate responsibility.",
+        "We establish targets to reduce waste, increase recycling and encourage the use of environmentally friendly products.",
+        "We fully comply with environmental legislation and other relevant obligations.",
+        "We support local environmental projects and sustainable tourism."
+      ]
+    },
+    {
+      "title": "FOOD SAFETY MANAGEMENT",
+      "items": [
+        "We consider food safety an essential part of guest health.",
+        "We prioritize hygiene, traceability and a risk-based approach in all food processes.",
+        "We fully comply with applicable food legislation and food safety standards.",
+        "We monitor our suppliers' compliance with food safety requirements."
+      ]
+    },
+    {
+      "title": "ENERGY MANAGEMENT",
+      "items": [
+        "In line with our environmental responsibilities and legal obligations, we follow national and international standards and regulations, work to reduce energy consumption, monitor and measure our energy performance and pursue continuous improvement.",
+        "We commit to using energy resources efficiently and reducing our carbon footprint.",
+        "We support energy efficiency projects and raise employee awareness.",
+        "We assess energy-related risks and emergencies and plan appropriate preventive measures."
+      ]
+    },
+    {
+      "title": "SUSTAINABLE PURCHASING AND SUPPLY MANAGEMENT",
+      "items": [
+        "We evaluate quality, food safety, environmental and energy criteria together in our purchasing processes.",
+        "We prioritize supporting local suppliers and local products.",
+        "We encourage our suppliers to adopt environmentally responsible, ethical, legally compliant and sustainable practices.",
+        "We emphasize traceability and continuity throughout our supply chain."
+      ]
+    },
+    {
+      "title": "SUPPORTING LOCAL EMPLOYMENT AND DEVELOPMENT",
+      "items": [
+        "We aim to contribute to regional development by supporting local employment.",
+        "We prioritize products and services provided by local producers and service providers.",
+        "We contribute to protecting local cultural, social and economic values."
+      ]
+    },
+    {
+      "title": "HUMAN RIGHTS AND EQUALITY",
+      "items": [
+        "We treat all employees, guests and stakeholders equally and fairly without discrimination based on religion, belief, language, race, color, gender, marital status, political opinion, age, disability or other personal characteristics.",
+        "We support a working and service environment in which people of different beliefs, thoughts and opinions can coexist with mutual respect and tolerance."
+      ]
+    },
+    {
+      "title": "CHILD PROTECTION AND SAFETY",
+      "items": [
+        "We prioritize children's physical, emotional and psychological safety in all our activities.",
+        "We adopt a zero-tolerance approach to all forms of child abuse, neglect and mistreatment.",
+        "We fully comply with national and international legislation concerning children's rights.",
+        "We provide regular training to increase employee awareness of child protection and ensure that suspected incidents are reported to the relevant departments and competent authorities."
+      ]
+    },
+    {
+      "title": "OCCUPATIONAL HEALTH AND SAFETY",
+      "items": [
+        "The health and safety of our guests, employees and business partners are as important as service quality. In keeping with our family-oriented hospitality approach, we assess occupational health and safety risks throughout our facilities and implement necessary preventive measures to protect all age groups.",
+        "We provide regular training to improve employee awareness of occupational health and safety."
+      ]
+    },
+    {
+      "title": "PERSONAL DATA PROTECTION AND INFORMATION SECURITY",
+      "items": [
+        "We recognize the protection of our guests', employees' and stakeholders' personal data as a corporate responsibility.",
+        "We process personal data in compliance with Personal Data Protection Law No. 6698 (KVKK) and applicable regulations and securely destroy it when the applicable retention period expires.",
+        "We restrict access to personal data based on authorization and implement technical and administrative security measures.",
+        "We monitor information security risks and manage potential breaches through preventive and corrective actions."
+      ]
+    },
+    {
+      "title": "LEGAL COMPLIANCE, RISK AND CONTINUOUS IMPROVEMENT",
+      "items": [
+        "We conduct all our activities in compliance with applicable national and international legislation.",
+        "We apply a systematic management approach by identifying risks and opportunities in advance.",
+        "We regularly review our Integrated Management System and continuously improve our performance."
+      ]
+    }
+  ],
+  "conclusion": "At SY Luxury Belek, we aim to implement this Integrated Sustainable Management System Policy together with all our employees and stakeholders, embracing a sustainable, safe, high-quality and environmentally responsible approach to hospitality."
+},
+
+
+"ExploreRegion": {
+  "title": "EXPLORE THE REGION",
+  "description": "To discover more of the natural and cultural treasures of our country and region, and to learn more about Turkish culture, we recommend visiting antalya.goturkiye.com, antalya.ktb.gov.tr and kulturportali.gov.tr.",
+  "places": {
+    "kaleici": {
+      "title": "KALEİÇİ & OLD HARBOUR",
+      "description": "Located in the heart of Antalya, Kaleiçi offers a charming atmosphere with its narrow streets, traditional stone houses and historic buildings. Just below it, the Old Harbour is one of the city's most enjoyable places, with boats, cafés and beautiful sunset views."
+    },
+    "manavgatWaterfall": {
+      "title": "MANAVGAT WATERFALL",
+      "description": "Located approximately 3 km west of Manavgat town centre, this waterfall is known for its wide cascade rather than its height. Its rushing waters create an impressive natural view. The waterfall can be reached by local public transport from Manavgat."
+    },
+    "titreyengol": {
+      "title": "TİTREYENGÖL LAKE",
+      "description": "Titreyengöl takes its name from the ripples that appear on its otherwise calm surface, even in a gentle breeze. Surrounded by natural vegetation, the lake is also associated with local legends."
+    },
+    "side": {
+      "title": "SIDE",
+      "description": "Located approximately 75 km from Antalya and 7 km from Manavgat, Side occupies a peninsula extending into the Mediterranean Sea. Its history reaches back to ancient civilizations, and the area has been home to many different cultures."
+    },
+    "sideAncientCity": {
+      "title": "SIDE ANCIENT CITY",
+      "description": "Side Ancient City invites visitors to explore its ancient theatre, Temple of Apollo, monumental gate, baths, agora and historic harbour. It is an exceptional place to discover the cultural heritage of the Mediterranean coast."
+    },
+    "aspendos": {
+      "title": "ASPENDOS THEATRE",
+      "description": "Located approximately 44 km from Manavgat, Aspendos Theatre was built in the 2nd century AD. With an estimated capacity of around 17,000 spectators, it is one of the best-preserved ancient theatres and continues to host concerts and cultural events."
+    },
+    "seleukeia": {
+      "title": "SELEUKEIA",
+      "description": "The ruins of Seleukeia lie northwest of Manavgat, towards the Taurus Mountains, on a hill approximately 300 metres above the surrounding landscape. Its steep slopes and valleys offer panoramic views alongside the ancient remains."
+    },
+    "kopruluCanyon": {
+      "title": "KÖPRÜLÜ CANYON",
+      "description": "Köprülü Canyon National Park is approximately 60 km from Manavgat. Known as one of Türkiye's popular rafting destinations, it combines the Köprüçay River, historic Roman bridges, ancient routes and remarkable natural landscapes."
+    },
+    "kursunluWaterfall": {
+      "title": "KURŞUNLU WATERFALL",
+      "description": "Kurşunlu Waterfall creates a beautiful natural setting with water falling from a height of approximately 18 metres into a series of connected ponds. Visitors can enjoy walking trails, viewing terraces and picnic areas."
+    },
+    "saklikentCanyon": {
+      "title": "SAKLIKENT CANYON",
+      "description": "Situated near the boundary between Antalya and the Fethiye area, Saklıkent Canyon stretches for approximately 18 kilometres. It is a remarkable destination for nature walks and discovering a dramatic rocky landscape shaped by flowing water."
+    },
+    "alanyaCastle": {
+      "title": "ALANYA CASTLE",
+      "description": "Alanya Castle, one of the symbols of Alanya, stands on a peninsula approximately 250 metres above the sea. Its walls extend for around 6.5 kilometres, surrounding historic towers and offering beautiful views of the Mediterranean."
+    }
+  },
+  "informationSections": [
+    {
+      "title": "RULES FOR VISITING NATURAL AND CULTURAL SITES",
+      "items": [
+        "Do not touch or damage exhibits in museums. Follow photography restrictions and all displayed instructions.",
+        "Do not damage archaeological sites, enter protected areas without permission or leave litter.",
+        "Respect restrictions on picnicking and fires in natural areas and forests. Never leave rubbish behind.",
+        "Avoid activities that disturb other visitors or wildlife.",
+        "Follow hunting regulations and respect wild animals and their habitats.",
+        "Do not purchase or sell historical artefacts without the required legal authorization.",
+        "Respect dress codes at mosques, remove your shoes before entering prayer areas and do not disturb worshippers.",
+        "Choose environmentally friendly cosmetic and cleaning products whenever possible.",
+        "Check museum opening days and visiting hours before travelling."
+      ]
+    },
+    {
+      "title": "BIODIVERSITY",
+      "paragraphs": [
+        "Biodiversity refers to the variety of life forms within ecosystems and around the world. Human life depends on clean water, fresh air, fertile soil, food and other natural resources.",
+        "The relationships between plants, animals, fungi and other organisms support the functioning of ecosystems. Balanced interactions between species are essential for environmental sustainability.",
+        "Plant diversity helps clean the air, prevent erosion and maintain soil fertility. Plants also provide food and shelter for other living creatures.",
+        "Animal diversity plays an important role in maintaining ecological balance. Many insects pollinate plants, while other organisms contribute to the decomposition of organic matter.",
+        "Healthy ecosystems depend on the diversity of the species living within them. We should protect biodiversity not only for human needs but also out of respect for the right of all living things to exist."
+      ]
+    },
+    {
+      "title": "PROTECTED PLANT AND ANIMAL SPECIES IN OUR REGION",
+      "paragraphs": [
+        "The Mediterranean monk seal and loggerhead sea turtles, known as Caretta caretta, are among the protected animals found in our region. Various native flowers and plants, including sea daffodils, irises, narcissus and crocuses, also contribute to the area's natural diversity.",
+        "Avoid purchasing products derived from protected plant and animal species. Follow legal hunting restrictions. We strongly encourage visitors not to participate in circuses, dolphin shows or other activities that remove animals from their natural habitats."
+      ]
+    }
+  ]
 }
-
-
-
-
 
 
 }

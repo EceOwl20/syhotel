@@ -27,19 +27,19 @@ export default async function RoomDetailSection({ room }: Props) {
       )}
 
       {/* Room header */}
-      <section className="mx-auto max-w-[1800px] px-5 pt-16 md:px-8">
+      <section className="mx-auto max-w-[1800px] px-5 pt-7 lg:pt-16 md:px-8">
 
         <div className="mb-12 text-center text-[#948475]">
 
-          <p className="mb-6 text-[12px] tracking-[0.15em]">
+          <p className="mb-4 lg:mb-6 text-[12px] tracking-[0.15em]"> 
             {room.subtitle}
           </p>
 
-          <h1 className="text-[34px] font-extralight tracking-[0.04em] md:text-[46px]">
+          <h1 className="text-[26px] font-extralight tracking-[0.04em] md:text-[32px] lg:text-[36px]">
             {room.title}
           </h1>
 
-          <p className="mx-auto mt-7 max-w-[1500px] text-[16px] font-light leading-[1.8]">
+          <p className="mx-auto mt-4 lg:mt-7 max-w-[1500px] text-[14px] lg:text-[16px] font-light leading-[1.8]">
             {room.description}
           </p>
 

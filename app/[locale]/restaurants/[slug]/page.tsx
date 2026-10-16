@@ -55,14 +55,14 @@ export default async function RestaurantDetailPage({
             <>
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-[45%] bg-linear-to-t from-[#948475]/65 via-[#948475]/25 via-50% to-transparent"
+                className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-[45%] bg-linear-to-t from-[#948475]/95 via-[#948475]/35 via-50% to-transparent"
               />
 
              <div
     className="
       absolute bottom-5 left-1/2 z-30
-      -translate-x-1/2
-      md:bottom-[-5%] 
+      -translate-x-1/2 bottom-[-8%]
+      lg::bottom-[-5%] 
     ">
                 <ParticleLogo
   src={restaurant.logo}

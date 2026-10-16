@@ -124,8 +124,6 @@ export const routing = defineRouting({
   "/restoran": "/restoran",
   "/pastane": "/pastane",
 
-  // Corporate
-  "/information": "/information",
   
   "/agencies": {
   tr: "/acentalar-icin",
@@ -148,13 +146,20 @@ export const routing = defineRouting({
   ru: "/защита-персональных-данных",
 },
 
-  "/sustainability": "/sustainability",
-  "/surdurulebilirlik": "/surdurulebilirlik",
-  "/discover": "/discover",
-  "/bolgeyi-kesfedin": "/bolgeyi-kesfedin",
+  "/sustainability": {
+  tr: "/surdurulebilirlik",
+  en: "/sustainability",
+  de: "/nachhaltigkeit",
+  ru: "/устойчивое-развитие",
+},
+  "/explore-region": {
+  tr: "/bolgeyi-kesfedin",
+  en: "/explore-region",
+  de: "/region-entdecken",
+  ru: "/откройте-для-себя-регион",
+},
 
-  // Other links used on the homepage
-  "/shows": "/shows",
+
   "/bars/[slug]": "/bars/[slug]",
   "/restaurants/[slug]": "/restaurants/[slug]",
 

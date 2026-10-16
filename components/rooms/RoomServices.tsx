@@ -60,7 +60,7 @@ export default function RoomServices({
 
         {/* Free Services */}
         <div>
-          <h2 className="mb-8 text-center text-[26px] font-extralight tracking-[0.04em] text-[#948475] md:text-[30px]">
+          <h2 className="mb-8 text-center text-[22px] lg:text-[26px] font-extralight tracking-[0.04em] text-[#948475] md:text-[30px]">
             {freeTitle}
           </h2>
 
@@ -80,7 +80,7 @@ export default function RoomServices({
 
         {/* Paid Services */}
         <div>
-          <h2 className="mb-8 text-center text-[26px] font-extralight tracking-[0.04em] text-[#948475] md:text-[30px]">
+          <h2 className="mb-8 text-center text-[22px] lg:text-[26px] font-extralight tracking-[0.04em] text-[#948475] md:text-[30px]">
             {paidTitle}
           </h2>
 

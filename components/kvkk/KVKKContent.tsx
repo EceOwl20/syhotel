@@ -21,7 +21,7 @@ export default function KVKKContent({
 }: KVKKContentProps) {
   return (
     <section className="w-full bg-white px-5 py-16 md:px-8 md:py-20 lg:py-24">
-      <div className="mx-auto max-w-[1800px] text-[#858585]">
+      <div className="mx-auto max-w-[1500px] text-[#858585]">
 
         {/* HEADING */}
         <div className="mb-14 flex flex-col items-center text-center md:mb-16">
@@ -29,7 +29,7 @@ export default function KVKKContent({
             {eyebrow}
           </span>
 
-          <h1 className="text-[30px] leading-[1.3] font-extralight tracking-[0.02em] md:text-[40px] lg:text-[44px]">
+          <h1 className="text-[30px] leading-[1.3] font-extralight tracking-[0.02em] md:text-[36px] lg:text-[40px]">
             {title}
           </h1>
         </div>

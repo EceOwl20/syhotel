@@ -39,8 +39,8 @@ export default function RoomGallery({
     <>
       <div
         className={`
-          grid grid-cols-2 gap-2
-          md:grid-cols-3 mx-auto w-[90%]
+          grid grid-cols-3 gap-2
+         mx-auto w-[99%] lg:w-[90%]
           ${columnClasses[columns]}
         `}
       >

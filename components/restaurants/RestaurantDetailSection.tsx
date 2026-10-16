@@ -54,17 +54,17 @@ export default function RestaurantDetailSection({
   </div>
 
   {/* Restaurant title */}
-  <h1 className="text-[32px] leading-[1.2] font-extralight tracking-[0.06em] md:text-[40px]">
+  <span className="text-[25px] md:text-[32px] leading-[1.2] font-extralight tracking-[0.06em] lg:text-[40px]">
     {title}
-  </h1>
+  </span>
 
   {/* Subtitle */}
-  <h2 className="mt-1 text-[22px] leading-[1.3] font-extralight md:text-[28px]">
+  <h2 className="mt-1 tetx-[20px] md:text-[22px] leading-[1.3] font-extralight lg:text-[28px]">
     {subtitle}
   </h2>
 
   {/* Description */}
-  <p className="mt-7 text-[14px] leading-[1.7] font-light md:text-[16px]">
+  <p className="mt-5 lg:mt-7 text-[14px] leading-[1.7] font-light md:text-[16px]">
     {description}
   </p>
 
@@ -85,7 +85,7 @@ export default function RestaurantDetailSection({
           {/* Open Buffet gallery */}
           {buffetImages.length > 0 && (
             <div className="mt-8">
-              <h3 className="mb-5 text-[22px] font-extralight tracking-[0.04em] md:text-[26px]">
+              <h3 className="mb-5 text-[20px] font-extralight tracking-[0.04em] md:text-[26px] text-center lg:text-start text-[#EEE1D3]">
                 {buffetTitle}
               </h3>
 

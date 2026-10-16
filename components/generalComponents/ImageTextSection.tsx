@@ -56,30 +56,7 @@ export default function ImageTextSection({
     <>
       <section className={`w-full bg-white px-5 py-5 md:px-8 ${className}`}>
         <div className="mx-auto grid max-w-[1560px] grid-cols-1 items-center gap-8 lg:grid-cols-3 lg:gap-0">
-
-          {/* TEXT */}
-          <div
-            className={`
-              flex flex-col justify-center
-              text-center text-[#948475]
-              lg:text-left
-              ${
-                imageIsLeft
-                  ? "lg:col-start-3 lg:pl-5"
-                  : "lg:col-start-1 lg:row-start-1 lg:pr-5 lg:text-right"
-              }
-            `}
-          >
-            <h2 className="mb-5 text-[24px] font-light md:text-[28px]">
-              {title}
-            </h2>
-
-            <p className="whitespace-pre-line text-[13px] leading-[1.8] font-light md:text-[15px]">
-              {description}
-            </p>
-          </div>
-
-          {/* IMAGE SLIDER */}
+ {/* IMAGE SLIDER */}
           <div
             className={`
               group relative aspect-video w-full overflow-hidden
@@ -169,6 +146,30 @@ export default function ImageTextSection({
               </>
             )}
           </div>
+          
+          {/* TEXT */}
+          <div
+            className={`
+              flex flex-col justify-center
+             text-left text-[#948475]
+              lg:text-left
+              ${
+                imageIsLeft
+                  ? "lg:col-start-3 lg:pl-5"
+                  : "lg:col-start-1 lg:row-start-1 lg:pr-5 text-right lg:text-right"
+              }
+            `}
+          >
+            <h2 className="mb-5 text-[24px] font-light md:text-[28px]">
+              {title}
+            </h2>
+
+            <p className="whitespace-pre-line text-[13px] leading-[1.8] font-light md:text-[15px]">
+              {description}
+            </p>
+          </div>
+
+         
         </div>
       </section>
 

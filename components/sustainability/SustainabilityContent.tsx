@@ -36,7 +36,7 @@ export default function SustainabilityContent({
 
           {/* LEFT: POLICY CONTENT */}
           <div className="min-w-0 text-[#858585]">
-            <h1 className="mx-auto mb-7 max-w-[1450px] text-center text-[28px] leading-[1.35] font-extralight tracking-[0.02em] md:text-[36px] lg:text-[40px]">
+            <h1 className="mx-auto mb-7 max-w-[1450px] text-center text-[26px] leading-[1.35] font-extralight tracking-[0.02em] md:text-[32px] lg:text-[36px]">
               {title}
             </h1>
 

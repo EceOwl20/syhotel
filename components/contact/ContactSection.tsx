@@ -40,8 +40,8 @@ export default function ContactSection({
       <div className="mx-auto max-w-[1800px]">
 
         {/* TITLE */}
-        <div className="mb-12 flex flex-col items-center text-center md:mb-14">
-          <h1 className="text-[32px] font-extralight tracking-[0.04em] text-[#948475] md:text-[42px]">
+        <div className="mb-4 md:mb-8 lg:mb-12 flex flex-col items-center text-center ">
+          <h1 className="text-[26px] md:text-[32px] font-extralight tracking-[0.04em] text-[#948475] lg:text-[36px]">
             {title}
           </h1>
 
@@ -51,7 +51,7 @@ export default function ContactSection({
         </div>
 
         {/* CONTACT INFORMATION */}
-        <div className="mb-16 flex flex-col items-center gap-5 text-center text-[13px] font-light text-[#948475] md:mb-20 md:text-[15px]">
+        <div className="mb-12 md:mb-16 lg:mb-20 flex flex-col items-center gap-5 text-center text-[13px] font-light text-[#948475] md:text-[15px]">
 
           {/* ADDRESS */}
           <div className="flex max-w-[800px] items-start justify-center gap-3">

@@ -66,11 +66,11 @@
       "exploreRegion": "Bölgeyi Keşfedin"
     },
     "reservation": "Rezervasyon",
-    "hotelContact": "Otel İletişim",
+    "hotelContact": "Hotel İletişim",
     "addressLines": {
-      "line1": "Kadriye, Kır Mevkii, Atatürk Cad.",
+      "line1": "Kadriye, Kır Mevkii, Atatürk Cad,",
       "line2": "07500 – Belek / Antalya / Türkiye",
-      "line3": "(Land Of Legends Karşısı)"
+      "line3": "(Land Of Legend Karşısı)"
     },
     "getDirections": "Yol Tarifi Al"
   },
@@ -83,7 +83,7 @@
     },
     "gastronomy": {
       "title": "GASTRONOMİ",
-      "description": "Dünya mutfaklarından seçkin lezzetler sunan restoranlarıyla öne çıkmaktadır. Misafirler, otelin ana restoranında açık büfe kahvaltıdan başlayarak günün her saatinde yerel ve uluslararası lezzetleri deneyimleyebilir."
+      "description": "Dünya mutfaklarından seçkin lezzetler sunan restoranlarıyla öne çıkmaktadır. Misafirler, otelin ana restoranında açık büfe kahvaltıdan başlayarak günün her saatinde yerel ve uluslararası lezzetleri deneyimleyebilir"
     },
     "pools": {
       "span": "",
@@ -100,13 +100,13 @@
     "entertainment": {
       "span": "",
       "title": "AKTİVİTE & EĞLENCE",
-      "description": "Gün boyu süren aktiviteler, heyecan verici spor etkinlikleri ve her akşam sahnelenen canlı gösterilerle SY Hotels Belek, tüm misafirlere unutulmaz bir deneyim yaşatmayı amaçlıyor. Otelde hem dinlenmek hem de sınırsız eğlenceyi keşfetmek mümkün.",
+      "description": "Gün boyu süren aktiviteler, heyecan verici spor etkinlikleri ve her akşam sahnelenen canlı gösterilerle SY Hotels Belek, tüm misafirlere unutulmaz bir deneyim yaşatmayı amaçlıyor. Hotelde hem dinlenmek hem de sınırsız eğlenceyi keşfetmek mümkün.",
       "button": "Keşfet"
     },
     "aquapark": {
       "span": "Heyecan arayanlar için",
       "title": "Mega Splash Aquapark",
-      "description": "16 farklı kaydırak seçeneğiyle adrenalin tutkunları ve eğlence severler için vazgeçilmezdir. Hem çocuklar hem de yetişkinler için ayrı alanları bulunan aquaparkta, her yaştan misafir suyun heyecan verici dünyasına kendini bırakabilir.",
+      "description": "16 Farklı kaydırak seçeneğiyle adrenalin tutkunları ve eğlence severler için vazgeçilmezdir. Hem çocuklar hem de yetişkinler için ayrı alanları bulunan aquaparkta, her yaştan misafir suyun heyecan verici dünyasına kendini bırakabilir.",
       "button": "Keşfet"
     },
     "kids": {

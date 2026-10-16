@@ -23,7 +23,7 @@ export default function MainBanner({
 
     const interval = window.setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    }, 5000);
 
     return () => window.clearInterval(interval);
   }, [slides.length]);
@@ -47,7 +47,7 @@ export default function MainBanner({
               : slide.src.src
           }
           aria-hidden={index !== currentIndex}
-          className={`absolute inset-0 transition-opacity duration-[1200ms] ease-in-out ${
+          className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
             index === currentIndex
               ? "z-10 opacity-100"
               : "z-0 opacity-0"

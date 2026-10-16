@@ -20,12 +20,12 @@ export default function GastronomySection({
       <div className="mx-auto max-w-[1800px]">
         {/* Heading */}
         <div className="mb-14 flex flex-col items-center text-center text-white">
-          <h2 className="text-[32px] font-extralight leading-[1.2] md:text-[40px]">
+          <h2 className="text-[30px] font-extralight leading-[1.2] md:text-[40px]">
             {title}
           </h2>
 
           {description && (
-            <p className="mt-6 max-w-[1500px] text-[15px] font-light leading-[1.65] md:text-[16px]">
+            <p className="mt-6 max-w-[1500px] text-[14px] font-normal leading-[1.66] md:text-[16px]">
               {description}
             </p>
           )}

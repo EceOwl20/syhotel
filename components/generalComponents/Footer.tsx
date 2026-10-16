@@ -85,16 +85,16 @@ export default async function Footer() {
 
           {/* Corporate */}
           <div>
-            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em] underline decoration-[#ba9b74] decoration-2 underline-offset-4">
+            <h3 className="mb-3 text-[16px] font-medium tracking-[0.08em] underline decoration-[#ba9b74] decoration-2 underline-offset-4">
               {t("corporate")}
             </h3>
 
-            <ul className="space-y-2 text-[13px] font-light">
+            <ul className="text-[15px] font-normal leading-[30px]">
               {corporateLinks.map((link) => (
                 <li key={link.key}>
                   <Link
                     href={link.href}
-                    className="transition-opacity hover:opacity-70"
+                    className="transition-colors duration-300 hover:text-[#eee1d3]"
                   >
                     {t(`corporateLinks.${link.key}`)}
                   </Link>
@@ -105,17 +105,17 @@ export default async function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em] underline decoration-[#ba9b74] decoration-2 underline-offset-4">
+            <h3 className="mb-3 text-[16px] font-medium tracking-[0.08em] underline decoration-[#ba9b74] decoration-2 underline-offset-4">
               {t("contact")}
             </h3>
 
-            <div className="space-y-4 text-[13px] font-light">
+            <div className="space-y-4 text-[15px] font-normal leading-[1.65]">
               <div>
                 <p>{t("reservation")}</p>
 
                 <a
                   href="tel:+902423404706"
-                  className="hover:underline"
+                  className="transition-colors duration-300 hover:text-[#eee1d3]"
                 >
                   +90 242 340 47 06
                 </a>
@@ -126,7 +126,7 @@ export default async function Footer() {
 
                 <a
                   href="tel:+902422054780"
-                  className="hover:underline"
+                  className="transition-colors duration-300 hover:text-[#eee1d3]"
                 >
                   +90 242 205 47 80
                 </a>
@@ -134,7 +134,7 @@ export default async function Footer() {
 
               <a
                 href="mailto:info@syhotels.com"
-                className="inline-block hover:underline"
+                className="inline-block transition-colors duration-300 hover:text-[#eee1d3]"
               >
                 info@syhotels.com
               </a>
@@ -143,11 +143,11 @@ export default async function Footer() {
 
           {/* Address */}
           <div>
-            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em] underline decoration-[#ba9b74] decoration-2 underline-offset-4">
+            <h3 className="mb-3 text-[16px] font-medium tracking-[0.08em] underline decoration-[#ba9b74] decoration-2 underline-offset-4">
               {t("address")}
             </h3>
 
-            <address className="text-[13px] leading-[1.8] font-light not-italic">
+            <address className="text-[15px] leading-[1.65] font-normal not-italic">
               {t("addressLines.line1")}
               <br />
               {t("addressLines.line2")}
@@ -159,7 +159,7 @@ export default async function Footer() {
               href="https://www.google.com/maps/search/?api=1&query=SY+Hotels+Belek+Antalya"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-block text-[13px] font-light underline underline-offset-2 transition-opacity hover:opacity-70"
+              className="mt-5 inline-block text-[15px] font-normal underline underline-offset-2 transition-colors duration-300 hover:text-[#eee1d3]"
             >
               {t("getDirections")}
             </a>
@@ -167,7 +167,7 @@ export default async function Footer() {
 
           {/* Social Media */}
           <div>
-            <h3 className="mb-3 text-[14px] font-medium tracking-[0.08em] underline decoration-[#ba9b74] decoration-2 underline-offset-4">
+            <h3 className="mb-3 text-[16px] font-medium tracking-[0.08em] underline decoration-[#ba9b74] decoration-2 underline-offset-4">
               {t("socialMedia")}
             </h3>
 
@@ -182,7 +182,7 @@ export default async function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="group flex items-center gap-2 text-[13px] font-light transition-opacity duration-300 hover:opacity-70"
+                    className="group flex items-center gap-2 text-[15px] font-normal text-[#eee1d3] transition-colors duration-300 hover:text-white"
                   >
                     <Icon className="text-[25px] transition-transform duration-500 ease-out group-hover:scale-110" />
                   </a>

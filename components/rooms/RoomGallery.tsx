@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image, { type StaticImageData } from "next/image";
 import RoomGalleryLightbox from "./RoomGalleryLightbox";
 
@@ -30,9 +30,43 @@ function GalleryItem({
   onClick: () => void;
 }) {
   const [loaded, setLoaded] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const itemRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const item = itemRef.current;
+    if (!item) return;
+
+    if (!("IntersectionObserver" in window)) {
+      const fallbackTimer = setTimeout(() => {
+        setIsVisible(true);
+      }, 0);
+
+      return () => clearTimeout(fallbackTimer);
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        setIsVisible(true);
+        observer.unobserve(item);
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+
+    observer.observe(item);
+
+    return () => observer.disconnect();
+  }, []);
+
+  const shouldReveal = loaded && isVisible;
 
   return (
     <button
+      ref={itemRef}
       type="button"
       onClick={onClick}
       aria-label={`${image.alt} fotoğrafını büyüt`}
@@ -52,17 +86,18 @@ function GalleryItem({
         className={`
           object-cover
           origin-top
-          transition-[transform,filter]
-          duration-[350ms]
-          ease-in-out
+          transition-[filter,transform]
+          duration-[800ms]
+          [transition-timing-function:ease]
 
           motion-reduce:transform-none
+          motion-reduce:filter-none
           motion-reduce:transition-none
 
           ${
-            loaded
-              ? "scale-100 opacity-100"
-              : "scale-50 opacity-0"
+            shouldReveal
+              ? "[filter:opacity(1)] [transform:scale(1)]"
+              : "[filter:opacity(0)] [transform:scale(0.5)]"
           }
         `}
       />
@@ -73,8 +108,9 @@ function GalleryItem({
         className="
           pointer-events-none absolute inset-0
           bg-black/0
-          transition-colors duration-[350ms]
+          transition-colors duration-[800ms] [transition-timing-function:ease]
           group-hover:bg-black/45
+          group-focus-visible:bg-black/45
         "
       />
     </button>

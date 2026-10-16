@@ -28,12 +28,12 @@ export default function GastronomyCard({
         alt={item.title}
         fill
         sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
-        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105 group-focus-visible:scale-105"
+        className="object-cover transition-transform duration-350 ease-in-out group-hover:scale-[1.07] group-focus-visible:scale-[1.07]"
       />
 
       {/* Category title */}
       <div className="pointer-events-none absolute inset-x-0 bottom-7 z-10 flex justify-center px-5">
-        <span className="flex w-full max-w-[290px] items-center justify-center bg-[#b2a594] px-5 py-2 text-center text-[23px] font-light text-white">
+        <span className="flex w-full max-w-[290px] items-center justify-center bg-[#ada190] px-5 py-2 text-center text-[16px] font-normal text-[#eee1d3] transition-colors duration-300 group-hover:text-white group-focus-visible:text-white md:text-[23px] md:font-light">
           {item.title}
         </span>
       </div>

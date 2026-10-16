@@ -14,12 +14,12 @@ export default function BeachDetailSection({
   images,
 }: BeachDetailSectionProps) {
   return (
-    <section className="w-full bg-white px-5 py-16 text-[#b47c56] md:px-8 md:py-20">
+    <section className="w-full px-5 py-10 md:py-16 text-[#b47c56] md:px-8 lg:py-20">
       <div className="mx-auto grid max-w-[1800px] grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_1px_minmax(0,1fr)] lg:gap-5">
 
         {/* LEFT: TEXT */}
         <div className="flex flex-col items-center text-center lg:items-end lg:text-right">
-          <h1 className="text-[32px] font-extralight tracking-[0.1em] md:text-[40px]">
+          <h1 className="text-[25px] font-extralight tracking-[0.1em] md:text-[32px] lg:text-[40px]">
             {title}
           </h1>
 

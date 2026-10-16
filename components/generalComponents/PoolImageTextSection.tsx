@@ -150,7 +150,7 @@ export default function PoolImageTextSection({
               <div className="mt-4">
                 <Link
                   href={discoverHref}
-                  className="inline-flex items-center gap-1 border-b border-[#948475] pb-1 text-[14px] font-light text-[#948475] transition-colors duration-300 hover:text-[#654b39]"
+                  className="inline-flex items-center gap-1 border-b border-[#948475] pb-1 text-[14px] font-light text-[#8B7C6A] transition-colors duration-300 hover:text-[#654b39]"
                 >
                   {discoverText}
                   <FiChevronRight size={15} />

@@ -151,12 +151,12 @@ export default function ImageTextSection({
           <div
             className={`
               flex flex-col justify-center
-             text-left text-[#948475]
+             text-center text-[#8B7C6A]
               lg:text-left
               ${
                 imageIsLeft
                   ? "lg:col-start-3 lg:pl-5"
-                  : "lg:col-start-1 lg:row-start-1 lg:pr-5 text-right lg:text-right"
+                  : "lg:col-start-1 lg:row-start-1 lg:pr-5 text-center lg:text-right"
               }
             `}
           >

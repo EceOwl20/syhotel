@@ -17,7 +17,7 @@ function ServiceItem({ service }: { service: RoomService }) {
     <div className="flex items-start gap-5">
 
       {/* Flaticon icon */}
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center text-[#948475]">
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center text-[#8B7C6A]">
         <i
           className={`${service.icon} text-[29px] leading-none`}
           aria-hidden="true"
@@ -26,12 +26,12 @@ function ServiceItem({ service }: { service: RoomService }) {
 
       {/* Service content */}
       <div className="min-w-0">
-        <h4 className="text-[16px] font-light leading-[1.5] text-[#948475]">
+        <h4 className="text-[16px] font-light leading-[1.5] text-[#8B7C6A]">
           {service.title}
         </h4>
 
         {service.description && (
-          <p className="mt-1 text-[12px] font-light leading-[1.6] text-[#948475]">
+          <p className="mt-1 text-[12px] font-light leading-[1.6] text-[#8B7C6A]">
             {service.description}
           </p>
         )}
@@ -60,7 +60,7 @@ export default function RoomServices({
 
         {/* Free Services */}
         <div>
-          <h2 className="mb-8 text-center text-[22px] lg:text-[26px] font-extralight tracking-[0.04em] text-[#948475] md:text-[30px]">
+          <h2 className="mb-8 text-center text-[22px] lg:text-[26px] font-extralight tracking-[0.04em] text-[#8B7C6A] md:text-[30px]">
             {freeTitle}
           </h2>
 
@@ -80,7 +80,7 @@ export default function RoomServices({
 
         {/* Paid Services */}
         <div>
-          <h2 className="mb-8 text-center text-[22px] lg:text-[26px] font-extralight tracking-[0.04em] text-[#948475] md:text-[30px]">
+          <h2 className="mb-8 text-center text-[22px] lg:text-[26px] font-extralight tracking-[0.04em] text-[#8B7C6A] md:text-[30px]">
             {paidTitle}
           </h2>
 

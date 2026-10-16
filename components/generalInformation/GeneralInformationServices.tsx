@@ -41,7 +41,7 @@ export default function GeneralInformationServices({
                   return (
                     <div
                       key={serviceId}
-                      className="flex items-start gap-4 text-[#948475]"
+                      className="flex items-start gap-4 text-[#8B7C6A]"
                     >
                       <i
                         aria-hidden="true"

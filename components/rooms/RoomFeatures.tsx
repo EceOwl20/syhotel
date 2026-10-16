@@ -17,7 +17,7 @@ export default function RoomFeatures({
         grid-cols-2
         gap-x-5 gap-y-5
         px-4 py-8
-        text-[#948475]
+        text-[#8B7C6A]
         sm:gap-x-8 sm:px-8
         lg:flex lg:flex-wrap lg:items-center
         lg:justify-center lg:gap-8 lg:p-10

@@ -42,7 +42,7 @@ export default async function Home() {
   ];
 
   return (
-    <main className="flex w-full flex-col items-center justify-center gap-10 bg-white pb-20">
+    <main className="flex w-full flex-col items-center justify-center gap-10 bg-[#f0eae5] pb-20">
 
       {/* Main Banner */}
       <MainBanner slides={slides} />
@@ -50,8 +50,8 @@ export default async function Home() {
       {/* Particle Logo */}
       <ParticleLogo
         src="/logo/logo_favicon1.webp"
-        width={150}
-        height={150}
+        width={135}
+        height={135}
         particleGap={1}
         particleSize={0.85}
         mouseRadius={50}

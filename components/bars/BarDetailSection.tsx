@@ -16,7 +16,7 @@ export default function BarDetailSection({
   images,
 }: BarDetailSectionProps) {
   return (
-    <section className="w-full bg-[#f7f7f5] px-3 py-8 md:py-12 text-[#948475] md:px-8 lg:py-20">
+    <section className="w-full bg-[#f7f7f5] px-3 py-8 md:py-12 text-[#8B7C6A] md:px-8 lg:py-20">
       <div className="mx-auto grid max-w-[1800px] grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_1fr] lg:gap-0">
 
         {/* LEFT: Text */}

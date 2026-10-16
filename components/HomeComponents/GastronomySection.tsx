@@ -1,4 +1,3 @@
-
 import GastronomyCard, {
   type GastronomyItem,
 } from "./GastronomyCard";
@@ -17,7 +16,7 @@ export default function GastronomySection({
   description,
 }: GastronomySectionProps) {
   return (
-    <section className="w-full bg-[#b9876b] px-5 py-16 md:px-9 md:py-20">
+    <section className="w-full bg-[#b9876b] px-4 py-16 md:px-9 md:py-20">
       <div className="mx-auto max-w-[1800px]">
         {/* Heading */}
         <div className="mb-14 flex flex-col items-center text-center text-white">
@@ -33,13 +32,25 @@ export default function GastronomySection({
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-2 lg:grid-cols-4">
-  {items.map((item, index) => (
-    <Reveal key={item.id} delay={index % 2 === 0 ? 0 : 200}>
-      <GastronomyCard item={item} />
-    </Reveal>
-  ))}
-</div>
+        <div className="grid grid-cols-2 items-start gap-x-4 gap-y-5 md:gap-x-6 lg:grid-cols-4 lg:gap-8">
+          {items.map((item, index) => (
+            <div
+              key={item.id}
+              className={`
+                min-w-0
+                ${
+                  index % 2 === 1
+                    ? "mt-8 md:mt-10 lg:mt-0"
+                    : ""
+                }
+              `}
+            >
+              <Reveal delay={index % 2 === 0 ? 0 : 200}>
+                <GastronomyCard item={item} />
+              </Reveal>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

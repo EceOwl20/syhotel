@@ -21,13 +21,13 @@ export default function RoomsSection({
       <div className="mx-auto max-w-[1800px]">
 
         {/* Section heading */}
-        <div className="mb-14 flex flex-col items-center text-center text-[#948475]">
-          <h2 className="text-[32px] font-extralight tracking-[0.04em] md:text-[42px]">
+        <div className="mb-14 flex flex-col items-center text-center text-[#8B7C6A]">
+          <h2 className="text-[30px] font-extralight tracking-[0.04em] md:text-[36px] lg:text-[40px]">
             {title}
           </h2>
 
           {description && (
-            <p className="mt-6 max-w-[1500px] text-[16px] leading-[1.7] font-light md:text-[18px]">
+            <p className="mt-6 max-w-[1500px] text-[14px] leading-[1.7] font-light md:text-[16px]">
               {description}
             </p>
           )}

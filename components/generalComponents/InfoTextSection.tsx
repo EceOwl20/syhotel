@@ -14,7 +14,7 @@ export default function InfoTextSection({
 }: InfoTextSectionProps) {
   return (
     <section
-      className={`w-full bg-white px-6 py-14 text-[#948475] md:px-10 md:py-20 ${className}`}
+      className={`w-full bg-white px-6 py-14 text-[#8B7C6A] md:px-10 md:py-20 ${className}`}
     >
       <div className="mx-auto flex max-w-[1600px] flex-col items-center text-center">
         {subtitle && (

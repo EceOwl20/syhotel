@@ -15,7 +15,7 @@ export default async function BeachPage() {
   }));
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen ">
 
       {/* MAIN BANNER */}
       <MainBanner slides={slides} />

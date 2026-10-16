@@ -27,7 +27,7 @@ export default function AgencyResourcesSection({
       <div className="mx-auto max-w-[1800px]">
 
         {/* TITLE & DESCRIPTION */}
-        <div className="mb-12 flex flex-col items-center text-center text-[#948475]">
+        <div className="mb-12 flex flex-col items-center text-center text-[#8B7C6A]">
           <h1 className="text-[32px] font-extralight tracking-[0.04em] md:text-[42px]">
             {title}
           </h1>
@@ -67,7 +67,7 @@ export default function AgencyResourcesSection({
                   />
                 </div>
 
-                <h2 className="mt-5 text-center text-[17px] font-light text-[#948475]">
+                <h2 className="mt-5 text-center text-[17px] font-light text-[#8B7C6A]">
                   {resource.title}
                 </h2>
               </>

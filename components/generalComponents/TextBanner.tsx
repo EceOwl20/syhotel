@@ -9,6 +9,7 @@ type MainBannerProps = {
   text?: string;
   buttonText?: string;
   buttonLink?: string;
+  backgroundPosition?: "center" | "start" | "end" | "top" | "bottom";
 };
 
 export default function MainBanner({
@@ -18,6 +19,7 @@ export default function MainBanner({
   text,
   buttonText,
   buttonLink,
+  backgroundPosition = "center",
 }: MainBannerProps) {
   const imageUrl =
     typeof backgroundImage === "string"
@@ -25,16 +27,17 @@ export default function MainBanner({
       : backgroundImage.src;
 
   return (
-    <section
-      className="relative flex h-[470px] lg:h-[583.8px] w-full items-center justify-center bg-cover bg-center px-6"
-      style={{
-        backgroundImage: `url("${imageUrl}")`,
-      }}
-    >
+   <section
+  className="relative flex h-[470px] w-full items-center justify-center bg-cover px-6 md:h-[580px] lg:h-[650px]"
+  style={{
+    backgroundImage: `url("${imageUrl}")`,
+    backgroundPosition,
+  }}
+>
       {/* Dark overlay */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-0 bg-black/45"
+        className="pointer-events-none absolute inset-0 z-0 bg-black/60"
       />
 
       {/* Banner content */}

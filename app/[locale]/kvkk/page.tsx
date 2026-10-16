@@ -16,10 +16,10 @@ export default async function KVKKPage() {
   return (
     <main className="min-h-screen bg-white">
       <HalfImageBanner
-        image="/images/general/aquarius-havuz-bar-6.webp"
+        image="/images/general/genel-gorunum-1.webp"
         imageAlt="SY Hotels Belek"
         logo="/logo/logo_favicon-beyaz.webp"
-        overlayOpacity={0.3}
+        overlayOpacity={0.5}
       />
 
       <KVKKContent

@@ -68,7 +68,7 @@ export default function SustainabilityContent({
           {/* RIGHT: CERTIFICATES */}
           <aside
             aria-label="Sustainability certificates"
-            className="flex flex-col items-center gap-4 lg:pt-16"
+            className="flex flex-row lg:flex-col items-center gap-4 lg:pt-16"
           >
             {certificates.map((certificate) => (
               <div
@@ -78,9 +78,9 @@ export default function SustainabilityContent({
                 <Image
                   src={certificate.src}
                   alt={certificate.alt}
-                  width={280}
+                  width={260}
                   height={400}
-                  sizes="(max-width: 1023px) 280px, 280px"
+                  sizes="(max-width: 1023px) 260px, 260px"
                   className="h-auto w-full object-contain"
                 />
               </div>

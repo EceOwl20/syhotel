@@ -1,31 +1,53 @@
-
 import Image from "next/image";
 import ParticleLogo from "@/components/generalComponents/ParticleLogo";
 
 type HalfImageBannerProps = {
   image: string;
   imageAlt?: string;
-  logo?: string;
+
+  // Full-image dark overlay
   overlayOpacity?: number;
+
+  // Optional bottom gradient
+  showGradient?: boolean;
+  gradientColor?: string;
+  gradientOpacity?: number;
+  gradientStart?: number;
+
+  // Logo
+  logo?: string;
   logoWidth?: number;
   logoHeight?: number;
+
   className?: string;
 };
 
 export default function HalfImageBanner({
   image,
   imageAlt = "",
-  logo = "/logo/logo_favicon1.webp",
-  overlayOpacity = 0.2,
-  logoWidth = 140,
-  logoHeight = 140,
+
+  // Black overlay is always present
+  overlayOpacity = 0.35,
+
+  // Bottom gradient is optional
+  showGradient = false,
+  gradientColor = "#948475",
+  gradientOpacity = 0.8,
+  gradientStart = 45,
+
+  logo = "/logo/logo_favicon-beyaz.webp",
+  logoWidth = 135,
+  logoHeight = 135,
+
   className = "",
 }: HalfImageBannerProps) {
-  const opacity = Math.min(1, Math.max(0, overlayOpacity));
+  const darkOpacity = Math.min(1, Math.max(0, overlayOpacity));
+  const bottomOpacity = Math.min(1, Math.max(0, gradientOpacity));
+  const start = Math.min(100, Math.max(0, gradientStart));
 
   return (
     <section
-      className={`relative h-[60vh] w-full min-h-[320px] overflow-hidden ${className}`}
+      className={`relative h-[70vh] w-full min-h-[320px] overflow-hidden lg:h-[60vh] ${className}`}
     >
       {/* BACKGROUND IMAGE */}
       <Image
@@ -37,39 +59,48 @@ export default function HalfImageBanner({
         className="object-cover object-center"
       />
 
-      {/* DARK OVERLAY */}
+      {/* FULL IMAGE BLACK OVERLAY */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-black"
-        style={{ opacity }}
+        style={{
+          opacity: darkOpacity,
+        }}
       />
 
-      {/* BOTTOM GRADIENT */}
-      {/* <div
-        aria-hidden="true"
-        className="
-          pointer-events-none absolute inset-0
-          bg-linear-to-b
-          from-transparent
-          via-transparent
-          to-[#948475]/90
-        "
-      /> */}
+      {/* OPTIONAL BOTTOM GRADIENT */}
+      {showGradient && (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background: `linear-gradient(
+              to bottom,
+              transparent ${start}%,
+              color-mix(
+                in srgb,
+                ${gradientColor} ${bottomOpacity * 100}%,
+                transparent
+              ) 100%
+            )`,
+          }}
+        />
+      )}
 
       {/* PARTICLE LOGO */}
       <div className="pointer-events-none absolute inset-0 z-10 mt-[11%] flex items-center justify-center">
         <ParticleLogo
-  src="/logo/logo_favicon-beyaz.webp"
-  width={135}
-  height={135}
-  particleGap={1}
-  particleSize={0.85}
-  mouseRadius={50}
-  detectionMode="alpha"
-  useOriginalColors
-  entranceAnimation
-  entranceDuration={1800}
-/>
+          src={logo}
+          width={logoWidth}
+          height={logoHeight}
+          particleGap={1}
+          particleSize={0.95}
+          mouseRadius={50}
+          detectionMode="alpha"
+          useOriginalColors
+          entranceAnimation
+          entranceDuration={1800}
+        />
       </div>
     </section>
   );

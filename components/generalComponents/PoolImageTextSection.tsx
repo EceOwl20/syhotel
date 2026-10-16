@@ -54,7 +54,7 @@ export default function PoolImageTextSection({
       <section
         className={`w-full bg-[#f7f7f5] px-5 py-8 md:px-10 lg:py-12 ${className}`}
       >
-        <div className="mx-auto grid max-w-[1450px] grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="mx-auto grid max-w-[1450px] grid-cols-1 items-center gap-10 md:grid-cols-2 lg:gap-16">
 
           {/* CIRCULAR IMAGE */}
           <div
@@ -126,8 +126,8 @@ export default function PoolImageTextSection({
           <div
             className={`flex flex-col justify-center text-[#858585] ${
               imageIsLeft
-                ? "text-center lg:col-start-2 lg:row-start-1 lg:text-left"
-                : "text-center lg:col-start-1 lg:row-start-1 lg:text-right"
+                ? "text-center md:col-start-2 md:row-start-1 md:text-left"
+                : "text-center md:col-start-1 md:row-start-1 md:text-right"
             }`}
           >
             <h2 className="text-[26px] font-light leading-tight md:text-[30px]">

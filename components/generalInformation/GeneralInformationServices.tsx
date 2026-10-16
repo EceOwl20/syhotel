@@ -1,4 +1,3 @@
-
 import {
   serviceGroups,
   serviceIcons,
@@ -8,6 +7,8 @@ import type {
   GeneralServiceId,
   GeneralServiceGroupId,
 } from "@/data/generalInformation";
+
+import Reveal from "@/components/HomeComponents/Reveal";
 
 type Props = {
   groupTitles: Record<GeneralServiceGroupId, string>;
@@ -28,38 +29,44 @@ export default function GeneralInformationServices({
     <div className="min-w-0 space-y-9">
       {serviceGroups.map((group) => (
         <section key={group.id}>
-          <h2 className="mb-5 text-center text-[17px] font-extralight text-[#a39486]">
-            {groupTitles[group.id]}
-          </h2>
+          {/* GROUP TITLE */}
+          <Reveal delay={0}>
+            <h2 className="mb-5 text-center text-[17px] font-extralight text-[#a39486]">
+              {groupTitles[group.id]}
+            </h2>
+          </Reveal>
 
+          {/* SERVICES */}
           <div className="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
             {group.columns.map((column, columnIndex) => (
               <div key={columnIndex} className="space-y-4">
-                {column.map((serviceId) => {
+                {column.map((serviceId, serviceIndex) => {
                   const service = services[serviceId];
 
                   return (
-                    <div
+                    <Reveal
                       key={serviceId}
-                      className="flex items-start gap-4 text-[#8B7C6A]"
+                      delay={serviceIndex * 120}
                     >
-                      <i
-                        aria-hidden="true"
-                        className={`${serviceIcons[serviceId]} mt-0.5 shrink-0 text-[25px]`}
-                      />
+                      <div className="flex items-start gap-4 text-[#8B7C6A]">
+                        <i
+                          aria-hidden="true"
+                          className={`${serviceIcons[serviceId]} mt-0.5 shrink-0 text-[25px]`}
+                        />
 
-                      <div className="min-w-0">
-                        <h3 className="text-[14px] leading-[1.4] font-light">
-                          {service.title}
-                        </h3>
+                        <div className="min-w-0">
+                          <h3 className="text-[16px] leading-[1.4] font-light">
+                            {service.title}
+                          </h3>
 
-                        {service.description && (
-                          <p className="mt-1 text-[10px] leading-[1.6] font-light text-[#a79b8e]">
-                            {service.description}
-                          </p>
-                        )}
+                          {service.description && (
+                            <p className="mt-1 text-[12px] leading-[1.6] font-light text-[#a79b8e]">
+                              {service.description}
+                            </p>
+                          )}
+                        </div>
                       </div>
-                    </div>
+                    </Reveal>
                   );
                 })}
               </div>

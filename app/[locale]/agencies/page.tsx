@@ -14,13 +14,14 @@ export default async function AgenciesPage() {
 
   return (
     <main className="min-h-screen bg-white">
-
+ 
       <HalfImageBanner
-        image="/images/general/aquarius-havuz-bar-6.webp"
-        imageAlt="SY Hotels Belek"
-        logo="/logo/logo_favicon-beyaz.webp"
-        overlayOpacity={0.25}
-      />
+  image="/images/general/aquarius-havuz-bar-6.webp"
+  overlayOpacity={0.45}
+  showGradient
+  gradientColor="#948475"
+  gradientOpacity={0.9}
+/>
 
       <AgencyResourcesSection
         title={t("title")}

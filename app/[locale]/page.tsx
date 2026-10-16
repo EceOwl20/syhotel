@@ -12,7 +12,7 @@ import { gastronomyItems } from "@/data/gastronomy";
 
 import backgroundImageSpa from "@/public/images/homepage/spa-1.webp";
 import backgroundImagePools from "@/public/images/homepage/acik-havuz.webp";
-import backgroundImageAquapark from "@/public/images/homepage/aquapark-1.webp";
+import backgroundImageAquapark from "@/public/images/aquapark/aquapark-1.webp";
 import backgroundImageShows from "@/public/images/homepage/aksam-sovlari.webp";
 import backgroundImageKids from "@/public/images/kids/mini-kulup-1.webp";
 
@@ -102,7 +102,7 @@ export default async function Home() {
         header={t("entertainment.title")}
         text={t("entertainment.description")}
         buttonText={t("entertainment.button")}
-        buttonLink="/shows"
+        buttonLink="/activities"
       />
 
       {/* Aquapark */}
@@ -113,6 +113,7 @@ export default async function Home() {
         text={t("aquapark.description")}
         buttonText={t("aquapark.button")}
         buttonLink="/aquapark"
+        backgroundPosition="top"
       />
 
       {/* Kids Club */}

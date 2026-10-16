@@ -451,32 +451,32 @@ export const rooms: RoomConfig[] = [
   gallery: [
     {
       id: "duplex-family-1",
-      src: "/images/rooms/duplexFamilyRoom/deluxe-family-duplex-rooms-1.webp",
+      src: "/images/rooms/duplexFamilyRoom/deluxe-family-dublex-rooms-1.webp",
       alt: "Deluxe Duplex Family Room 1",
     },
     {
       id: "duplex-family-2",
-      src: "/images/rooms/duplexFamilyRoom/deluxe-family-duplex-rooms-2.webp",
+      src: "/images/rooms/duplexFamilyRoom/deluxe-family-dublex-rooms-2.webp",
       alt: "Deluxe Duplex Family Room 2",
     },
     {
       id: "duplex-family-3",
-      src: "/images/rooms/duplexFamilyRoom/deluxe-family-duplex-rooms-3.webp",
+      src: "/images/rooms/duplexFamilyRoom/deluxe-family-dublex-rooms-3.webp",
       alt: "Deluxe Duplex Family Room 3",
     },
     {
       id: "duplex-family-4",
-      src: "/images/rooms/duplexFamilyRoom/deluxe-family-duplex-rooms-4.webp",
+      src: "/images/rooms/duplexFamilyRoom/deluxe-family-dublex-rooms-4.webp",
       alt: "Deluxe Duplex Family Room 4",
     },
     {
       id: "duplex-family-5",
-      src: "/images/rooms/duplexFamilyRoom/deluxe-family-duplex-rooms-5.webp",
+      src: "/images/rooms/duplexFamilyRoom/deluxe-family-dublex-rooms-5.webp",
       alt: "Deluxe Duplex Family Room 5",
     },
     {
       id: "duplex-family-6",
-      src: "/images/rooms/duplexFamilyRoom/deluxe-family-duplex-rooms-6.webp",
+      src: "/images/rooms/duplexFamilyRoom/deluxe-family-dublex-rooms-6.webp",
       alt: "Deluxe Duplex Family Room 6",
     },
   ],

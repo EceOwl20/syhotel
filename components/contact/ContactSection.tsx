@@ -36,7 +36,7 @@ export default function ContactSection({
   mapTitle,
 }: ContactSectionProps) {
   return (
-    <section className="w-full bg-[#f7f7f5] px-5 py-16 md:px-8 md:py-20 lg:py-24">
+    <section className="w-full bg-[#f7f7f5] px-5 py-9 md:px-8 md:py-12 lg:py-18">
       <div className="mx-auto max-w-[1800px]">
 
         {/* TITLE */}
@@ -107,7 +107,7 @@ export default function ContactSection({
         </div>
 
         {/* GOOGLE MAPS */}
-        <div className="relative h-[300px] w-full overflow-hidden sm:h-[380px] lg:h-[450px]">
+        <div className="relative h-[440px] w-full overflow-hidden md:h-[460px] lg:h-[500px]">
           <iframe
             src={mapUrl}
             title={mapTitle}

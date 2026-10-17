@@ -3,8 +3,8 @@
 
 import { useEffect, useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { usePathname, useRouter, Link } from "@/i18n/navigation";
-import type { ComponentProps } from "react";
 import Image from "next/image";
 
 import HomeIcon from "./icons/HomeIcon";
@@ -15,7 +15,6 @@ import logo from "@/public/logo/sy-logo.svg";
 const languages = ["tr", "en", "de", "ru"] as const;
 
 type Language = (typeof languages)[number];
-type AppPathname = ComponentProps<typeof Link>["href"];
 
 export default function Header() {
   const t = useTranslations("Header");
@@ -23,6 +22,7 @@ export default function Header() {
 
   const router = useRouter();
   const pathname = usePathname();
+  const params = useParams<{ slug?: string }>();
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,9 +61,18 @@ export default function Header() {
     setIsMenuOpen(false);
 
     startTransition(() => {
-      router.replace(pathname as AppPathname, {
-        locale: language,
-      });
+      const options = { locale: language };
+
+      switch (pathname) {
+        case "/rooms/[slug]":
+        case "/bars/[slug]":
+        case "/restaurants/[slug]":
+          if (!params.slug) return;
+          router.replace({ pathname, params: { slug: params.slug } }, options);
+          break;
+        default:
+          router.replace(pathname, options);
+      }
     });
   };
 

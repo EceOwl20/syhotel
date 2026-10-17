@@ -1,8 +1,10 @@
+import type { IconType } from "react-icons";
+
 export type RoomService = {
   id: string | number;
   title: string;
   description?: string;
-  icon: string;
+  icon: string | IconType;
 };
 
 type RoomServicesProps = {
@@ -13,15 +15,21 @@ type RoomServicesProps = {
 };
 
 function ServiceItem({ service }: { service: RoomService }) {
+  const Icon = typeof service.icon === "string" ? null : service.icon;
+
   return (
     <div className="flex items-start gap-5">
 
       {/* Flaticon icon */}
       <div className="flex h-9 w-9 shrink-0 items-center justify-center text-[#8B7C6A]">
-        <i
-          className={`${service.icon} text-[29px] leading-none`}
-          aria-hidden="true"
-        />
+        {Icon ? (
+          <Icon className="h-[29px] w-[29px]" aria-hidden="true" />
+        ) : (
+          <i
+            className={`${service.icon} text-[29px] leading-none`}
+            aria-hidden="true"
+          />
+        )}
       </div>
 
       {/* Service content */}

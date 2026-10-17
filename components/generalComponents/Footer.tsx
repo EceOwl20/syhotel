@@ -12,7 +12,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 const corporateLinks = [
   {
     key: "contact",
-    href: "/iletisim",
+    href: "/contact",
   },
   {
     key: "privacy",
@@ -20,11 +20,11 @@ const corporateLinks = [
   },
   {
     key: "sustainability",
-    href: "/surdurulebilirlik",
+    href: "/sustainability",
   },
   {
     key: "exploreRegion",
-    href: "/bolgeyi-kesfedin",
+    href: "/explore-region",
   },
 ] as const;
 

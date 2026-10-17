@@ -36,6 +36,22 @@ export const restaurants: RestaurantConfig[] = [
 
   logo: "/images/restaurants/sirius/logos_sirius.webp",
 
+  // Main banner: restaurant and terrace images
+  bannerImages: [
+    ...createGallery(
+      "sirius-restaurant",
+      "sirius",
+      "sirius",
+      11,
+    ),
+    ...createGallery(
+      "sirius-restaurant",
+      "sirius",
+      "sirius-restoran-teras",
+      3,
+    ),
+  ],
+
   // Main restaurant gallery
   gallery: createGallery(
     "sirius-restaurant",

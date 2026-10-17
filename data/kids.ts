@@ -6,7 +6,7 @@ export const kidsGalleries = {
   ),
 
   aquapark: Array.from(
-    { length: 4 },
+    { length: 8 },
     (_, index) =>
       `/images/kids/aquapark-${index + 1}.webp`,
   ),

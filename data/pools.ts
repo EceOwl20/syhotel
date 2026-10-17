@@ -62,14 +62,14 @@ export const pools: PoolItem[] = [
   {
     id: "blockB",
     imagePosition: "left",
-    images: createPoolImages("bblok-acik-havuz", [1]),
+    images: createPoolImages("bblok-acik-havuz", [1,2,3,4,5,6,7,8,9,10,11]),
   },
 
   // 4. Mega Splash Aquapark
   {
     id: "aquapark",
     imagePosition: "right",
-    images: createPoolImages("aquapark", [1, 2, 3]),
+    images: createPoolImages("aquapark", [1, 2, 3, 4, 5, 6]),
     discoverHref: "/aquapark",
   },
 
@@ -79,7 +79,7 @@ export const pools: PoolItem[] = [
     imagePosition: "left",
     images: createPoolImages(
       "kapali-havuz",
-      [2, 3, 4, 5, 6, 7, 8, 9],
+      [1, 2, 3, 4, 5, 6, 7, 8, 9],
     ),
   },
 ];

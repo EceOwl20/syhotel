@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
+import Reveal from "@/components/HomeComponents/Reveal";
 import RoomGalleryLightbox from "@/components/rooms/RoomGalleryLightbox";
 import type { GalleryImage } from "@/components/rooms/RoomGallery";
 
@@ -13,6 +14,7 @@ type ImageTextSectionProps = {
   description: string;
   images: string[];
   imagePosition?: "left" | "right";
+  desktopImageSize?: "default" | "compact";
   className?: string;
 };
 
@@ -21,6 +23,7 @@ export default function ImageTextSection({
   description,
   images,
   imagePosition = "right",
+  desktopImageSize = "default",
   className = "",
 }: ImageTextSectionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -28,6 +31,27 @@ export default function ImageTextSection({
 
   const hasMultipleImages = images.length > 1;
   const imageIsLeft = imagePosition === "left";
+  const hasCompactDesktopImage = desktopImageSize === "compact";
+  const desktopGridClass = hasCompactDesktopImage
+    ? "lg:grid-cols-5"
+    : "lg:grid-cols-3";
+  const desktopImageClass = hasCompactDesktopImage
+    ? imageIsLeft
+      ? "lg:col-span-3 lg:col-start-1 lg:row-start-1"
+      : "lg:col-span-3 lg:col-start-3 lg:row-start-1"
+    : imageIsLeft
+      ? "lg:col-span-2 lg:col-start-1 lg:row-start-1"
+      : "lg:col-span-2 lg:col-start-2 lg:row-start-1";
+  const desktopTextClass = hasCompactDesktopImage
+    ? imageIsLeft
+      ? "lg:col-span-2 lg:col-start-4 lg:pl-5"
+      : "lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:pr-5 lg:text-right"
+    : imageIsLeft
+      ? "lg:col-start-3 lg:pl-5"
+      : "lg:col-start-1 lg:row-start-1 lg:pr-5 lg:text-right";
+  const imageSizes = hasCompactDesktopImage
+    ? "(max-width: 1023px) 100vw, 60vw"
+    : "(max-width: 1023px) 100vw, 66vw";
 
   const galleryImages: GalleryImage[] = useMemo(
     () =>
@@ -55,16 +79,15 @@ export default function ImageTextSection({
   return (
     <>
       <section className={`w-full bg-white px-5 py-5 md:px-8 ${className}`}>
-        <div className="mx-auto grid max-w-[1560px] grid-cols-1 items-center gap-8 lg:grid-cols-3 lg:gap-0">
- {/* IMAGE SLIDER */}
+        <Reveal>
+          <div
+            className={`mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-8 lg:gap-0 ${desktopGridClass}`}
+          >
+          {/* IMAGE SLIDER */}
           <div
             className={`
               group relative aspect-video w-full overflow-hidden
-              ${
-                imageIsLeft
-                  ? "lg:col-span-2 lg:col-start-1 lg:row-start-1"
-                  : "lg:col-span-2 lg:col-start-2 lg:row-start-1"
-              }
+              ${desktopImageClass}
             `}
           >
             {/* CLICKABLE IMAGES */}
@@ -89,7 +112,7 @@ export default function ImageTextSection({
                   src={src}
                   alt={`${title} - ${index + 1}`}
                   fill
-                  sizes="(max-width: 1023px) 100vw, 66vw"
+                  sizes={imageSizes}
                   className="object-cover"
                 />
               </button>
@@ -146,18 +169,14 @@ export default function ImageTextSection({
               </>
             )}
           </div>
-          
+
           {/* TEXT */}
           <div
             className={`
               flex flex-col justify-center
-             text-center text-[#8B7C6A]
+              text-center text-[#8B7C6A]
               lg:text-left
-              ${
-                imageIsLeft
-                  ? "lg:col-start-3 lg:pl-5"
-                  : "lg:col-start-1 lg:row-start-1 lg:pr-5 text-center lg:text-right"
-              }
+              ${desktopTextClass}
             `}
           >
             <h2 className="mb-5 text-[24px] font-light md:text-[28px]">
@@ -169,8 +188,8 @@ export default function ImageTextSection({
             </p>
           </div>
 
-         
-        </div>
+          </div>
+        </Reveal>
       </section>
 
       {/* FULLSCREEN LIGHTBOX */}

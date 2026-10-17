@@ -17,6 +17,12 @@ export async function getBarDetail(
     namespace: "Bars",
   });
 
+  const translateGallery = (images: typeof bar.gallery) =>
+    images.map((image, index) => ({
+      ...image,
+      alt: `${t(`${slug}.title`)} - ${index + 1}`,
+    }));
+
   return {
     slug: bar.slug,
     logo: bar.logo,
@@ -25,9 +31,9 @@ export async function getBarDetail(
     subtitle: t(`${slug}.subtitle`),
     description: t(`${slug}.description`),
 
-    gallery: bar.gallery.map((image, index) => ({
-      ...image,
-      alt: `${t(`${slug}.title`)} - ${index + 1}`,
-    })),
+    gallery: translateGallery(bar.gallery),
+    bannerImages: bar.bannerImages
+      ? translateGallery(bar.bannerImages)
+      : undefined,
   };
 }

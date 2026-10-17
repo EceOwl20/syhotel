@@ -9,6 +9,7 @@ export type RoomFeature = {
 
 export type RoomDetail = {
   slug: string;
+  bannerImageCount?: number;
   title: string;
   subtitle: string;
   description: string;

@@ -54,6 +54,14 @@
     }
   },
 
+  "RelatedContent": {
+    "otherRooms": "OTHER ROOMS",
+    "otherBars": "OTHER BARS",
+    "otherRestaurants": "OTHER RESTAURANTS",
+    "previous": "Previous items",
+    "next": "Next items"
+  },
+
   "Footer": {
     "corporate": "CORPORATE",
     "contact": "CONTACT",
@@ -347,26 +355,29 @@
 },
 
  "Restaurants": {
-    "slogan": "Adding Flavor to Your Holiday",
     "openBuffet": "OPEN BUFFET",
     "sirius-restaurant": {
       "title": "SIRIUS",
       "subtitle": "RESTAURANT",
+      "slogan": "\"We Add Flavor to Your Holiday\"",
       "description": "Offering fresh, delicious and healthy alternatives to its guests from breakfast to dinner, the restaurant makes your holiday special with carefully selected dishes from international and Turkish cuisine. In addition, it offers its guests a different taste experience every evening with different theme nights."
     },
     "nova-food-court": {
       "title": "NOVA",
       "subtitle": "FOOD COURT",
+      "slogan": "”Delicious Snacks”",
       "description": "Located by the pool and beach, the Food Court is the address for quick and delicious snacks. With hot and cold sandwiches, pizza varieties, fresh salads and ice cream options, this area adds energy to your holiday throughout the day and offers guests a pleasant and practical eating and drinking experience."
     },
     "bettelglow-patisserie": {
       "title": "BETTELGLOW",
       "subtitle": "PATISSERIE",
+      "slogan": "”A Sweet Getaway”",
       "description": "For guests who want to have a sweet escape, it serves freshly prepared cakes, cookies, cupcakes and chocolates throughout the day. Desserts served with handmade ice creams and Turkish coffee allow guests to take delicious breaks while relaxing."
     },
     "larimar-beach-restaurant": {
       "title": "LARIMAR",
       "subtitle": "BEACH BAR & RESTAURANT",
+      "slogan": "",
       "description": "It stands out with its professional and friendly service approach that makes every guest feel special. You will have an unforgettable experience with carefully prepared meals and personalized service."
     }
   },
@@ -435,29 +446,29 @@
 
    "Beach": {
     "title": "BEACH",
-    "description": "The beach is 2 km from the hotel and can be reached in approximately 4 minutes by shuttle service, which operates every 15 minutes."
+    "description": "The distance of the hotel to the beach is 2 km, and it is 4 minutes away with a shuttle service every 15 minutes."
   },
 
   "Aquapark": {
     "title": "MEGA SPLASH AQUAPARK",
-    "description": "With 14 different water slide options, Mega Splash Aquapark offers an unforgettable experience for thrill seekers and water lovers. Featuring separate areas for children and adults, the aquapark invites guests of all ages to enjoy an exciting world of water attractions. Fast slides, a wave pool and dedicated activity areas provide hours of fun for families and friends.",
+    "description": "With 14 different slide options, it offers an indispensable experience for adrenaline enthusiasts and entertainment lovers. With separate areas for both children and adults, guests of all ages can abandon themselves to the exciting world of water in the aquapark. With its fast slides, wave pool and special activity areas, the aquapark allows you to spend enjoyable hours with your family and loved ones all day long.",
     "slides": [
-      "Hill Slide – 1 slide / 35.96 m",
-      "Body Slide – Combo – 1 slide / 36.90 m",
-      "Kids Slide Str – 1 slide / 19.37 m",
-      "Body Slide – Combo – 1 slide / 60.82 m",
-      "Body Slide – 1 slide / 36.33 m",
-      "Kids Slide Crv – 1 slide / 18.62 m",
-      "Body Slide – Combo – 1 slide / 61.15 m",
-      "Kids Slide Str – 1 slide / 9.11 m",
-      "Body Slide Combo – 1 slide / 62 m",
-      "Body Slide – Combo – 1 slide / 50.14 m",
-      "Body Slide – Combo – 1 slide / 27.95 m",
-      "Body Slide – Combo – 1 slide / 66.29 m",
-      "Body Slide – Combo – 1 slide / 61.64 m",
-      "Kids Slide Crv – 1 slide / 12.15 m",
-      "Body Slide – 1 slide / 54.88 m",
-      "Body Slide – Combo – 1 slide / 80.90 m"
+      "Hill Slide – 1 piece / 35.96 m",
+      "Body Slide – Combo – 1 piece / 36.90 m",
+      "Kids Slide Str – 1 piece / 19.37 m",
+      "Body Slide – Combo – 1 piece / 60.82 m",
+      "Body Slide – 1 piece / 36.33 m",
+      "Kids Slide Crv – 1 piece / 18.62 m",
+      "Body Slide – Combo – 1 piece / 61.15 m",
+      "Kids Slide Str – 1 piece / 9.11 m",
+      "Body Slide Combo – 1 piece / 62 m",
+      "Body Slide – Combo – 1 piece / 50.14 m",
+      "Body Slide – Combo – 1 piece / 27.95 m",
+      "Body Slide – Combo – 1 piece / 66.29 m",
+      "Body Slide – Combo – 1 piece / 61.64 m",
+      "Kids Slide Crv – 1 piece / 12.15m",
+      "Body Slide – 1 piece of 54.88 m",
+      "Body Slide – Combo – 1 piece of 80.90 m"
     ]
   },
 
@@ -822,75 +833,75 @@
     },
     "manavgatWaterfall": {
       "title": "MANAVGAT WATERFALL",
-      "description": "Located approximately 3 km west of Manavgat town centre, this waterfall is known for its wide cascade rather than its height. Its rushing waters create an impressive natural view. The waterfall can be reached by local public transport from Manavgat."
+      "description": "Located 3 km west of Manavgat, the waterfall bears the same name as the district. Although it falls from a surprisingly low height, its roaring flow across a wide area creates a view well worth seeing. It can be reached by minibuses departing from Manavgat."
     },
     "titreyengol": {
       "title": "TİTREYENGÖL LAKE",
-      "description": "Titreyengöl takes its name from the ripples that appear on its otherwise calm surface, even in a gentle breeze. Surrounded by natural vegetation, the lake is also associated with local legends."
+      "description": "The lake is very still, yet even the lightest breeze makes its surface tremble, which is how it got its name. According to legend, birds would gather around an old fisherman who lived by the lake whenever he fed them. One day, hunters shot ducks on the water. The fisherman confronted them and tried to stop the hunt, but they pushed him aside. The other ducks then rose together, creating a whirlwind with their wings and driving the hunters away. From that day on, the lake is said to have continued trembling."
     },
     "side": {
       "title": "SIDE",
-      "description": "Located approximately 75 km from Antalya and 7 km from Manavgat, Side occupies a peninsula extending into the Mediterranean Sea. Its history reaches back to ancient civilizations, and the area has been home to many different cultures."
+      "description": "Located 75 km from Antalya and 7 km from Manavgat, Side is a peninsula approximately 400 metres wide and 1 kilometre long. The name Side means ‘pomegranate’ in an ancient Anatolian language. Inscriptions suggest that its history reaches back to the Hittites. According to some sources, one of Anatolia’s oldest settlements was founded before the 7th century BC and later came under the rule of many civilizations."
     },
     "sideAncientCity": {
       "title": "SIDE ANCIENT CITY",
-      "description": "Side Ancient City invites visitors to explore its ancient theatre, Temple of Apollo, monumental gate, baths, agora and historic harbour. It is an exceptional place to discover the cultural heritage of the Mediterranean coast."
+      "description": "Located 75 km from Antalya and 7 km from Manavgat, Side lies on a peninsula approximately 400 metres wide and 1 kilometre long. Known in the lexicon of Hesychius as the City of Pomegranates, ancient Side brings history to life through its theatre, seaside ruins, Temple of Apollo, magnificent city gate, baths, agora and historic harbour."
     },
     "aspendos": {
       "title": "ASPENDOS THEATRE",
-      "description": "Located approximately 44 km from Manavgat, Aspendos Theatre was built in the 2nd century AD. With an estimated capacity of around 17,000 spectators, it is one of the best-preserved ancient theatres and continues to host concerts and cultural events."
+      "description": "Built in the 2nd century AD, 44 km from Manavgat, the 17,000-seat Aspendos Theatre is one of the best-preserved amphitheatres still standing today. It is among the rare theatres whose stage has survived in excellent condition. The venue is now used for concerts, celebrations, festivals and traditional oil wrestling. The Agora, Basilica, Nymphaeum and 15-kilometre arched aqueducts are also worth seeing."
     },
     "seleukeia": {
       "title": "SELEUKEIA",
-      "description": "The ruins of Seleukeia lie northwest of Manavgat, towards the Taurus Mountains, on a hill approximately 300 metres above the surrounding landscape. Its steep slopes and valleys offer panoramic views alongside the ancient remains."
+      "description": "The ruins of Seleukeia are reached after travelling 12 km northwest from Manavgat towards the Taurus Mountains. Founded by the Seleucids as a fortified acropolis city on a hill around 300 BC, its geography of steep slopes and deep valleys overlooks the entire plain and the sea."
     },
     "kopruluCanyon": {
       "title": "KÖPRÜLÜ CANYON",
-      "description": "Köprülü Canyon National Park is approximately 60 km from Manavgat. Known as one of Türkiye's popular rafting destinations, it combines the Köprüçay River, historic Roman bridges, ancient routes and remarkable natural landscapes."
+      "description": "Köprülü Canyon National Park is 60 km from Manavgat. It is one of Türkiye’s most popular rafting areas and its longest canyon. Rafting is an exciting river sport performed in inflatable boats on fast-flowing rivers. The Köprüçay River is one of Türkiye’s finest natural recreation areas, while Roman bridges, historic roads and many archaeological remains make the national park especially worth visiting."
     },
     "kursunluWaterfall": {
       "title": "KURŞUNLU WATERFALL",
-      "description": "Kurşunlu Waterfall creates a beautiful natural setting with water falling from a height of approximately 18 metres into a series of connected ponds. Visitors can enjoy walking trails, viewing terraces and picnic areas."
+      "description": "At Kurşunlu Waterfall, water falls from a height of 18 metres and seven small ponds are connected by smaller cascades. The waterfall lies within a two-kilometre canyon. Opened as a public park in 1986, the waterfall and picnic area cover 33 hectares and include viewing terraces, a children’s playground, restaurant, car park and walking paths."
     },
     "saklikentCanyon": {
       "title": "SAKLIKENT CANYON",
-      "description": "Situated near the boundary between Antalya and the Fethiye area, Saklıkent Canyon stretches for approximately 18 kilometres. It is a remarkable destination for nature walks and discovering a dramatic rocky landscape shaped by flowing water."
+      "description": "Located between Antalya and Fethiye, Saklıkent Canyon is 18 kilometres long. It is a rewarding destination for visitors planning a trip immersed in nature, where forests of Turkish red pine, cedar and black pine can also be seen."
     },
     "alanyaCastle": {
       "title": "ALANYA CASTLE",
-      "description": "Alanya Castle, one of the symbols of Alanya, stands on a peninsula approximately 250 metres above the sea. Its walls extend for around 6.5 kilometres, surrounding historic towers and offering beautiful views of the Mediterranean."
+      "description": "Alanya Castle is one of the symbols of Alanya, a district of Antalya. It stands on a peninsula rising approximately 250 metres above the sea, and its walls extend for a total of 6.5 kilometres. The castle was built during the Hellenistic period in the settlement once known as Kandeleri."
     }
   },
   "informationSections": [
     {
       "title": "RULES FOR VISITING NATURAL AND CULTURAL SITES",
       "items": [
-        "Do not touch or damage exhibits in museums. Follow photography restrictions and all displayed instructions.",
-        "Do not damage archaeological sites, enter protected areas without permission or leave litter.",
-        "Respect restrictions on picnicking and fires in natural areas and forests. Never leave rubbish behind.",
-        "Avoid activities that disturb other visitors or wildlife.",
-        "Follow hunting regulations and respect wild animals and their habitats.",
-        "Do not purchase or sell historical artefacts without the required legal authorization.",
-        "Respect dress codes at mosques, remove your shoes before entering prayer areas and do not disturb worshippers.",
-        "Choose environmentally friendly cosmetic and cleaning products whenever possible.",
-        "Check museum opening days and visiting hours before travelling."
+        "Do not touch or damage exhibits in museums. Do not take videos or photographs in prohibited areas, and follow all written or verbal instructions.",
+        "Do not damage ancient sites, enter protected areas or pollute their surroundings.",
+        "Do not picnic or light fires in natural recreation areas and forests. Never litter and always observe warning signs.",
+        "Do not behave inappropriately towards adults or children in these areas, and avoid disturbing other people.",
+        "Hunt only in accordance with the applicable laws and rules, and respect wildlife and the natural environment.",
+        "Do not buy or sell historical artefacts without the necessary permits and documents. Illegal trade is prohibited.",
+        "Remove your shoes before entering a mosque, observe the appropriate head-covering rules and do not bring food or drink inside.",
+        "To help protect nature, choose environmentally friendly cosmetics. Remember that chemicals entering water sources harm living organisms, while chemicals released into the atmosphere cause air pollution.",
+        "Check the opening days and hours of the museum you wish to visit. A Museum Pass lets you discover the country’s cultural and natural treasures while contributing to the protection of cultural heritage."
       ]
     },
     {
       "title": "BIODIVERSITY",
       "paragraphs": [
-        "Biodiversity refers to the variety of life forms within ecosystems and around the world. Human life depends on clean water, fresh air, fertile soil, food and other natural resources.",
-        "The relationships between plants, animals, fungi and other organisms support the functioning of ecosystems. Balanced interactions between species are essential for environmental sustainability.",
-        "Plant diversity helps clean the air, prevent erosion and maintain soil fertility. Plants also provide food and shelter for other living creatures.",
-        "Animal diversity plays an important role in maintaining ecological balance. Many insects pollinate plants, while other organisms contribute to the decomposition of organic matter.",
-        "Healthy ecosystems depend on the diversity of the species living within them. We should protect biodiversity not only for human needs but also out of respect for the right of all living things to exist."
+        "Biodiversity is the variety of life forms found within an ecosystem and throughout the world. For people to survive, their environment must provide clean water and air, fertile soil, food and other necessities. Fungi, plants, animals and other living organisms that supply these needs together form biodiversity.",
+        "As biodiversity increases, the ecological services of an environment also increase, provided that the species involved interact in balance. Greater biodiversity makes nutrient cycles and energy flows more efficient; when biodiversity declines, ecosystem services decline as well.",
+        "Plant diversity cleans the air, prevents erosion, adds organic matter to the soil and reduces soil fatigue. By providing food and shelter for other organisms, plants give ecosystems continuity.",
+        "Humans have used animals since ancient times for food, transport, clothing and medical research. Some insects pollinate plants and sustain plant diversity; many help decompose organic matter and return it to the soil. Insects also provide food for birds, fish and reptiles.",
+        "The sustainability of ecosystems depends on the diversity and health of the species living within them. Preventing ecosystem degradation is essential to human survival. Biodiversity and ecosystems have their own intrinsic value and right to exist, beyond the benefits they provide to people. We must protect them not only for our needs, but because every living thing has a right to life."
       ]
     },
     {
       "title": "PROTECTED PLANT AND ANIMAL SPECIES IN OUR REGION",
       "paragraphs": [
-        "The Mediterranean monk seal and loggerhead sea turtles, known as Caretta caretta, are among the protected animals found in our region. Various native flowers and plants, including sea daffodils, irises, narcissus and crocuses, also contribute to the area's natural diversity.",
-        "Avoid purchasing products derived from protected plant and animal species. Follow legal hunting restrictions. We strongly encourage visitors not to participate in circuses, dolphin shows or other activities that remove animals from their natural habitats."
+        "Mediterranean monk seals, sea turtles and Caretta caretta turtles are protected in our region. Plant species including vetch flowers, alkanet, irises, sea daffodils, broomrape, narcissus and crocuses are also among the protected species.",
+        "Do not purchase products made from protected plants or animals. Hunting outside the dates authorized by the Ministry of Agriculture and Forestry is prohibited. We strongly ask you not to attend circuses, zoos, dolphin shows or other activities that remove animals from their natural habitats."
       ]
     }
   ]

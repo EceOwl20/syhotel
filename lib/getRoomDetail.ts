@@ -70,6 +70,7 @@ export async function getRoomDetail(
 
   return {
     slug: room.slug,
+    bannerImageCount: room.bannerImageCount,
 
     title: t(`${roomKey}.title`),
     subtitle: t(`${roomKey}.subtitle`),

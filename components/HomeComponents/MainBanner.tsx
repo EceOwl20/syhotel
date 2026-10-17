@@ -37,7 +37,7 @@ export default function MainBanner({
   return (
     <section
       aria-label="SY Hotels Gallery"
-      className="relative h-[70vh] lg:h-screen w-full overflow-hidden"
+      className="relative h-[70vh] md:h-[80vh] lg:h-screen w-full overflow-hidden"
     >
       {slides.map((slide, index) => (
         <div

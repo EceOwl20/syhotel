@@ -60,7 +60,7 @@ const corporateLinks = [
   { key: "contact", href: "/contact" },
   { key: "privacy", href: "/kvkk" },
   { key: "sustainability", href: "/sustainability" },
-  { key: "discoverRegion", href: "/discover" },
+  { key: "discoverRegion", href: "/explore-region" },
 ] as const;
 
 export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
@@ -106,13 +106,15 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
             </Link>
 
             {/* Reservation */}
-            <Link
-              href="/reservation"
+            <a
+              href="https://syhotels.platformeva.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={onClose}
               className={menuLinkClass}
             >
               {t("reservation")}
-            </Link>
+            </a>
 
             {/* ROOMS */}
             <div>

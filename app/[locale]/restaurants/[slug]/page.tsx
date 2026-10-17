@@ -8,6 +8,8 @@ import MainBanner from "@/components/HomeComponents/MainBanner";
 import ParticleLogo from "@/components/generalComponents/ParticleLogo";
 import RestaurantTextBanner from "@/components/restaurants/RestaurantTextBanner";
 import RestaurantDetailSection from "@/components/restaurants/RestaurantDetailSection";
+import RelatedContent from "@/components/generalComponents/RelatedContent";
+import { getTranslations } from "next-intl/server";
 
 type PageProps = {
   params: Promise<{
@@ -15,6 +17,8 @@ type PageProps = {
     slug: string;
   }>;
 };
+
+export const instant = false;
 
 export function generateStaticParams() {
   return restaurants.map((restaurant) => ({
@@ -35,6 +39,25 @@ export default async function RestaurantDetailPage({
   if (!restaurant) {
     notFound();
   }
+
+  const tRestaurants = await getTranslations({
+    locale,
+    namespace: "Restaurants",
+  });
+  const tRelated = await getTranslations({
+    locale,
+    namespace: "RelatedContent",
+  });
+
+  const relatedRestaurants = restaurants
+    .filter((item) => item.slug !== slug)
+    .map((item) => ({
+      id: item.slug,
+      title: tRestaurants(`${item.slug}.title`),
+      subtitle: tRestaurants(`${item.slug}.subtitle`),
+      image: item.gallery[0].src,
+      href: `/restaurants/${item.slug}`,
+    }));
 
   const slides = (
     restaurant.bannerImages ?? restaurant.gallery
@@ -102,6 +125,13 @@ export default async function RestaurantDetailPage({
         buffetTitle={restaurant.buffetTitle}
         background={restaurant.galleryBackground}
       />
+
+      {/* <RelatedContent
+        title={tRelated("otherRestaurants")}
+        items={relatedRestaurants}
+        previousLabel={tRelated("previous")}
+        nextLabel={tRelated("next")}
+      /> */}
 
     </main>
   );

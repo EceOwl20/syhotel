@@ -7,7 +7,8 @@ import { getBarDetail } from "@/lib/getBarDetail";
 import BarDetailSection from "@/components/bars/BarDetailSection";
 import MainBanner from "@/components/HomeComponents/MainBanner";
 import ParticleLogo from "@/components/generalComponents/ParticleLogo";
-import Image from "next/image";
+import RelatedContent from "@/components/generalComponents/RelatedContent";
+import { getTranslations } from "next-intl/server";
 
 type PageProps = {
   params: Promise<{
@@ -15,6 +16,8 @@ type PageProps = {
     slug: string;
   }>;
 };
+
+export const instant = false;
 
 export function generateStaticParams() {
   return bars.map((bar) => ({
@@ -33,7 +36,23 @@ export default async function BarDetailPage({
     notFound();
   }
 
-  const slides = bar.gallery.map((image) => ({
+  const tBars = await getTranslations({ locale, namespace: "Bars" });
+  const tRelated = await getTranslations({
+    locale,
+    namespace: "RelatedContent",
+  });
+
+  const relatedBars = bars
+    .filter((item) => item.slug !== slug)
+    .map((item) => ({
+      id: item.slug,
+      title: tBars(`${item.slug}.title`),
+      subtitle: tBars(`${item.slug}.subtitle`),
+      image: item.gallery[0].src,
+      href: `/bars/${item.slug}`,
+    }));
+
+  const slides = (bar.bannerImages ?? bar.gallery).map((image) => ({
     src: image.src,
     alt: image.alt,
   }));
@@ -103,6 +122,13 @@ export default async function BarDetailPage({
         description={bar.description}
         images={bar.gallery}
       />
+
+      {/* <RelatedContent
+        title={tRelated("otherBars")}
+        items={relatedBars}
+        previousLabel={tRelated("previous")}
+        nextLabel={tRelated("next")}
+      /> */}
 
     </main>
   );

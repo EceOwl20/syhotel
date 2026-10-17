@@ -5,6 +5,7 @@ export type BarConfig = {
   slug: string;
   logo: string;
   gallery: GalleryImage[];
+  bannerImages?: GalleryImage[];
 };
 
 function createBarGallery(
@@ -23,6 +24,45 @@ function createBarGallery(
     };
   });
 }
+
+const larimarBannerImages: GalleryImage[] = [1, 4, 5].map(
+  (imageNumber) => ({
+    id: `larimar-beach-restaurant-${imageNumber}`,
+    src: `/images/bars/larimar/larimar-${imageNumber}.webp`,
+    alt: `larimar-beach-restaurant - ${imageNumber}`,
+  }),
+);
+
+const larimarGalleryImages: GalleryImage[] = [
+  larimarBannerImages[0],
+  {
+    id: "larimar-beach-restaurant-2",
+    src: "/images/bars/larimar/larimar-beach-bar-restoran-2-300x169.webp",
+    alt: "larimar-beach-restaurant - 2",
+  },
+  {
+    id: "larimar-beach-restaurant-3",
+    src: "/images/bars/larimar/larimar-beach-bar-restoran-3-300x169.webp",
+    alt: "larimar-beach-restaurant - 3",
+  },
+  larimarBannerImages[1],
+  larimarBannerImages[2],
+  {
+    id: "larimar-beach-restaurant-6",
+    src: "/images/bars/larimar/larimar-beach-bar-restoran-6-300x169.webp",
+    alt: "larimar-beach-restaurant - 6",
+  },
+  {
+    id: "larimar-beach-restaurant-7",
+    src: "/images/bars/larimar/larimar-beach-bar-restoran-7-300x169.webp",
+    alt: "larimar-beach-restaurant - 7",
+  },
+  {
+    id: "larimar-beach-restaurant-8",
+    src: "/images/bars/larimar/larimar-beach-bar-restoran-8-300x169.webp",
+    alt: "larimar-beach-restaurant - 8",
+  },
+];
 
 export const bars: BarConfig[] = [
   {
@@ -64,10 +104,7 @@ export const bars: BarConfig[] = [
   {
     slug: "larimar-beach-restaurant",
     logo: "/images/bars/larimar/logos_larimar-beach-restaurant.webp",
-    gallery: createBarGallery(
-      "larimar-beach-restaurant",
-      "larimar",
-      3,
-    ),
+    bannerImages: larimarBannerImages,
+    gallery: larimarGalleryImages,
   },
 ];

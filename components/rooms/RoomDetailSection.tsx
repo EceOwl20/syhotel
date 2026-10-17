@@ -11,7 +11,12 @@ type Props = {
 };
 
 export default async function RoomDetailSection({ room }: Props) {
-  const slides = room.gallery.map((image) => ({
+  const bannerImages = room.gallery.slice(
+    0,
+    room.bannerImageCount ?? room.gallery.length,
+  );
+
+  const slides = bannerImages.map((image) => ({
     src: image.src,
     alt: image.alt,
   }));
@@ -35,11 +40,11 @@ export default async function RoomDetailSection({ room }: Props) {
             {room.subtitle}
           </p>
 
-          <h1 className="text-[26px] font-extralight tracking-[0.04em] md:text-[32px] lg:text-[36px]">
+          <h2 className="text-[32px] font-extralight tracking-[0.04em] md:text-[40px] lg:text-[44px]">
             {room.title}
-          </h1>
+          </h2>
 
-          <p className="mx-auto mt-4 lg:mt-7 max-w-[1500px] text-[14px] lg:text-[16px] font-light leading-[1.8]">
+          <p className="mx-auto mt-4 lg:mt-7 max-w-[1500px] text-[14px] md:text-[16px] font-light leading-[1.8]">
             {room.description}
           </p>
 

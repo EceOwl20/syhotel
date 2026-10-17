@@ -54,6 +54,14 @@
     }
   },
 
+  "RelatedContent": {
+    "otherRooms": "WEITERE ZIMMER",
+    "otherBars": "WEITERE BARS",
+    "otherRestaurants": "WEITERE RESTAURANTS",
+    "previous": "Vorherige Einträge",
+    "next": "Nächste Einträge"
+  },
+
   "Footer": {
     "corporate": "UNTERNEHMEN",
     "contact": "KONTAKT",
@@ -348,26 +356,29 @@
 },
 
 "Restaurants": {
-    "slogan": "Wir verleihen Ihrem Urlaub Geschmack",
     "openBuffet": "OFFENES BUFFET",
     "sirius-restaurant": {
       "title": "SIRIUS",
       "subtitle": "RESTAURANT",
-      "description": "Von morgens bis abends bietet das Sirius Restaurant seinen Gästen frische, köstliche und gesunde Speisen. Mit sorgfältig ausgewählten Spezialitäten der internationalen und türkischen Küche wird Ihr Urlaub zu einem besonderen Erlebnis. Verschiedene Themenabende sorgen jeden Abend für neue kulinarische Entdeckungen."
+      "slogan": "Wır Fugen Ihrem Urlaub Geschmack Hınzu",
+      "description": "Das Restaurant, das seinen Gästen von Frühstück bis Abendessen frische, köstliche und gesunde Alternativen bietet, macht Ihren Urlaub mit sorgfältig ausgewählten Gerichten aus der internationalen und türkischen Küche besonders. Außerdem bietet es seinen Gästen an verschiedenen Themenabenden jeden Abend ein anderes Geschmackserlebnis."
     },
     "nova-food-court": {
       "title": "NOVA",
       "subtitle": "FOOD COURT",
+      "slogan": "Kostliche Snacks",
       "description": "Direkt am Pool und Strand gelegen, ist der Nova Food Court die ideale Adresse für schnelle und köstliche Snacks. Mit warmen und kalten Sandwiches, verschiedenen Pizzen, frischen Salaten und Eiscreme bietet er den ganzen Tag über eine praktische und genussvolle Verpflegung."
     },
     "bettelglow-patisserie": {
       "title": "BETTELGLOW",
       "subtitle": "KONDITOREI",
+      "slogan": "Ein süßer Zufluchtsort",
       "description": "Für Gäste, die sich eine süße Auszeit gönnen möchten, bietet die Bettelglow Konditorei den ganzen Tag über frisch zubereitete Kuchen, Kekse, Cupcakes und Pralinen. Handgemachtes Eis und türkischer Kaffee machen jede entspannte Pause zu einem besonderen Genuss."
     },
     "larimar-beach-restaurant": {
       "title": "LARIMAR",
       "subtitle": "STRANDBAR & RESTAURANT",
+      "slogan": "",
       "description": "Mit professionellem und herzlichem Service sorgt das Larimar dafür, dass sich jeder Gast besonders fühlt. Liebevoll zubereitete Speisen und persönlicher Service machen Ihren Besuch zu einem unvergesslichen Erlebnis."
     }
   },
@@ -436,29 +447,29 @@
 
   "Beach": {
     "title": "STRAND",
-    "description": "Der Strand liegt 2 km vom Hotel entfernt und ist mit dem Shuttlebus, der alle 15 Minuten fährt, in etwa 4 Minuten erreichbar."
+    "description": "Die Entfernung des Hotels zum Strand beträgt 2 km und dieser ist mit einem Shuttleservice alle 15 Minuten in 4 Minuten zu erreichen."
   },
 
   "Aquapark": {
     "title": "MEGA SPLASH AQUAPARK",
-    "description": "Mit 14 verschiedenen Wasserrutschen bietet der Mega Splash Aquapark ein unvergessliches Erlebnis für Abenteuerlustige und Wasserspaß-Fans. Separate Bereiche für Kinder und Erwachsene laden Gäste jeden Alters ein, die aufregende Welt der Wasserattraktionen zu entdecken. Schnelle Rutschen, ein Wellenbecken und spezielle Erlebnisbereiche sorgen für abwechslungsreiche Stunden mit Familie und Freunden.",
+    "description": "Mit 14 verschiedenen Rutschenoptionen bietet der Aquapark ein unverzichtbares Erlebnis für Adrenalinjunkies und Spaßliebhaber. Der Aquapark, der separate Bereiche für Kinder und Erwachsene bietet, ermöglicht es Gästen jeden Alters, sich in die aufregende Welt des Wassers zu stürzen. Mit schnellen Rutschen, einem Wellenbecken und speziellen Veranstaltungsbereichen sorgt der Aquapark dafür, dass Sie mit Ihrer Familie und Ihren Lieben einen ganzen Tag voller Spaß genießen können.",
     "slides": [
-      "Hill Slide – 1 Rutsche / 35,96 m",
-      "Body Slide – Combo – 1 Rutsche / 36,90 m",
-      "Kids Slide Str – 1 Rutsche / 19,37 m",
-      "Body Slide – Combo – 1 Rutsche / 60,82 m",
-      "Body Slide – 1 Rutsche / 36,33 m",
-      "Kids Slide Crv – 1 Rutsche / 18,62 m",
-      "Body Slide – Combo – 1 Rutsche / 61,15 m",
-      "Kids Slide Str – 1 Rutsche / 9,11 m",
-      "Body Slide Combo – 1 Rutsche / 62 m",
-      "Body Slide – Combo – 1 Rutsche / 50,14 m",
-      "Body Slide – Combo – 1 Rutsche / 27,95 m",
-      "Body Slide – Combo – 1 Rutsche / 66,29 m",
-      "Body Slide – Combo – 1 Rutsche / 61,64 m",
-      "Kids Slide Crv – 1 Rutsche / 12,15 m",
-      "Body Slide – 1 Rutsche / 54,88 m",
-      "Body Slide – Combo – 1 Rutsche / 80,90 m"
+      "Hill Slide – 1 Stück / 35,96 m",
+      "Body Slide Combo – 1 Stück / 36,90 m",
+      "Kids Slide Str – 1 Stück / 19,37 m",
+      "Body Slide Combo – 1 Stück / 60,82 m",
+      "Body Slide – 1 Stück / 36,33 m",
+      "Kids Slide Crv – 1 Stück / 18,62 m",
+      "Body Slide Combo v 1 Stück / 61,15 m",
+      "Kids Slide Str – 1 Stück / 9,11 m",
+      "Body Slide Combo – 1 Stück / 62 m",
+      "Body Slide Combo – 1 Stück / 50,14 m",
+      "Body Slide Combo – 1 Stück / 27,95 m",
+      "Body Slide Combo – 1 Stück / 66,29 m",
+      "Body Slide Combo – 1 Stück / 61,64 m",
+      "Kids Slide Crv – 1 Stück / 12,15 m",
+      "Body Slide – 1 Stück / 54,88 m",
+      "Body Slide Combo – 1 Stück / 80,90 m"
     ]
   },
 
@@ -822,75 +833,75 @@
     },
     "manavgatWaterfall": {
       "title": "MANAVGAT-WASSERFALL",
-      "description": "Der Manavgat-Wasserfall liegt etwa 3 km westlich des Stadtzentrums. Das Wasser stürzt über eine breite Kante und bietet trotz der geringen Fallhöhe einen beeindruckenden Anblick. Der Wasserfall ist mit öffentlichen Verkehrsmitteln von Manavgat aus erreichbar."
+      "description": "Der Wasserfall liegt 3 km westlich von Manavgat und trägt denselben Namen wie der Landkreis. Obwohl das Wasser aus einer überraschend geringen Höhe fällt, bietet sein rauschender Lauf über eine breite Fläche einen sehenswerten Anblick. Der Wasserfall ist mit Kleinbussen von Manavgat aus erreichbar."
     },
     "titreyengol": {
       "title": "TİTREYENGÖL",
-      "description": "Der Titreyengöl verdankt seinen Namen den kleinen Wellen, die selbst bei leichtem Wind auf seiner ansonsten ruhigen Oberfläche entstehen. Die natürliche Vegetation und die lokalen Legenden verleihen dem See seinen besonderen Charme."
+      "description": "Der sehr ruhige See verdankt seinen Namen den Bewegungen, die selbst der leichteste Wind auf seiner Oberfläche erzeugt. Einer Legende zufolge versammelten sich Vögel um einen alten Fischer am See, sobald er sie fütterte. Eines Tages schossen Jäger auf Enten. Der Fischer wollte sie aufhalten, wurde jedoch weggestoßen. Daraufhin erhoben sich die übrigen Enten gemeinsam, erzeugten mit ihren Flügeln einen Wirbelsturm und vertrieben die Jäger. Seit diesem Ereignis soll der See unaufhörlich zittern."
     },
     "side": {
       "title": "SIDE",
-      "description": "Side liegt etwa 75 km von Antalya und 7 km von Manavgat entfernt auf einer Halbinsel im Mittelmeer. Die Geschichte dieses Ortes reicht bis in die Antike zurück. Im Laufe der Jahrhunderte war die Region Heimat verschiedener Zivilisationen."
+      "description": "Side liegt 75 km von Antalya und 7 km von Manavgat entfernt auf einer etwa 400 Meter breiten und 1 Kilometer langen Halbinsel. Der Name Side bedeutet in einer anatolischen Sprache „Granatapfel“. Inschriften deuten darauf hin, dass seine Geschichte bis zu den Hethitern reicht. Einige Quellen zufolge wurde eine der ältesten Siedlungen Anatoliens vor dem 7. Jahrhundert v. Chr. gegründet und stand später unter der Herrschaft vieler Zivilisationen."
     },
     "sideAncientCity": {
       "title": "ANTIKE STADT SIDE",
-      "description": "Die antike Stadt Side beeindruckt mit ihrem Theater, dem Apollontempel, dem monumentalen Stadttor, historischen Bädern, der Agora und dem alten Hafen. Hier können Besucher die kulturelle Geschichte der Mittelmeerküste entdecken."
+      "description": "Side liegt 75 km von Antalya und 7 km von Manavgat entfernt auf einer etwa 400 Meter breiten und 1 Kilometer langen Halbinsel. Die antike Stadt, im Lexikon des Hesychios als Stadt der Granatäpfel erwähnt, lässt mit ihrem Theater, den Ruinen am Strand, dem Apollontempel, dem prächtigen Stadttor, den Bädern, der Agora und dem historischen Hafen Geschichte bis ins Detail lebendig werden."
     },
     "aspendos": {
       "title": "THEATER VON ASPENDOS",
-      "description": "Das etwa 44 km von Manavgat entfernte Theater von Aspendos wurde im 2. Jahrhundert n. Chr. erbaut. Mit einer geschätzten Kapazität von rund 17.000 Zuschauern gehört es zu den am besten erhaltenen antiken Theatern und wird heute für Konzerte und Kulturveranstaltungen genutzt."
+      "description": "Das 44 km von Manavgat entfernte Theater von Aspendos wurde im 2. Jahrhundert n. Chr. erbaut, fasst 17.000 Personen und zählt zu den am besten erhaltenen Amphitheatern. Es gehört zu den seltenen Theatern, deren Bühne bis heute hervorragend erhalten ist. Heute finden dort Konzerte, Feste, Festivals und traditionelles Ölringen statt. Auch Agora, Basilika, Nymphaeum und die 15 km langen Bogenwasserleitungen sind sehenswert."
     },
     "seleukeia": {
       "title": "SELEUKEIA",
-      "description": "Die Ruinen von Seleukeia befinden sich nordwestlich von Manavgat in Richtung Taurusgebirge auf einem etwa 300 Meter hohen Hügel. Die steilen Hänge und tiefen Täler bieten neben antiken Überresten auch beeindruckende Ausblicke."
+      "description": "Die Ruinen von Seleukeia erreicht man 12 km nordwestlich von Manavgat in Richtung Taurusgebirge. Die von den Seleukiden um 300 v. Chr. als befestigte Akropolis auf einem Hügel gegründete Stadt bietet mit ihren steilen Hängen und tiefen Tälern einen weiten Blick über die Ebene und das Meer."
     },
     "kopruluCanyon": {
       "title": "KÖPRÜLÜ-CANYON",
-      "description": "Der Nationalpark Köprülü Canyon liegt etwa 60 km von Manavgat entfernt. Er zählt zu den beliebten Raftinggebieten der Türkei und ist für den Fluss Köprüçay, historische römische Brücken, alte Wege und seine eindrucksvolle Natur bekannt."
+      "description": "Der Köprülü-Canyon-Nationalpark liegt 60 km von Manavgat entfernt. Er ist eines der beliebtesten Raftinggebiete der Türkei und zugleich ihr längster Canyon. Rafting ist ein aufregender Flusssport, der mit Schlauchbooten auf schnell fließenden Flüssen betrieben wird. Der Köprüçay zählt zu den schönsten natürlichen Erholungsgebieten der Türkei. Römische Brücken, historische Straßen und zahlreiche archäologische Spuren machen den Nationalpark besonders sehenswert."
     },
     "kursunluWaterfall": {
       "title": "KURŞUNLU-WASSERFALL",
-      "description": "Der Kurşunlu-Wasserfall fällt aus ungefähr 18 Metern Höhe in mehrere miteinander verbundene Teiche. Wanderwege, Aussichtsterrassen und Picknickplätze ermöglichen es den Besuchern, diese besondere Naturlandschaft zu genießen."
+      "description": "Am Kurşunlu-Wasserfall fällt das Wasser aus 18 Metern Höhe und verbindet über kleine Kaskaden sieben Teiche. Der Wasserfall liegt in einem zwei Kilometer langen Canyon. Das 1986 eröffnete Park- und Picknickgebiet umfasst 33 Hektar und bietet Aussichtsterrassen, einen Kinderspielplatz, ein Restaurant, Parkplätze und Spazierwege."
     },
     "saklikentCanyon": {
       "title": "SAKLIKENT-SCHLUCHT",
-      "description": "Die Saklıkent-Schlucht liegt im Grenzgebiet zwischen Antalya und Fethiye und erstreckt sich über ungefähr 18 Kilometer. Ihre beeindruckenden Felswände und das fließende Wasser machen sie zu einem besonderen Ziel für Naturfreunde."
+      "description": "Die zwischen Antalya und Fethiye gelegene Saklıkent-Schlucht ist insgesamt 18 Kilometer lang. Sie eignet sich besonders für einen Ausflug mitten in der Natur; im Canyon sind außerdem Wälder aus Türkischer Kiefer, Zeder und Schwarzkiefer zu sehen."
     },
     "alanyaCastle": {
       "title": "BURG VON ALANYA",
-      "description": "Die Burg von Alanya, eines der Wahrzeichen der Stadt, erhebt sich auf einer Halbinsel etwa 250 Meter über dem Meer. Ihre ungefähr 6,5 Kilometer langen Mauern, historischen Türme und Ausblicke auf das Mittelmeer machen sie zu einer bedeutenden Sehenswürdigkeit."
+      "description": "Die Burg von Alanya ist eines der Wahrzeichen des gleichnamigen Landkreises von Antalya. Sie liegt auf einer Halbinsel etwa 250 Meter über dem Meer; ihre Mauern sind insgesamt 6,5 Kilometer lang. Die Burg wurde in hellenistischer Zeit in der früher Kandeleri genannten Siedlung errichtet."
     }
   },
   "informationSections": [
     {
       "title": "VERHALTENSREGELN IN NATUR- UND KULTURSTÄTTEN",
       "items": [
-        "Berühren oder beschädigen Sie keine Ausstellungsstücke in Museen. Beachten Sie Fotoverbote und alle ausgeschilderten Regeln.",
-        "Beschädigen Sie keine antiken Stätten, betreten Sie keine gesperrten Schutzgebiete und hinterlassen Sie keinen Müll.",
-        "Beachten Sie die Einschränkungen für Picknicks und offenes Feuer in Naturgebieten und Wäldern. Entsorgen Sie Abfälle ordnungsgemäß.",
-        "Vermeiden Sie Aktivitäten, die andere Besucher oder Wildtiere stören könnten.",
-        "Halten Sie die Jagdgesetze ein und respektieren Sie Wildtiere und ihre Lebensräume.",
-        "Kaufen oder verkaufen Sie keine historischen Gegenstände ohne die erforderlichen Genehmigungen.",
-        "Beachten Sie die Kleidervorschriften in Moscheen, ziehen Sie vor dem Betreten der Gebetsräume die Schuhe aus und stören Sie keine Betenden.",
-        "Bevorzugen Sie umweltfreundliche Kosmetik- und Reinigungsprodukte.",
-        "Informieren Sie sich vor dem Besuch über die Öffnungszeiten und Besuchstage von Museen."
+        "Berühren oder beschädigen Sie keine Ausstellungsstücke in Museen. Machen Sie in verbotenen Bereichen keine Foto- oder Videoaufnahmen und befolgen Sie schriftliche wie mündliche Anweisungen.",
+        "Beschädigen Sie keine antiken Stätten, betreten Sie keine geschützten Bereiche und verschmutzen Sie deren Umgebung nicht.",
+        "Picknicken und offenes Feuer sind in Naturgebieten und Wäldern zu unterlassen. Werfen Sie keinen Müll weg und beachten Sie Warnschilder.",
+        "Verhalten Sie sich Erwachsenen und Kindern gegenüber angemessen und belästigen Sie keine anderen Menschen.",
+        "Jagen Sie nur im Rahmen der geltenden Gesetze und Vorschriften und respektieren Sie Wildtiere und Natur.",
+        "Kaufen oder verkaufen Sie historische Gegenstände nicht ohne die erforderlichen Genehmigungen und Dokumente. Illegaler Handel ist untersagt.",
+        "Ziehen Sie vor dem Betreten einer Moschee die Schuhe aus, beachten Sie die Regeln zur Kopfbedeckung und bringen Sie keine Speisen oder Getränke hinein.",
+        "Wählen Sie zum Schutz der Natur möglichst umweltfreundliche Kosmetikprodukte. Chemikalien in Gewässern schaden Lebewesen; in die Atmosphäre gelangte Chemikalien verursachen Luftverschmutzung.",
+        "Prüfen Sie vorab Öffnungstage und -zeiten des Museums. Mit einer Museumskarte entdecken Sie die kulturellen und natürlichen Schätze des Landes und unterstützen zugleich den Schutz des Kulturerbes."
       ]
     },
     {
       "title": "BIODIVERSITÄT",
       "paragraphs": [
-        "Biodiversität bezeichnet die Vielfalt aller Lebensformen innerhalb eines Ökosystems und auf der ganzen Welt. Für das menschliche Leben sind sauberes Wasser, reine Luft, fruchtbare Böden, Nahrungsmittel und andere natürliche Ressourcen unverzichtbar.",
-        "Das Zusammenspiel von Pflanzen, Tieren, Pilzen und anderen Lebewesen ermöglicht das Funktionieren von Ökosystemen. Ausgewogene Beziehungen zwischen den Arten sind entscheidend für deren Nachhaltigkeit.",
-        "Die Pflanzenvielfalt trägt zur Reinigung der Luft, zur Vermeidung von Erosion und zur Fruchtbarkeit der Böden bei. Pflanzen bieten anderen Lebewesen Nahrung und Lebensraum.",
-        "Die Tierwelt spielt eine wichtige Rolle für das ökologische Gleichgewicht. Viele Insekten bestäuben Pflanzen, während andere Organismen organische Stoffe zersetzen.",
-        "Die Nachhaltigkeit von Ökosystemen hängt von der Vielfalt und Gesundheit ihrer Arten ab. Wir sollten die Biodiversität nicht nur für menschliche Bedürfnisse, sondern auch aus Respekt vor dem Lebensrecht aller Lebewesen schützen."
+        "Biodiversität bezeichnet die Vielfalt der Lebensformen in einem Ökosystem und auf der ganzen Welt. Menschen benötigen sauberes Wasser und reine Luft, fruchtbare Böden, Nahrung und weitere natürliche Ressourcen. Pilze, Pflanzen, Tiere und andere Lebewesen, die diese Grundlagen ermöglichen, bilden gemeinsam die Biodiversität.",
+        "Mit wachsender Biodiversität nehmen auch die ökologischen Leistungen einer Umwelt zu, sofern die beteiligten Arten ausgewogen zusammenwirken. Größere Vielfalt macht Stoffkreisläufe und Energieflüsse effizienter; sinkt sie, nehmen auch die Ökosystemleistungen ab.",
+        "Pflanzenvielfalt reinigt die Luft, verhindert Erosion, führt dem Boden organisches Material zu und mindert Bodenmüdigkeit. Pflanzen sichern die Kontinuität von Ökosystemen, indem sie anderen Lebewesen Nahrung und Schutz bieten.",
+        "Seit der Antike nutzt der Mensch Tiere als Nahrung, für Transport, Kleidung und medizinische Forschung. Manche Insekten bestäuben Pflanzen, andere zersetzen organisches Material und führen es dem Boden zurück. Zugleich dienen Insekten Vögeln, Fischen und Reptilien als Nahrung.",
+        "Die Nachhaltigkeit von Ökosystemen hängt von Vielfalt und Gesundheit ihrer Arten ab. Ihre Unversehrtheit ist eine Grundbedingung menschlichen Lebens. Biodiversität und Ökosysteme besitzen über ihren Nutzen für Menschen hinaus einen eigenen Wert und ein Existenzrecht. Wir müssen sie schützen, weil jedes Lebewesen ein Recht auf Leben hat."
       ]
     },
     {
       "title": "GESCHÜTZTE PFLANZEN- UND TIERARTEN UNSERER REGION",
       "paragraphs": [
-        "Die Mittelmeer-Mönchsrobbe und die Unechte Karettschildkröte (Caretta caretta) gehören zu den geschützten Tierarten unserer Region. Auch zahlreiche heimische Pflanzen wie Strandlilien, Iris, Narzissen und Krokusse tragen zur natürlichen Vielfalt bei.",
-        "Vermeiden Sie den Kauf von Produkten aus geschützten Pflanzen- und Tierarten. Beachten Sie gesetzliche Jagdbeschränkungen. Wir bitten Sie ausdrücklich, nicht an Zirkusveranstaltungen, Delfinshows oder anderen Aktivitäten teilzunehmen, bei denen Tiere ihrer natürlichen Umgebung entzogen werden."
+        "Mittelmeer-Mönchsrobben, Meeresschildkröten und Caretta-caretta-Schildkröten stehen in unserer Region unter Schutz. Auch Pflanzenarten wie Wicke, Ochsenzunge, Iris, Strandlilie, Sommerwurz, Narzisse und Krokus gehören zu den geschützten Arten.",
+        "Kaufen Sie keine Produkte aus geschützten Pflanzen- oder Tierarten. Die Jagd außerhalb der vom Ministerium für Land- und Forstwirtschaft zugelassenen Zeiten ist verboten. Wir bitten Sie ausdrücklich, Zirkusse, Zoos, Delfinshows und andere Aktivitäten zu meiden, die Tiere ihrer natürlichen Umgebung entziehen."
       ]
     }
   ]

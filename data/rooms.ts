@@ -9,6 +9,7 @@ export type RoomFeatureConfig = {
 
 export type RoomConfig = {
   slug: string;
+  bannerImageCount?: number;
   features: RoomFeatureConfig[];
   gallery: GalleryImage[];
   freeServices: RoomServiceId[];
@@ -18,6 +19,7 @@ export type RoomConfig = {
 export const rooms: RoomConfig[] = [
   {
     slug: "deluxe-rooms",
+    bannerImageCount: 6,
 
     features: [
       { id: "area", icon: "flaticon-area" },
@@ -57,6 +59,11 @@ export const rooms: RoomConfig[] = [
         id: "deluxe-6",
         src: "/images/rooms/deluxe-rooms-6.webp",
         alt: "Deluxe room - 6",
+      },
+      {
+        id: "deluxe-7",
+        src: "/images/rooms/deluxe-rooms-7-300x169.webp",
+        alt: "Deluxe room - 7",
       },
     ],
 

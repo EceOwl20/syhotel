@@ -44,7 +44,7 @@ export default async function Home() {
   ];
 
   return (
-    <main className="flex w-full flex-col items-center justify-center gap-10 bg-[#f0eae5] pb-20">
+    <main className="flex w-full flex-col items-center justify-center lg:gap-10 bg-[#f0eae5] pb-0 lg:pb-20">
 
       {/* Main Banner */}
       <MainBanner slides={slides} />

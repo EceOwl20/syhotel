@@ -13,14 +13,14 @@ export default function RoomFeatures({
   return (
     <div
       className="
-        mx-auto grid w-full max-w-[1100px]
+        mx-auto grid w-full max-w-[1550px]
         grid-cols-2
         gap-x-5 gap-y-5
         px-4 py-8
         text-[#8B7C6A]
         sm:gap-x-8 sm:px-8
         lg:flex lg:flex-wrap lg:items-center
-        lg:justify-center lg:gap-8 lg:p-10
+        lg:justify-between lg:gap-8 lg:p-10
       "
     >
       {features.map((feature) => (
@@ -46,8 +46,8 @@ export default function RoomFeatures({
             className="
               text-[14px] leading-snug font-light
               wrap-break-word
-              sm:text-[16px]
-              lg:text-[20px]
+              md:text-[16px]
+              lg:text-[18px]
             "
           >
             {feature.label}

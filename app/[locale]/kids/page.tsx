@@ -40,6 +40,7 @@ export default async function KidsPage() {
         description={kidsClubDescription}
         images={kidsGalleries.kidsClub}
         imagePosition="right"
+        desktopImageSize="compact"
       />
 
       {/* AQUAPARK - IMAGE LEFT / TEXT RIGHT */}
@@ -48,6 +49,7 @@ export default async function KidsPage() {
         description={t("aquapark.description")}
         images={kidsGalleries.aquapark}
         imagePosition="left"
+        desktopImageSize="compact"
       />
 
     </main>

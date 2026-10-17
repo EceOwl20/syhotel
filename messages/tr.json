@@ -54,6 +54,14 @@
     }
   },
 
+  "RelatedContent": {
+    "otherRooms": "DİĞER ODALAR",
+    "otherBars": "DİĞER BARLAR",
+    "otherRestaurants": "DİĞER RESTORANLAR",
+    "previous": "Önceki öğeler",
+    "next": "Sonraki öğeler"
+  },
+
   "Footer": {
     "corporate": "KURUMSAL",
     "contact": "İLETİŞİM",
@@ -343,26 +351,29 @@
   },
 
   "Restaurants": {
-    "slogan": "Tatilinize Tat Katıyoruz",
     "openBuffet": "AÇIK BÜFE",
     "sirius-restaurant": {
       "title": "SIRIUS",
       "subtitle": "RESTORAN",
-      "description": "Kahvaltıdan akşam yemeğine kadar misafirlerine taze, lezzetli ve sağlıklı alternatifler sunan restoranımız, dünya ve Türk mutfağından özenle seçilmiş yemekleriyle tatilinize ayrıcalık katıyor. Ayrıca farklı tema geceleriyle her akşam misafirlerine yeni lezzet deneyimleri sunuyor."
+      "slogan": "”Tatilinize Tat Katıyoruz”",
+      "description": "Sabah kahvaltısından akşam yemeğine kadar misafirlere taze, lezzetli ve sağlıklı alternatifler sunan restoran, uluslararası ve Türk mutfağından özenle seçilmiş yemeklerle tatilinizi özel kılar. Ayrıca, farklı tema geceleriyle misafirlerine her akşam farklı bir lezzet deneyimi sunar."
     },
     "nova-food-court": {
       "title": "NOVA",
       "subtitle": "FOOD COURT",
+      "slogan": "”Enfes Atıştırmalıklar”",
       "description": "Havuz ve sahil kenarında bulunan Food Court, hızlı ve lezzetli atıştırmalıkların adresidir. Sıcak ve soğuk sandviçler, pizza çeşitleri, taze salatalar ve dondurma seçenekleriyle gün boyu tatilinize enerji katarak keyifli ve pratik bir yeme içme deneyimi sunar."
     },
     "bettelglow-patisserie": {
       "title": "BETTELGLOW",
       "subtitle": "PASTANE",
+      "slogan": "”Tatlı Bir Kaçamak Yeri”",
       "description": "Tatlı bir mola vermek isteyen misafirlerimiz için gün boyu taze hazırlanmış kekler, kurabiyeler, cupcake'ler ve çikolatalar sunar. El yapımı dondurmalar ve Türk kahvesi eşliğinde servis edilen tatlılar, dinlenirken lezzetli molalar vermenizi sağlar."
     },
     "larimar-beach-restaurant": {
       "title": "LARIMAR",
       "subtitle": "SAHİL BAR & RESTORAN",
+      "slogan": "",
       "description": "Her misafirin kendisini özel hissetmesini sağlayan profesyonel ve güler yüzlü hizmet anlayışıyla öne çıkıyor. Özenle hazırlanan yemekleri ve kişiye özel hizmetiyle unutulmaz bir deneyim sunuyor."
     }
   },
@@ -431,12 +442,12 @@
 
    "Beach": {
     "title": "SAHİL",
-    "description": "Otelin sahile uzaklığı 2 km olup, her 15 dakikada bir shuttle servisi ile yaklaşık 4 dakikada ulaşılabilmektedir."
+    "description": "Hotelin sahile uzaklığı 2 km olup, her 15 dakikada bir shuttle servis ile 4 dk mesafededir."
   },
 
   "Aquapark": {
     "title": "MEGA SPLASH AQUAPARK",
-    "description": "14 farklı kaydırak seçeneğiyle adrenalin tutkunları ve eğlence severler için vazgeçilmez bir deneyim sunuyor. Hem çocuklar hem de yetişkinler için ayrı alanları bulunan aquaparkta, her yaştan misafir suyun heyecan verici dünyasına kendini bırakabilir. Hızlı kaydıraklar, dalga havuzu ve özel etkinlik alanları ile aquapark, aileniz ve sevdiklerinizle gün boyu keyif dolu saatler geçirmenizi sağlar.",
+    "description": "14 Farklı kaydırak seçeneğiyle adrenalin tutkunları ve eğlence severler için vazgeçilmez bir deneyim sunuyor. Hem çocuklar hem de yetişkinler için ayrı alanları bulunan aquaparkta, her yaştan misafir suyun heyecan verici dünyasına kendini bırakabilir. Hızlı kaydıraklar, dalga havuzu ve özel etkinlik alanları ile aquapark, aileniz ve sevdiklerinizle gün boyu keyif dolu saatler geçirmenizi sağlar.",
     "slides": [
       "Hill Slide – 1 adet / 35,96 m",
       "Body Slide – Combo – 1 adet / 36,90 m",
@@ -689,7 +700,7 @@
 
 "KVKK": {
   "eyebrow": "KVKK",
-  "title": "KİŞİSEL VERİLERİN KORUNMA KANUNU",
+  "title": "KİŞİSEL VERİLERİN KORUMA KANUNU",
   "intro": "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, SY Hotels Belek olarak kişisel verilerinizin güvenliğine büyük önem vermekteyiz.",
   "explanation": "Bu doğrultuda, sizlere ait kişisel veriler; kanunlara ve ilgili mevzuata uygun olarak, dürüstlük kurallarına bağlı, doğru ve gerektiğinde güncel olacak şekilde, belirli, açık ve meşru amaçlar doğrultusunda işlenmekte, saklanmakta ve korunmaktadır.",
   "listIntro": "Verileriniz;",
@@ -817,75 +828,75 @@
     },
     "manavgatWaterfall": {
       "title": "MANAVGAT ŞELALESİ",
-      "description": "Manavgat ilçesinin yaklaşık 3 km batısında bulunan şelale, ilçe ile aynı adı taşır. Alçak bir yükseklikten geniş bir alan üzerine dökülen suları, görülmeye değer etkileyici bir manzara oluşturur. Manavgat’tan kalkan toplu taşıma araçlarıyla ulaşım sağlanabilir."
+      "description": "Manavgat ilçesinin 3 km. batısında bulunan şelale, ilçe ile aynı adı taşır. Şaşırtıcı bir yükseklikten dökülmesine karşın, geniş bir alan üzerinden gürül gürül akışı görülmeye değer bir manzara oluşturur. Manavgat’tan kalkan dolmuşlarla ulaşım sağlanabilir."
     },
     "titreyengol": {
       "title": "TİTREYENGÖL",
-      "description": "Durgun yüzeyinde en hafif rüzgârda bile oluşan titreşimlerden adını alan Titreyengöl, doğal güzelliği ve çevresindeki bitki örtüsüyle dikkat çeker. Gölün adıyla ilgili anlatılan efsaneler de bölgenin kültürel zenginliğinin bir parçasıdır."
+      "description": "Çok durgun ve en hafif rüzgârda bile üzerinde titremeler oluşan göl, adını buradan almıştır. Rivayete göre gölün kenarında yaşayan yaşlı balıkçı kuşları her beslediğinde kuşlar etrafında toplanırmış. Bir gün gölde avlanan avcılar su üstündeki ördekleri vurur; yaşlı balıkçı avcıların üzerine yürür ve onları avlanmaktan vazgeçirmeye çalışır. Avcılar yaşlı adamı iter ve vurdukları ördekleri almaya çalışır. Bu sırada diğer ördekler hep birlikte havalanarak kanatları ile bir hortum oluşturur ve avcıları kaçırırlar. Bu olaydan sonra göl hep titremeye başlar."
     },
     "side": {
       "title": "SİDE",
-      "description": "Antalya’ya yaklaşık 75 km, Manavgat’a 7 km uzaklıkta bulunan Side, denize uzanan bir yarımada üzerinde yer alır. Tarihi Hititlere kadar uzanan bölge, geçmişte birçok medeniyete ev sahipliği yapmıştır."
+      "description": "Antalya’ya 75 km, Manavgat’a 7 km uzaklıkta olan Side, yaklaşık 400 m eni ve 1 km uzunluğu olan bir yarımada şeklindedir. Side adı Anadolu dilinde ‘nar’ anlamına gelmektedir. Bulunan bazı yazıtlara göre Side tarihinin Hititlere kadar uzandığı anlaşılmaktadır. Anadolu’nun en eski yerleşim birimlerinden olan Side, bazı kaynaklara göre MÖ VII. yüzyıldan önce kurulmuş ve zamanla birçok medeniyetin egemenliği altında kalmıştır."
     },
     "sideAncientCity": {
       "title": "SİDE ANTİK KENTİ",
-      "description": "Side Antik Kenti; antik tiyatrosu, Apollon Tapınağı, anıtsal kapısı, hamamları, agorası ve tarihi limanıyla ziyaretçilerine zengin bir kültürel miras sunar. Akdeniz kıyısında tarih ve doğayı bir arada keşfedebilirsiniz."
+      "description": "Antalya’ya 75 km, Manavgat’a 7 km uzaklıkta olan Side, yaklaşık 400 m eni ve 1 km uzunluğu olan bir yarımada şeklindedir. Pek çok uygarlığın gelip geçtiği Antik Kent Side; Hesychius’un sözlüğünde bahsettiği Narlar Kenti, antik tiyatrosu, kumsalın yanında uzanan tarihi kalıntıları, Apollon Tapınağı, ihtişamlı kent kapısı, hamamları, agorası ve tarihi limanı ile size tarihi en ince ayrıntılarına kadar yaşatacak bir kenttir."
     },
     "aspendos": {
       "title": "ASPENDOS TİYATROSU",
-      "description": "Manavgat’a yaklaşık 44 km mesafede bulunan Aspendos Tiyatrosu, MS 2. yüzyılda inşa edilmiştir. Yaklaşık 17.000 kişi kapasiteli antik tiyatro, günümüze oldukça iyi korunmuş şekilde ulaşmıştır. Günümüzde çeşitli konser, festival ve kültürel etkinliklere ev sahipliği yapmaktadır."
+      "description": "Manavgat’a 44 km mesafede, MS 2. yüzyılda inşa edilen Aspendos Tiyatrosu 17.000 kişilik olup günümüzde ayakta kalmış en iyi korunmuş amfi tiyatrolardan biridir. Sahnesi ile birlikte günümüze değin korunabilmiş nadir tiyatrolardandır. Günümüzde çeşitli konser, şenlik, festival ve yağlı güreşlerde kullanılmaktadır. Aspendos’ta Agora, Bazilika, Nymphaeum ve 15 km uzunluğundaki kemerli su yolları da görülmeye değer yapılardır."
     },
     "seleukeia": {
       "title": "SELEUKEİA",
-      "description": "Manavgat’ın kuzeybatısında, Toroslar yönünde bulunan Seleukeia kalıntıları, yaklaşık 300 metre yüksekliğinde bir tepe üzerinde yer alır. Dik yamaçları ve derin vadilerle çevrili konumu, ziyaretçilere tarihi kalıntılarla birlikte etkileyici bir doğa manzarası sunar."
+      "description": "Manavgat’tan kuzeybatı yönünde Toroslara doğru gidildiğinde 12 km sonra Seleukeia kalıntılarına ulaşılır. Selevkoslar tarafından kurulmuştur. MÖ 300’lerde korunma amaçlı akropol kent olarak bir tepe üzerine kurulmuş olan kent, dik yamaçlı ve derin vadili coğrafyası ile tüm ovayı ve denizi gözler önüne serer."
     },
     "kopruluCanyon": {
       "title": "KÖPRÜLÜ KANYON",
-      "description": "Köprülü Kanyon Milli Parkı, Manavgat’a yaklaşık 60 km uzaklıkta bulunur. Türkiye’nin popüler rafting alanlarından biri olan bölge; Köprüçay Nehri, Roma döneminden kalma köprüleri, tarihi yolları ve doğal güzellikleriyle tanınır."
+      "description": "Köprülü Kanyon Milli Parkı, Manavgat’a 60 km uzaklıktadır. Türkiye’nin en popüler rafting alanlarından biri ve en uzun kanyonudur. Rafting, raft adı verilen botlarla debisi yüksek nehirlerde yapılan eğlenceli ve heyecan verici bir nehir sporudur. Köprüçay Nehri, Türkiye’nin en güzel doğal rekreasyon alanlarından biridir. Roma devrine ait köprüler, tarihi yollar ve pek çok arkeolojik kaynak Köprülü Kanyon Milli Parkı’nı görülmeye değer yerlerden biri yapmaktadır."
     },
     "kursunluWaterfall": {
       "title": "KURŞUNLU ŞELALESİ",
-      "description": "Kurşunlu Şelalesi, yaklaşık 18 metre yükseklikten dökülen suları ve birbirine bağlanan küçük göletleriyle büyüleyici bir doğal ortam sunar. Mesire alanında yürüyüş yolları, seyir terasları ve piknik alanları bulunmaktadır."
+      "description": "Kurşunlu Şelalesi’ne su 18 metre yükseklikten dökülmekte ve küçük şelalelerle 7 adet küçük gölet birbirine bağlanmaktadır. Şelale, 2 kilometrelik bir kanyonun içinde yer alır. Bu alan 1986 yılında park haline getirilerek ziyarete açılmıştır. Şelale ve piknik yeri 33 hektarlık bir alanı kaplar. Piknik alanında manzara seyir terasları, çocuk parkı, restoran, otopark ve gezinti patikaları bulunmaktadır."
     },
     "saklikentCanyon": {
       "title": "SAKLIKENT KANYONU",
-      "description": "Antalya ve Fethiye sınırları arasında yer alan Saklıkent Kanyonu, yaklaşık 18 kilometre uzunluğundadır. Doğayla iç içe yürüyüş yapmak ve serin suların oluşturduğu etkileyici kanyon manzarasını keşfetmek isteyenler için özel bir yerdir."
+      "description": "Antalya ile Fethiye sınırları arasında konumlanan Saklıkent Kanyonu, toplamda 18 kilometrelik bir uzunluğa sahiptir. Doğa ile iç içe bir gezi planı yapmak isteyenlerin keyifli vakit geçirebileceği kanyon içerisinde kızılçam, sedir ve karaçam ağaçlarının oluşturduğu ormanlık alanlar da görülebilmektedir."
     },
     "alanyaCastle": {
       "title": "ALANYA KALESİ",
-      "description": "Alanya’nın simgelerinden biri olan Alanya Kalesi, denizden yaklaşık 250 metre yükseklikte bir yarımada üzerinde yer alır. Yaklaşık 6,5 kilometrelik surları, tarihi kuleleri ve Akdeniz manzarasıyla bölgenin önemli kültürel miraslarından biridir."
+      "description": "Alanya Kalesi, Antalya’nın ilçesi Alanya’nın simgelerinden biridir. Denizden yaklaşık 250 metre yükselen bir yarımada üzerinde bulunmaktadır. Surlarının toplam uzunluğu 6,5 kilometredir. Eski dönemlerde Kandeleri olarak adlandırılan Alanya yerleşimine kale Helenistik dönemde inşa edilmiştir."
     }
   },
   "informationSections": [
     {
       "title": "DOĞAL VE KÜLTÜREL ALANLARDA UYULMASI GEREKEN KURALLAR",
       "items": [
-        "Müzelerde sergilenen eserlere dokunulmamalı ve zarar verilmemelidir. Yasak olan bölümlerde video ve fotoğraf çekimi yapılmamalı, belirtilen kurallara uyulmalıdır.",
-        "Antik kent alanları tahrip edilmemeli, koruma altındaki bölgelere girilmemeli ve çevre kirletilmemelidir.",
-        "Doğal gezi alanlarında ve ormanlarda piknik yapılmamalı, ateş yakılmamalı, yerlere çöp atılmamalı ve uyarı levhalarına dikkat edilmelidir.",
-        "Bu alanlarda yetişkin ve çocuklarla uygun olmayan faaliyetler gerçekleştirilmemeli, insanları rahatsız edici davranışlardan kaçınılmalıdır.",
-        "Avcılık için belirlenen yasa ve kurallara uyulmalı, yaban hayatına saygı gösterilmelidir.",
-        "Tarihi eserlerin izinsiz alım ve satımı yapılmamalıdır.",
-        "Camiye ayakkabı ile girilmemeli, uygun kıyafet kurallarına uyulmalı ve ibadet eden kişiler rahatsız edilmemelidir.",
-        "Doğamızı korumak amacıyla kullanılan kozmetik ve temizlik ürünlerinde doğa dostu seçeneklere özen gösterilmelidir.",
-        "Ziyaret etmek istediğiniz müzelerin açık olduğu saat ve günleri önceden kontrol etmenizi öneririz."
+        "Müzelerde sergilenen eserlere dokunulmamalı ve zarar verilmemelidir. Yasak olan bölümlerde video ve resim çekimi yapılmamalı; yazılı ya da sözlü belirtilen kurallara uyulmalıdır.",
+        "Antik kent alanları tahrip edilmemeli, koruma bölgesi altına alınan alanlara girilmemeli ve çevresi kirletilmemelidir.",
+        "Doğal gezi alanları ve ormanlarda piknik yapılmamalı, ateş yakılmamalı, yerlere çöp atılmamalı ve uyarı levhalarına dikkat edilmelidir.",
+        "Bu alanlarda yetişkin ve çocuklarla uygun olmayan samimiyet kurulmamalı ve insanlar rahatsız edilmemelidir.",
+        "Avcılık için belirlenen yasa ve kurallara uygun avcılık yapılmalı; vahşi yaşam ve doğal hayata saygı gösterilmelidir.",
+        "Tarihi eser alım satımı gerekli izin ve belgeler olmadan yapılmamalı, yasa dışı alım satımdan kaçınılmalıdır.",
+        "Camiye ayakkabı ile girilmemeli, kadınlar başörtüsü ile girmeli ve içeriye yiyecek-içecek sokulmamalıdır.",
+        "Doğamızı korumak amacıyla kullandığınız kozmetik ürünlerini doğa dostu ürünlerden seçmeye özen gösteriniz. Su kaynaklarımıza yayılan kimyasalların canlılara zarar verdiğini, atmosfere yayılan kimyasalların hava kirliliğine neden olduğunu unutmayınız.",
+        "Ziyaret etmek istediğiniz müzenin açık olduğu saat ve günleri kontrol etmenizi öneririz. Müze Kart sahibi olarak ülkemizin kültürel ve doğal zenginliklerini keşfedebilir, aynı zamanda kültürel varlıkların korunmasına katkı sağlayabilirsiniz."
       ]
     },
     {
       "title": "BİYOÇEŞİTLİLİK",
       "paragraphs": [
-        "Biyoçeşitlilik, bir ekosistemde ve tüm dünyada bulunan yaşam formlarının çeşitliliğidir. İnsanların yaşamlarını sürdürebilmesi için temiz suya, temiz havaya, verimli topraklara, besin kaynaklarına ve doğal kaynaklara ihtiyacı vardır.",
-        "Biyoçeşitlilik; bitkiler, hayvanlar, mantarlar ve diğer canlılar arasındaki ilişkiler sayesinde ekosistemlerin işleyişini destekler. Türler arasındaki dengeli etkileşim, doğal yaşamın sürdürülebilirliği açısından önemlidir.",
-        "Bitki çeşitliliği havanın temizlenmesine, erozyonun önlenmesine ve toprağın verimliliğine katkı sağlar. Bitkiler diğer canlılara barınma ve beslenme ortamı sunar.",
-        "Hayvan çeşitliliği ekosistemlerin dengesinin korunmasında önemli rol oynar. Pek çok böcek türü bitkilerin tozlaşmasını sağlarken başka türler organik maddelerin ayrışmasına yardımcı olur.",
-        "Ekosistemlerin sürdürülebilirliği, içinde yaşayan türlerin çeşitliliğine ve sağlığına bağlıdır. Biyoçeşitliliği yalnızca insanların ihtiyaçları için değil, tüm canlıların yaşam hakkına saygı göstermek için korumalıyız."
+        "Biyoçeşitlilik, bir ekosistemde ve tüm dünyada bulunan yaşam formlarının çeşitliliğidir. İnsanların yaşamlarını sürdürebilmesi için yaşadıkları çevrede temiz su ve havanın, verimli toprakların, besinlerin ve diğer gereksinimlerin karşılanması gerekir. Bunları sağlayan mantarlar, bitkiler, hayvanlar ve diğer canlılar biyoçeşitliliği oluşturur.",
+        "Bir çevredeki biyoçeşitlilik arttıkça o çevrenin ekolojik hizmetleri de artar. Bu artış, biyoçeşitliliği oluşturan türler arasında dengeli etkileşim gerçekleştiğinde geçerlidir. Biyolojik çeşitlilik arttıkça ekosistemlerdeki madde dolaşımı ve enerji akışı daha etkin gerçekleşir; azaldığında ise ekosistem hizmetleri de azalır.",
+        "Bitki çeşitliliği havayı temizler, erozyonu önler, toprağa organik madde kazandırır ve toprak yorgunluğunu giderir. Bitkiler, diğer canlılara barınma ve beslenme ortamı sağlayarak ekosisteme devamlılık kazandırır.",
+        "İnsanlar ilk çağlardan günümüze hayvanlardan gıda, taşımacılık, giyim ve tıp alanlarında yararlanmıştır. Bazı böcekler bitkilerin tozlaşmasını sağlayarak ekosistemin sürekliliğine katkıda bulunur; bazıları organik maddelerin ayrışmasını ve yeniden toprağa kazandırılmasını sağlar. Böcek türleri aynı zamanda kuşlar, balıklar ve sürüngenler için besin kaynağıdır.",
+        "Ekosistemlerin sürdürülebilirliği, içinde yaşayan türlerin çeşitliliğine ve sağlığına bağlıdır. İnsan yaşamının devamı için ekosistemlerin bozulmaması öncelikli koşuldur. Biyoçeşitliliğin insanlara sağladığı yararların yanı sıra kendine özgü değeri ve var olma hakkı vardır. Onu yalnızca ihtiyaçlarımız için değil, tüm canlıların yaşama hakkına saygı gösterdiğimiz için korumalıyız."
       ]
     },
     {
       "title": "BÖLGEMİZDE KORUMA ALTINA ALINAN BİTKİ VE HAYVAN TÜRLERİ",
       "paragraphs": [
-        "Akdeniz foku ve Caretta caretta deniz kaplumbağaları bölgemizde koruma altındaki türler arasında bulunmaktadır. Burçak Çiçeği, Havacıva Çiçeği, İris Çiçeği, Kum Zambağı, Canavar Otu, Nergis ve Çiğdem gibi bitki türleri de bölgenin doğal çeşitliliğine katkı sağlamaktadır.",
-        "Koruma altındaki bitki ve hayvan türlerinden elde edilmiş ürünleri satın almaktan kaçınmalıyız. Yasal avlanma dönemlerine uyulmalıdır. Sirk, hayvanat bahçesi ve yunus gösterileri gibi hayvanları doğal yaşamlarından ayıran etkinliklere katılmamanızı önemle rica ederiz."
+        "Akdeniz foku, deniz kaplumbağası ve Caretta carettalar bölgemizde koruma altına alınmıştır. Burçak Çiçeği, Havacıva Çiçeği, İris Çiçeği, Kum Zambağı, Canavar Otu, Nergis ve Çiğdem Çiçeği gibi bitki türleri de koruma altındaki türler arasındadır.",
+        "Koruma altındaki bitki ve hayvan türlerinden elde edilmiş ürünleri satın almak sakıncalıdır. Tarım ve Orman Bakanlığı’nın izin verdiği tarihler dışında avlanmak yasaktır. Sirk, hayvanat bahçesi ve yunus gösterileri gibi hayvanları doğal yaşamından ayıran aktivitelere katılmamanızı önemle rica ederiz."
       ]
     }
   ]

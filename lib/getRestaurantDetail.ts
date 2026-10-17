@@ -32,7 +32,7 @@ export async function getRestaurantDetail(
     title: t(`${slug}.title`),
     subtitle: t(`${slug}.subtitle`),
     description: t(`${slug}.description`),
-    slogan: t("slogan"),
+    slogan: t(`${slug}.slogan`),
     buffetTitle: t("openBuffet"),
     gallery: translateGallery(restaurant.gallery),
     buffetGallery: restaurant.buffetGallery

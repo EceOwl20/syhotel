@@ -60,7 +60,7 @@ export default function RestaurantTextBanner({
     max-w-[1100px]
     text-[24px] leading-[1.2]
     font-extralight tracking-[0.02em] text-white
-    sm:text-[32px] md:text-[36px] lg:text-[52px]
+    sm:text-[32px] md:text-[36px] lg:text-[44px]
 
     transform-gpu
     transition-[transform,opacity]

@@ -31,7 +31,7 @@ export default function RoomsSection({
           </h2>
 
           {description && (
-            <p className="mt-6 max-w-[1500px] text-[14px] leading-[1.66] font-normal md:text-[16px]">
+            <p className="w-[95%] mt-6 max-w-[1500px] text-[14px] leading-[1.66] font-normal md:text-[16px]">
               {description}
             </p>
           )}

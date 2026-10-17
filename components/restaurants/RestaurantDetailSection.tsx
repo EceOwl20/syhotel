@@ -64,7 +64,7 @@ export default function RestaurantDetailSection({
   </h2>
 
   {/* Description */}
-  <p className="mt-5 lg:mt-7 text-[14px] leading-[1.7] font-light md:text-[16px]">
+  <p className="mt-5 lg:mt-7 text-[14px] leading-[1.7] font-light md:text-[16px] lg:text-[14px]">
     {description}
   </p>
 

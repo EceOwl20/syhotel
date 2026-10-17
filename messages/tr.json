@@ -362,7 +362,7 @@
       "title": "NOVA",
       "subtitle": "FOOD COURT",
       "slogan": "”Enfes Atıştırmalıklar”",
-      "description": "Havuz ve sahil kenarında bulunan Food Court, hızlı ve lezzetli atıştırmalıkların adresidir. Sıcak ve soğuk sandviçler, pizza çeşitleri, taze salatalar ve dondurma seçenekleriyle gün boyu tatilinize enerji katarak keyifli ve pratik bir yeme içme deneyimi sunar."
+      "description": "Havuz ve sahil kenarında konumlanan Food Court, hızlı ve lezzetli atıştırmalıkların adresidir. Sıcak-soğuk sandviçler, pizza çeşitleri, taze salatalar ve dondurma seçenekleriyle, gün boyunca tatilinize enerji katan bu alan, misafirlere keyifli ve pratik bir yeme-içme deneyimi yaşatır."
     },
     "bettelglow-patisserie": {
       "title": "BETTELGLOW",
@@ -380,9 +380,9 @@
 
   "SpaWellness": {
     "intro": {
-      "subtitle": "GÜZELLİK, BAKIM",
+      "subtitle": "GÜZELLİK, BAKIMLAR",
       "title": "SPA & WELLNESS",
-      "description": "Otelimiz kapsamlı bir spa ve wellness merkezine sahiptir. Uzman terapistler tarafından sunulan masaj terapileriyle stresinizi atabilir; Türk hamamı, sauna ve buhar odasında rahatlayabilir, kapalı ve açık havuzlarda serinleyebilirsiniz. Ayrıca otelimizin modern fitness merkezi, spor yapmayı seven misafirlerimiz için en son teknoloji ekipmanlarla donatılmıştır."
+      "description": "Geniş kapsamlı bir spa ve wellness merkezine sahiptir. Uzman terapistler tarafından sunulan masaj terapileri ile stresinizi atabilir, Türk hamamı, sauna ve buhar odasında dinlenebilir, kapalı ve açık havuzlarında serinleyebilirsiniz. Ayrıca, otelin modern fitness salonu, spor yapmayı sevenler için son teknoloji ekipmanlarla donatılmıştır."
     },
     "spa": {
       "title": "Spa",
@@ -596,7 +596,7 @@
           "title": "Restoranlar & Alakart Restoranlar",
           "lines": [
             {"text": "• Sirius Restaurant"},
-            {"text": "(Türkiye Tema, İtalyan Tema, Asya Tema, Gala Star Tema, Meksika Tema, Balık Tema, World Tema)"},
+            {"text": "(Türkiye Tema, İtalyan Tema, Asia Tema, Gala Star Tema, Meksika Tema, Balık Tema, World Tema (Dünya Mutfakları))"},
             {"text": "• Kahvaltı"},
             {"text": "• Öğle Yemeği"},
             {"text": "• Çocuk Büfesi (Öğle) / Mini Club"},
@@ -617,7 +617,7 @@
             {"text": "• Açık Havuz A Blok (+16) (Isıtma & Soğutma)"},
             {"text": "• Açık Havuz (B Blok)"},
             {"text": "• Çocuk Havuzu"},
-            {"text": "• Kapalı Havuz"}
+            {"text": "• Kapalı Havuz (Isıtma, 01.11 - 31.03)"}
           ]
         },
         {

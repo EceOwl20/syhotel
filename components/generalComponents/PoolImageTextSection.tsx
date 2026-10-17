@@ -58,7 +58,7 @@ export default function PoolImageTextSection({
 
           {/* CIRCULAR IMAGE */}
           <div
-            className={`relative mx-auto w-full max-w-[560px] ${
+            className={`relative mx-auto w-full max-w-[300px] md:max-w-[560px] ${
               imageIsLeft
                 ? "lg:col-start-1 lg:row-start-1"
                 : "lg:col-start-2 lg:row-start-1"
@@ -89,7 +89,7 @@ export default function PoolImageTextSection({
                     src={src}
                     alt={`${title} - ${index + 1}`}
                     fill
-                    sizes="(max-width: 1023px) 90vw, 560px"
+                    sizes="(max-width: 767px) 300px, (max-width: 1023px) 50vw, 560px"
                     className="object-cover transition-transform duration-700 ease-out hover:scale-105"
                   />
                 </button>

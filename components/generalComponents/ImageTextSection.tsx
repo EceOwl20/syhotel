@@ -33,24 +33,24 @@ export default function ImageTextSection({
   const imageIsLeft = imagePosition === "left";
   const hasCompactDesktopImage = desktopImageSize === "compact";
   const desktopGridClass = hasCompactDesktopImage
-    ? "lg:grid-cols-5"
+    ? "lg:grid-cols-2"
     : "lg:grid-cols-3";
   const desktopImageClass = hasCompactDesktopImage
     ? imageIsLeft
-      ? "lg:col-span-3 lg:col-start-1 lg:row-start-1"
-      : "lg:col-span-3 lg:col-start-3 lg:row-start-1"
+      ? "lg:col-start-1 lg:row-start-1"
+      : "lg:col-start-2 lg:row-start-1"
     : imageIsLeft
       ? "lg:col-span-2 lg:col-start-1 lg:row-start-1"
       : "lg:col-span-2 lg:col-start-2 lg:row-start-1";
   const desktopTextClass = hasCompactDesktopImage
     ? imageIsLeft
-      ? "lg:col-span-2 lg:col-start-4 lg:pl-5"
-      : "lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:pr-5 lg:text-right"
+      ? "lg:col-start-2 lg:pl-5"
+      : "lg:col-start-1 lg:row-start-1 lg:pr-5 lg:text-right"
     : imageIsLeft
       ? "lg:col-start-3 lg:pl-5"
       : "lg:col-start-1 lg:row-start-1 lg:pr-5 lg:text-right";
   const imageSizes = hasCompactDesktopImage
-    ? "(max-width: 1023px) 100vw, 60vw"
+    ? "(max-width: 1023px) 100vw, 50vw"
     : "(max-width: 1023px) 100vw, 66vw";
 
   const galleryImages: GalleryImage[] = useMemo(
@@ -78,7 +78,7 @@ export default function ImageTextSection({
 
   return (
     <>
-      <section className={`w-full bg-white px-5 py-5 md:px-8 ${className}`}>
+      <section className={`w-full bg-white px-5 py-5 md:py-10 md:px-8 ${className}`}>
         <Reveal>
           <div
             className={`mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-8 lg:gap-0 ${desktopGridClass}`}

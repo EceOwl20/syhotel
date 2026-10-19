@@ -134,10 +134,10 @@ export default function RoomGallery({
     <>
       <div
         className={`
-          mx-auto grid w-[99%]
+          mx-auto grid w-[99%] max-w-[1030px]
           grid-cols-3 gap-[10px]
           md:grid-cols-4
-          lg:w-[90%]
+          lg:w-full
           ${columnClasses[columns]}
         `}
       >

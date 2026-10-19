@@ -91,21 +91,22 @@ export default async function BarDetailPage({
   <div
     className="
       absolute left-1/2 z-30
-      -translate-x-1/2 bottom-[-7%]
-      lg::bottom-[-5%] 
+      -translate-x-1/2 bottom-[-12px]
+      md:bottom-[10px]
     "
   >
     <ParticleLogo
   src={bar.logo}
-  width={460}
-  height={300}
-  padding={20}
+  width={450}
+  height={250}
+  padding={0}
   particleGap={1}
-  particleSize={0.85}
+  particleSize={1.2}
   mouseRadius={50}
-  color="#ffffff"
+  color="#EEE1D3"
   detectionMode="alpha"
   entranceAnimation
+  entranceOrigin="random"
   entranceDuration={1800}
 />
   </div>

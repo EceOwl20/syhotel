@@ -50,14 +50,14 @@ export default async function GeneralInformationContent() {
 
   return (
     <section className="w-full bg-[#f7f7f5] px-5 py-14 md:px-8 md:py-20">
-      <div className="mx-auto max-w-[1500px]">
+      <div className="mx-auto max-w-[1040px]">
         {/* Page heading */}
-        <div className="mb-12 text-center text-[#858585]">
-          <h1 className="text-[30px] font-extralight tracking-[0.02em] md:text-[38px]">
+        <div className="mb-12 text-center text-[#7A7A7A]">
+          <h1 className="text-[30px] leading-[1.35] font-extralight tracking-[0.02em] md:text-[44px]">
             {t("title")}
           </h1>
 
-          <p className="mx-auto mt-5 max-w-[1600px] text-[13px] leading-[1.8] font-light md:text-[15px]">
+          <p className="mx-auto mt-5 max-w-[1040px] text-[14px] leading-[1.66] font-normal md:text-[16px]">
             {t("description")}
           </p>
         </div>

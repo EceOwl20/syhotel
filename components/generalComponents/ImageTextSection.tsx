@@ -81,7 +81,7 @@ export default function ImageTextSection({
       <section className={`w-full bg-white px-5 py-5 md:py-10 md:px-8 ${className}`}>
         <Reveal>
           <div
-            className={`mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-8 lg:gap-0 ${desktopGridClass}`}
+            className={`mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-8 lg:gap-0 ${desktopGridClass}`}
           >
           {/* IMAGE SLIDER */}
           <div
@@ -179,11 +179,11 @@ export default function ImageTextSection({
               ${desktopTextClass}
             `}
           >
-            <h2 className="mb-5 text-[24px] font-light md:text-[28px]">
+            <h2 className="mb-5 text-[24px] leading-[1.2] font-normal md:text-[30px]">
               {title}
             </h2>
 
-            <p className="whitespace-pre-line text-[13px] leading-[1.8] font-light md:text-[15px]">
+            <p className="whitespace-pre-line text-[14px] leading-[1.66] font-normal md:text-[16px]">
               {description}
             </p>
           </div>

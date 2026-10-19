@@ -13,11 +13,11 @@ export default function RoomFeatures({
   return (
     <div
       className="
-        mx-auto grid w-full max-w-[1550px]
+        mx-auto grid w-full max-w-[1030px]
         grid-cols-2
         gap-x-5 gap-y-5
-        px-4 py-8
-        text-[#8B7C6A]
+        px-0 py-8
+        text-[#7A7A7A]
         sm:gap-x-8 sm:px-8
         lg:flex lg:flex-wrap lg:items-center
         lg:justify-between lg:gap-8 lg:p-10
@@ -44,7 +44,7 @@ export default function RoomFeatures({
 
           <p
             className="
-              text-[14px] leading-snug font-light
+              text-[14px] leading-snug font-normal
               wrap-break-word
               md:text-[16px]
               lg:text-[18px]

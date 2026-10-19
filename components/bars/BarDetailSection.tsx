@@ -23,7 +23,7 @@ export default function BarDetailSection({
         <div className="flex flex-col items-center text-center lg:items-end lg:pr-6 lg:text-right">
           <div className="max-w-[850px]">
             <div
-              className="mb-2 flex items-center justify-center gap-5 lg:justify-end"
+              className="mb-2 hidden items-center justify-center gap-5 md:flex lg:justify-end"
               aria-hidden="true"
             >
               <i className="flaticon-cocktail-1 text-[30px]" />

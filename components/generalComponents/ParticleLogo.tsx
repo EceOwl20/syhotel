@@ -18,7 +18,8 @@ type ParticleLogoProps = {
   // New animation options
   entranceAnimation?: boolean;
   entranceDuration?: number;
-   useOriginalColors?: boolean;
+  entranceOrigin?: "sides" | "random";
+  useOriginalColors?: boolean;
 };
 
 type Particle = {
@@ -55,6 +56,7 @@ export default function ParticleLogo({
 
   entranceAnimation = false,
   entranceDuration = 2400,
+  entranceOrigin = "sides",
   useOriginalColors = false,
 
 }: ParticleLogoProps) {
@@ -308,13 +310,17 @@ const originY = y + jitterY + padding;
 const fromLeft = originX < canvasWidth / 2;
 
 const startX = entranceAnimation
-  ? fromLeft
-    ? -50 - Math.random() * canvasWidth * 0.5
-    : canvasWidth + 50 + Math.random() * canvasWidth * 0.5
+  ? entranceOrigin === "random"
+    ? Math.random() * canvasWidth
+    : fromLeft
+      ? -50 - Math.random() * canvasWidth * 0.5
+      : canvasWidth + 50 + Math.random() * canvasWidth * 0.5
   : originX;
 
 const startY = entranceAnimation
-  ? originY + (Math.random() - 0.5) * 100
+  ? entranceOrigin === "random"
+    ? Math.random() * canvasHeight
+    : originY + (Math.random() - 0.5) * 100
   : originY;
 
 particles.push({
@@ -418,6 +424,7 @@ mouse.y =
   useOriginalColors,
   entranceAnimation,
   entranceDuration,
+  entranceOrigin,
 ]);
 
 return (

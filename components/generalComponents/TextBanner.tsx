@@ -68,7 +68,7 @@ export default function MainBanner({
       />
 
       {/* Banner content */}
-      <div className="relative z-10 flex w-full max-w-[1240px] flex-col items-center justify-center gap-4 text-center text-[#F3F3F0]">
+      <div className="relative z-10 flex w-full max-w-[1440px] flex-col items-center justify-center gap-4 text-center text-[#F3F3F0]">
         {span && (
           <span className="text-xs leading-[1.2] font-medium tracking-[0.1em] uppercase">
             {span}

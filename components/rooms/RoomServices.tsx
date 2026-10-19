@@ -21,7 +21,7 @@ function ServiceItem({ service }: { service: RoomService }) {
     <div className="flex items-start gap-5">
 
       {/* Flaticon icon */}
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center text-[#8B7C6A]">
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center text-[#7A7A7A]">
         {Icon ? (
           <Icon className="h-[29px] w-[29px]" aria-hidden="true" />
         ) : (
@@ -34,12 +34,12 @@ function ServiceItem({ service }: { service: RoomService }) {
 
       {/* Service content */}
       <div className="min-w-0">
-        <h4 className="text-[16px] font-light leading-[1.5] text-[#8B7C6A]">
+        <h4 className="text-[16px] font-normal leading-[1.5] text-[#7A7A7A]">
           {service.title}
         </h4>
 
         {service.description && (
-          <p className="mt-1 text-[12px] font-light leading-[1.6] text-[#8B7C6A]">
+          <p className="mt-1 text-[12px] font-normal leading-[1.6] text-[#7A7A7A]">
             {service.description}
           </p>
         )}
@@ -63,12 +63,12 @@ export default function RoomServices({
   ];
 
   return (
-    <section className="w-full bg-[#f7f7f5] px-5 py-12 md:px-8 md:py-16 ">
-      <div className="mx-auto grid max-w-[1650px] grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20 w-[96%] lg:w-[90%]">
+    <section className="w-full bg-[#f7f7f5] px-0 py-12 md:px-8 md:py-16">
+      <div className="mx-auto grid w-full max-w-[1030px] grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20">
 
         {/* Free Services */}
         <div>
-          <h2 className="mb-8 text-center text-[22px] lg:text-[26px] font-extralight tracking-[0.04em] text-[#8B7C6A] md:text-[30px]">
+          <h2 className="mb-8 text-center text-[22px] font-extralight tracking-[0.04em] text-[#7A7A7A] md:text-[30px] lg:text-[26px]">
             {freeTitle}
           </h2>
 
@@ -88,7 +88,7 @@ export default function RoomServices({
 
         {/* Paid Services */}
         <div>
-          <h2 className="mb-8 text-center text-[22px] lg:text-[26px] font-extralight tracking-[0.04em] text-[#8B7C6A] md:text-[30px]">
+          <h2 className="mb-8 text-center text-[22px] font-extralight tracking-[0.04em] text-[#7A7A7A] md:text-[30px] lg:text-[26px]">
             {paidTitle}
           </h2>
 

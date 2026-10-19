@@ -112,6 +112,7 @@ export default async function RestaurantDetailPage({
           <RestaurantTextBanner
             image={restaurant.textBannerImage}
             title={restaurant.slogan}
+            variant="restaurant"
           />
         )}
 

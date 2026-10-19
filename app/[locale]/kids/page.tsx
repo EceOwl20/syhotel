@@ -25,6 +25,7 @@ export default async function KidsPage() {
         youtubeUrl={kidsVideo.url}
         start={kidsVideo.start}
         end={kidsVideo.end}
+        mobileHeight="compact"
       />
 
       {/* PAGE INTRODUCTION */}

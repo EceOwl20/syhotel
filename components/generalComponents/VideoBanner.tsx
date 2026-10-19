@@ -1,13 +1,14 @@
 
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 type VideoBannerProps = {
   youtubeUrl: string;
   start?: number;
   end?: number;
   overlayOpacity?: number;
+  mobileHeight?: "full" | "compact";
   className?: string;
   children?: React.ReactNode;
 };
@@ -50,10 +51,11 @@ export default function VideoBanner({
   start = 0,
   end,
   overlayOpacity = 0.15,
+  mobileHeight = "full",
   className = "",
   children,
 }: VideoBannerProps) {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [loadedUrl, setLoadedUrl] = useState<string | null>(null);
 
   const videoId = useMemo(
     () => getYoutubeId(youtubeUrl),
@@ -87,15 +89,15 @@ const params = new URLSearchParams({
     return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
   }, [videoId, start, end]);
 
-  useEffect(() => {
-    setIsLoaded(false);
-  }, [embedUrl]);
-
   if (!embedUrl) return null;
+
+  const isLoaded = loadedUrl === embedUrl;
 
   return (
     <section
-      className={`relative h-screen min-h-[400px] w-full overflow-hidden bg-black ${className}`}
+      className={`relative min-h-[400px] w-full overflow-hidden bg-black md:h-screen ${
+        mobileHeight === "compact" ? "h-[70vh]" : "h-screen"
+      } ${className}`}
     >
       {/* YouTube background */}
       <iframe
@@ -105,7 +107,7 @@ const params = new URLSearchParams({
         tabIndex={-1}
         aria-hidden="true"
         allow="autoplay; encrypted-media; picture-in-picture"
-        onLoad={() => setIsLoaded(true)}
+        onLoad={() => setLoadedUrl(embedUrl)}
         className={`
           pointer-events-none absolute
           left-1/2 top-1/2

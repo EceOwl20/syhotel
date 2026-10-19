@@ -23,7 +23,7 @@ export default function AgencyResourcesSection({
   resources,
 }: AgencyResourcesSectionProps) {
   return (
-    <section className="w-full bg-white px-5 py-16 md:px-8 md:py-20">
+    <section className="w-full bg-white px-2 py-16 md:px-8 md:py-20">
       <div className="mx-auto max-w-[1800px]">
 
         {/* TITLE & DESCRIPTION */}
@@ -53,7 +53,7 @@ export default function AgencyResourcesSection({
         </div>
 
         {/* RESOURCE CARDS */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-2.5 md:gap-5 lg:grid-cols-4">
           {resources.map((resource) => {
             const content = (
               <>
@@ -62,12 +62,12 @@ export default function AgencyResourcesSection({
                     src={resource.image}
                     alt={resource.title}
                     fill
-                    sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
+                    sizes="(max-width: 1023px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                 </div>
 
-                <h2 className="mt-5 text-center text-[17px] font-light text-[#8B7C6A]">
+                <h2 className="mt-5 text-center text-[18px] font-normal text-[#8B7C6A] md:text-[24px]">
                   {resource.title}
                 </h2>
               </>

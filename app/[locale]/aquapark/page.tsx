@@ -21,6 +21,7 @@ export default async function AquaparkPage() {
           start={aquaparkVideo.start}
           end={aquaparkVideo.end}
           overlayOpacity={0.15}
+          mobileHeight="compact"
         />
       )}
 

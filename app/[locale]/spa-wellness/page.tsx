@@ -17,6 +17,7 @@ export default async function SpaWellnessPage() {
         start={246}
         end={284}
         overlayOpacity={0.15}
+        mobileHeight="compact"
       />
 
       {/* INTRODUCTION */}

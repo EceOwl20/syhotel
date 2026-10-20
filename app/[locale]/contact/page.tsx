@@ -2,6 +2,12 @@ import { getTranslations } from "next-intl/server";
 
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import ContactSection from "@/components/contact/ContactSection";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "Contact",
+  "title",
+);
 
 export default async function ContactPage() {
   const t = await getTranslations("Contact");

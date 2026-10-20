@@ -5,6 +5,12 @@ import InfoTextSection from "@/components/generalComponents/InfoTextSection";
 import ImageTextSection from "@/components/generalComponents/ImageTextSection";
 
 import { kidsGalleries, kidsVideo } from "@/data/kids";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "KidsPage",
+  "title",
+);
 
 export default async function KidsPage() {
   const t = await getTranslations("KidsPage");

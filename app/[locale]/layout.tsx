@@ -22,7 +22,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "SY Hotels Belek",
+  title: {
+    default: "SY Hotels Belek",
+    template: "%s | SY Hotels Belek",
+  },
   description: "SY Hotels Belek - Luxury Hotel Experience",
  icons: {
   icon: [

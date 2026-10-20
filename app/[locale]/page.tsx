@@ -1,4 +1,5 @@
 
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { rooms as roomConfigs } from "@/data/roomsCard";
 import MainBanner from "@/components/HomeComponents/MainBanner";
@@ -17,6 +18,12 @@ import backgroundImageKids from "@/public/images/kids/mini-kulup-1.webp";
 import backgroundImageKids2 from "@/public/images/kids/mini-kulup-2.webp";
 import backgroundImageKids4 from "@/public/images/kids/mini-kulup-4.webp";
 import backgroundImageKids6 from "@/public/images/kids/mini-kulup-6.webp";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "SY Hotels Belek",
+  },
+};
 
 export default async function Home() {
   const t = await getTranslations("HomePage");

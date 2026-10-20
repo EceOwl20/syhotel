@@ -6,6 +6,12 @@ import InfoTextSection from "@/components/generalComponents/InfoTextSection";
 import PoolImageTextSection from "@/components/generalComponents/PoolImageTextSection";
 
 import { pools, poolBannerSlides } from "@/data/pools";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "Pools",
+  "intro.title",
+);
 
 export default async function PoolsPage() {
   const t = await getTranslations("Pools");

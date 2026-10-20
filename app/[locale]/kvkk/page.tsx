@@ -2,6 +2,12 @@ import { getTranslations } from "next-intl/server";
 
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import KVKKContent from "@/components/kvkk/KVKKContent";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "KVKK",
+  "title",
+);
 
 export default async function KVKKPage() {
   const t = await getTranslations("KVKK");

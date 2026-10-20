@@ -4,6 +4,12 @@ import { getTranslations } from "next-intl/server";
 import VideoBanner from "@/components/generalComponents/VideoBanner";
 import InfoTextSection from "@/components/generalComponents/InfoTextSection";
 import ImageTextSection from "@/components/generalComponents/ImageTextSection";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "SpaWellness",
+  "intro.title",
+);
 
 export default async function SpaWellnessPage() {
   const t = await getTranslations("SpaWellness");

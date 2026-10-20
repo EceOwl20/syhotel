@@ -2,6 +2,12 @@ import { getTranslations } from "next-intl/server";
 
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import SustainabilityContent from "@/components/sustainability/SustainabilityContent";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "Sustainability",
+  "title",
+);
 
 type PolicySection = {
   title: string;

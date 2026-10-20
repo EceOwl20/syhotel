@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { rooms } from "@/data/rooms";
@@ -14,6 +15,15 @@ type PageProps = {
 };
 
 export const instant = false;
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const room = await getRoomDetail(slug, locale);
+
+  return room ? { title: room.title } : {};
+}
 
 export function generateStaticParams() {
   return rooms.map((room) => ({

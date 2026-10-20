@@ -1,4 +1,5 @@
 
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { restaurants } from "@/data/restaurants";
@@ -19,6 +20,19 @@ type PageProps = {
 };
 
 export const instant = false;
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const restaurant = await getRestaurantDetail(slug, locale);
+
+  if (!restaurant) return {};
+
+  return {
+    title: `${restaurant.title} ${restaurant.subtitle}`,
+  };
+}
 
 export function generateStaticParams() {
   return restaurants.map((restaurant) => ({

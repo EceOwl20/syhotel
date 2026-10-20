@@ -5,6 +5,12 @@ import MainBanner from "@/components/HomeComponents/MainBanner";
 import BeachDetailSection from "@/components/beach/BeachDetailSection";
 
 import { beach } from "@/data/beach";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "Beach",
+  "title",
+);
 
 export default async function BeachPage() {
   const t = await getTranslations("Beach");

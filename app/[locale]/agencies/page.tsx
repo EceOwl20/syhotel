@@ -3,6 +3,12 @@ import { getTranslations } from "next-intl/server";
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import AgencyResourcesSection from "@/components/agencies/AgencyResourcesSection";
 import { agencyResources } from "@/data/agencyResources";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "Agencies",
+  "title",
+);
 
 export default async function AgenciesPage() {
   const t = await getTranslations("Agencies");

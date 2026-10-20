@@ -9,6 +9,12 @@ import {
   activitiesBannerImage,
   activitiesGallery,
 } from "@/data/activities";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "Activities",
+  "title",
+);
 
 export default async function ActivitiesPage() {
   const t = await getTranslations("Activities");

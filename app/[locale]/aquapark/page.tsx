@@ -5,6 +5,12 @@ import VideoBanner from "@/components/generalComponents/VideoBanner";
 import AquaparkDetailSection from "@/components/aquapark/AquaparkDetailSection";
 
 import { aquaparkVideo, aquaparkGallery } from "@/data/aquapark";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "Aquapark",
+  "title",
+);
 
 export default async function AquaparkPage() {
   const t = await getTranslations("Aquapark");

@@ -1,4 +1,5 @@
 
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { bars } from "@/data/bars";
@@ -18,6 +19,19 @@ type PageProps = {
 };
 
 export const instant = false;
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const bar = await getBarDetail(slug, locale);
+
+  if (!bar) return {};
+
+  return {
+    title: `${bar.title} ${bar.subtitle}`,
+  };
+}
 
 export function generateStaticParams() {
   return bars.map((bar) => ({

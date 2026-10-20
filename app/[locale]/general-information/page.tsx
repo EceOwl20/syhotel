@@ -1,6 +1,12 @@
 
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import GeneralInformationContent from "@/components/generalInformation/GeneralInformationContent";
+import { createTranslatedMetadata } from "@/lib/metadata";
+
+export const generateMetadata = createTranslatedMetadata(
+  "GeneralInformation",
+  "title",
+);
 
 export default function GeneralInformationPage() {
   return (

@@ -10,6 +10,7 @@ import { routing } from "@/i18n/routing";
 
 import Header from "@/components/generalComponents/Header";
 import Footer from "@/components/generalComponents/Footer";
+import LiveChat from "@/components/generalComponents/LiveChat";
 
 import "../globals.css";
 import BackToTop from "@/components/generalComponents/BackToTop";
@@ -70,7 +71,8 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <Footer />
-           <BackToTop />
+          <BackToTop />
+          <LiveChat />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -42,7 +42,7 @@ export default function BackToTop() {
       tabIndex={isVisible ? 0 : -1}
       aria-hidden={!isVisible}
       className={`
-        fixed bottom-2 right-2 z-50
+        fixed bottom-20 right-2 z-[10000]
         flex h-[44px] w-[44px]
         items-center justify-center
         border border-[#b99d75]/60
@@ -56,7 +56,7 @@ export default function BackToTop() {
         focus-visible:outline-2
         focus-visible:outline-offset-2
         focus-visible:outline-[#b99d75]
-        md:bottom-6 md:right-4
+        md:bottom-28 md:right-4
         ${
           isVisible
             ? "translate-y-0 opacity-100"

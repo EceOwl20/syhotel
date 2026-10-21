@@ -26,3 +26,37 @@ i[class*=" flaticon-"]::before {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
 }
+
+@keyframes live-chat-nudge {
+  0%,
+  74%,
+  100% {
+    transform: rotate(0deg);
+  }
+  78% {
+    transform: rotate(-8deg);
+  }
+  82% {
+    transform: rotate(8deg);
+  }
+  86% {
+    transform: rotate(-5deg);
+  }
+  90% {
+    transform: rotate(4deg);
+  }
+  94% {
+    transform: rotate(0deg);
+  }
+}
+
+.live-chat-button {
+  animation: live-chat-nudge 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-chat-button {
+    animation: none;
+  }
+}

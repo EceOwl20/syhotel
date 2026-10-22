@@ -285,11 +285,11 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               </a>
 
               <a
-                href="mailto:sales@syhotels.com"
+                href="mailto:callcenter@syhotels.com"
                 className="flex items-center justify-start gap-2 hover:text-white"
               >
                 <IoMail size={18} />
-                sales@syhotels.com
+                callcenter@syhotels.com
               </a>
             </div>
 

@@ -80,7 +80,8 @@
       "line2": "07500 – Belek / Antalya / Türkiye",
       "line3": "(Land Of Legend Karşısı)"
     },
-    "getDirections": "Yol Tarifi Al"
+    "getDirections": "Yol Tarifi Al",
+    "cookiePreferences": "Çerez Tercihleri"
   },
 
   "HomePage": {
@@ -541,9 +542,9 @@
           "lines": [
             {"label": "Web Sitesi", "text": "www.syhotels.com"},
             {"label": "E-Mail", "text": "info@syhotels.com"},
-            {"label": "Satış", "text": "sales@syhotels.com"},
+            {"label": "Satış", "text": "callcenter@syhotels.com"},
             {"label": "Adres", "text": "Kadriye Mah. Kır Mevkii Atatürk Cad. Belek – Antalya / Türkiye"},
-            {"label": "Telefon", "text": "+90 242 205 47 80"}
+            {"label": "Telefon", "text": "+90 242 205 47 87"}
           ]
         },
         {
@@ -900,8 +901,34 @@
       ]
     }
   ]
-}
-
-
-
+},
+  "CookieConsent": {
+    "eyebrow": "GİZLİLİK TERCİHLERİ",
+    "title": "Deneyiminizi birlikte şekillendirelim",
+    "description": "Zorunlu çerezleri sitenin güvenli ve doğru çalışması için, diğer çerezleri ise izninizle deneyiminizi geliştirmek için kullanıyoruz.",
+    "privacyLink": "Detaylı bilgi",
+    "settings": "Tercihleri yönet",
+    "rejectOptional": "Opsiyonelleri reddet",
+    "acceptAll": "Tümünü kabul et",
+    "savePreferences": "Tercihleri kaydet",
+    "alwaysActive": "Her zaman aktif",
+    "categories": {
+      "necessary": {
+        "title": "Zorunlu çerezler",
+        "description": "Temel site işlevleri ve seçiminizin hatırlanması için gereklidir."
+      },
+      "functional": {
+        "title": "İşlevsel çerezler",
+        "description": "Canlı destek gibi gelişmiş site özelliklerini etkinleştirir."
+      },
+      "analytics": {
+        "title": "Analitik çerezler",
+        "description": "Site kullanımını anonim olarak anlamamıza ve deneyimi iyileştirmemize yardımcı olur."
+      },
+      "marketing": {
+        "title": "Pazarlama çerezleri",
+        "description": "Size daha ilgili içerikler ve kampanyalar sunabilmemizi sağlar."
+      }
+    }
+  }
 }

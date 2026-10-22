@@ -8,6 +8,7 @@ import sunsetImage from "@/public/images/gunbatimi.webp";
 
 import { IoLogoFacebook } from "react-icons/io";
 import { AiOutlineInstagram } from "react-icons/ai";
+import CookiePreferencesButton from "./CookiePreferencesButton";
 
 const corporateLinks = [
   {
@@ -100,6 +101,9 @@ export default async function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <CookiePreferencesButton label={t("cookiePreferences")} />
+              </li>
             </ul>
           </div>
 
@@ -114,23 +118,19 @@ export default async function Footer() {
                 <p>{t("reservation")}</p>
 
                 <a
-                  href="tel:+902423404706"
+                  href="tel:+902422054787"
                   className="transition-colors duration-300 hover:text-[#eee1d3]"
                 >
-                  +90 242 340 47 06
+                  0 242 205 47 87
                 </a>
               </div>
 
-              <div>
-                <p>{t("hotelContact")}</p>
-
-                <a
-                  href="tel:+902422054780"
-                  className="transition-colors duration-300 hover:text-[#eee1d3]"
-                >
-                  +90 242 205 47 80
-                </a>
-              </div>
+               <a
+                href="mailto:callcenter@syhotels.com"
+                className="inline-block transition-colors duration-300 hover:text-[#eee1d3]"
+              >
+               callcenter@syhotels.com
+              </a>
 
               <a
                 href="mailto:info@syhotels.com"

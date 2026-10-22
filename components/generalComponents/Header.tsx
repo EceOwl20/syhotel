@@ -164,7 +164,7 @@ export default function Header() {
             </button>
 
             <a
-              href="tel:+902423404706"
+              href="tel:+902422054787"
               aria-label={t("callUs")}
             >
               <PhoneIcon className="h-5 w-5" />

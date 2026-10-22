@@ -80,7 +80,8 @@
       "line2": "07500 – Belek / Antalya / Türkei",
       "line3": "(Gegenüber von The Land of Legends)"
     },
-    "getDirections": "Route anzeigen"
+  "getDirections": "Route anzeigen",
+  "cookiePreferences": "Cookie-Einstellungen"
   },
 
   "HomePage": {
@@ -548,9 +549,9 @@
         "lines": [
           {"label": "Webseite", "text": "www.syhotels.com"},
           {"label": "E-Mail", "text": "info@syhotels.com"},
-          {"label": "Vertrieb", "text": "sales@syhotels.com"},
+          {"label": "Vertrieb", "text": "callcenter@syhotels.com"},
           {"label": "Adresse", "text": "Kadriye Mah. Kır Mevkii Atatürk Cad. Belek – Antalya / Türkiye"},
-          {"label": "Telefon", "text": "+90 242 205 47 80"}
+          {"label": "Telefon", "text": "+90 242 205 47 87"}
         ]
       },
       {
@@ -905,7 +906,34 @@
       ]
     }
   ]
-}
-
-
+},
+  "CookieConsent": {
+    "eyebrow": "DATENSCHUTZEINSTELLUNGEN",
+    "title": "Gestalten wir Ihr Erlebnis gemeinsam",
+    "description": "Wir verwenden notwendige Cookies für den sicheren und korrekten Betrieb der Website und optionale Cookies – mit Ihrer Einwilligung – zur Verbesserung Ihres Erlebnisses.",
+    "privacyLink": "Mehr erfahren",
+    "settings": "Einstellungen verwalten",
+    "rejectOptional": "Optionale ablehnen",
+    "acceptAll": "Alle akzeptieren",
+    "savePreferences": "Einstellungen speichern",
+    "alwaysActive": "Immer aktiv",
+    "categories": {
+      "necessary": {
+        "title": "Notwendige Cookies",
+        "description": "Für grundlegende Website-Funktionen und zum Speichern Ihrer Auswahl erforderlich."
+      },
+      "functional": {
+        "title": "Funktionale Cookies",
+        "description": "Aktivieren erweiterte Funktionen wie den Live-Support."
+      },
+      "analytics": {
+        "title": "Analyse-Cookies",
+        "description": "Helfen uns, die Nutzung anonym zu verstehen und das Erlebnis zu verbessern."
+      },
+      "marketing": {
+        "title": "Marketing-Cookies",
+        "description": "Ermöglichen relevantere Inhalte und Kampagnen."
+      }
+    }
+  }
 }

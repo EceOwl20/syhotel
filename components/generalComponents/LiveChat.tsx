@@ -1,7 +1,12 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import {
+  COOKIE_CONSENT_EVENT,
+  readCookiePreferences,
+  type CookiePreferences,
+} from "@/lib/cookieConsent";
 
 const CONNEXEASE_CHANNEL_ID = "afcfdef6-9ebe-4c5b-ac37-1890010b1e93";
 
@@ -16,8 +21,33 @@ declare global {
 
 export default function LiveChat() {
   const [isMessengerOpen, setIsMessengerOpen] = useState(false);
+  const hasFunctionalConsent = useSyncExternalStore(
+    (onStoreChange) => {
+      const handleConsentChange = (event: Event) => {
+        const preferences = (event as CustomEvent<CookiePreferences>).detail;
+
+        if (!preferences.functional) {
+          document.getElementById("web-messenger-container")?.remove();
+          window.__connexeaseWebMessengerInitialized = false;
+        }
+
+        onStoreChange();
+      };
+
+      window.addEventListener(COOKIE_CONSENT_EVENT, handleConsentChange);
+      return () =>
+        window.removeEventListener(
+          COOKIE_CONSENT_EVENT,
+          handleConsentChange,
+        );
+    },
+    () => readCookiePreferences()?.functional ?? false,
+    () => false,
+  );
 
   useEffect(() => {
+    if (!hasFunctionalConsent) return;
+
     let resizeObserver: ResizeObserver | undefined;
     let iframeStyleObserver: MutationObserver | undefined;
     let updateMessengerState: (() => void) | undefined;
@@ -45,6 +75,8 @@ export default function LiveChat() {
 
         setImportantStyle("right", isDesktop ? "0.375rem" : "-0.125rem");
         setImportantStyle("bottom", isDesktop ? "0.4375rem" : "-0.5625rem");
+        // Keep the provider iframe in the hit-testing tree. The branded
+        // launcher sits above it visually while pointer events pass through.
         setImportantStyle("opacity", "1");
         setImportantStyle(
           "clip-path",
@@ -92,7 +124,7 @@ export default function LiveChat() {
         window.removeEventListener("resize", updateMessengerState);
       }
     };
-  }, []);
+  }, [hasFunctionalConsent]);
 
   const initializeMessenger = () => {
     if (
@@ -107,6 +139,8 @@ export default function LiveChat() {
     window.__connexeaseWebMessengerInitialized = true;
   };
 
+  if (!hasFunctionalConsent) return null;
+
   return (
     <>
       <Script
@@ -118,7 +152,7 @@ export default function LiveChat() {
 
       <span
         aria-hidden="true"
-        className={`live-chat-button fixed right-[5px] bottom-2 z-[9999]
+        className={`live-chat-button fixed right-[5px] bottom-2 z-[10000]
           flex h-14 w-14 items-center justify-center rounded-full
           border border-white/35 bg-[#b99d75] text-white
           shadow-[0_6px_22px_rgba(0,0,0,0.28)]

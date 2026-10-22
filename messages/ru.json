@@ -80,7 +80,8 @@
       "line2": "07500 – Белек / Анталья / Турция",
       "line3": "(Напротив The Land of Legends)"
     },
-    "getDirections": "Проложить маршрут"
+  "getDirections": "Проложить маршрут",
+  "cookiePreferences": "Настройки файлов cookie"
   },
 
   "HomePage": {
@@ -546,9 +547,9 @@
         "lines": [
           {"label": "Веб-сайт", "text": "www.syhotels.com"},
           {"label": "Электронная почта", "text": "info@syhotels.com"},
-          {"label": "Отдел продаж", "text": "sales@syhotels.com"},
+          {"label": "Отдел продаж", "text": "callcenter@syhotels.com"},
           {"label": "Адрес", "text": "Kadriye Mah. Kır Mevkii Atatürk Cad. Belek – Antalya / Türkiye"},
-          {"label": "Телефон", "text": "+90 242 205 47 80"}
+          {"label": "Телефон", "text": "+90 242 205 47 87"}
         ]
       },
       {
@@ -904,8 +905,34 @@
       ]
     }
   ]
-}
-
-
-
+},
+  "CookieConsent": {
+    "eyebrow": "НАСТРОЙКИ КОНФИДЕНЦИАЛЬНОСТИ",
+    "title": "Настроим ваш опыт вместе",
+    "description": "Мы используем обязательные файлы cookie для безопасной и корректной работы сайта, а дополнительные — с вашего согласия — для улучшения сервиса.",
+    "privacyLink": "Подробнее",
+    "settings": "Управлять настройками",
+    "rejectOptional": "Отклонить дополнительные",
+    "acceptAll": "Принять все",
+    "savePreferences": "Сохранить настройки",
+    "alwaysActive": "Всегда активно",
+    "categories": {
+      "necessary": {
+        "title": "Обязательные cookie",
+        "description": "Необходимы для основных функций сайта и сохранения вашего выбора."
+      },
+      "functional": {
+        "title": "Функциональные cookie",
+        "description": "Включают дополнительные функции сайта, например онлайн-поддержку."
+      },
+      "analytics": {
+        "title": "Аналитические cookie",
+        "description": "Помогают анонимно анализировать использование сайта и улучшать сервис."
+      },
+      "marketing": {
+        "title": "Маркетинговые cookie",
+        "description": "Позволяют показывать более актуальный контент и предложения."
+      }
+    }
+  }
 }

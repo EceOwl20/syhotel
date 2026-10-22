@@ -80,7 +80,8 @@
       "line2": "07500 – Belek / Antalya / Türkiye",
       "line3": "(Opposite The Land of Legends)"
     },
-    "getDirections": "Get Directions"
+  "getDirections": "Get Directions",
+  "cookiePreferences": "Cookie Preferences"
   },
 
   "HomePage": {
@@ -547,9 +548,9 @@
         "lines": [
           {"label": "Website", "text": "www.syhotels.com"},
           {"label": "Email", "text": "info@syhotels.com"},
-          {"label": "Sales", "text": "sales@syhotels.com"},
+          {"label": "Sales", "text": "callcenter@syhotels.com"},
           {"label": "Address", "text": "Kadriye Mah. Kır Mevkii Atatürk Cad. Belek – Antalya / Türkiye"},
-          {"label": "Telephone", "text": "+90 242 205 47 80"}
+          {"label": "Telephone", "text": "+90 242 205 47 87"}
         ]
       },
       {
@@ -905,7 +906,34 @@
       ]
     }
   ]
-}
-
-
+},
+  "CookieConsent": {
+    "eyebrow": "PRIVACY PREFERENCES",
+    "title": "Let us shape your experience together",
+    "description": "We use essential cookies to keep the site secure and working correctly, and optional cookies—with your permission—to improve your experience.",
+    "privacyLink": "Learn more",
+    "settings": "Manage preferences",
+    "rejectOptional": "Reject optional",
+    "acceptAll": "Accept all",
+    "savePreferences": "Save preferences",
+    "alwaysActive": "Always active",
+    "categories": {
+      "necessary": {
+        "title": "Essential cookies",
+        "description": "Required for core site functions and to remember your selection."
+      },
+      "functional": {
+        "title": "Functional cookies",
+        "description": "Enable enhanced site features such as live support."
+      },
+      "analytics": {
+        "title": "Analytics cookies",
+        "description": "Help us understand site usage anonymously and improve the experience."
+      },
+      "marketing": {
+        "title": "Marketing cookies",
+        "description": "Allow us to offer more relevant content and campaigns."
+      }
+    }
+  }
 }

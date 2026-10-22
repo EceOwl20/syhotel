@@ -9,19 +9,15 @@ type ContactSectionProps = {
   description: string;
   address: string;
   reservationLabel: string;
-  hotelPhoneLabel: string;
   mapTitle: string;
 };
 
 const contact = {
-  reservationPhone: "+90 242 340 47 06",
-  reservationPhoneHref: "tel:+902423404706",
-
-  hotelPhone: "+90 242 205 47 80",
-  hotelPhoneHref: "tel:+902422054780",
+  reservationPhone: "+90 242 205 47 87",
+  reservationPhoneHref: "tel:+902422054787",
 
   email: "info@syhotels.com",
-  salesEmail: "sales@syhotels.com",
+  salesEmail: "callcenter@syhotels.com",
 };
 
 const mapUrl =
@@ -32,7 +28,6 @@ export default function ContactSection({
   description,
   address,
   reservationLabel,
-  hotelPhoneLabel,
   mapTitle,
 }: ContactSectionProps) {
   return (
@@ -75,19 +70,17 @@ export default function ContactSection({
             </span>
           </a>
 
-          {/* HOTEL PHONE */}
-          <a
-            href={contact.hotelPhoneHref}
-            className="flex items-center gap-3 transition-opacity duration-300 hover:opacity-60"
-          >
-            <FaPhone size={13} />
-
-            <span>
-              {hotelPhoneLabel}: {contact.hotelPhone}
-            </span>
-          </a>
 
           {/* GENERAL EMAIL */}
+
+           <a
+            href={`mailto:${contact.salesEmail}`}
+            className="flex items-center gap-3 transition-opacity duration-300 hover:opacity-60"
+          >
+            <FaEnvelope size={13} />
+            <span>{contact.salesEmail}</span>
+          </a>
+          
           <a
             href={`mailto:${contact.email}`}
             className="flex items-center gap-3 transition-opacity duration-300 hover:opacity-60"
@@ -97,13 +90,7 @@ export default function ContactSection({
           </a>
 
           {/* SALES EMAIL */}
-          <a
-            href={`mailto:${contact.salesEmail}`}
-            className="flex items-center gap-3 transition-opacity duration-300 hover:opacity-60"
-          >
-            <FaEnvelope size={13} />
-            <span>{contact.salesEmail}</span>
-          </a>
+         
         </div>
 
         {/* GOOGLE MAPS */}

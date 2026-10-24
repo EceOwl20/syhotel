@@ -9,12 +9,16 @@ type ContactSectionProps = {
   description: string;
   address: string;
   reservationLabel: string;
+  hotelPhoneLabel: string;
   mapTitle: string;
 };
 
 const contact = {
   reservationPhone: "+90 242 205 47 87",
   reservationPhoneHref: "tel:+902422054787",
+
+  hotelPhone: "+90 242 205 47 80",
+  hotelPhoneHref: "tel:+902422054780",
 
   email: "info@syhotels.com",
   salesEmail: "callcenter@syhotels.com",
@@ -28,6 +32,7 @@ export default function ContactSection({
   description,
   address,
   reservationLabel,
+  hotelPhoneLabel,
   mapTitle,
 }: ContactSectionProps) {
   return (
@@ -67,6 +72,17 @@ export default function ContactSection({
 
             <span>
               {reservationLabel}: {contact.reservationPhone}
+            </span>
+          </a>
+
+          <a
+            href={contact.hotelPhoneHref}
+            className="flex items-center gap-3 transition-opacity duration-300 hover:opacity-60"
+          >
+            <FaPhone size={13} />
+
+            <span>
+              {hotelPhoneLabel}: {contact.hotelPhone}
             </span>
           </a>
 

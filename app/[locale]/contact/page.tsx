@@ -27,6 +27,7 @@ export default async function ContactPage() {
         description={t("description")}
         address={t("address")}
         reservationLabel={t("reservation")}
+         hotelPhoneLabel={t("hotelPhone")}
         mapTitle={t("mapTitle")}
       />
 

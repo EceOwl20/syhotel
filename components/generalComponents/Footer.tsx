@@ -125,6 +125,17 @@ export default async function Footer() {
                 </a>
               </div>
 
+              <div>
+                <p>{t("hotelContact")}</p>
+
+                <a
+                  href="tel:+902422054780"
+                  className="transition-colors duration-300 hover:text-[#eee1d3]"
+                >
+                  0 242 205 47 80
+                </a>
+              </div>
+
                <a
                 href="mailto:callcenter@syhotels.com"
                 className="inline-block transition-colors duration-300 hover:text-[#eee1d3]"

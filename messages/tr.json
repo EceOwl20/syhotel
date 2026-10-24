@@ -74,7 +74,8 @@
       "exploreRegion": "Bölgeyi Keşfedin"
     },
     "reservation": "Rezervasyon",
-    "hotelContact": "Hotel İletişim",
+    "reception":"Resepsiyon",
+    "hotelContact": "Otel İletişim",
     "addressLines": {
       "line1": "Kadriye, Kır Mevkii, Atatürk Cad,",
       "line2": "07500 – Belek / Antalya / Türkiye",

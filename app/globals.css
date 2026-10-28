@@ -60,3 +60,30 @@ i[class*=" flaticon-"]::before {
     animation: none;
   }
 }
+
+
+@keyframes phone-ring {
+  0%, 30%, 100% {
+    transform: rotate(0deg);
+  }
+
+  5%, 15%, 25% {
+    transform: rotate(-20deg);
+  }
+
+  10%, 20% {
+    transform: rotate(20deg);
+  }
+}
+
+.animate-phone-ring {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  animation: phone-ring 2.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-phone-ring {
+    animation: none;
+  }
+}

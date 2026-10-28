@@ -152,7 +152,7 @@ export default function LiveChat() {
 
       <span
         aria-hidden="true"
-        className={`live-chat-button fixed right-[5px] bottom-2 z-[10000]
+        className={`live-chat-button fixed right-[15px] bottom-5 z-[10000]
           flex h-14 w-14 items-center justify-center rounded-full
           border border-white/35 bg-[#b99d75] text-white
           shadow-[0_6px_22px_rgba(0,0,0,0.28)]

@@ -12,6 +12,7 @@ import Header from "@/components/generalComponents/Header";
 import Footer from "@/components/generalComponents/Footer";
 import LiveChat from "@/components/generalComponents/LiveChat";
 import CookieConsent from "@/components/generalComponents/CookieConsent";
+import MobileBookingBar from "@/components/generalComponents/MobileBookingBar";
 
 import "../globals.css";
 import BackToTop from "@/components/generalComponents/BackToTop";
@@ -74,6 +75,11 @@ export default async function LocaleLayout({
           <Footer />
           <BackToTop />
           <LiveChat />
+          <MobileBookingBar
+  phoneNumber="+902422054787"
+  bookingUrl="https://syhotels.platformeva.com/"
+  bookNowText="Book Now"
+/>
           <CookieConsent />
         </NextIntlClientProvider>
       </body>

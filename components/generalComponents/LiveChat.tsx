@@ -77,15 +77,17 @@ export default function LiveChat() {
         setImportantStyle("bottom", isDesktop ? "0.4375rem" : "-0.5625rem");
         // Keep the provider iframe in the hit-testing tree. The branded
         // launcher sits above it visually while pointer events pass through.
-        setImportantStyle("opacity", "1");
-        setImportantStyle(
-          "clip-path",
-          isOpen ? "none" : "circle(28px at 50% 50%)",
-        );
-        setImportantStyle(
-          "-webkit-clip-path",
-          isOpen ? "none" : "circle(28px at 50% 50%)",
-        );
+  setImportantStyle("opacity", "1");
+
+setImportantStyle(
+  "clip-path",
+  isOpen ? "none" : "circle(0px)",
+);
+
+setImportantStyle(
+  "-webkit-clip-path",
+  isOpen ? "none" : "circle(0px)",
+);
         setImportantStyle("z-index", isOpen ? "10001" : "9998");
         setIsMessengerOpen(isOpen);
       };

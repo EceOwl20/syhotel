@@ -73,21 +73,29 @@ export default function LiveChat() {
           messenger.style.setProperty(property, value, "important");
         };
 
-        setImportantStyle("right", isDesktop ? "0.375rem" : "-0.125rem");
-        setImportantStyle("bottom", isDesktop ? "0.4375rem" : "-0.5625rem");
-        // Keep the provider iframe in the hit-testing tree. The branded
-        // launcher sits above it visually while pointer events pass through.
-  setImportantStyle("opacity", "1");
+  //       setImportantStyle("right", isDesktop ? "0.375rem" : "-0.125rem");
+  //       setImportantStyle("bottom", isDesktop ? "0.4375rem" : "-0.5625rem");
+  //       // Keep the provider iframe in the hit-testing tree. The branded
+  //       // launcher sits above it visually while pointer events pass through.
+  // setImportantStyle("opacity", "1");
+
+setImportantStyle("right", isDesktop ? "0.375rem" : "-0.125rem");
+setImportantStyle("bottom", isDesktop ? "0.4375rem" : "-0.5625rem");
+
+setImportantStyle("opacity", "1");
 
 setImportantStyle(
   "clip-path",
-  isOpen ? "none" : "circle(0px)",
+  isOpen ? "none" : "circle(28px at 50% 50%)",
 );
 
 setImportantStyle(
   "-webkit-clip-path",
-  isOpen ? "none" : "circle(0px)",
+  isOpen ? "none" : "circle(28px at 50% 50%)",
 );
+
+setImportantStyle("z-index", isOpen ? "10001" : "9998");
+setIsMessengerOpen(isOpen);
         setImportantStyle("z-index", isOpen ? "10001" : "9998");
         setIsMessengerOpen(isOpen);
       };
@@ -154,7 +162,7 @@ setImportantStyle(
 
       <span
         aria-hidden="true"
-        className={`live-chat-button fixed right-[15px] bottom-5 z-[10000]
+        className={`live-chat-button fixed right-[5px] bottom-3 z-[10000]
           flex h-14 w-14 items-center justify-center rounded-full
           border border-white/35 bg-[#b99d75] text-white
           shadow-[0_6px_22px_rgba(0,0,0,0.28)]

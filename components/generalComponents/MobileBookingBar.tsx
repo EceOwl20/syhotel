@@ -14,14 +14,14 @@ export default function MobileBookingBar({
   bookNowText = "Book Now",
 }: MobileBookingBarProps) {
   return (
-    <div className="pointer-events-none fixed bottom-5 left-0 z-40 w-full md:hidden">
+    <div className="pointer-events-none fixed bottom-3 left-0 z-40 w-full md:hidden">
       {/* Phone Button */}
       <a
         href={`tel:${phoneNumber}`}
         aria-label="Call hotel"
         className="
           pointer-events-auto
-          absolute bottom-0 left-[15px]
+          absolute bottom-0 left-[5px]
           flex h-[54px] w-[54px]
           items-center justify-center
           rounded-full border border-white/80

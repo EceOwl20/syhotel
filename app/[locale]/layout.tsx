@@ -12,6 +12,7 @@ import Header from "@/components/generalComponents/Header";
 import Footer from "@/components/generalComponents/Footer";
 import LiveChat from "@/components/generalComponents/LiveChat";
 import CookieConsent from "@/components/generalComponents/CookieConsent";
+import GoogleTagManager from "@/components/generalComponents/GoogleTagManager";
 import MobileBookingBar from "@/components/generalComponents/MobileBookingBar";
 
 import "../globals.css";
@@ -69,6 +70,7 @@ export default async function LocaleLayout({
       </head>
 
       <body className={montserrat.variable}>
+        <GoogleTagManager />
         <NextIntlClientProvider>
           <Header />
           {children}

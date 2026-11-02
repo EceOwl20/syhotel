@@ -192,7 +192,7 @@ export default function Header() {
 
             {/* RESERVATION BUTTON */}
             <a
-              href="https://syhotels.platformeva.com/"
+              href="https://syhotelsbelek.rezervasyonal.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-hidden={isMenuOpen}

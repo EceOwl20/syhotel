@@ -107,7 +107,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
 
             {/* Reservation */}
             <a
-              href="https://syhotels.platformeva.com/"
+              href="https://syhotelsbelek.rezervasyonal.com/"
               target="_blank"
               rel="noopener noreferrer"
               onClick={onClose}

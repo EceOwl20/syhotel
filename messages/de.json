@@ -936,5 +936,11 @@
         "description": "Ermöglichen relevantere Inhalte und Kampagnen."
       }
     }
-  }
+  },
+
+"NotFound": {
+  "title": "SEITE NICHT GEFUNDEN",
+  "description": "Die gesuchte Seite wurde möglicherweise verschoben, entfernt oder ist vorübergehend nicht verfügbar.",
+  "button": "Zur Startseite"
+}
 }

@@ -931,5 +931,11 @@
         "description": "Size daha ilgili içerikler ve kampanyalar sunabilmemizi sağlar."
       }
     }
-  }
+  },
+
+"NotFound": {
+  "title": "SAYFA BULUNAMADI",
+  "description": "Aradığınız sayfa taşınmış, kaldırılmış veya geçici olarak kullanılamıyor olabilir.",
+  "button": "Ana Sayfaya Dön"
+}
 }

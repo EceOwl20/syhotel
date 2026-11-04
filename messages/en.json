@@ -936,5 +936,11 @@
         "description": "Allow us to offer more relevant content and campaigns."
       }
     }
-  }
+  },
+
+"NotFound": {
+  "title": "PAGE NOT FOUND",
+  "description": "The page you are looking for may have been moved, removed or is temporarily unavailable.",
+  "button": "Back to Home"
+}
 }

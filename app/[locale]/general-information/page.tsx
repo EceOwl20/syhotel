@@ -6,6 +6,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "GeneralInformation",
   "title",
+  "/general-information",
 );
 
 export default function GeneralInformationPage() {

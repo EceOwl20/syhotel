@@ -7,6 +7,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "KVKK",
   "title",
+  "/kvkk",
 );
 
 export default async function KVKKPage() {

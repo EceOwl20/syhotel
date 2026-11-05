@@ -11,10 +11,14 @@ import RestaurantTextBanner from "@/components/restaurants/RestaurantTextBanner"
 import RestaurantDetailSection from "@/components/restaurants/RestaurantDetailSection";
 import RelatedContent from "@/components/generalComponents/RelatedContent";
 import { getTranslations } from "next-intl/server";
+import {
+  createRestaurantSeoAlternates,
+  type Locale,
+} from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{
-    locale: string;
+    locale: Locale;
     slug: string;
   }>;
 };
@@ -31,6 +35,10 @@ export async function generateMetadata({
 
   return {
     title: `${restaurant.title} ${restaurant.subtitle}`,
+    alternates: createRestaurantSeoAlternates(
+      slug,
+      locale,
+    ),
   };
 }
 

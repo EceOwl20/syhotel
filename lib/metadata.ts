@@ -2,10 +2,15 @@ import "server-only";
 
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import {
+  createSeoAlternates,
+  type Locale,
+  type StaticPath,
+} from "@/lib/seo";
 
 export type LocalePageProps = {
   params: Promise<{
-    locale: string;
+    locale: Locale;
   }>;
 };
 
@@ -26,6 +31,7 @@ type MetadataNamespace =
 export function createTranslatedMetadata(
   namespace: MetadataNamespace,
   titleKey: string,
+  pathname: StaticPath,
 ) {
   return async function generateMetadata({
     params,
@@ -35,6 +41,7 @@ export function createTranslatedMetadata(
 
     return {
       title: t(titleKey as never),
+      alternates: createSeoAlternates(pathname, locale),
     };
   };
 }

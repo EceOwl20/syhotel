@@ -7,6 +7,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "Contact",
   "title",
+  "/contact",
 );
 
 export default async function ContactPage() {

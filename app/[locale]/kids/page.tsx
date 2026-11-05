@@ -10,6 +10,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "KidsPage",
   "title",
+  "/kids",
 );
 
 export default async function KidsPage() {

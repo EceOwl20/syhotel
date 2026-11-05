@@ -10,6 +10,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "ExploreRegion",
   "title",
+  "/explore-region",
 );
 
 type InformationSection = {

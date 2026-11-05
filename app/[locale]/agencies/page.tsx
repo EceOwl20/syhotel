@@ -8,6 +8,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "Agencies",
   "title",
+  "/agencies",
 );
 
 export default async function AgenciesPage() {

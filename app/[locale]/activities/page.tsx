@@ -14,6 +14,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "Activities",
   "title",
+  "/activities",
 );
 
 export default async function ActivitiesPage() {

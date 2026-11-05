@@ -10,6 +10,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "Beach",
   "title",
+  "/beach",
 );
 
 export default async function BeachPage() {

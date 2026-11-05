@@ -11,6 +11,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "Pools",
   "intro.title",
+  "/pools",
 );
 
 export default async function PoolsPage() {

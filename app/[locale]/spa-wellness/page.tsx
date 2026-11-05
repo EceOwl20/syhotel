@@ -9,6 +9,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "SpaWellness",
   "intro.title",
+  "/spa-wellness",
 );
 
 export default async function SpaWellnessPage() {

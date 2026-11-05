@@ -10,10 +10,14 @@ import MainBanner from "@/components/HomeComponents/MainBanner";
 import ParticleLogo from "@/components/generalComponents/ParticleLogo";
 import RelatedContent from "@/components/generalComponents/RelatedContent";
 import { getTranslations } from "next-intl/server";
+import {
+  createBarSeoAlternates,
+  type Locale,
+} from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{
-    locale: string;
+    locale: Locale;
     slug: string;
   }>;
 };
@@ -30,6 +34,7 @@ export async function generateMetadata({
 
   return {
     title: `${bar.title} ${bar.subtitle}`,
+    alternates: createBarSeoAlternates(slug, locale),
   };
 }
 

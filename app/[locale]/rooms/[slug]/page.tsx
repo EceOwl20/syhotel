@@ -6,10 +6,14 @@ import { getRoomDetail } from "@/lib/getRoomDetail";
 import RoomDetailSection from "@/components/rooms/RoomDetailSection";
 import RelatedContent from "@/components/generalComponents/RelatedContent";
 import { getTranslations } from "next-intl/server";
+import {
+  createRoomSeoAlternates,
+  type Locale,
+} from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{
-    locale: string;
+    locale: Locale;
     slug: string;
   }>;
 };
@@ -22,7 +26,12 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const room = await getRoomDetail(slug, locale);
 
-  return room ? { title: room.title } : {};
+  return room
+    ? {
+        title: room.title,
+        alternates: createRoomSeoAlternates(slug, locale),
+      }
+    : {};
 }
 
 export function generateStaticParams() {

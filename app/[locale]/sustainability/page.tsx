@@ -7,6 +7,7 @@ import { createTranslatedMetadata } from "@/lib/metadata";
 export const generateMetadata = createTranslatedMetadata(
   "Sustainability",
   "title",
+  "/sustainability",
 );
 
 type PolicySection = {

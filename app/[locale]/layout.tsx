@@ -26,6 +26,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+   metadataBase: new URL("https://syhotels.com"),
+   
   title: {
     default: "SY Hotels Belek",
     template: "%s | SY Hotels Belek",

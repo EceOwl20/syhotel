@@ -5,6 +5,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+  source: "/:path*",
+  has: [
+    {
+      type: "host",
+      value: "www.syhotels.com",
+    },
+  ],
+  destination: "https://syhotels.com/:path*",
+  permanent: true,
+},
+      {
         source: "/tr/tr-acentalar-icin",
         destination: "/tr/acentalar-icin",
         permanent: true,
@@ -51,6 +62,16 @@ const nextConfig: NextConfig = {
         destination: "/tr/aktivite-eglence",
         permanent: true,
       },
+      {
+  source: "/tr/tr-deluxe-engelli-odalar",
+  destination: "/tr/deluxe-engelli-odalari",
+  permanent: true,
+},
+{
+  source: "/tr/tr-deluxe-odalar",
+  destination: "/tr/deluxe-odalar",
+  permanent: true,
+},
     ];
   },
   experimental: {

@@ -19,11 +19,22 @@ import backgroundImageKids2 from "@/public/images/kids/mini-kulup-2.webp";
 import backgroundImageKids4 from "@/public/images/kids/mini-kulup-4.webp";
 import backgroundImageKids6 from "@/public/images/kids/mini-kulup-6.webp";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "SY Hotels Belek",
-  },
-};
+import { routing } from "@/i18n/routing";
+import { createSeoAlternates } from "@/lib/seo";
+
+type Locale = (typeof routing.locales)[number];
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    alternates: createSeoAlternates("/", locale),
+  };
+}
 
 export default async function Home() {
   const t = await getTranslations("HomePage");

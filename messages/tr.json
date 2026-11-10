@@ -937,5 +937,64 @@
   "title": "SAYFA BULUNAMADI",
   "description": "Aradığınız sayfa taşınmış, kaldırılmış veya geçici olarak kullanılamıyor olabilir.",
   "button": "Ana Sayfaya Dön"
+},
+
+ "Offers": {
+    "metaTitle": "Özel Teklifler | SY Hotels",
+    "metaDescription": "SY Hotels'in özel tekliflerini keşfedin.",
+    "title": "Özel Teklifler",
+    "description": "Size özel fırsatlarla unutulmaz bir tatil deneyimi keşfedin.",
+    "offerLabel": "Özel Teklif",
+    "offer01": "Özel Teklif 01",
+    "description01": "Kampanya açıklaması yakında eklenecektir.",
+    "offer02": "Özel Teklif 02",
+    "description02": "Kampanya açıklaması yakında eklenecektir.",
+    "offer03": "Özel Teklif 03",
+    "description03": "Kampanya açıklaması yakında eklenecektir.",
+    "offer04": "Özel Teklif 04",
+    "description04": "Kampanya açıklaması yakında eklenecektir.",
+    "discoverMore": "Detayları Keşfet",
+    "bottomTitle": "Unutulmaz Bir Tatil",
+    "bottomDescription": "Tatil planınız hakkında daha fazla bilgi almak için bizimle iletişime geçin.",
+    "contact": "Bize Ulaşın",
+
+      "experienceEyebrow": "SY HOTELS DENEYİMİ",
+  "experienceTitle": "Her Anı Özel Kılan Bir Tatil",
+  "experienceDescription": "Konfor, huzur ve ayrıcalıklı deneyimlerin bir araya geldiği bir dünya.",
+  "contactEyebrow": "SY HOTELS • REZERVASYON",
+  "contactHeading": "Hayalinizdeki Tatil Burada Başlıyor.",
+  "contactDescription": "Size özel bir konaklama deneyimi için ekibimizle iletişime geçin.",
+  "bookNow": "Rezervasyon Yap",
+  "contactTitle": "Sizin İçin Buradayız",
+  "callLabel": "Bizi Arayın",
+  "emailLabel": "E-posta Gönderin",
+
+   "momentsTitle": "Ayrıcalıklı Anlar",
+  "momentsDescription": "Her köşesinde farklı bir deneyim, her anında unutulmaz bir hikâye.",
+  "momentsPoolTitle": "Havuz Keyfi",
+  "momentsPoolDescription": "Güneşin ve suyun buluştuğu eşsiz bir atmosfer.",
+  "momentsSpaTitle": "Huzurun Adresi",
+  "momentsSpaDescription": "Kendinize zaman ayırın, ruhunuzu ve bedeninizi yenileyin.",
+  "momentsAquaparkTitle": "Eğlence Dolu Anlar",
+  "momentsAquaparkDescription": "Her yaşa hitap eden unutulmaz eğlence deneyimleri."
+
+  },
+
+  "OffersBenefits": {
+  "title": "Ayrıcalıklı Fırsatlar",
+  "description": "SY Hotels Belek'te konfor ve ayrıcalıklarla dolu bir tatil deneyimi.",
+  "imageHeading": "Her Anı Özel Bir Deneyim",
+  "guestRating": "Misafir Puanı",
+  "accommodation": "Özel Konaklama Fırsatı",
+  "wellness": "Spa & Wellness Ayrıcalığı",
+  "swimupTitle": "Swim-Up Konaklama",
+  "swimupDescription": "Havuza doğrudan erişim sunan odalarda ayrıcalıklı konaklama.",
+  "spaTitle": "Spa & Wellness Deneyimi",
+  "spaDescription": "Dinlenme ve yenilenme dolu bir tatil için özel fırsatlar.",
+  "off": "İndirim",
+  "discoverMore": "Detayları Keşfet",
+  "sampleOffer": "Örnek kampanya",
+  "disclaimer": "Gösterilen indirim oranları örnek amaçlıdır. Aktif kampanya değildir.",
+  "ratingDisclaimer":"Misafir değerlendirme puanları ilgili platformlardan alınmıştır ve zamanla değişebilir."
 }
 }

@@ -942,5 +942,63 @@
   "title": "SEITE NICHT GEFUNDEN",
   "description": "Die gesuchte Seite wurde möglicherweise verschoben, entfernt oder ist vorübergehend nicht verfügbar.",
   "button": "Zur Startseite"
+},
+
+"Offers": {
+    "metaTitle": "Sonderangebote | SY Hotels",
+    "metaDescription": "Entdecken Sie besondere Angebote bei SY Hotels.",
+    "title": "Sonderangebote",
+    "description": "Entdecken Sie unvergessliche Urlaubserlebnisse mit exklusiven Angeboten.",
+    "offerLabel": "Exklusives Angebot",
+    "offer01": "Sonderangebot 01",
+    "description01": "Weitere Informationen folgen in Kürze.",
+    "offer02": "Sonderangebot 02",
+    "description02": "Weitere Informationen folgen in Kürze.",
+    "offer03": "Sonderangebot 03",
+    "description03": "Weitere Informationen folgen in Kürze.",
+    "offer04": "Sonderangebot 04",
+    "description04": "Weitere Informationen folgen in Kürze.",
+    "discoverMore": "Mehr Entdecken",
+    "bottomTitle": "Ihr Traumurlaub",
+    "bottomDescription": "Kontaktieren Sie uns für weitere Informationen zu Ihrem nächsten Urlaub.",
+    "contact": "Kontaktieren Sie Uns",
+
+    "experienceEyebrow": "DAS SY HOTELS ERLEBNIS",
+  "experienceTitle": "Wo Jeder Moment Besonders Ist",
+  "experienceDescription": "Entdecken Sie eine Welt voller Komfort, Ruhe und besonderer Erlebnisse.",
+  "contactEyebrow": "SY HOTELS • RESERVIERUNGEN",
+  "contactHeading": "Ihr Nächster Urlaub Beginnt Hier.",
+  "contactDescription": "Kontaktieren Sie unser Team für einen individuellen Urlaub.",
+  "bookNow": "Jetzt Buchen",
+  "contactTitle": "Wir Sind Für Sie Da",
+  "callLabel": "Rufen Sie Uns An",
+  "emailLabel": "E-Mail Senden",
+
+  "momentsTitle": "Exklusive Momente",
+  "momentsDescription": "An jeder Ecke ein neues Erlebnis, in jedem Moment eine unvergessliche Geschichte.",
+  "momentsPoolTitle": "Poolvergnügen",
+  "momentsPoolDescription": "Eine einzigartige Atmosphäre, in der Sonne und Wasser aufeinandertreffen.",
+  "momentsSpaTitle": "Eine Welt der Ruhe",
+  "momentsSpaDescription": "Nehmen Sie sich Zeit für sich und tanken Sie neue Energie.",
+  "momentsAquaparkTitle": "Grenzenloser Spaß",
+  "momentsAquaparkDescription": "Unvergessliche Unterhaltung für jedes Alter."
+  },
+
+  "OffersBenefits": {
+  "title": "Exklusive Vorteile",
+  "description": "Erleben Sie einen Urlaub voller Komfort und exklusiver Vorteile im SY Hotels Belek.",
+  "imageHeading": "Wo Jeder Moment Besonders Wird",
+  "guestRating": "Gästebewertung",
+  "accommodation": "Exklusives Unterkunftsangebot",
+  "wellness": "Spa & Wellness Vorteil",
+  "swimupTitle": "Swim-Up Erlebnis",
+  "swimupDescription": "Genießen Sie direkten Poolzugang von Ihrem Zimmer aus.",
+  "spaTitle": "Spa & Wellness Erlebnis",
+  "spaDescription": "Besondere Möglichkeiten für Entspannung und Erholung.",
+  "off": "Rabatt",
+  "discoverMore": "Mehr Entdecken",
+  "sampleOffer": "Beispielangebot",
+  "disclaimer": "Die angegebenen Rabatte dienen nur als Beispiele und sind keine aktiven Angebote.",
+  "ratingDisclaimer":"Die Gästebewertungen stammen von den jeweiligen Plattformen und können sich im Laufe der Zeit ändern."
 }
 }

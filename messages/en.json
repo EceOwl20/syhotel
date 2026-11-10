@@ -942,5 +942,63 @@
   "title": "PAGE NOT FOUND",
   "description": "The page you are looking for may have been moved, removed or is temporarily unavailable.",
   "button": "Back to Home"
+},
+
+ "Offers": {
+    "metaTitle": "Special Offers | SY Hotels",
+    "metaDescription": "Discover special offers at SY Hotels.",
+    "title": "Special Offers",
+    "description": "Discover unforgettable holiday experiences with exclusive opportunities.",
+    "offerLabel": "Exclusive Offer",
+    "offer01": "Special Offer 01",
+    "description01": "Offer details will be added soon.",
+    "offer02": "Special Offer 02",
+    "description02": "Offer details will be added soon.",
+    "offer03": "Special Offer 03",
+    "description03": "Offer details will be added soon.",
+    "offer04": "Special Offer 04",
+    "description04": "Offer details will be added soon.",
+    "discoverMore": "Discover More",
+    "bottomTitle": "Your Perfect Getaway",
+    "bottomDescription": "Contact us to learn more about your next holiday experience.",
+    "contact": "Contact Us",
+
+    "experienceEyebrow": "THE SY HOTELS EXPERIENCE",
+  "experienceTitle": "Where Every Moment Feels Special",
+  "experienceDescription": "Discover a world of comfort, tranquility and exceptional experiences.",
+  "contactEyebrow": "SY HOTELS • RESERVATIONS",
+  "contactHeading": "Your Next Stay Starts Here.",
+  "contactDescription": "Connect with our team to plan a personalized holiday experience.",
+  "bookNow": "Book Your Stay",
+  "contactTitle": "We're Here for You",
+  "callLabel": "Call Us",
+  "emailLabel": "Email Us",
+
+   "momentsTitle": "Exclusive Moments",
+  "momentsDescription": "A different experience in every corner, an unforgettable story in every moment.",
+  "momentsPoolTitle": "Poolside Bliss",
+  "momentsPoolDescription": "An exceptional atmosphere where sunshine meets the water.",
+  "momentsSpaTitle": "A World of Serenity",
+  "momentsSpaDescription": "Take time for yourself and renew your body and mind.",
+  "momentsAquaparkTitle": "Endless Fun",
+  "momentsAquaparkDescription": "Unforgettable entertainment experiences for all ages."
+  },
+
+  "OffersBenefits": {
+  "title": "Exclusive Benefits",
+  "description": "Experience a holiday filled with comfort and exclusive privileges at SY Hotels Belek.",
+  "imageHeading": "Where Every Moment Becomes Special",
+  "guestRating": "Guest Rating",
+  "accommodation": "Exclusive Accommodation Offer",
+  "wellness": "Spa & Wellness Privilege",
+  "swimupTitle": "Swim-Up Experience",
+  "swimupDescription": "Experience the comfort of direct pool access from your room.",
+  "spaTitle": "Spa & Wellness Experience",
+  "spaDescription": "Special opportunities for a relaxing and rejuvenating getaway.",
+  "off": "Off",
+  "discoverMore": "Discover More",
+  "sampleOffer": "Sample offer",
+  "disclaimer": "Displayed discount rates are examples only and are not active promotions.",
+  "ratingDisclaimer":"Guest ratings are sourced from their respective platforms and may change over time."
 }
 }

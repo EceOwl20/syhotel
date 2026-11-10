@@ -981,7 +981,29 @@
   "momentsSpaTitle": "A World of Serenity",
   "momentsSpaDescription": "Take time for yourself and renew your body and mind.",
   "momentsAquaparkTitle": "Endless Fun",
-  "momentsAquaparkDescription": "Unforgettable entertainment experiences for all ages."
+  "momentsAquaparkDescription": "Unforgettable entertainment experiences for all ages.",
+
+
+"flightsEyebrow": "SY HOTELS • YOUR JOURNEY",
+"flightsTitle": "Fly to Antalya",
+"flightsDescription": "Your holiday begins with the journey. Discover flights to Antalya and plan your SY Hotels Belek experience.",
+"flightsArrival": "Your Destination",
+"flightsPartners": "Choose Your Flight Partner",
+"flightsSearch": "Explore Flights",
+"flightsDisclaimer": "Links redirect to independent airlines and flight booking platforms. Flight availability, prices and booking conditions are the responsibility of the respective providers.",
+
+"galleryTitle": "SY Hotels Photo Gallery",
+  "galleryRooms": "Rooms",
+  "galleryGastronomy": "Gastronomy",
+  "galleryPools": "Pools",
+  "gallerySpa": "Spa & Wellness",
+  "galleryEntertainment": "Entertainment",
+  "galleryClose": "Close Gallery",
+  "galleryNext": "Next Photo",
+  "galleryPrevious": "Previous Photo",
+  "galleryViewImage": "View Photo"
+
+
   },
 
   "OffersBenefits": {

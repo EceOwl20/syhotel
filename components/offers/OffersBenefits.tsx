@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { FiArrowUpRight } from "react-icons/fi";
+import OffersGallery from "./OffersGallery";
+import { offersGallery } from "@/data/offersGallery";
 
 import {
   benefitOffers,
@@ -19,29 +21,42 @@ export default async function OffersBenefits({
     namespace: "OffersBenefits",
   });
 
+  const galleryLabels = {
+  galleryTitle: t("galleryTitle"),
+  rooms: t("galleryRooms"),
+  gastronomy: t("galleryGastronomy"),
+  pools: t("galleryPools"),
+  spa: t("gallerySpa"),
+  entertainment: t("galleryEntertainment"),
+  close: t("galleryClose"),
+  next: t("galleryNext"),
+  previous: t("galleryPrevious"),
+  viewImage: t("galleryViewImage"),
+};
+
   return (
-    <section className="w-full bg-[#f8f6f3] px-5 py-20 md:px-8 md:py-28 lg:pb-24">
+    <section className="w-full bg-[#f8f6f3] px-5 py-10 md:px-8 md:py-16 lg:pb-20">
 
       <div className="mx-auto max-w-[1600px]">
 
         {/* SECTION HEADER */}
-        <div className="mb-14 text-center md:mb-20">
+        {/* <div className="mb-3 text-center md:mb-5">
 
           <span className="text-[11px] font-light uppercase tracking-[0.3em] text-[#948475]">
             SY HOTELS BELEK
           </span>
 
-          <h2 className="mt-5 text-[32px] font-extralight uppercase tracking-[0.09em] text-[#745444] md:text-[46px]">
+          <h2 className="mt-2 text-[32px] font-extralight uppercase tracking-[0.09em] text-[#745444] md:text-[46px]">
             {t("title")}
           </h2>
 
-          <div className="mx-auto my-7 h-px w-16 bg-[#b9876b]" />
+          <div className="mx-auto my-2 h-px w-16 bg-[#b9876b]" />
 
           <p className="mx-auto max-w-[620px] text-[14px] font-light leading-8 text-[#8e7d6c]">
             {t("description")}
           </p>
 
-        </div>
+        </div> */}
 
         {/* MAIN LAYOUT */}
         <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
@@ -49,7 +64,7 @@ export default async function OffersBenefits({
           {/* LEFT MAIN VISUAL */}
           <div className="flex min-w-0 flex-col gap-5">
 
-            <div className="group relative min-h-[480px] flex-1 overflow-hidden bg-[#d9d0c6] md:min-h-[650px]">
+            <div className="group relative min-h-[480px] flex-1 overflow-hidden bg-[#d9d0c6] md:min-h-[600px]">
 
               <Image
                 src="/images/homepage/acik-havuz.webp"
@@ -83,8 +98,18 @@ export default async function OffersBenefits({
 
             </div>
 
+             {/* HOTEL PHOTO GALLERY */}
+<OffersGallery
+  categories={offersGallery}
+  labels={galleryLabels}
+/>
+
         {/* HOTEL RATINGS */}
 <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+
+ 
+
+
   {hotelRatings.map((rating) => {
     const percentage =
       (rating.score / rating.maxScore) * 100;

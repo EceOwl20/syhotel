@@ -976,7 +976,15 @@
   "momentsSpaTitle": "Huzurun Adresi",
   "momentsSpaDescription": "Kendinize zaman ayırın, ruhunuzu ve bedeninizi yenileyin.",
   "momentsAquaparkTitle": "Eğlence Dolu Anlar",
-  "momentsAquaparkDescription": "Her yaşa hitap eden unutulmaz eğlence deneyimleri."
+  "momentsAquaparkDescription": "Her yaşa hitap eden unutulmaz eğlence deneyimleri.",
+
+  "flightsEyebrow": "SY HOTELS • YOLCULUĞUNUZ",
+"flightsTitle": "Antalya'ya Uçun",
+"flightsDescription": "Tatiliniz yolculukla başlar. Antalya uçuşlarını keşfedin ve SY Hotels Belek deneyiminizi planlayın.",
+"flightsArrival": "Varış Noktanız",
+"flightsPartners": "Uçuş Partnerinizi Seçin",
+"flightsSearch": "Uçuşları İncele",
+"flightsDisclaimer": "Bağlantılar bağımsız havayolu ve bilet platformlarına yönlendirir. Uçuşlar, fiyatlar ve rezervasyon koşulları ilgili sağlayıcıların sorumluluğundadır."
 
   },
 
@@ -995,6 +1003,17 @@
   "discoverMore": "Detayları Keşfet",
   "sampleOffer": "Örnek kampanya",
   "disclaimer": "Gösterilen indirim oranları örnek amaçlıdır. Aktif kampanya değildir.",
-  "ratingDisclaimer":"Misafir değerlendirme puanları ilgili platformlardan alınmıştır ve zamanla değişebilir."
+  "ratingDisclaimer":"Misafir değerlendirme puanları ilgili platformlardan alınmıştır ve zamanla değişebilir.",
+
+  "galleryTitle": "SY Hotels Fotoğraf Galerisi",
+  "galleryRooms": "Odalar",
+  "galleryGastronomy": "Gastronomi",
+  "galleryPools": "Havuzlar",
+  "gallerySpa": "Spa & Wellness",
+  "galleryEntertainment": "Eğlence",
+  "galleryClose": "Galeriyi Kapat",
+  "galleryNext": "Sonraki Fotoğraf",
+  "galleryPrevious": "Önceki Fotoğraf",
+  "galleryViewImage": "Fotoğrafı Görüntüle"
 }
 }

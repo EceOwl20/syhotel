@@ -7,6 +7,8 @@ import OffersExperience from "@/components/offers/OffersExperience";
 import OffersContact from "@/components/offers/OffersContact";
 import OffersBenefits from "@/components/offers/OffersBenefits";
 import OffersMomentsCarousel from "@/components/offers/OffersMomentsCarousel";
+import OffersFlights from "@/components/offers/OffersFlights";
+import OffersFlights2 from "@/components/offers/OffersFlights2";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -75,11 +77,11 @@ export default async function OffersPage({ params }: Props) {
   return (
     <main className="w-full overflow-hidden">
 
-      <OffersHero
+      {/* <OffersHero
         title={t("title")}
         description={t("description")}
         discoverLabel={t("discoverMore")}
-      />
+      /> */}
 
       <OffersBenefits locale={locale} />
 
@@ -101,6 +103,26 @@ export default async function OffersPage({ params }: Props) {
         title={t("experienceTitle")}
         description={t("experienceDescription")}
       />
+      
+      {/* <OffersFlights
+  eyebrow={t("flightsEyebrow")}
+  title={t("flightsTitle")}
+  description={t("flightsDescription")}
+  arrivalLabel={t("flightsArrival")}
+  selectPartnerLabel={t("flightsPartners")}
+  searchFlightsLabel={t("flightsSearch")}
+  disclaimer={t("flightsDisclaimer")}
+/> */}
+
+      <OffersFlights2
+  eyebrow={t("flightsEyebrow")}
+  title={t("flightsTitle")}
+  description={t("flightsDescription")}
+  arrivalLabel={t("flightsArrival")}
+  selectPartnerLabel={t("flightsPartners")}
+  searchFlightsLabel={t("flightsSearch")}
+  disclaimer={t("flightsDisclaimer")}
+/>
 
       <OffersContact
         eyebrow={t("contactEyebrow")}

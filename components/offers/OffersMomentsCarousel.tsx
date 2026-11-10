@@ -77,17 +77,17 @@ export default function OffersMomentsCarousel({
       <div className="pointer-events-none absolute -right-20 bottom-0 h-[400px] w-[400px] rounded-full bg-[#b9876b]/10 blur-[100px]" />
 
       {/* HEADER */}
-      <div className="relative z-10 mx-auto mb-12 max-w-[800px] px-5 text-center md:mb-20">
+      <div className="relative z-10 mx-auto mb-8 max-w-[800px] px-5 text-center md:mb-12">
 
         <span className="text-[11px] font-light uppercase tracking-[0.35em] text-[#948475]">
           {eyebrow}
         </span>
 
-        <h2 className="mt-5 text-4xl font-extralight uppercase tracking-[0.08em] text-[#745444] md:text-5xl">
+        <h2 className="mt-2 text-4xl font-extralight uppercase tracking-[0.08em] text-[#745444] md:text-5xl">
           {heading}
         </h2>
 
-        <div className="mx-auto my-7 h-px w-16 bg-[#b9876b]" />
+        <div className="mx-auto my-5 h-px w-16 bg-[#b9876b]" />
 
         <p className="text-sm font-light leading-8 text-[#8e7d6c] md:text-base">
           {description}

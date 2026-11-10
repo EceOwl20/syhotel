@@ -981,7 +981,17 @@
   "momentsSpaTitle": "Eine Welt der Ruhe",
   "momentsSpaDescription": "Nehmen Sie sich Zeit für sich und tanken Sie neue Energie.",
   "momentsAquaparkTitle": "Grenzenloser Spaß",
-  "momentsAquaparkDescription": "Unvergessliche Unterhaltung für jedes Alter."
+  "momentsAquaparkDescription": "Unvergessliche Unterhaltung für jedes Alter.",
+
+
+"flightsEyebrow": "SY HOTELS • IHRE REISE",
+"flightsTitle": "Fliegen Sie nach Antalya",
+"flightsDescription": "Ihr Urlaub beginnt mit der Reise. Entdecken Sie Flüge nach Antalya und planen Sie Ihren Aufenthalt im SY Hotels Belek.",
+"flightsArrival": "Ihr Reiseziel",
+"flightsPartners": "Wählen Sie Ihren Fluganbieter",
+"flightsSearch": "Flüge Entdecken",
+"flightsDisclaimer": "Die Links führen zu unabhängigen Fluggesellschaften und Flugbuchungsplattformen. Flugverfügbarkeit, Preise und Buchungsbedingungen liegen in der Verantwortung der jeweiligen Anbieter."
+
   },
 
   "OffersBenefits": {
@@ -999,6 +1009,17 @@
   "discoverMore": "Mehr Entdecken",
   "sampleOffer": "Beispielangebot",
   "disclaimer": "Die angegebenen Rabatte dienen nur als Beispiele und sind keine aktiven Angebote.",
-  "ratingDisclaimer":"Die Gästebewertungen stammen von den jeweiligen Plattformen und können sich im Laufe der Zeit ändern."
+  "ratingDisclaimer":"Die Gästebewertungen stammen von den jeweiligen Plattformen und können sich im Laufe der Zeit ändern.",
+
+   "galleryTitle": "SY Hotels Fotogalerie",
+  "galleryRooms": "Zimmer",
+  "galleryGastronomy": "Gastronomie",
+  "galleryPools": "Pools",
+  "gallerySpa": "Spa & Wellness",
+  "galleryEntertainment": "Unterhaltung",
+  "galleryClose": "Galerie Schließen",
+  "galleryNext": "Nächstes Foto",
+  "galleryPrevious": "Vorheriges Foto",
+  "galleryViewImage": "Foto Anzeigen"
 }
 }

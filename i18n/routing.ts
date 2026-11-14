@@ -81,7 +81,6 @@ export const routing = defineRouting({
   // Mevcut 8 oda tanımın burada kalacak.
 
   // General pages
-  "/reservation": "/reservation",
   "/pools": {
   tr: "/havuzlar",
   en: "/pools",
@@ -175,6 +174,25 @@ export const routing = defineRouting({
   en: "/general-information",
   de: "/allgemeine-informationen",
   ru: "/общая-информация",
+},
+
+"/reservation": {
+  tr: "/rezervasyon",
+  en: "/reservation",
+  de: "/reservierung",
+  ru: "/bronirovanie",
+},
+"/basket": {
+  tr: "/sepet",
+  en: "/basket",
+  de: "/warenkorb",
+  ru: "/korzina",
+},
+"/thank-you": {
+  tr: "/tesekkur",
+  en: "/thank-you",
+  de: "/danke",
+  ru: "/spasibo",
 },
 
   },

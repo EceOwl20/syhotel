@@ -80,10 +80,9 @@ export default async function LocaleLayout({
           <BackToTop />
           <LiveChat />
           <MobileBookingBar
-  phoneNumber="+902422054787"
-  bookingUrl="https://syhotelsbelek.rezervasyonal.com/"
-  bookNowText="Book Now"
-/>
+            phoneNumber="+902422054787"
+            bookNowText="Book Now"
+          />
           <CookieConsent />
         </NextIntlClientProvider>
       </body>

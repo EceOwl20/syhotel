@@ -1,16 +1,15 @@
 "use client";
 
 import { FiPhone } from "react-icons/fi";
+import ReservationLink from "./ReservationLink";
 
 type MobileBookingBarProps = {
   phoneNumber: string;
-  bookingUrl: string;
   bookNowText?: string;
 };
 
 export default function MobileBookingBar({
   phoneNumber,
-  bookingUrl,
   bookNowText = "Book Now",
 }: MobileBookingBarProps) {
   return (
@@ -34,10 +33,7 @@ export default function MobileBookingBar({
 
       {/* Book Now Button */}
       <div className="mx-auto w-full max-w-[420px] px-[85px]">
-        <a
-          href={bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+        <ReservationLink
           className="
             pointer-events-auto
             flex h-[46px] w-full
@@ -51,7 +47,7 @@ export default function MobileBookingBar({
           "
         >
           {bookNowText}
-        </a>
+        </ReservationLink>
       </div>
     </div>
   );

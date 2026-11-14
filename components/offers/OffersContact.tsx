@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FiArrowUpRight, FiPhone, FiMail } from "react-icons/fi";
-import img1 from "@/public/images/rooms/deluxeRoom/deluxe-rooms-3.webp"
+import ReservationLink from "@/components/generalComponents/ReservationLink";
+import img1 from "@/public/images/rooms/deluxeRoom/deluxe-rooms-3.webp";
 
 type Props = {
   eyebrow: string;
@@ -11,8 +12,6 @@ type Props = {
   callLabel: string;
   emailLabel: string;
 };
-
-const bookingUrl = "https://syhotelsbelek.rezervasyonal.com/";
 
 export default function OffersContact({
   eyebrow,
@@ -44,10 +43,7 @@ export default function OffersContact({
             {description}
           </p>
 
-          <a
-            href={bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <ReservationLink
             className="group mt-12 inline-flex w-fit items-center gap-10 border border-[#c8b59c] px-8 py-5 text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 hover:bg-[#c8b59c] hover:text-[#252b29]"
           >
             {bookNow}
@@ -55,7 +51,7 @@ export default function OffersContact({
               size={18}
               className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
             />
-          </a>
+          </ReservationLink>
         </div>
 
         {/* RIGHT IMAGE */}

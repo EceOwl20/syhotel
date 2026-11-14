@@ -8,6 +8,7 @@ import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialYoutube } from "react-icons/ti";
 import { IoMail } from "react-icons/io5";
+import ReservationLink from "./ReservationLink";
 
 type MenuOverlayProps = {
   isOpen: boolean;
@@ -106,15 +107,12 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
             </Link>
 
             {/* Reservation */}
-            <a
-              href="https://syhotelsbelek.rezervasyonal.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <ReservationLink
               onClick={onClose}
               className={menuLinkClass}
             >
               {t("reservation")}
-            </a>
+            </ReservationLink>
 
             {/* ROOMS */}
             <div>

@@ -10,6 +10,7 @@ import Image from "next/image";
 import HomeIcon from "./icons/HomeIcon";
 import PhoneIcon from "./icons/PhoneIcon";
 import MenuOverlay from "./MenuOverlay";
+import ReservationLink from "./ReservationLink";
 import logo from "@/public/logo/sy-logo.svg";
 
 const languages = ["tr", "en", "de", "ru"] as const;
@@ -191,10 +192,7 @@ export default function Header() {
           <div className="flex flex-col-reverse items-end gap-2 min-[590px]:h-full min-[590px]:flex-row min-[590px]:items-center min-[590px]:gap-5">
 
             {/* RESERVATION BUTTON */}
-            <a
-              href="https://syhotelsbelek.rezervasyonal.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <ReservationLink
               aria-hidden={isMenuOpen}
               tabIndex={isMenuOpen ? -1 : 0}
               className={`
@@ -214,7 +212,7 @@ export default function Header() {
               `}
             >
               {t("reservation")}
-            </a>
+            </ReservationLink>
 
             {/* LANGUAGE SELECTOR */}
             <nav

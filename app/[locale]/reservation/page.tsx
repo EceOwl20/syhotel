@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import AsisiaWidget from "@/components/reservation/AsisiaWidget";
 
 export const metadata: Metadata = {
@@ -8,7 +9,21 @@ export const metadata: Metadata = {
     "SY Hotels Belek Luxury için online rezervasyon yapın. Tarihlerinizi ve odanızı seçerek konaklamanızı planlayın.",
 };
 
-export default function ReservationPage() {
+type ReservationPageProps = {
+  params: Promise<{
+    locale: string;
+  }>;
+};
+
+export default async function ReservationPage({
+  params,
+}: ReservationPageProps) {
+  const { locale } = await params;
+
+  if (locale !== "tr") {
+    notFound();
+  }
+
   const widgetUrl =
     "https://sy-hotel.asisia.com/tr/Home/WidgetJs" +
     "?url=/SY-Belek-Luxury" +

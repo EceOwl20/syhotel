@@ -38,20 +38,31 @@ export default async function OffersPage({ params }: Props) {
     namespace: "Offers",
   });
 
-  const showcaseOffers = [
-    {
-      id: "offer-01",
-      title: t("offer01"),
-      description: t("description01"),
-      image: "/images/pools/kapali-havuz-3.webp",
-    },
-    {
-      id: "offer-02",
-      title: t("offer02"),
-      description: t("description02"),
-      image: "/images/pools/bblok-acik-havuz-11.webp",
-    },
-  ];
+const showcaseOffers = [
+  {
+    id: "offer-01",
+    title: t("offer01"),
+    description: t("description01"),
+    image: "/images/pools/kapali-havuz-3.webp",
+
+    upgradesLabel: t("upgradeListTitle"),
+
+    upgrades: [
+      {
+        from: "Standard Land",
+        to: "Standard Pool",
+      },
+      {
+        from: "Standard Shallow",
+        to: "Standard Swim-up",
+      },
+      {
+        from: "Superior Room",
+        to: "Dublex Family Room",
+      },
+    ],
+  }
+];
 
   const momentSlides = [
   {
@@ -73,6 +84,7 @@ export default async function OffersPage({ params }: Props) {
     subtitle: t("momentsAquaparkDescription"),
   },
 ];
+
 
   return (
     <main className="w-full overflow-hidden">

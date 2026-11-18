@@ -9,10 +9,14 @@ export type RatingProvider = {
 export type BenefitOffer = {
   id: string;
   discount: number;
+  showPercent: boolean;
+  suffixKey: "prepaymentLabel" | "nightLabel";
   image: string;
-  titleKey: "swimupTitle" | "spaTitle";
-  descriptionKey: "swimupDescription" | "spaDescription";
-  categoryKey: "accommodation" | "wellness";
+  titleKey: "prepaymentTitle" | "longStayTitle";
+  descriptionKey:
+    | "prepaymentDescription"
+    | "longStayDescription";
+  categoryKey: "accommodation" | "wellness" | "longStayCategory";
   href?: string;
 };
 
@@ -49,19 +53,23 @@ export const hotelRatings: RatingProvider[] = [
 
 export const benefitOffers: BenefitOffer[] = [
   {
-    id: "swimup",
-    discount: 20, // SAMPLE ONLY
+    id: "prepayment",
+    discount: 30,
+    showPercent: true,
+    suffixKey: "prepaymentLabel",
     image: "/images/homepage/acik-havuz.webp",
-    titleKey: "swimupTitle",
-    descriptionKey: "swimupDescription",
+    titleKey: "prepaymentTitle",
+    descriptionKey: "prepaymentDescription",
     categoryKey: "accommodation",
   },
   {
-    id: "spa",
-    discount: 15, // SAMPLE ONLY
+    id: "longStay",
+    discount: 7,
+    showPercent: false,
+    suffixKey: "nightLabel",
     image: "/images/homepage/spa-1.webp",
-    titleKey: "spaTitle",
-    descriptionKey: "spaDescription",
-    categoryKey: "wellness",
+    titleKey: "longStayTitle",
+    descriptionKey: "longStayDescription",
+    categoryKey: "longStayCategory",
   },
 ];

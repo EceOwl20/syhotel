@@ -950,8 +950,6 @@
     "title": "Sonderangebote",
     "description": "Entdecken Sie unvergessliche Urlaubserlebnisse mit exklusiven Angeboten.",
     "offerLabel": "Exklusives Angebot",
-    "offer01": "Sonderangebot 01",
-    "description01": "Weitere Informationen folgen in Kürze.",
     "offer02": "Sonderangebot 02",
     "description02": "Weitere Informationen folgen in Kürze.",
     "offer03": "Sonderangebot 03",
@@ -962,6 +960,10 @@
     "bottomTitle": "Ihr Traumurlaub",
     "bottomDescription": "Kontaktieren Sie uns für weitere Informationen zu Ihrem nächsten Urlaub.",
     "contact": "Kontaktieren Sie Uns",
+
+     "offer01": "Exklusives Zimmer-Upgrade im April & Mai",
+  "description01": "Machen Sie Ihren Frühlingsurlaub zu einem besonderen Erlebnis! Genießen Sie bei Aufenthalten im April und Mai ein kostenloses Zimmer-Upgrade in ausgewählten Zimmerkategorien und erleben Sie noch mehr Komfort.",
+  "upgradeListTitle": "Kostenlose Zimmer-Upgrades",
 
     "experienceEyebrow": "DAS SY HOTELS ERLEBNIS",
   "experienceTitle": "Wo Jeder Moment Besonders Ist",
@@ -994,32 +996,38 @@
 
   },
 
-  "OffersBenefits": {
-  "title": "Exklusive Vorteile",
-  "description": "Erleben Sie einen Urlaub voller Komfort und exklusiver Vorteile im SY Hotels Belek.",
-  "imageHeading": "Wo Jeder Moment Besonders Wird",
-  "guestRating": "Gästebewertung",
-  "accommodation": "Exklusives Unterkunftsangebot",
-  "wellness": "Spa & Wellness Vorteil",
-  "swimupTitle": "Swim-Up Erlebnis",
-  "swimupDescription": "Genießen Sie direkten Poolzugang von Ihrem Zimmer aus.",
-  "spaTitle": "Spa & Wellness Erlebnis",
-  "spaDescription": "Besondere Möglichkeiten für Entspannung und Erholung.",
-  "off": "Rabatt",
-  "discoverMore": "Mehr Entdecken",
-  "sampleOffer": "Beispielangebot",
-  "disclaimer": "Die angegebenen Rabatte dienen nur als Beispiele und sind keine aktiven Angebote.",
-  "ratingDisclaimer":"Die Gästebewertungen stammen von den jeweiligen Plattformen und können sich im Laufe der Zeit ändern.",
+   "OffersBenefits": {
+    "title": "Exklusive Angebote",
+    "description": "Erleben Sie einen Urlaub voller Komfort und exklusiver Vorteile im SY Hotels Belek.",
+    "imageHeading": "Jeder Moment ein besonderes Erlebnis",
+    "guestRating": "Gästebewertung",
 
-   "galleryTitle": "SY Hotels Fotogalerie",
-  "galleryRooms": "Zimmer",
-  "galleryGastronomy": "Gastronomie",
-  "galleryPools": "Pools",
-  "gallerySpa": "Spa & Wellness",
-  "galleryEntertainment": "Unterhaltung",
-  "galleryClose": "Galerie Schließen",
-  "galleryNext": "Nächstes Foto",
-  "galleryPrevious": "Vorheriges Foto",
-  "galleryViewImage": "Foto Anzeigen"
-}
+    "accommodation": "Exklusives Buchungsangebot",
+    "longStayCategory": "Exklusive Vorteile für Ihren Aufenthalt",
+
+    "prepaymentTitle": "Planen Sie Ihren Urlaub ganz entspannt",
+    "prepaymentDescription": "Die Planung Ihres Traumurlaubs war noch nie so einfach! Sichern Sie sich Ihre Reservierung mit nur 30 % Anzahlung und profitieren Sie von flexiblen Zahlungsbedingungen. Dieses Angebot gilt ausschließlich für Buchungen aus den GUS-Märkten.",
+
+    "longStayTitle": "VIP-Transfer & Massage-Extras",
+    "longStayDescription": "Genießen Sie einen besonderen Urlaub! Bei einem Aufenthalt von mindestens 7 Nächten während der gesamten Saison in den Zimmerkategorien Superior, Family, Duplex Family, Shallow, Swim-up und Family Swim-up erhalten Sie einen kostenlosen VIP-Transfer für Hin- und Rückfahrt sowie zwei Massagen von jeweils 30 Minuten.",
+
+    "prepaymentLabel": "Anzahlung",
+    "nightLabel": "Nächte oder mehr",
+
+    "discoverMore": "Mehr entdecken",
+    "sampleOffer": "Beispielangebot",
+    "disclaimer": "Die Angebote gelten gemäß den angegebenen Buchungs- und Aufenthaltsbedingungen. Für weitere Informationen kontaktieren Sie bitte unser Hotel.",
+    "ratingDisclaimer": "Die Gästebewertungen stammen von den jeweiligen Plattformen und können sich im Laufe der Zeit ändern.",
+
+    "galleryTitle": "SY Hotels Fotogalerie",
+    "galleryRooms": "Zimmer",
+    "galleryGastronomy": "Gastronomie",
+    "galleryPools": "Pools",
+    "gallerySpa": "Spa & Wellness",
+    "galleryEntertainment": "Unterhaltung",
+    "galleryClose": "Galerie schließen",
+    "galleryNext": "Nächstes Foto",
+    "galleryPrevious": "Vorheriges Foto",
+    "galleryViewImage": "Foto ansehen"
+  }
 }

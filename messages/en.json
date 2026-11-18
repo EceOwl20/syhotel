@@ -950,8 +950,7 @@
     "title": "Special Offers",
     "description": "Discover unforgettable holiday experiences with exclusive opportunities.",
     "offerLabel": "Exclusive Offer",
-    "offer01": "Special Offer 01",
-    "description01": "Offer details will be added soon.",
+
     "offer02": "Special Offer 02",
     "description02": "Offer details will be added soon.",
     "offer03": "Special Offer 03",
@@ -962,6 +961,10 @@
     "bottomTitle": "Your Perfect Getaway",
     "bottomDescription": "Contact us to learn more about your next holiday experience.",
     "contact": "Contact Us",
+
+     "offer01": "Exclusive Room Upgrade Offer for April & May",
+  "description01": "Make your spring holiday even more special! Enjoy a more comfortable stay with complimentary room upgrades in selected room categories for stays during April and May.",
+  "upgradeListTitle": "Complimentary Room Upgrades",
 
     "experienceEyebrow": "THE SY HOTELS EXPERIENCE",
   "experienceTitle": "Where Every Moment Feels Special",
@@ -1007,20 +1010,37 @@
   },
 
   "OffersBenefits": {
-  "title": "Exclusive Benefits",
-  "description": "Experience a holiday filled with comfort and exclusive privileges at SY Hotels Belek.",
-  "imageHeading": "Where Every Moment Becomes Special",
-  "guestRating": "Guest Rating",
-  "accommodation": "Exclusive Accommodation Offer",
-  "wellness": "Spa & Wellness Privilege",
-  "swimupTitle": "Swim-Up Experience",
-  "swimupDescription": "Experience the comfort of direct pool access from your room.",
-  "spaTitle": "Spa & Wellness Experience",
-  "spaDescription": "Special opportunities for a relaxing and rejuvenating getaway.",
-  "off": "Off",
-  "discoverMore": "Discover More",
-  "sampleOffer": "Sample offer",
-  "disclaimer": "Displayed discount rates are examples only and are not active promotions.",
-  "ratingDisclaimer":"Guest ratings are sourced from their respective platforms and may change over time."
-}
+    "title": "Exclusive Offers",
+    "description": "Experience a holiday filled with comfort and exclusive privileges at SY Hotels Belek.",
+    "imageHeading": "Every Moment, An Exceptional Experience",
+    "guestRating": "Guest Rating",
+
+    "accommodation": "Exclusive Booking Offer",
+    "longStayCategory": "Exclusive Stay Privileges",
+
+    "prepaymentTitle": "Plan Your Holiday with Ease",
+    "prepaymentDescription": "Planning your dream holiday has never been easier! Secure your reservation with just a 30% prepayment and enjoy flexible payment conditions. This offer is available exclusively for bookings from CIS markets.",
+
+    "longStayTitle": "VIP Transfer & Massage Privileges",
+    "longStayDescription": "Enjoy an exceptional holiday with complimentary round-trip VIP transfers and two 30-minute massages when booking a stay of 7 nights or more throughout the season in Superior, Family, Duplex Family, Shallow, Swim-up and Family Swim-up room categories.",
+
+    "prepaymentLabel": "Prepayment",
+    "nightLabel": "Nights or More",
+
+    "discoverMore": "Discover More",
+    "sampleOffer": "Sample Offer",
+    "disclaimer": "Offers are subject to the specified booking and accommodation conditions. Please contact our hotel for further details.",
+    "ratingDisclaimer": "Guest ratings are provided by the respective platforms and may change over time.",
+
+    "galleryTitle": "SY Hotels Photo Gallery",
+    "galleryRooms": "Rooms",
+    "galleryGastronomy": "Gastronomy",
+    "galleryPools": "Pools",
+    "gallerySpa": "Spa & Wellness",
+    "galleryEntertainment": "Entertainment",
+    "galleryClose": "Close Gallery",
+    "galleryNext": "Next Photo",
+    "galleryPrevious": "Previous Photo",
+    "galleryViewImage": "View Photo"
+  }
 }

@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -7,6 +8,11 @@ export type ShowcaseOffer = {
   description: string;
   image: string;
   href?: string;
+  upgrades?: {
+    from: string;
+    to: string;
+  }[];
+  upgradesLabel?: string;
 };
 
 type Props = {
@@ -52,27 +58,63 @@ export default function OfferShowcase({
             </div>
 
             {/* CONTENT */}
-            <div className="mx-auto w-full max-w-[480px] py-5">
+            <div className="mx-auto w-full max-w-[630px] py-5">
               <span className="text-[11px] uppercase tracking-[0.3em] text-[#948475]">
                 {label}
               </span>
 
-              <h2 className="mt-6 text-3xl font-extralight uppercase leading-snug tracking-[0.05em] text-[#776a5f] md:text-5xl">
+              {/* TITLE */}
+              <h2 className="mt-5 text-[27px] font-extralight uppercase leading-[1.35] tracking-[0.04em] text-[#776a5f] md:text-[36px] lg:text-[38px]">
                 {offer.title}
               </h2>
 
-              <div className="my-8 h-px w-16 bg-[#948475]" />
+              <div className="my-6 h-px w-16 bg-[#948475]" />
 
-              <p className="text-[15px] font-light leading-8 text-[#706961]">
+              {/* DESCRIPTION */}
+              <p className="text-[14px] font-light leading-7 text-[#706961] md:text-[15px]">
                 {offer.description}
               </p>
 
+              {/* ROOM UPGRADE LIST */}
+              {offer.upgrades && offer.upgrades.length > 0 && (
+                <div className="mt-7">
+                  {offer.upgradesLabel && (
+                    <h3 className="mb-4 text-[12px] font-normal uppercase tracking-[0.15em] text-[#948475]">
+                      {offer.upgradesLabel}
+                    </h3>
+                  )}
+
+                  <ul className="space-y-3">
+                    {offer.upgrades.map((upgrade) => (
+                      <li
+                        key={`${upgrade.from}-${upgrade.to}`}
+                        className="flex items-start gap-3 text-[13px] font-light leading-6 text-[#706961] md:text-[14px]"
+                      >
+                        <span className="mt-[10px] h-[5px] w-[5px] shrink-0 rounded-full bg-[#b9876b]" />
+
+                        <span>
+                          {upgrade.from}
+                          <span className="mx-2 text-[#b9876b]">
+                            →
+                          </span>
+                          <span className="font-normal text-[#745444]">
+                            {upgrade.to}
+                          </span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* DISCOVER MORE */}
               {offer.href && (
                 <a
                   href={offer.href}
                   className="group mt-10 inline-flex items-center gap-8 border-b border-[#948475] pb-3 text-xs uppercase tracking-[0.18em] text-[#948475]"
                 >
                   {discoverMore}
+
                   <FiArrowUpRight
                     size={17}
                     className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"

@@ -945,8 +945,7 @@
     "title": "Özel Teklifler",
     "description": "Size özel fırsatlarla unutulmaz bir tatil deneyimi keşfedin.",
     "offerLabel": "Özel Teklif",
-    "offer01": "Özel Teklif 01",
-    "description01": "Kampanya açıklaması yakında eklenecektir.",
+    
     "offer02": "Özel Teklif 02",
     "description02": "Kampanya açıklaması yakında eklenecektir.",
     "offer03": "Özel Teklif 03",
@@ -957,6 +956,10 @@
     "bottomTitle": "Unutulmaz Bir Tatil",
     "bottomDescription": "Tatil planınız hakkında daha fazla bilgi almak için bizimle iletişime geçin.",
     "contact": "Bize Ulaşın",
+
+      "offer01": "Nisan ve Mayıs Aylarına Özel Oda Yükseltme Fırsatı",
+  "description01": "Bahar tatilinizi daha ayrıcalıklı hale getirin! Nisan ve Mayıs aylarında gerçekleşecek konaklamalarınızda, seçili oda kategorilerinde sunulan ücretsiz oda yükseltme fırsatı ile daha konforlu bir tatil deneyimi yaşayın.",
+  "upgradeListTitle": "Oda Yükseltme Ayrıcalıklarımız",
 
       "experienceEyebrow": "SY HOTELS DENEYİMİ",
   "experienceTitle": "Her Anı Özel Kılan Bir Tatil",
@@ -993,13 +996,17 @@
   "description": "SY Hotels Belek'te konfor ve ayrıcalıklarla dolu bir tatil deneyimi.",
   "imageHeading": "Her Anı Özel Bir Deneyim",
   "guestRating": "Misafir Puanı",
-  "accommodation": "Özel Konaklama Fırsatı",
-  "wellness": "Spa & Wellness Ayrıcalığı",
-  "swimupTitle": "Swim-Up Konaklama",
-  "swimupDescription": "Havuza doğrudan erişim sunan odalarda ayrıcalıklı konaklama.",
-  "spaTitle": "Spa & Wellness Deneyimi",
-  "spaDescription": "Dinlenme ve yenilenme dolu bir tatil için özel fırsatlar.",
-  "off": "İndirim",
+
+  "accommodation": "Avantajlı Rezervasyon",
+  "longStayCategory": "Konaklamaya Özel Ayrıcalıklar",
+  "prepaymentTitle": "Tatilinizi Avantajlı Planlayın",
+  "prepaymentDescription": "Hayalinizdeki tatili planlamak şimdi çok daha kolay! Yalnızca %30 ön ödeme ile rezervasyonunuzu oluşturun, tatilinizi avantajlı ödeme koşullarıyla güvence altına alın. Bu fırsat BDT pazarındaki rezervasyonlar için geçerlidir.",
+  "longStayTitle": "VIP Transfer & Masaj Ayrıcalığı",
+  "longStayDescription": "Sezon boyunca 7 gece ve üzeri konaklamalarınızda Superior, Family, Dublex Family, Shallow, Swim-up ve Family Swim-up oda kategorilerinde çift yön VIP transfer ve 2 adet 30 dakikalık masaj hediyesiyle tatilinizi ayrıcalıklı bir deneyime dönüştürün.",
+  "prepaymentLabel": "Ön Ödeme ile",
+  "nightLabel": "Gece ve Üzeri",
+
+
   "discoverMore": "Detayları Keşfet",
   "sampleOffer": "Örnek kampanya",
   "disclaimer": "Gösterilen indirim oranları örnek amaçlıdır. Aktif kampanya değildir.",

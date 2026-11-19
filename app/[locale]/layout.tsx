@@ -14,6 +14,7 @@ import LiveChat from "@/components/generalComponents/LiveChat";
 import CookieConsent from "@/components/generalComponents/CookieConsent";
 import GoogleTagManager from "@/components/generalComponents/GoogleTagManager";
 import MobileBookingBar from "@/components/generalComponents/MobileBookingBar";
+import CampaignPopup from "@/components/generalComponents/CampaignPopup";
 
 import "../globals.css";
 import BackToTop from "@/components/generalComponents/BackToTop";
@@ -77,6 +78,7 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <Footer />
+          <CampaignPopup />
           <BackToTop />
           <LiveChat />
           <MobileBookingBar

@@ -18,6 +18,7 @@ import backgroundImageKids from "@/public/images/kids/mini-kulup-1.webp";
 import backgroundImageKids2 from "@/public/images/kids/mini-kulup-2.webp";
 import backgroundImageKids4 from "@/public/images/kids/mini-kulup-4.webp";
 import backgroundImageKids6 from "@/public/images/kids/mini-kulup-6.webp";
+import { getImageProps } from "next/image";
 
 import { routing } from "@/i18n/routing";
 import { createSeoAlternates } from "@/lib/seo";
@@ -46,20 +47,30 @@ export default async function Home() {
   title: tRooms(`roomNames.${room.id}`),
 }));
 
-  const slides = [
-    {
-      src: "/images/homepage/rubby-lobi-bar-1.webp",
-      alt: "SY Hotels - Hotel view",
-    },
-    {
-      src: "/images/homepage/rubby-lobi-bar-3.webp",
-      alt: "SY Hotels - Pool view",
-    },
-    {
-      src: "/images/homepage/rubby-lobi-bar-7.webp",
-      alt: "SY Hotels - Beach view",
-    },
-  ];
+
+const slides = [
+  {
+    src: "/images/general/yilbasi.png",
+    mobileSrc: "/images/general/yilbasi-mobile.png",
+    alt: "SY Hotels - Yılbaşı",
+  },
+  {
+    src: "/images/homepage/rubby-lobi-bar-1.webp",
+    mobileSrc: "/images/homepage/rubby-lobi-bar-1.webp",
+    alt: "SY Hotels - Hotel view",
+  },
+  {
+    src: "/images/homepage/rubby-lobi-bar-3.webp",
+    mobileSrc: "/images/homepage/rubby-lobi-bar-3.webp",
+    alt: "SY Hotels - Pool view",
+  },
+  {
+    src: "/images/homepage/rubby-lobi-bar-7.webp",
+    mobileSrc: "/images/homepage/rubby-lobi-bar-7.webp",
+    alt: "SY Hotels - Beach view",
+  },
+];
+
 
   return (
     <main className="flex w-full flex-col items-center justify-center lg:gap-10 bg-[#f0eae5] pb-0 lg:pb-20">

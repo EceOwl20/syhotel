@@ -1,12 +1,13 @@
 
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
+import { getOfferImage } from "@/lib/offerImages";
 
 export type ShowcaseOffer = {
   id: string;
   title: string;
   description: string;
-  image: string;
+  imageNumber: number;
   href?: string;
   upgrades?: {
     from: string;
@@ -19,12 +20,14 @@ type Props = {
   offers: ShowcaseOffer[];
   label: string;
   discoverMore: string;
+  locale: string;
 };
 
 export default function OfferShowcase({
   offers,
   label,
   discoverMore,
+  locale,
 }: Props) {
   return (
     <section
@@ -44,17 +47,15 @@ export default function OfferShowcase({
               }`}
             >
               <Image
-                src={offer.image}
+                src={getOfferImage(offer.imageNumber, locale)}
                 alt={offer.title}
                 width={1200}
                 height={800}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="h-auto w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                className="h-auto w-full object-contain transition-transform duration-1000 group-hover:scale-105"
               />
 
-              <span className="absolute bottom-6 left-6 text-5xl font-extralight text-white/80">
-                {String(index + 1).padStart(2, "0")}
-              </span>
+             
             </div>
 
             {/* CONTENT */}

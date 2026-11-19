@@ -11,7 +11,7 @@ export type BenefitOffer = {
   discount: number;
   showPercent: boolean;
   suffixKey: "prepaymentLabel" | "nightLabel";
-  image: string;
+  imageNumber: number;
   titleKey: "prepaymentTitle" | "longStayTitle";
   descriptionKey:
     | "prepaymentDescription"
@@ -19,6 +19,7 @@ export type BenefitOffer = {
   categoryKey: "accommodation" | "wellness" | "longStayCategory";
   href?: string;
 };
+
 
 export const hotelRatings: RatingProvider[] = [
   {
@@ -51,13 +52,14 @@ export const hotelRatings: RatingProvider[] = [
   },
 ];
 
+
 export const benefitOffers: BenefitOffer[] = [
   {
     id: "prepayment",
     discount: 30,
     showPercent: true,
     suffixKey: "prepaymentLabel",
-    image: "/images/homepage/acik-havuz.webp",
+    imageNumber: 3,
     titleKey: "prepaymentTitle",
     descriptionKey: "prepaymentDescription",
     categoryKey: "accommodation",
@@ -67,7 +69,7 @@ export const benefitOffers: BenefitOffer[] = [
     discount: 7,
     showPercent: false,
     suffixKey: "nightLabel",
-    image: "/images/homepage/spa-1.webp",
+    imageNumber: 5,
     titleKey: "longStayTitle",
     descriptionKey: "longStayDescription",
     categoryKey: "longStayCategory",

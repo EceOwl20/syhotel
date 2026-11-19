@@ -43,7 +43,7 @@ const showcaseOffers = [
     id: "offer-01",
     title: t("offer01"),
     description: t("description01"),
-    image: "/images/pools/kapali-havuz-3.webp",
+    imageNumber: 4,
 
     upgradesLabel: t("upgradeListTitle"),
 
@@ -61,6 +61,24 @@ const showcaseOffers = [
         to: "Dublex Family Room",
       },
     ],
+  },
+
+  {
+    id: "offer-02",
+    title: t("accommodation"),
+    description: t("prepaymentDescription"),
+    imageNumber: 6,
+
+    upgradesLabel: t("upgradeListTitle"),
+  },
+
+   {
+    id: "offer-03",
+    title: t("longStayTitle"),
+    description: t("longStayDescription"),
+    imageNumber: 2,
+
+    upgradesLabel: t("upgradeListTitle"),
   }
 ];
 
@@ -108,6 +126,7 @@ const showcaseOffers = [
         offers={showcaseOffers}
         label={t("offerLabel")}
         discoverMore={t("discoverMore")}
+         locale={locale}
       />
 
       <OffersExperience

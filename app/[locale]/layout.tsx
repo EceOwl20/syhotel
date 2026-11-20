@@ -1,6 +1,6 @@
 
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 import { Montserrat } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -10,7 +10,7 @@ import { routing } from "@/i18n/routing";
 
 import Header from "@/components/generalComponents/Header";
 import Footer from "@/components/generalComponents/Footer";
-import LiveChat from "@/components/generalComponents/LiveChat";
+import MarketLiveChat from "@/components/generalComponents/MarketLiveChat";
 import CookieConsent from "@/components/generalComponents/CookieConsent";
 import GoogleTagManager from "@/components/generalComponents/GoogleTagManager";
 import MobileBookingBar from "@/components/generalComponents/MobileBookingBar";
@@ -78,9 +78,11 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <Footer />
-          <CampaignPopup />
+          {locale === "tr" && <CampaignPopup />}
           <BackToTop />
-          <LiveChat />
+          <Suspense fallback={null}>
+            <MarketLiveChat />
+          </Suspense>
           <MobileBookingBar
             phoneNumber="+902422054787"
             bookNowText="Book Now"

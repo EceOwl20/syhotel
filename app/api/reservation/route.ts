@@ -2,12 +2,10 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
 import {
+  EXTERNAL_BOOKING_URL,
   getVisitorCountry,
   isTurkeyTurkishMarket,
 } from "@/lib/visitorMarket";
-
-const EXTERNAL_BOOKING_URL =
-  "https://syhotelsbelek.rezervasyonal.com/";
 
 export function GET(request: NextRequest) {
   const locale = request.nextUrl.searchParams.get("locale") ?? "";

@@ -166,11 +166,9 @@ export default async function OffersBenefits({ locale }: Props) {
         </div>
 
         {/* BOTTOM TEXT */}
-        <p className="mt-8 text-center text-[11px] font-light leading-6 text-[#948475]">
-          {t("disclaimer")}
-        </p>
 
-        <p className="mt-2 text-center text-[11px] font-light text-[#948475]">
+
+        <p className="mt-4 text-center text-[11px] font-light text-[#948475]">
           {t("ratingDisclaimer")}
         </p>
       </div>

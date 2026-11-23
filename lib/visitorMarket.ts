@@ -4,6 +4,9 @@ const COUNTRY_HEADER_NAMES = [
   "x-vercel-ip-country",
 ] as const;
 
+export const EXTERNAL_BOOKING_URL =
+  "https://syhotelsbelek.rezervasyonal.com/";
+
 type ReadonlyHeaders = Pick<Headers, "get">;
 
 export function getVisitorCountry(headers: ReadonlyHeaders) {

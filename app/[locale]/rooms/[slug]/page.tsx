@@ -11,6 +11,9 @@ import {
   type Locale,
 } from "@/lib/seo";
 
+import RoomVirtualTour from "@/components/rooms/RoomVirtualTour";
+import { roomVirtualTours } from "@/data/roomVirtualTours";
+
 type PageProps = {
   params: Promise<{
     locale: Locale;
@@ -34,12 +37,6 @@ export async function generateMetadata({
     : {};
 }
 
-export function generateStaticParams() {
-  return rooms.map((room) => ({
-    slug: room.slug,
-  }));
-}
-
 export default async function RoomDetailPage({
   params,
 }: PageProps) {
@@ -51,30 +48,28 @@ export default async function RoomDetailPage({
     notFound();
   }
 
-  const tRooms = await getTranslations({ locale, namespace: "Rooms" });
-  const tRelated = await getTranslations({
+  const tVirtualTour = await getTranslations({
     locale,
-    namespace: "RelatedContent",
+    namespace: "RoomVirtualTour",
   });
 
-  const relatedRooms = rooms
-    .filter((item) => item.slug !== slug)
-    .map((item) => ({
-      id: item.slug,
-      title: tRooms(`details.${item.slug}.title`),
-      image: item.gallery[0].src,
-      href: `/rooms/${item.slug}`,
-    }));
+  const tourUrl = roomVirtualTours[slug];
 
   return (
     <>
       <RoomDetailSection room={room} />
-      {/* <RelatedContent
-        title={tRelated("otherRooms")}
-        items={relatedRooms}
-        previousLabel={tRelated("previous")}
-        nextLabel={tRelated("next")}
-      /> */}
+
+      {tourUrl && (
+        <RoomVirtualTour
+          title={tVirtualTour("title", {
+            room: room.title,
+          })}
+          description={tVirtualTour("description")}
+          tourUrl={tourUrl}
+          openTourText={tVirtualTour("openTour")}
+        />
+      )}
+      
     </>
   );
 }

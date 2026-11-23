@@ -1054,5 +1054,11 @@
     "galleryNext": "Next Photo",
     "galleryPrevious": "Previous Photo",
     "galleryViewImage": "View Photo"
+  },
+
+   "RoomVirtualTour": {
+    "title": "{room} - 360° Virtual Tour",
+    "description": "Explore your room in detail with our immersive 360° virtual tour.",
+    "openTour": "Open Virtual Tour in New Tab"
   }
 }

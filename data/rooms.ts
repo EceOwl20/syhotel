@@ -33,7 +33,7 @@ export const rooms: RoomConfig[] = [
   const number = index + 1;
   return {
     id: `deluxe-${number}`,
-    src: `/images/rooms/deluxeFamilyRoom/deluxe-rooms-${number}.webp`,
+    src: `/images/rooms/deluxeRoom/deluxe-rooms-${number}.webp`,
     alt: `Deluxe Room ${number}`,
   };
 }),

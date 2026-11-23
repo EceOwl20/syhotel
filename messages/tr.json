@@ -1030,5 +1030,11 @@
   "galleryNext": "Sonraki Fotoğraf",
   "galleryPrevious": "Önceki Fotoğraf",
   "galleryViewImage": "Fotoğrafı Görüntüle"
-}
+},
+
+"RoomVirtualTour": {
+    "title": "{room} - 360° Sanal Tur",
+    "description": "Odanızı 360° sanal tur deneyimiyle yakından keşfedin.",
+    "openTour": "Sanal Turu Yeni Sekmede Aç"
+  }
 }

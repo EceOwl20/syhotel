@@ -1041,5 +1041,11 @@
     "galleryNext": "Nächstes Foto",
     "galleryPrevious": "Vorheriges Foto",
     "galleryViewImage": "Foto ansehen"
+  },
+
+  "RoomVirtualTour": {
+    "title": "{room} - 360° Virtueller Rundgang",
+    "description": "Entdecken Sie Ihr Zimmer bei einem interaktiven 360°-Rundgang.",
+    "openTour": "Virtuellen Rundgang in neuem Tab öffnen"
   }
 }

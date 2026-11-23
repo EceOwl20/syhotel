@@ -10,6 +10,11 @@ import {
 
 const CONNEXEASE_CHANNEL_ID = "afcfdef6-9ebe-4c5b-ac37-1890010b1e93";
 
+function removeConnexeaseMessenger() {
+  document.getElementById("web-messenger-container")?.remove();
+  window.__connexeaseWebMessengerInitialized = false;
+}
+
 declare global {
   interface Window {
     ConnexeaseWebMessenger?: {
@@ -27,8 +32,7 @@ export default function LiveChat() {
         const preferences = (event as CustomEvent<CookiePreferences>).detail;
 
         if (!preferences.functional) {
-          document.getElementById("web-messenger-container")?.remove();
-          window.__connexeaseWebMessengerInitialized = false;
+          removeConnexeaseMessenger();
         }
 
         onStoreChange();
@@ -133,6 +137,8 @@ setIsMessengerOpen(isOpen);
       if (updateMessengerState) {
         window.removeEventListener("resize", updateMessengerState);
       }
+
+      removeConnexeaseMessenger();
     };
   }, [hasFunctionalConsent]);
 

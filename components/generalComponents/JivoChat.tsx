@@ -1,6 +1,5 @@
 "use client";
 
-import Script from "next/script";
 import { useEffect, useSyncExternalStore } from "react";
 
 import {
@@ -12,6 +11,7 @@ import {
 declare global {
   interface Window {
     jivo_destroy?: () => void;
+    jivo_init?: () => void;
   }
 }
 
@@ -44,19 +44,38 @@ export default function JivoChat({ widgetId }: JivoChatProps) {
   );
 
   useEffect(() => {
-    return () => {
+    document.getElementById("web-messenger-container")?.remove();
+    window.__connexeaseWebMessengerInitialized = false;
+
+    if (!hasFunctionalConsent) {
       window.jivo_destroy?.();
+      return;
+    }
+
+    const existingScript = document.getElementById("jivo-live-chat");
+
+    if (existingScript) {
+      window.jivo_init?.();
+      return () => window.jivo_destroy?.();
+    }
+
+    const script = document.createElement("script");
+    script.id = "jivo-live-chat";
+    script.src = `https://code.jivosite.com/widget/${encodeURIComponent(widgetId)}`;
+    script.async = true;
+    script.onerror = () => {
+      console.error("[JivoChat] Widget script yüklenemedi.");
     };
-  }, []);
 
-  if (!hasFunctionalConsent) return null;
+    document.body.appendChild(script);
 
-  return (
-    <Script
-      id="jivo-live-chat"
-      src={`https://code.jivosite.com/widget/${encodeURIComponent(widgetId)}`}
-      strategy="afterInteractive"
-    />
-  );
+    return () => {
+      script.onerror = null;
+      window.jivo_destroy?.();
+      script.remove();
+    };
+  }, [hasFunctionalConsent, widgetId]);
+
+  return null;
 }
 

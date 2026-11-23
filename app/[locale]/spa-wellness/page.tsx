@@ -39,10 +39,10 @@ export default async function SpaWellnessPage() {
         title={t("spa.title")}
         description={t("spa.description")}
         imagePosition="right"
-        images={[
-          "/images/spa/spa-3.webp",
-          "/images/spa/spa-4.webp",
-        ]}
+        images={Array.from(
+    { length: 20 },
+    (_, index) => `/images/spa/spa-${index + 1}.webp`
+  )}
       />
 
       {/* MASSAGE ROOMS */}
@@ -50,10 +50,10 @@ export default async function SpaWellnessPage() {
         title={t("massageRooms.title")}
         description={t("massageRooms.description")}
         imagePosition="left"
-        images={[
-          "/images/spa/masaj-odalari-1.webp",
-          "/images/spa/masaj-odalari-2.webp",
-        ]}
+         images={Array.from(
+    { length: 13 },
+    (_, index) => `/images/spa/masaj-odalari-${index + 1}.webp`
+  )}
       />
 
       {/* FITNESS CENTER */}
@@ -61,9 +61,10 @@ export default async function SpaWellnessPage() {
         title={t("fitnessCenter.title")}
         description={t("fitnessCenter.description")}
         imagePosition="right"
-        images={[
-          "/images/spa/fitness-center-1.webp",
-        ]}
+        images={Array.from(
+    { length: 6 },
+    (_, index) => `/images/spa/fitness-center-${index + 1}.webp`
+  )}
       />
 
       {/* TURKISH BATH */}
@@ -71,10 +72,10 @@ export default async function SpaWellnessPage() {
         title={t("turkishBath.title")}
         description={t("turkishBath.description")}
         imagePosition="left"
-        images={[
-          "/images/spa/hamam-1.webp",
-          "/images/spa/hamam-2.webp",
-        ]}
+        images={Array.from(
+    { length: 12 },
+    (_, index) => `/images/spa/hamam-${index + 1}.webp`
+  )}
       />
 
       {/* SAUNA */}
@@ -82,9 +83,10 @@ export default async function SpaWellnessPage() {
         title={t("sauna.title")}
         description={t("sauna.description")}
         imagePosition="right"
-        images={[
-          "/images/spa/sauna-1.webp",
-        ]}
+        images={Array.from(
+    { length: 4 },
+    (_, index) => `/images/spa/sauna-${index + 1}.webp`
+  )}
       />
 
     </main>

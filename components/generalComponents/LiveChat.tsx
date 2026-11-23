@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import { useLocale } from "next-intl";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import {
   COOKIE_CONSENT_EVENT,
@@ -8,7 +9,27 @@ import {
   type CookiePreferences,
 } from "@/lib/cookieConsent";
 
+import ConnexeaseWelcome from "./ConnexeaseWelcome";
+
 const CONNEXEASE_CHANNEL_ID = "afcfdef6-9ebe-4c5b-ac37-1890010b1e93";
+const AUTO_OPEN_DELAY_MS = 5_000;
+const AUTO_OPEN_SESSION_KEY = "connexease-auto-opened";
+
+function wasAutoOpenedInSession() {
+  try {
+    return sessionStorage.getItem(AUTO_OPEN_SESSION_KEY) === "true";
+  } catch {
+    return false;
+  }
+}
+
+function markAutoOpenedInSession() {
+  try {
+    sessionStorage.setItem(AUTO_OPEN_SESSION_KEY, "true");
+  } catch {
+    // The in-memory timer still prevents repeated opening on this page.
+  }
+}
 
 function removeConnexeaseMessenger() {
   document.getElementById("web-messenger-container")?.remove();
@@ -17,6 +38,25 @@ function removeConnexeaseMessenger() {
 
 declare global {
   interface Window {
+    Connexease?: {
+      open: () => void | Promise<void>;
+      getDisplayedConversation?: () => {
+        id: string;
+      } | null;
+      sendMessage?: (
+        message: string | { type: "text"; text: string },
+        conversationId?: string,
+      ) => void | Promise<unknown>;
+      createConversation?: (options: {
+        messages: Array<{ type: "text"; text: string }>;
+      }) => Promise<{ id: string }>;
+      loadConversation?: (
+        conversationId: string,
+      ) => void | Promise<void>;
+      setPredefinedMessage?: (
+        message: string,
+      ) => void | Promise<void>;
+    };
     ConnexeaseWebMessenger?: {
       Init: (channelId: string) => void;
     };
@@ -25,7 +65,9 @@ declare global {
 }
 
 export default function LiveChat() {
+  const locale = useLocale();
   const [isMessengerOpen, setIsMessengerOpen] = useState(false);
+  const [isWelcomeVisible, setIsWelcomeVisible] = useState(false);
   const hasFunctionalConsent = useSyncExternalStore(
     (onStoreChange) => {
       const handleConsentChange = (event: Event) => {
@@ -33,6 +75,7 @@ export default function LiveChat() {
 
         if (!preferences.functional) {
           removeConnexeaseMessenger();
+          setIsWelcomeVisible(false);
         }
 
         onStoreChange();
@@ -55,6 +98,7 @@ export default function LiveChat() {
     let resizeObserver: ResizeObserver | undefined;
     let iframeStyleObserver: MutationObserver | undefined;
     let updateMessengerState: (() => void) | undefined;
+    let autoOpenTimer: number | undefined;
 
     const observeMessenger = () => {
       const messenger = document.getElementById("web-messenger-container");
@@ -102,6 +146,7 @@ setImportantStyle("z-index", isOpen ? "10001" : "9998");
 setIsMessengerOpen(isOpen);
         setImportantStyle("z-index", isOpen ? "10001" : "9998");
         setIsMessengerOpen(isOpen);
+        if (isOpen) setIsWelcomeVisible(false);
       };
 
       resizeObserver = new ResizeObserver(updateMessengerState);
@@ -115,6 +160,22 @@ setIsMessengerOpen(isOpen);
 
       updateMessengerState();
       window.addEventListener("resize", updateMessengerState);
+
+      if (
+        autoOpenTimer === undefined &&
+        !wasAutoOpenedInSession()
+      ) {
+        autoOpenTimer = window.setTimeout(() => {
+          markAutoOpenedInSession();
+
+          const { width, height } = messenger.getBoundingClientRect();
+          const isAlreadyOpen = width > 120 || height > 150;
+
+          if (isAlreadyOpen || !window.Connexease) return;
+
+          setIsWelcomeVisible(true);
+        }, AUTO_OPEN_DELAY_MS);
+      }
 
       return true;
     };
@@ -134,6 +195,9 @@ setIsMessengerOpen(isOpen);
       mutationObserver.disconnect();
       resizeObserver?.disconnect();
       iframeStyleObserver?.disconnect();
+      if (autoOpenTimer !== undefined) {
+        window.clearTimeout(autoOpenTimer);
+      }
       if (updateMessengerState) {
         window.removeEventListener("resize", updateMessengerState);
       }
@@ -155,6 +219,73 @@ setIsMessengerOpen(isOpen);
     window.__connexeaseWebMessengerInitialized = true;
   };
 
+  const openChatWithMessage = async (message: string) => {
+    const messenger = window.Connexease;
+
+    if (!messenger) return;
+
+    setIsWelcomeVisible(false);
+
+    try {
+      await Promise.resolve(messenger.open());
+    } catch {
+      console.error("[LiveChat] Connexease açılamadı.");
+      return;
+    }
+
+    const displayedConversation =
+      messenger.getDisplayedConversation?.();
+
+    if (displayedConversation && messenger.sendMessage) {
+      try {
+        await Promise.resolve(
+          messenger.sendMessage(
+            { type: "text", text: message },
+            displayedConversation.id,
+          ),
+        );
+        await Promise.resolve(messenger.setPredefinedMessage?.(""));
+        return;
+      } catch {
+        // Continue with a new conversation or the prefilled-message fallback.
+      }
+    }
+
+    if (messenger.createConversation) {
+      try {
+        const conversation = await messenger.createConversation({
+          messages: [{ type: "text", text: message }],
+        });
+
+        await Promise.resolve(
+          messenger.loadConversation?.(conversation.id),
+        );
+        await Promise.resolve(messenger.setPredefinedMessage?.(""));
+        return;
+      } catch {
+        // Fall back to prefilling the native input when creation is unavailable.
+      }
+    }
+
+    if (messenger.sendMessage) {
+      try {
+        await Promise.resolve(
+          messenger.sendMessage({ type: "text", text: message }),
+        );
+        await Promise.resolve(messenger.setPredefinedMessage?.(""));
+        return;
+      } catch {
+        // Fall back to prefilling the native input.
+      }
+    }
+
+    try {
+      await Promise.resolve(messenger.setPredefinedMessage?.(message));
+    } catch {
+      console.error("[LiveChat] Mesaj Connexease'e aktarılamadı.");
+    }
+  };
+
   if (!hasFunctionalConsent) return null;
 
   return (
@@ -165,6 +296,14 @@ setIsMessengerOpen(isOpen);
         strategy="afterInteractive"
         onReady={initializeMessenger}
       />
+
+      {isWelcomeVisible && !isMessengerOpen ? (
+        <ConnexeaseWelcome
+          locale={locale}
+          onClose={() => setIsWelcomeVisible(false)}
+          onMessage={openChatWithMessage}
+        />
+      ) : null}
 
       <span
         aria-hidden="true"

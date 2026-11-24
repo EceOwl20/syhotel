@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useSyncExternalStore } from "react";
 
 import {
@@ -20,6 +21,8 @@ type JivoChatProps = {
 };
 
 export default function JivoChat({ widgetId }: JivoChatProps) {
+  const pathname = usePathname();
+  const isOffersPage = pathname === "/tr/offers";
   const hasFunctionalConsent = useSyncExternalStore(
     (onStoreChange) => {
       const handleConsentChange = (event: Event) => {
@@ -47,8 +50,9 @@ export default function JivoChat({ widgetId }: JivoChatProps) {
     document.getElementById("web-messenger-container")?.remove();
     window.__connexeaseWebMessengerInitialized = false;
 
-    if (!hasFunctionalConsent) {
+    if (!hasFunctionalConsent || isOffersPage) {
       window.jivo_destroy?.();
+      document.getElementById("jivo-live-chat")?.remove();
       return;
     }
 
@@ -74,7 +78,7 @@ export default function JivoChat({ widgetId }: JivoChatProps) {
       window.jivo_destroy?.();
       script.remove();
     };
-  }, [hasFunctionalConsent, widgetId]);
+  }, [hasFunctionalConsent, isOffersPage, widgetId]);
 
   return null;
 }

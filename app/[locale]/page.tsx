@@ -37,7 +37,12 @@ export async function generateMetadata({
   };
 }
 
-export default async function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations("HomePage");
 
   const tRooms = await getTranslations("HomeRooms");
@@ -47,13 +52,40 @@ export default async function Home() {
   title: tRooms(`roomNames.${room.id}`),
 }));
 
+const newYearImages: Record<
+  Locale,
+  {
+    desktop: string;
+    mobile: string;
+  }
+> = {
+  tr: {
+    desktop: "/images/general/yilbasi.png",
+    mobile: "/images/general/yilbasi-mobile.png",
+  },
+  en: {
+    desktop: "/images/general/yilbasi-en.jpeg",
+    mobile: "/images/general/yilbasi-mobile-en.jpeg",
+  },
+  de: {
+    desktop: "/images/general/yilbasi-de.jpeg",
+    mobile: "/images/general/yilbasi-mobile-de.jpeg",
+  },
+  ru: {
+    desktop: "/images/general/yilbasi-ru.jpeg",
+    mobile: "/images/general/yilbasi-mobile-ru.jpeg",
+  },
+};
+
+const newYearImage = newYearImages[locale];
+
 
 const slides = [
   {
-    src: "/images/general/yilbasi.png",
-    mobileSrc: "/images/general/yilbasi-mobile.png",
-    alt: "SY Hotels - Yılbaşı",
-  },
+  src: newYearImage.desktop,
+  mobileSrc: newYearImage.mobile,
+  alt: "SY Hotels - New Year",
+},
   {
     src: "/images/homepage/rubby-lobi-bar-1.webp",
     mobileSrc: "/images/homepage/rubby-lobi-bar-1.webp",

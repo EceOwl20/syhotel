@@ -30,14 +30,14 @@
     "sustainability": "Nachhaltigkeit",
     "discoverRegion": "Region entdecken",
     "roomLinks": {
-      "deluxe": "Deluxe Zimmer",
-      "deluxeFamily": "Deluxe Familienzimmer",
-      "deluxeSuperior": "Deluxe Superior Zimmer",
-      "swimUpFamily": "Deluxe Swim-Up Familienzimmer",
-      "swimUp": "Deluxe Swim-Up Zimmer",
-      "shallowPool": "Deluxe Zimmer mit Flachwasserpool",
-      "duplexFamily": "Deluxe Duplex-Familienzimmer",
-      "accessible": "Barrierefreie Deluxe Zimmer"
+      "deluxe": "Standardzimmer mit Land-/Poolblick",
+      "deluxeFamily": "Familienzimmer",
+      "deluxeSuperior": "Superior-Zimmer",
+      "swimUpFamily": "Swim-Up-Familienzimmer",
+      "swimUp": "Swim-Up-Zimmer",
+      "shallowPool": "Zimmer mit Flachwasserpool",
+      "duplexFamily": "Duplex-Familienzimmer",
+      "accessible": "Barrierefreies Zimmer"
     },
     "barLinks": {
       "ruby": "Ruby Lobbybar",
@@ -133,10 +133,10 @@
     "details": {
 
       "deluxe-rooms": {
-        "title": "DELUXE ZIMMER",
+        "title": "STANDARDZIMMER MIT LAND-/POOLBLICK",
         "subtitle": "EIN NEUES LEBENSGEFÜHL ERWARTET SIE",
         "description": "Mit ihren großzügigen und eleganten Zimmern bietet es den Gästen einen Lebensraum, der über den Komfort hinausgeht. Mit dem Stil der modernen Dekoration können Sie sich wie zu Hause fühlen. Alle Zimmer sind mit modernster Technologie ausgestattet und wurden mit Blick auf jedes Detail entworfen, das die Gäste benötigen könnten",
-        "galleryAlt": "Foto des Deluxe Zimmers",
+        "galleryAlt": "Foto des Standardzimmers mit Land-/Poolblick",
         "features": {
           "area": "23 m²",
           "guests": "2+1+1 (Baby)",
@@ -148,10 +148,10 @@
 
 
 "deluxe-family-rooms": {
-  "title": "DELUXE FAMILIENZIMMER",
+  "title": "FAMILIENZIMMER",
   "subtitle": "GEMEINSAM MIT IHREN LIEBSTEN",
-  "description": "Unsere Deluxe Familienzimmer bestehen aus zwei Zimmern mit Verbindungstür und bieten einen komfortablen Wohnbereich. Sie sind ideal für Familien und Freundesgruppen und ermöglichen es Ihnen, gemeinsam Zeit mit Ihren Liebsten zu verbringen, ohne auf Ihre Privatsphäre verzichten zu müssen.",
-  "galleryAlt": "Foto des Deluxe Familienzimmers",
+  "description": "Unser Familienzimmer besteht aus zwei Zimmern mit Verbindungstür und bietet einen komfortablen Wohnbereich. Es ist ideal für Familien und Freundesgruppen und ermöglicht es Ihnen, gemeinsam Zeit mit Ihren Liebsten zu verbringen, ohne auf Ihre Privatsphäre verzichten zu müssen.",
+  "galleryAlt": "Foto des Familienzimmers",
   "features": {
     "area": "43 m²",
     "guests": "4+1 (Baby)",
@@ -165,10 +165,10 @@
 
 
 "deluxe-superior-rooms": {
-  "title": "DELUXE SUPERIOR ZIMMER",
+  "title": "SUPERIOR-ZIMMER",
   "subtitle": "",
   "description": "Mit ihrer großzügigen und geräumigen Gestaltung wurden diese Zimmer speziell für einen komfortablen Familienurlaub konzipiert. Sie sind auf die Bedürfnisse von Gästen jeden Alters abgestimmt und bieten mit ihrer modernen Einrichtung und funktionalen Raumaufteilung ein angenehmes Wohnambiente.",
-  "galleryAlt": "Foto des Deluxe Superior Zimmers",
+  "galleryAlt": "Foto des Superior-Zimmers",
   "features": {
     "area": "41 m²",
     "guests": "3+1+1 (Baby)",
@@ -181,10 +181,10 @@
 
 
 "deluxe-swimup-family-rooms": {
-  "title": "DELUXE SWIM-UP FAMILIENZIMMER",
+  "title": "SWIM-UP-FAMILIENZIMMER",
   "subtitle": "EIN NEUES LEBENSGEFÜHL ERWARTET SIE",
   "description": "Direkt von Ihrem Zimmer aus können Sie ins Wasser steigen! Dank des Swim-Up-Konzepts genießen Sie den Pool, ohne weite Wege zurücklegen zu müssen. Besonders für Familien mit Kindern wird die gemeinsame Zeit am Pool dadurch noch angenehmer und sicherer.",
-  "galleryAlt": "Foto des Deluxe Swim-Up Familienzimmers",
+  "galleryAlt": "Foto des Swim-Up-Familienzimmers",
   "features": {
     "area": "57 m²",
     "guests": "4+2+1 (Baby)",
@@ -200,10 +200,10 @@
 
 
 "deluxe-swimup-rooms": {
-  "title": "DELUXE SWIM-UP ZIMMER",
+  "title": "SWIM-UP-ZIMMER",
   "subtitle": "WIE IM TRAUM",
   "description": "Mit direktem Zugang zum Pool von Ihrer privaten Zimmerterrasse aus wird Ihr Urlaub zu einem besonderen Erlebnis. Genießen Sie eine exklusive Unterkunft, in der Sie sich jederzeit erfrischen und gleichzeitig Komfort und Ruhe erleben können.",
-  "galleryAlt": "Foto des Deluxe Swim-Up Zimmers",
+  "galleryAlt": "Foto des Swim-Up-Zimmers",
   "features": {
     "area": "23 m²",
     "guests": "2+1+1 (Baby)",
@@ -217,10 +217,10 @@
 
 
 "deluxe-shallow-pool-rooms": {
-  "title": "DELUXE ZIMMER MIT FLACHWASSERPOOL",
+  "title": "ZIMMER MIT FLACHWASSERPOOL",
   "subtitle": "EIN NEUES LEBENSGEFÜHL ERWARTET SIE",
   "description": "Mit direktem Zugang zum flachen Pool bieten diese Zimmer ein komfortables und erholsames Urlaubserlebnis. Sie eignen sich besonders für Familien mit Kindern sowie für Gäste, die einen ruhigen und entspannten Aufenthalt suchen.",
-  "galleryAlt": "Foto des Deluxe Zimmers mit Flachwasserpool",
+  "galleryAlt": "Foto des Zimmers mit Flachwasserpool",
   "features": {
     "area": "23 m²",
     "guests": "2+1+1 (Baby)",
@@ -232,10 +232,10 @@
 
 
 "deluxe-duplex-family-rooms": {
-  "title": "DELUXE DUPLEX-FAMILIENZIMMER",
+  "title": "DUPLEX-FAMILIENZIMMER",
   "subtitle": "GEMEINSAM MIT IHREN LIEBSTEN",
   "description": "Dank der innenliegenden Treppe bieten diese Zimmer Familien einen großzügigen und komfortablen Wohnbereich. Die Raumaufteilung auf zwei Etagen ermöglicht es Ihnen, gemeinsame Zeit zu genießen und gleichzeitig Ihre Privatsphäre zu bewahren.",
-  "galleryAlt": "Foto des Deluxe Duplex-Familienzimmers",
+  "galleryAlt": "Foto des Duplex-Familienzimmers",
   "features": {
     "area": "39 m²",
     "guests": "4+1 (Baby)",
@@ -248,10 +248,10 @@
 
 
 "deluxe-handicap-rooms": {
-  "title": "BARRIEREFREIE DELUXE ZIMMER",
+  "title": "BARRIEREFREIES ZIMMER",
   "subtitle": "WIR BAUEN BARRIEREN AB",
   "description": "Diese Zimmer sind mehr als nur Unterkünfte. Sie wurden speziell gestaltet, damit Gäste mit Behinderungen ihren Urlaub genießen können, ohne auf Selbstständigkeit und persönliche Freiheit verzichten zu müssen. Damit verwirklichen wir den Gedanken gleicher Urlaubsmöglichkeiten für alle.",
-  "galleryAlt": "Foto des barrierefreien Deluxe Zimmers",
+  "galleryAlt": "Foto des barrierefreien Zimmers",
   "features": {
     "area": "23 m²",
     "guests": "2 Personen",
@@ -511,14 +511,14 @@
   "description": "Mit ihren geräumigen und eleganten Zimmern bietet es den Gästen weit mehr als nur Komfort – es schafft einen Lebensraum. Durch den modernen Dekorationsstil können Sie sich wie zu Hause fühlen. Alle Zimmer sind mit modernster Technologie ausgestattet und wurden so gestaltet, dass alle Bedürfnisse der Gäste berücksichtigt werden.",
   "discover": "Entdecken",
   "roomNames": {
-    "deluxe-standard": "Deluxe Standardzimmer",
-    "deluxe-family": "Deluxe Familienzimmer",
-    "deluxe-superior": "Deluxe Superior Zimmer",
-    "deluxe-swim-up-aile": "Deluxe Swim-up Familienzimmer",
-    "deluxe-swim-up": "Deluxe Swim-up Zimmer",
-    "deluxe-sig-havuzlu": "Deluxe Zimmer mit flachem Pool",
-    "deluxe-dubleks-aile-standard": "Deluxe Duplex Familienzimmer",
-    "deluxe-engelli": "Barrierefreie Deluxe Zimmer"
+    "deluxe-standard": "Standardzimmer mit Land-/Poolblick",
+    "deluxe-family": "Familienzimmer",
+    "deluxe-superior": "Superior-Zimmer",
+    "deluxe-swim-up-aile": "Swim-Up-Familienzimmer",
+    "deluxe-swim-up": "Swim-Up-Zimmer",
+    "deluxe-sig-havuzlu": "Zimmer mit Flachwasserpool",
+    "deluxe-dubleks-aile-standard": "Duplex-Familienzimmer",
+    "deluxe-engelli": "Barrierefreies Zimmer"
   }
 },
 
@@ -580,14 +580,14 @@
       {
         "title": "Zimmer & Suiten",
         "lines": [
-          {"text": "• Deluxe Zimmer – 23 m²"},
-          {"text": "• Deluxe Familienzimmer – 43 m²"},
-          {"text": "• Deluxe Superior Zimmer – 41 m²"},
-          {"text": "• Deluxe Swim-Up Zimmer – 23 m²"},
-          {"text": "• Deluxe Swim-Up Familienzimmer – 57 m²"},
-          {"text": "• Deluxe Duplex Familienzimmer – 39 m²"},
-          {"text": "• Deluxe Zimmer mit flachem Pool – 23 m²"},
-          {"text": "• Barrierefreie Deluxe Zimmer – 23 m²"}
+          {"text": "• Standardzimmer mit Land-/Poolblick – 23 m²"},
+          {"text": "• Familienzimmer – 43 m²"},
+          {"text": "• Superior-Zimmer – 41 m²"},
+          {"text": "• Swim-Up-Zimmer – 23 m²"},
+          {"text": "• Swim-Up-Familienzimmer – 57 m²"},
+          {"text": "• Duplex-Familienzimmer – 39 m²"},
+          {"text": "• Zimmer mit Flachwasserpool – 23 m²"},
+          {"text": "• Barrierefreies Zimmer – 23 m²"}
         ]
       },
       {

@@ -18,23 +18,23 @@ export const offersGallery: GalleryCategory[] = [
     images: [
       {
         src: "/images/rooms/deluxeRoom/deluxe-rooms-1.webp",
-        alt: "SY Hotels Belek Deluxe Room",
+        alt: "SY Hotels Belek Standard Room",
       },
       {
         src: "/images/rooms/deluxeRoom/deluxe-rooms-2.webp",
-        alt: "SY Hotels Belek Deluxe Room Interior",
+        alt: "SY Hotels Belek Standard Room Interior",
       },
       {
         src: "/images/rooms/deluxeRoom/deluxe-rooms-3.webp",
-        alt: "SY Hotels Belek Deluxe Accommodation",
+        alt: "SY Hotels Belek Standard Accommodation",
       },
       {
         src: "/images/rooms/deluxeRoom/deluxe-rooms-4.webp",
-        alt: "SY Hotels Belek Deluxe Room Design",
+        alt: "SY Hotels Belek Standard Room Design",
       },
       {
         src: "/images/rooms/deluxeSwimupFamilyRoom/deluxe-family-swimup-rooms-1.webp",
-        alt: "SY Hotels Belek Deluxe Swim-Up Family Room",
+        alt: "SY Hotels Belek Family Swim-Up Room",
       },
       {
         src: "/images/rooms/deluxeSwimupFamilyRoom/deluxe-family-swimup-rooms-2.webp",

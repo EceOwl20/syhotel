@@ -30,14 +30,14 @@
     "sustainability": "Sustainability",
     "discoverRegion": "Explore the Region",
     "roomLinks": {
-      "deluxe": "Deluxe Rooms",
-      "deluxeFamily": "Deluxe Family Rooms",
-      "deluxeSuperior": "Deluxe Superior Rooms",
-      "swimUpFamily": "Deluxe Swim-Up Family Rooms",
-      "swimUp": "Deluxe Swim-Up Rooms",
-      "shallowPool": "Deluxe Shallow Pool Rooms",
-      "duplexFamily": "Deluxe Duplex Family Rooms",
-      "accessible": "Deluxe Accessible Rooms"
+      "deluxe": "Standard Land/Pool View Room",
+      "deluxeFamily": "Family Room",
+      "deluxeSuperior": "Superior Room",
+      "swimUpFamily": "Family Swim-Up Room",
+      "swimUp": "Swim-Up Room",
+      "shallowPool": "Shallow Pool Room",
+      "duplexFamily": "Duplex Family Room",
+      "accessible": "Accessible Room"
     },
     "barLinks": {
       "ruby": "Ruby Lobby Bar",
@@ -134,10 +134,10 @@
     "details": {
       
       "deluxe-rooms": {
-        "title": "DELUXE ROOMS",
+        "title": "STANDARD LAND/POOL VIEW ROOM",
         "subtitle": "A NEW LIFESTYLE AWAITS YOU",
         "description": "It offers its guests a living space beyond comfort with its spacious and elegantly designed rooms. You can feel at home with the elegance offered by modern decoration. All rooms are equipped with superior technology and designed with every detail that the guests may need in mind.",
-        "galleryAlt": "Deluxe room photo",
+        "galleryAlt": "Standard Land/Pool View Room photo",
         "features": {
           "area": "23 m²",
           "guests": "2+1+1 (Infant)",
@@ -149,10 +149,10 @@
 
 
 "deluxe-family-rooms": {
-  "title": "DELUXE FAMILY ROOMS",
+  "title": "FAMILY ROOM",
   "subtitle": "TOGETHER WITH YOUR LOVED ONES",
-  "description": "Consisting of two connecting rooms, our Deluxe Family Rooms offer a comfortable living space. Ideal for families and groups of friends, these rooms allow you to enjoy time together with your loved ones while maintaining your privacy.",
-  "galleryAlt": "Deluxe Family Room photo",
+  "description": "Consisting of two connecting rooms, our Family Room offers a comfortable living space. Ideal for families and groups of friends, this room allows you to enjoy time together with your loved ones while maintaining your privacy.",
+  "galleryAlt": "Family Room photo",
   "features": {
     "area": "43 m²",
     "guests": "4+1 (Infant)",
@@ -166,10 +166,10 @@
 
 
 "deluxe-superior-rooms": {
-  "title": "DELUXE SUPERIOR ROOMS",
+  "title": "SUPERIOR ROOM",
   "subtitle": "",
   "description": "Specially designed for families to enjoy a comfortable holiday, these rooms feature a spacious and airy layout. Created to meet the needs of guests of all ages, they offer a comfortable living space with modern decor and functional areas.",
-  "galleryAlt": "Deluxe Superior room photo",
+  "galleryAlt": "Superior Room photo",
   "features": {
     "area": "41 m²",
     "guests": "3+1+1 (Infant)",
@@ -182,10 +182,10 @@
 
 
 "deluxe-swimup-family-rooms": {
-  "title": "DELUXE SWIM-UP FAMILY ROOMS",
+  "title": "FAMILY SWIM-UP ROOM",
   "subtitle": "A NEW LIFESTYLE AWAITS YOU",
   "description": "You can step into the water as soon as you leave your room! Thanks to the swim-up feature, you can enjoy the pool without having to go anywhere. Especially for families with children, spending time by the pool becomes even more enjoyable and safer.",
-  "galleryAlt": "Deluxe Swim-Up Family Room photo",
+  "galleryAlt": "Family Swim-Up Room photo",
   "features": {
     "area": "57 m²",
     "guests": "4+2+1 (Infant)",
@@ -201,10 +201,10 @@
 
 
 "deluxe-swimup-rooms": {
-  "title": "DELUXE SWIM-UP ROOMS",
+  "title": "SWIM-UP ROOM",
   "subtitle": "LIKE A DREAM",
   "description": "It adds exclusivity to your holiday by offering direct access to the pool from your room’s terrace. It provides a special accommodation experience where you can cool off at any time of the day while enjoying comfort and tranquility together.",
-  "galleryAlt": "Deluxe Swim-Up room photo",
+  "galleryAlt": "Swim-Up Room photo",
   "features": {
     "area": "23 m²",
     "guests": "2+1+1 (Infant)",
@@ -218,10 +218,10 @@
 
 
 "deluxe-shallow-pool-rooms": {
-  "title": "DELUXE ROOMS WITH SHALLOW POOLS",
+  "title": "SHALLOW POOL ROOM",
   "subtitle": "A NEW LIFESTYLE AWAITS YOU",
   "description": "It offers a comfortable and enjoyable accommodation experience with direct access to the shallow pool. It is an ideal option especially for families with children and guests seeking a peaceful holiday.",
-  "galleryAlt": "Deluxe Shallow Pool room photo",
+  "galleryAlt": "Shallow Pool Room photo",
   "features": {
     "area": "23 m²",
     "guests": "2+1+1 (Infant)",
@@ -233,10 +233,10 @@
 
 
 "deluxe-duplex-family-rooms": {
-  "title": "DELUXE DUPLEX FAMILY ROOMS",
+  "title": "DUPLEX FAMILY ROOM",
   "subtitle": "WITH YOUR LOVED ONES",
   "description": "With its internal staircase design, it offers families a spacious and comfortable living area. Its layout spread over upper and lower floors provides an ideal accommodation experience where you can enjoy time together while also preserving your private space.",
-  "galleryAlt": "Deluxe Duplex Family Room photo",
+  "galleryAlt": "Duplex Family Room photo",
   "features": {
     "area": "39 m²",
     "guests": "4+1 (Infant)",
@@ -249,10 +249,10 @@
 
 
 "deluxe-handicap-rooms": {
-  "title": "DELUXE ACCESSIBLE ROOMS",
+  "title": "ACCESSIBLE ROOM",
   "subtitle": "BREAKING DOWN BARRIERS",
   "description": "These rooms are more than just accommodation spaces. They are thoughtfully designed living areas that allow guests with disabilities to enjoy their holidays while maintaining their independence and freedom. They bring the principle of equal holiday opportunities for everyone to life.",
-  "galleryAlt": "Deluxe Accessible Room photo",
+  "galleryAlt": "Accessible Room photo",
   "features": {
     "area": "23 m²",
     "guests": "2 Guests",
@@ -510,14 +510,14 @@
   "description": "It offers its guests a living space beyond comfort with its spacious and elegantly designed rooms. You can feel at home with the elegance offered by modern decoration. All rooms are equipped with superior technology and designed with every detail that the guests may need in mind.",
   "discover": "Discover",
   "roomNames": {
-    "deluxe-standard": "Deluxe Standard Rooms",
-    "deluxe-family": "Deluxe Family Rooms",
-    "deluxe-superior": "Deluxe Superior Rooms",
-    "deluxe-swim-up-aile": "Deluxe Swim-up Family Rooms",
-    "deluxe-swim-up": "Deluxe Swim-up Rooms",
-    "deluxe-sig-havuzlu": "Deluxe Shallow Pool Rooms",
-    "deluxe-dubleks-aile-standard": "Deluxe Duplex Family Rooms",
-    "deluxe-engelli": "Deluxe Accessible Rooms"
+    "deluxe-standard": "Standard Land/Pool View Room",
+    "deluxe-family": "Family Room",
+    "deluxe-superior": "Superior Room",
+    "deluxe-swim-up-aile": "Family Swim-Up Room",
+    "deluxe-swim-up": "Swim-Up Room",
+    "deluxe-sig-havuzlu": "Shallow Pool Room",
+    "deluxe-dubleks-aile-standard": "Duplex Family Room",
+    "deluxe-engelli": "Accessible Room"
   }
 },
 
@@ -579,14 +579,14 @@
       {
         "title": "Rooms & Suites",
         "lines": [
-          {"text": "• Deluxe Rooms – 23 m²"},
-          {"text": "• Deluxe Family Rooms – 43 m²"},
-          {"text": "• Deluxe Superior Rooms – 41 m²"},
-          {"text": "• Deluxe Swim-Up Rooms – 23 m²"},
-          {"text": "• Deluxe Swim-Up Family Rooms – 57 m²"},
-          {"text": "• Deluxe Duplex Family Rooms – 39 m²"},
-          {"text": "• Deluxe Shallow Pool Rooms – 23 m²"},
-          {"text": "• Deluxe Accessible Rooms – 23 m²"}
+          {"text": "• Standard Land/Pool View Room – 23 m²"},
+          {"text": "• Family Room – 43 m²"},
+          {"text": "• Superior Room – 41 m²"},
+          {"text": "• Swim-Up Room – 23 m²"},
+          {"text": "• Family Swim-Up Room – 57 m²"},
+          {"text": "• Duplex Family Room – 39 m²"},
+          {"text": "• Shallow Pool Room – 23 m²"},
+          {"text": "• Accessible Room – 23 m²"}
         ]
       },
       {

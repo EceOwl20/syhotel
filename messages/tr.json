@@ -30,14 +30,14 @@
     "sustainability": "Sürdürülebilirlik",
     "discoverRegion": "Bölgeyi Keşfedin",
     "roomLinks": {
-      "deluxe": "Deluxe Odalar",
-      "deluxeFamily": "Deluxe Aile Odaları",
-      "deluxeSuperior": "Deluxe Superior Odalar",
-      "swimUpFamily": "Deluxe Swim-Up Aile Odaları",
-      "swimUp": "Deluxe Swim-Up Odalar",
-      "shallowPool": "Deluxe Sığ Havuzlu Odalar",
-      "duplexFamily": "Deluxe Dubleks Aile Odaları",
-      "accessible": "Deluxe Engelli Odalar"
+      "deluxe": "Standart Kara/Havuz Manzaralı Oda",
+      "deluxeFamily": "Aile Odası",
+      "deluxeSuperior": "Superior Oda",
+      "swimUpFamily": "Swim-Up Aile Odası",
+      "swimUp": "Swim-Up Oda",
+      "shallowPool": "Sığ Havuzlu Oda",
+      "duplexFamily": "Dubleks Aile Odası",
+      "accessible": "Engelli Odası"
     },
     "barLinks": {
       "ruby": "Ruby Lobi Bar",
@@ -133,10 +133,10 @@
     "details": {
       
       "deluxe-rooms": {
-        "title": "DELUXE ODALAR",
+        "title": "STANDART KARA/HAVUZ MANZARALI ODA",
         "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
         "description": "Geniş ve zarif tasarımlı odaları ile misafirlerine konforun ötesinde bir yaşam alanı sunuyor. Modern dekorasyonun sunduğu şıklıkla kendinizi evinizde hissedebilirsiniz. Tüm odalar, üstün teknoloji ile donatılmış olup, misafirlerin ihtiyaç duyabileceği her türlü detay düşünülerek tasarlanmıştır.",
-        "galleryAlt": "Deluxe oda fotoğrafı",
+        "galleryAlt": "Standart Kara/Havuz Manzaralı Oda fotoğrafı",
         "features": {
           "area": "23 m²",
           "guests": "2+1+1 (Bebek)",
@@ -147,10 +147,10 @@
       },
 
       "deluxe-family-rooms": {
-  "title": "DELUXE AİLE ODALARI",
+  "title": "AİLE ODASI",
   "subtitle": "SEVDİKLERİNİZLE BİRLİKTE",
   "description": "Ara kapılı 2 odadan oluşmakta olup rahat bir yaşam alanı sunar. Aileler ve arkadaş grupları için ideal olan bu odalar, hem özel alanınızı koruyup hem de sevdiklerinizle bir arada olmanızı sağlar.",
-  "galleryAlt": "Deluxe Aile Odası fotoğrafı",
+  "galleryAlt": "Aile Odası fotoğrafı",
   "features": {
     "area": "43 m²",
     "guests": "4+1 Bebek",
@@ -163,10 +163,10 @@
 },
 
 "deluxe-superior-rooms": {
-  "title": "DELUXE SUPERIOR ODALAR",
+  "title": "SUPERIOR ODA",
   "subtitle": "",
   "description": "Geniş ve ferah tasarımıyla ailelerin konforlu bir tatil geçirmesi için özel olarak hazırlanmıştır. Her yaştan misafirin ihtiyaçlarını karşılamak üzere tasarlanan bu odalar, modern dekorasyonu ve fonksiyonel alanlarıyla rahat bir yaşam alanı sunar.",
-  "galleryAlt": "Deluxe Superior oda fotoğrafı",
+  "galleryAlt": "Superior Oda fotoğrafı",
   "features": {
     "area": "41 m²",
     "guests": "3+1+1 Bebek",
@@ -179,10 +179,10 @@
 
 
 "deluxe-swimup-family-rooms": {
-  "title": "DELUXE SWIM-UP AİLE ODALARI",
+  "title": "SWIM-UP AİLE ODASI",
   "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
   "description": "Odanızdan çıkar çıkmaz suya adım atabilirsiniz! Swim-Up özelliği sayesinde hiçbir yere gitmeden havuzun keyfini çıkarmak mümkün. Özellikle çocuklu aileler için havuz başında geçirilen anlar daha keyifli ve güvenli hale geliyor.",
-  "galleryAlt": "Deluxe Swim-Up Aile Odası fotoğrafı",
+  "galleryAlt": "Swim-Up Aile Odası fotoğrafı",
   "features": {
     "area": "57 m²",
     "guests": "4+2+1 Bebek",
@@ -198,10 +198,10 @@
 
 
 "deluxe-swimup-rooms": {
-  "title": "DELUXE SWIM-UP ODALAR",
+  "title": "SWIM-UP ODA",
   "subtitle": "RÜYA GİBİ",
   "description": "Odanızın terasından havuza doğrudan erişim sunarak tatilinize ayrıcalık katıyor. Konfor ve huzuru bir arada yaşayarak günün dilediğiniz saatinde serinleyebileceğiniz özel bir konaklama deneyimi sunuyor.",
-  "galleryAlt": "Deluxe Swim-Up oda fotoğrafı",
+  "galleryAlt": "Swim-Up Oda fotoğrafı",
   "features": {
     "area": "23 m²",
     "guests": "2+1+1 Bebek",
@@ -215,10 +215,10 @@
 
 
 "deluxe-shallow-pool-rooms": {
-  "title": "DELUXE SIĞ HAVUZLU ODALAR",
+  "title": "SIĞ HAVUZLU ODA",
   "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
   "description": "Sığ havuza doğrudan erişim imkânıyla konforlu ve keyifli bir konaklama deneyimi sunuyor. Özellikle çocuklu aileler ve huzurlu bir tatil arayan misafirler için ideal bir seçenektir.",
-  "galleryAlt": "Deluxe Sığ Havuzlu Oda fotoğrafı",
+  "galleryAlt": "Sığ Havuzlu Oda fotoğrafı",
   "features": {
     "area": "23 m²",
     "guests": "2+1+1 Bebek",
@@ -229,10 +229,10 @@
 },
 
 "deluxe-duplex-family-rooms": {
-  "title": "DELUXE DUBLEKS AİLE ODALARI",
+  "title": "DUBLEKS AİLE ODASI",
   "subtitle": "SEVDİKLERİNİZLE BİRLİKTE",
   "description": "İç merdivenli tasarımıyla ailelere geniş ve konforlu bir yaşam alanı sunar. Alt ve üst kata yayılan yerleşimi sayesinde hem birlikte vakit geçirebileceğiniz hem de özel alanınızı koruyabileceğiniz ideal bir konaklama deneyimi sağlar.",
-  "galleryAlt": "Deluxe Dubleks Aile Odası fotoğrafı",
+  "galleryAlt": "Dubleks Aile Odası fotoğrafı",
   "features": {
     "area": "39 m²",
     "guests": "4+1 Bebek",
@@ -245,10 +245,10 @@
 
 
 "deluxe-handicap-rooms": {
-  "title": "ENGELLİ MİSAFİRLER İÇİN DELUXE ODALAR",
+  "title": "ENGELLİ MİSAFİRLER İÇİN ODA",
   "subtitle": "ENGELLERİ KALDIRDIK",
   "description": "Bu odalar yalnızca bir konaklama alanı değil, engelli misafirlerimizin bağımsızlıklarını ve özgürlüklerini koruyarak tatillerinin keyfini çıkarabilmeleri için tasarlanmış yaşam alanlarıdır. Herkes için eşit tatil hakkı anlayışını hayata geçiriyoruz.",
-  "galleryAlt": "Erişilebilir Deluxe oda fotoğrafı",
+  "galleryAlt": "Engelli misafirler için oda fotoğrafı",
   "features": {
     "area": "23 m²",
     "guests": "2 Kişilik",
@@ -505,14 +505,14 @@
   "description": "Geniş ve zarif tasarımlı odaları ile misafirlerine konforun ötesinde bir yaşam alanı sunuyor. Modern dekorasyonun sunduğu şıklıkla kendinizi evinizde hissedebilirsiniz. Tüm odalar, üstün teknoloji ile donatılmış olup, misafirlerin ihtiyaç duyabileceği her türlü detay düşünülerek tasarlanmıştır.",
   "discover": "Keşfet",
   "roomNames": {
-    "deluxe-standard": "Deluxe Standart Odalar",
-    "deluxe-family": "Deluxe Aile Odaları",
-    "deluxe-superior": "Deluxe Superior Odalar",
-    "deluxe-swim-up-aile": "Deluxe Swim-up Aile Odaları",
-    "deluxe-swim-up": "Deluxe Swim-up Odalar",
-    "deluxe-sig-havuzlu": "Deluxe Sığ Havuzlu Odalar",
-    "deluxe-dubleks-aile-standard": "Deluxe Dubleks Aile Odaları",
-    "deluxe-engelli": "Deluxe Engelli Odaları"
+    "deluxe-standard": "Standart Kara/Havuz Manzaralı Oda",
+    "deluxe-family": "Aile Odası",
+    "deluxe-superior": "Superior Oda",
+    "deluxe-swim-up-aile": "Swim-Up Aile Odası",
+    "deluxe-swim-up": "Swim-Up Oda",
+    "deluxe-sig-havuzlu": "Sığ Havuzlu Oda",
+    "deluxe-dubleks-aile-standard": "Dubleks Aile Odası",
+    "deluxe-engelli": "Engelli Odası"
   }
 },
 
@@ -573,14 +573,14 @@
         {
           "title": "Odalar & Suitler",
           "lines": [
-            {"text": "• Deluxe Odalar – 23 m²"},
-            {"text": "• Deluxe Aile Odaları – 43 m²"},
-            {"text": "• Deluxe Superior Odalar – 41 m²"},
-            {"text": "• Deluxe Swim-Up Odalar – 23 m²"},
-            {"text": "• Deluxe Swim-Up Aile Odaları – 57 m²"},
-            {"text": "• Deluxe Dubleks Aile Odaları – 39 m²"},
-            {"text": "• Deluxe Sığ Havuzlu Odalar – 23 m²"},
-            {"text": "• Deluxe Engelli Odalar – 23 m²"}
+            {"text": "• Standart Kara/Havuz Manzaralı Oda – 23 m²"},
+            {"text": "• Aile Odası – 43 m²"},
+            {"text": "• Superior Oda – 41 m²"},
+            {"text": "• Swim-Up Oda – 23 m²"},
+            {"text": "• Swim-Up Aile Odası – 57 m²"},
+            {"text": "• Dubleks Aile Odası – 39 m²"},
+            {"text": "• Sığ Havuzlu Oda – 23 m²"},
+            {"text": "• Engelli Odası – 23 m²"}
           ]
         },
         {

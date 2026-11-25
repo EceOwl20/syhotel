@@ -34,7 +34,7 @@ export const rooms: RoomConfig[] = [
   return {
     id: `deluxe-${number}`,
     src: `/images/rooms/deluxeRoom/deluxe-rooms-${number}.webp`,
-    alt: `Deluxe Room ${number}`,
+    alt: `Standard Land/Pool View Room ${number}`,
   };
 }),
 
@@ -82,7 +82,7 @@ export const rooms: RoomConfig[] = [
   return {
     id: `deluxe-family-${number}`,
     src: `/images/rooms/deluxeFamilyRoom/deluxe-family-rooms-${number}.webp`,
-    alt: `Deluxe Family Room ${number}`,
+    alt: `Family Room ${number}`,
   };
 }),
 
@@ -127,7 +127,7 @@ export const rooms: RoomConfig[] = [
   return {
     id: `deluxe-superior-${number}`,
     src: `/images/rooms/deluxeSuperiorRoom/deluxe-superior-rooms-${number}.webp`,
-    alt: `Deluxe Superior Room ${number}`,
+    alt: `Superior Room ${number}`,
   };
 }),
 
@@ -176,7 +176,7 @@ export const rooms: RoomConfig[] = [
   return {
     id: `deluxe-family-swimup-rooms-${number}`,
     src: `/images/rooms/deluxeSwimupFamilyRoom/deluxe-family-swimup-rooms-${number}.webp`,
-    alt: `Deluxe Swim-up Family Room ${number}`,
+    alt: `Family Swim-Up Room ${number}`,
   };
 }),
 
@@ -224,7 +224,7 @@ export const rooms: RoomConfig[] = [
   return {
     id: `swim-up-${number}`,
     src: `/images/rooms/deluxeSwimupRoom/deluxe-swimup-rooms-${number}.webp`,
-    alt: `Deluxe Swim-Up Room ${number}`,
+    alt: `Swim-Up Room ${number}`,
   };
 }),
 
@@ -269,7 +269,7 @@ export const rooms: RoomConfig[] = [
   return {
     id: `shallow-pool-${number}`,
     src: `/images/rooms/deluxeShallowPoolRoom/deluxe-shallow-pool-rooms-${number}.webp`,
-    alt: `Deluxe Shallow Pool Room ${number}`,
+    alt: `Shallow Pool Room ${number}`,
   };
 }),
 
@@ -317,7 +317,7 @@ gallery: Array.from({ length: 21 }, (_, index) => {
   return {
     id: `duplex-family-${number}`,
     src: `/images/rooms/duplexFamilyRoom/deluxe-family-dublex-rooms-${number}.webp`,
-    alt: `Deluxe Duplex Family Room ${number}`,
+    alt: `Duplex Family Room ${number}`,
   };
 }),
 
@@ -360,7 +360,7 @@ gallery: Array.from({ length: 21 }, (_, index) => {
   return {
     id: `accessible-${number}`,
     src: `/images/rooms/deluxeHandicapRoom/deluxe-handicap-rooms-${number}.webp`,
-    alt: `Deluxe Accessible Room ${number}`,
+    alt: `Accessible Room ${number}`,
   };
 }),
 

@@ -10,6 +10,7 @@ import {
   createRoomSeoAlternates,
   type Locale,
 } from "@/lib/seo";
+import { createMetadataDescription } from "@/lib/metadata";
 
 import RoomVirtualTour from "@/components/rooms/RoomVirtualTour";
 import { roomVirtualTours } from "@/data/roomVirtualTours";
@@ -32,6 +33,7 @@ export async function generateMetadata({
   return room
     ? {
         title: room.title,
+        description: createMetadataDescription(room.description),
         alternates: createRoomSeoAlternates(slug, locale),
       }
     : {};

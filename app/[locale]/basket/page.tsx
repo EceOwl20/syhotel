@@ -1,14 +1,12 @@
 
-import type { Metadata } from "next";
 import AsisiaWidget from "@/components/reservation/AsisiaWidget";
+import { createTranslatedMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Rezervasyon Sepeti | SY Hotels",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+export const generateMetadata = createTranslatedMetadata(
+  "basket",
+  "/basket",
+  { robots: { index: false, follow: false } },
+);
 
 export default function BasketPage() {
   const widgetUrl =

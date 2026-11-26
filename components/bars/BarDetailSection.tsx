@@ -31,14 +31,14 @@ export default function BarDetailSection({
               <i className="flaticon-breakfast-4 text-[30px]" />
             </div>
 
-            <h2 className="text-[25px] font-extralight leading-[1.2] tracking-[0.04em] md:text-[32px] lg:text-[36px]">
+            <h1 className="text-[25px] font-extralight leading-[1.2] tracking-[0.04em] md:text-[32px] lg:text-[36px]">
               {title}
-            </h2>
+            </h1>
 
             {subtitle && (
-              <h3 className="mt-1 text-[20px] lg:text-[24px] font-extralight leading-[1.3] md:text-[28px]">
+              <h2 className="mt-1 text-[20px] lg:text-[24px] font-extralight leading-[1.3] md:text-[28px]">
                 {subtitle}
-              </h3>
+              </h2>
             )}
 
             <p className="mt-7 text-[14px] font-light leading-[1.7] md:text-[16px] lg:text-[14px]">

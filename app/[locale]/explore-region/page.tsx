@@ -8,8 +8,7 @@ import { exploreRegionItems } from "@/data/exploreRegion";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "ExploreRegion",
-  "title",
+  "exploreRegion",
   "/explore-region",
 );
 

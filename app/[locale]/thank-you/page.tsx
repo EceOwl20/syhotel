@@ -1,14 +1,12 @@
 
-import type { Metadata } from "next";
 import AsisiaWidget from "@/components/reservation/AsisiaWidget";
+import { createTranslatedMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Rezervasyon Onayı | SY Hotels",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+export const generateMetadata = createTranslatedMetadata(
+  "thankYou",
+  "/thank-you",
+  { robots: { index: false, follow: false } },
+);
 
 export default function ThankYouPage() {
   const widgetUrl =

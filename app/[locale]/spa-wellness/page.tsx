@@ -7,8 +7,7 @@ import ImageTextSection from "@/components/generalComponents/ImageTextSection";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "SpaWellness",
-  "intro.title",
+  "spaWellness",
   "/spa-wellness",
 );
 

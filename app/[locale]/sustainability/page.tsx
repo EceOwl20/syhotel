@@ -5,8 +5,7 @@ import SustainabilityContent from "@/components/sustainability/SustainabilityCon
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "Sustainability",
-  "title",
+  "sustainability",
   "/sustainability",
 );
 

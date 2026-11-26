@@ -5,8 +5,7 @@ import ContactSection from "@/components/contact/ContactSection";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "Contact",
-  "title",
+  "contact",
   "/contact",
 );
 

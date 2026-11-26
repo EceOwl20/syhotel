@@ -5,8 +5,7 @@ import KVKKContent from "@/components/kvkk/KVKKContent";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "KVKK",
-  "title",
+  "kvkk",
   "/kvkk",
 );
 

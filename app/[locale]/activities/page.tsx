@@ -12,8 +12,7 @@ import {
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "Activities",
-  "title",
+  "activities",
   "/activities",
 );
 

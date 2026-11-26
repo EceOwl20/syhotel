@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { createTranslatedMetadata } from "@/lib/metadata";
 
 import OffersHero from "@/components/offers/OffersHero";
 import OfferShowcase from "@/components/offers/OfferShowcase";
@@ -14,19 +14,11 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({
-  params,
-}: Props): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Offers" });
-
-  return {
-    title: t("metaTitle"),
-    description: t("metaDescription"),
-    // Geçici içerikler için:
-    robots: { index: false, follow: true },
-  };
-}
+export const generateMetadata = createTranslatedMetadata(
+  "offers",
+  "/offers",
+  { robots: { index: false, follow: true } },
+);
 
 export default async function OffersPage({ params }: Props) {
   const { locale } = await params;

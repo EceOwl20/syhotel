@@ -1,5 +1,75 @@
 
 {
+  "Metadata": {
+    "home": {
+      "title": "SY Hotels Luxury Belek | Belek Ultra Her Şey Dahil Otel",
+      "description": "Antalya Belek'te şık odalar, aquapark, özel sahil, spa ve seçkin gastronomiyle ultra her şey dahil tatili SY Hotels Luxury Belek'te keşfedin."
+    },
+    "activities": {
+      "title": "Aktiviteler ve Eğlence",
+      "description": "SY Hotels Luxury Belek'te gündüz aktiviteleri, spor etkinlikleri, canlı müzik ve akşam şovlarıyla her yaşa uygun eğlenceyi keşfedin."
+    },
+    "agencies": {
+      "title": "Seyahat Acentaları İçin",
+      "description": "SY Hotels Luxury Belek ile çalışan seyahat acentaları için otel görsellerine, tanıtım materyallerine ve güncel kaynaklara ulaşın."
+    },
+    "aquapark": {
+      "title": "Mega Splash Aquapark",
+      "description": "14 farklı kaydırak, dalga havuzu ve çocuklara özel alanlarla Mega Splash Aquapark'ta ailece su ve eğlence dolu bir gün yaşayın."
+    },
+    "beach": {
+      "title": "Özel Sahil ve Plaj",
+      "description": "SY Hotels Luxury Belek'in özel plajını, sahil olanaklarını ve otelden her 15 dakikada bir hareket eden ücretsiz servis detaylarını inceleyin."
+    },
+    "contact": {
+      "title": "İletişim",
+      "description": "SY Hotels Luxury Belek iletişim bilgileri, adresi, telefon numaraları ve harita konumu. Rezervasyon ve sorularınız için bize ulaşın."
+    },
+    "exploreRegion": {
+      "title": "Belek ve Antalya Bölgesini Keşfedin",
+      "description": "Side, Manavgat Şelalesi, Kurşunlu Şelalesi ve Antalya'nın doğal ve tarihi güzelliklerini keşfederek Belek tatilinizi zenginleştirin."
+    },
+    "generalInformation": {
+      "title": "Otel Hakkında Genel Bilgiler",
+      "description": "SY Hotels Luxury Belek'in konumu, konsepti, hizmetleri ve tatiliniz öncesinde bilmeniz gereken genel otel bilgilerini inceleyin."
+    },
+    "kids": {
+      "title": "Çocuklar İçin Tatil ve Mini Kulüp",
+      "description": "Mini kulüp, çocuk aquaparkı, oyunlar ve yaş gruplarına özel etkinliklerle SY Hotels Luxury Belek'te çocuklara unutulmaz bir tatil sunun."
+    },
+    "kvkk": {
+      "title": "Kişisel Verilerin Korunması",
+      "description": "SY Hotels Luxury Belek'in 6698 sayılı KVKK kapsamındaki kişisel veri işleme, saklama ve koruma esasları hakkında bilgi edinin."
+    },
+    "offers": {
+      "title": "Özel Teklifler ve Tatil Fırsatları",
+      "description": "SY Hotels Luxury Belek'in avantajlı konaklama paketlerini, erken rezervasyon fırsatlarını ve tatile özel ayrıcalıklarını keşfedin."
+    },
+    "pools": {
+      "title": "Açık, Kapalı ve Çocuk Havuzları",
+      "description": "SY Hotels Luxury Belek'in açık, kapalı, sığ ve çocuk havuzlarını keşfedin; dinlenme ve eğlenceyi bir arada yaşayın."
+    },
+    "spaWellness": {
+      "title": "Spa, Wellness ve Fitness",
+      "description": "Masaj terapileri, Türk hamamı, sauna, buhar odası ve modern fitness merkeziyle SY Hotels Luxury Belek'te bedeninizi ve zihninizi yenileyin."
+    },
+    "sustainability": {
+      "title": "Sürdürülebilirlik Politikası",
+      "description": "SY Hotels Luxury Belek'in çevre, enerji, su, atık yönetimi ve toplumsal sorumluluk alanlarındaki sürdürülebilirlik yaklaşımını inceleyin."
+    },
+    "reservation": {
+      "title": "Online Rezervasyon",
+      "description": "SY Hotels Luxury Belek için tarih ve oda seçiminizi yapın, güncel fiyatları görüntüleyin ve tatilinizi güvenle online rezerve edin."
+    },
+    "basket": {
+      "title": "Rezervasyon Sepeti",
+      "description": "SY Hotels Luxury Belek rezervasyon seçiminizi kontrol edin ve güvenli ödeme adımlarına devam edin."
+    },
+    "thankYou": {
+      "title": "Rezervasyon Onayı",
+      "description": "SY Hotels Luxury Belek rezervasyon işleminiz tamamlandı. Rezervasyon onayınızı ve konaklama bilgilerinizi görüntüleyin."
+    }
+  },
   "Header": {
     "reservation": "REZERVASYON",
     "home": "Ana Sayfa",
@@ -86,6 +156,10 @@
   },
 
   "HomePage": {
+    "hero": {
+      "title": "Belek'te Ultra Her Şey Dahil Tatil",
+      "description": "Zarif odalar, ailelere özel deneyimler, aquapark, özel sahil ve spa ayrıcalıklarıyla Akdeniz'in kalbinde unutulmaz bir tatil yaşayın."
+    },
     "rooms": {
       "title": "KONAKLAMA",
       "description": "Geniş ve zarif tasarımlı odaları ile misafirlerine konforun ötesinde bir yaşam alanı sunuyor. Modern dekorasyonun sunduğu şıklıkla kendinizi evinizde hissedebilirsiniz. Tüm odalar, üstün teknoloji ile donatılmış olup, misafirlerin ihtiyaç duyabileceği her türlü detay düşünülerek tasarlanmıştır.",

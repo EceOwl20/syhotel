@@ -8,8 +8,7 @@ import { kidsGalleries, kidsVideo } from "@/data/kids";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "KidsPage",
-  "title",
+  "kids",
   "/kids",
 );
 

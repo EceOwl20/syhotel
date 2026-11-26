@@ -9,8 +9,7 @@ import { pools, poolBannerSlides } from "@/data/pools";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "Pools",
-  "intro.title",
+  "pools",
   "/pools",
 );
 

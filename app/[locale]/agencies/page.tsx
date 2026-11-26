@@ -6,8 +6,7 @@ import { agencyResources } from "@/data/agencyResources";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "Agencies",
-  "title",
+  "agencies",
   "/agencies",
 );
 

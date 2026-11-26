@@ -14,6 +14,7 @@ import {
   createBarSeoAlternates,
   type Locale,
 } from "@/lib/seo";
+import { createMetadataDescription } from "@/lib/metadata";
 
 type PageProps = {
   params: Promise<{
@@ -34,6 +35,7 @@ export async function generateMetadata({
 
   return {
     title: `${bar.title} ${bar.subtitle}`,
+    description: createMetadataDescription(bar.description),
     alternates: createBarSeoAlternates(slug, locale),
   };
 }

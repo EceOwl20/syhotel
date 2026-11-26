@@ -40,9 +40,9 @@ export default async function RoomDetailSection({ room }: Props) {
             {room.subtitle}
           </p>
 
-          <h2 className="text-[26px] leading-[1.35] font-extralight tracking-[0.04em] md:text-[40px] lg:text-[44px]">
+          <h1 className="text-[26px] leading-[1.35] font-extralight tracking-[0.04em] md:text-[40px] lg:text-[44px]">
             {room.title}
-          </h2>
+          </h1>
 
           <p className="mx-auto mt-4 max-w-[1030px] text-[14px] leading-[1.66] font-normal md:text-[16px] lg:mt-7">
             {room.description}

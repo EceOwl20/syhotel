@@ -11,6 +11,13 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
 
+    "/offers": {
+      tr: "/offers",
+      en: "/offers",
+      de: "/angebote",
+      ru: "/predlozheniya",
+    },
+
     // Deluxe Rooms
     "/rooms/deluxe-rooms": {
       tr: "/deluxe-odalar",

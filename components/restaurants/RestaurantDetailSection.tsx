@@ -54,9 +54,9 @@ export default function RestaurantDetailSection({
   </div>
 
   {/* Restaurant title */}
-  <span className="text-[25px] md:text-[32px] leading-[1.2] font-extralight tracking-[0.06em] lg:text-[40px]">
+  <h1 className="text-[25px] md:text-[32px] leading-[1.2] font-extralight tracking-[0.06em] lg:text-[40px]">
     {title}
-  </span>
+  </h1>
 
   {/* Subtitle */}
   <h2 className="mt-1 tetx-[20px] md:text-[22px] leading-[1.3] font-extralight lg:text-[28px]">

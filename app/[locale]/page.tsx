@@ -1,5 +1,4 @@
 
-import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { rooms as roomConfigs } from "@/data/roomsCard";
 import MainBanner from "@/components/HomeComponents/MainBanner";
@@ -7,9 +6,7 @@ import ParticleLogo from "@/components/generalComponents/ParticleLogo";
 import TextBanner from "@/components/generalComponents/TextBanner";
 import RoomsSection from "@/components/HomeComponents/RoomsSection";
 import GastronomySection from "@/components/HomeComponents/GastronomySection";
-
 import { gastronomyItems } from "@/data/gastronomy";
-
 import backgroundImageSpa from "@/public/images/homepage/spa-1.webp";
 import backgroundImagePools from "@/public/images/homepage/acik-havuz.webp";
 import backgroundImageAquapark from "@/public/images/aquapark/aquapark-1.webp";
@@ -19,23 +16,16 @@ import backgroundImageKids2 from "@/public/images/kids/mini-kulup-2.webp";
 import backgroundImageKids4 from "@/public/images/kids/mini-kulup-4.webp";
 import backgroundImageKids6 from "@/public/images/kids/mini-kulup-6.webp";
 import { getImageProps } from "next/image";
-
 import { routing } from "@/i18n/routing";
-import { createSeoAlternates } from "@/lib/seo";
+import { createTranslatedMetadata } from "@/lib/metadata";
 
 type Locale = (typeof routing.locales)[number];
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: Locale }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-
-  return {
-    alternates: createSeoAlternates("/", locale),
-  };
-}
+export const generateMetadata = createTranslatedMetadata(
+  "home",
+  "/",
+  { absoluteTitle: true },
+);
 
 export default async function Home({
   params,
@@ -132,6 +122,17 @@ const slides = [
         mouseRadius={50}
         color="#877565"
       />
+
+      <section className="w-full px-5 text-center text-[#8B7C6A] md:px-8">
+        <div className="mx-auto max-w-[1100px]">
+          <h1 className="text-[30px] leading-[1.2] font-normal tracking-[0.02em] md:text-[42px] lg:text-[48px]">
+            {t("hero.title")}
+          </h1>
+          <p className="mx-auto mt-5 max-w-[900px] text-[14px] leading-[1.7] font-normal md:text-[16px]">
+            {t("hero.description")}
+          </p>
+        </div>
+      </section>
 
       {/* Rooms */}
      

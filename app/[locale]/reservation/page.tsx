@@ -1,13 +1,12 @@
 
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import AsisiaWidget from "@/components/reservation/AsisiaWidget";
+import { createTranslatedMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Online Rezervasyon | SY Hotels",
-  description:
-    "SY Hotels Luxury Belek Luxury için online rezervasyon yapın. Tarihlerinizi ve odanızı seçerek konaklamanızı planlayın.",
-};
+export const generateMetadata = createTranslatedMetadata(
+  "reservation",
+  "/reservation",
+);
 
 type ReservationPageProps = {
   params: Promise<{

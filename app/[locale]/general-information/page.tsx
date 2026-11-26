@@ -4,8 +4,7 @@ import GeneralInformationContent from "@/components/generalInformation/GeneralIn
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "GeneralInformation",
-  "title",
+  "generalInformation",
   "/general-information",
 );
 

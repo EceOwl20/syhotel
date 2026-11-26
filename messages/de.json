@@ -1,5 +1,75 @@
 
 {
+  "Metadata": {
+    "home": {
+      "title": "SY Hotels Luxury Belek | Ultra-All-inclusive-Hotel",
+      "description": "Entdecken Sie Ultra-All-inclusive-Urlaub in Belek mit eleganten Zimmern, Privatstrand, Aquapark, Spa und feiner Küche im SY Hotels Luxury Belek."
+    },
+    "activities": {
+      "title": "Aktivitäten und Unterhaltung",
+      "description": "Erleben Sie Tagesaktivitäten, Sport, Livemusik und Abendshows für Gäste jeden Alters im SY Hotels Luxury Belek."
+    },
+    "agencies": {
+      "title": "Für Reisebüros",
+      "description": "Hier finden Reisebüros Hotelbilder, Werbematerialien und aktuelle Informationen rund um das SY Hotels Luxury Belek."
+    },
+    "aquapark": {
+      "title": "Mega Splash Aquapark",
+      "description": "Genießen Sie einen erlebnisreichen Familientag im Mega Splash Aquapark mit 14 Wasserrutschen, Wellenbad und eigenen Kinderbereichen."
+    },
+    "beach": {
+      "title": "Privatstrand",
+      "description": "Entdecken Sie den Privatstrand des SY Hotels Luxury Belek, seine Angebote und den kostenlosen Shuttle, der alle 15 Minuten vom Hotel fährt."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Adresse, Telefonnummern und Kartenstandort des SY Hotels Luxury Belek. Kontaktieren Sie uns für Reservierungen, Hilfe oder weitere Informationen."
+    },
+    "exploreRegion": {
+      "title": "Belek und Antalya entdecken",
+      "description": "Bereichern Sie Ihren Belek-Urlaub mit Side, den Wasserfällen Manavgat und Kurşunlu sowie den Natur- und Kultursehenswürdigkeiten Antalyas."
+    },
+    "generalInformation": {
+      "title": "Allgemeine Hotelinformationen",
+      "description": "Erfahren Sie alles über Lage, Konzept, Service und wichtige Gästeinformationen für Ihren Aufenthalt im SY Hotels Luxury Belek."
+    },
+    "kids": {
+      "title": "Familienurlaub und Kinderclub",
+      "description": "Kinderclub, Kinder-Aquapark, Spiele und altersgerechte Aktivitäten machen den Familienurlaub im SY Hotels Luxury Belek unvergesslich."
+    },
+    "kvkk": {
+      "title": "Schutz personenbezogener Daten",
+      "description": "Erfahren Sie, wie SY Hotels Luxury Belek personenbezogene Daten nach dem türkischen Datenschutzgesetz Nr. 6698 verarbeitet und schützt."
+    },
+    "offers": {
+      "title": "Sonderangebote und Urlaubsangebote",
+      "description": "Entdecken Sie attraktive Aufenthaltspakete, Frühbuchervorteile und exklusive Urlaubsprivilegien im SY Hotels Luxury Belek."
+    },
+    "pools": {
+      "title": "Innen-, Außen- und Kinderpools",
+      "description": "Entdecken Sie Außen-, Innen-, Flachwasser- und Kinderpools im SY Hotels Luxury Belek für Erholung und gemeinsamen Familienspaß."
+    },
+    "spaWellness": {
+      "title": "Spa, Wellness und Fitness",
+      "description": "Regenerieren Sie sich mit Massagen, türkischem Bad, Sauna, Dampfbad und modernem Fitnesscenter im SY Hotels Luxury Belek."
+    },
+    "sustainability": {
+      "title": "Nachhaltigkeitsrichtlinie",
+      "description": "Erfahren Sie mehr über Umwelt, Energie, Wasser, Abfallmanagement und gesellschaftliche Verantwortung im SY Hotels Luxury Belek."
+    },
+    "reservation": {
+      "title": "Online-Reservierung",
+      "description": "Wählen Sie Reisedaten und Zimmer, prüfen Sie aktuelle Preise und buchen Sie Ihren Aufenthalt im SY Hotels Luxury Belek sicher online."
+    },
+    "basket": {
+      "title": "Reservierungsübersicht",
+      "description": "Prüfen Sie Ihre Reservierung im SY Hotels Luxury Belek und fahren Sie mit der sicheren Zahlung fort."
+    },
+    "thankYou": {
+      "title": "Reservierungsbestätigung",
+      "description": "Ihre Reservierung im SY Hotels Luxury Belek ist abgeschlossen. Sehen Sie Ihre Buchungsbestätigung und Aufenthaltsdetails ein."
+    }
+  },
   "Header": {
     "reservation": "JETZT BUCHEN",
     "home": "Startseite",
@@ -86,6 +156,10 @@
   },
 
   "HomePage": {
+    "hero": {
+      "title": "Ultra-All-inclusive-Urlaub in Belek",
+      "description": "Erleben Sie einen unvergesslichen Mittelmeerurlaub mit eleganten Zimmern, Angeboten für Familien, Aquapark, Privatstrand und entspannendem Spa."
+    },
     "rooms": {
       "title": "UNTERKUNFT",
       "description": "Mit großzügig und elegant gestalteten Zimmern bietet SY Hotels seinen Gästen einen Wohnbereich, der weit über gewöhnlichen Komfort hinausgeht. Genießen Sie die stilvolle Atmosphäre moderner Einrichtung und fühlen Sie sich wie zu Hause. Alle Zimmer sind mit moderner Technologie ausgestattet und bis ins kleinste Detail durchdacht, um den Bedürfnissen unserer Gäste gerecht zu werden.",

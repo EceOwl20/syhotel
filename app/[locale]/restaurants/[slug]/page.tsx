@@ -15,6 +15,7 @@ import {
   createRestaurantSeoAlternates,
   type Locale,
 } from "@/lib/seo";
+import { createMetadataDescription } from "@/lib/metadata";
 
 type PageProps = {
   params: Promise<{
@@ -35,6 +36,9 @@ export async function generateMetadata({
 
   return {
     title: `${restaurant.title} ${restaurant.subtitle}`,
+    description: createMetadataDescription(
+      restaurant.description,
+    ),
     alternates: createRestaurantSeoAlternates(
       slug,
       locale,

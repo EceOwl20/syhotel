@@ -8,8 +8,7 @@ import { beach } from "@/data/beach";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
-  "Beach",
-  "title",
+  "beach",
   "/beach",
 );
 

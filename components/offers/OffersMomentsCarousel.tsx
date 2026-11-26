@@ -155,7 +155,7 @@ export default function OffersMomentsCarousel({
                 }`}
               >
                 <span className="text-[10px] font-light uppercase tracking-[0.3em] text-white/80">
-                  SY HOTELS BELEK
+                  SY Hotels Luxury Belek
                 </span>
 
                 <h3 className="mt-4 text-3xl font-extralight uppercase tracking-[0.05em] md:text-5xl">

@@ -110,7 +110,7 @@
     "entertainment": {
       "span": "",
       "title": "ACTIVITIES & ENTERTAINMENT",
-      "description": "With activities throughout the day, exciting sports events and spectacular live performances every evening, SY Hotels Belek aims to create unforgettable experiences for all guests. Enjoy the perfect combination of relaxation and endless entertainment.",
+      "description": "With activities throughout the day, exciting sports events and spectacular live performances every evening, SY Hotels Luxury Belek aims to create unforgettable experiences for all guests. Enjoy the perfect combination of relaxation and endless entertainment.",
       "button": "Discover"
     },
     "aquapark": {
@@ -530,7 +530,7 @@
     "blocks": [
       {
         "lines": [
-          {"label": "Hotel Name", "text": "SY Hotels Belek"},
+          {"label": "Hotel Name", "text": "SY Hotels Luxury Belek"},
           {"label": "Category", "text": "Boutique Luxury"}
         ]
       },
@@ -686,7 +686,7 @@
   "address": "Kadriye Neighborhood, Atatürk Avenue, Kır Mevkii, 07500 Belek / Antalya, Türkiye",
   "reservation": "Reservations",
   "hotelPhone": "Hotel Contact",
-  "mapTitle": "SY Hotels Belek Location Map"
+  "mapTitle": "SY Hotels Luxury Belek Location Map"
 },
 
 
@@ -696,7 +696,7 @@
   "description1": "To make our cooperation more efficient and help you provide the best possible service to your guests, we are pleased to share resources that give you easy access to our hotel's images, fact sheets and presentation materials.",
   "description2": "Using the links below, you can access our hotel logos, high-resolution photographs, up-to-date fact sheets and presentation files. Please feel free to contact us if you have any questions or require additional materials.",
   "signature": "Kind regards,",
-  "team": "SY Hotels Belek\nSales and Marketing Team",
+  "team": "SY Hotels Luxury Belek\nSales and Marketing Team",
   "resources": {
     "logo": "Logo",
     "factSheet": "Fact Sheet",
@@ -709,7 +709,7 @@
 "KVKK": {
   "eyebrow": "DATA PROTECTION",
   "title": "PERSONAL DATA PROTECTION LAW",
-  "intro": "In accordance with Personal Data Protection Law No. 6698 (KVKK), SY Hotels Belek attaches great importance to the security of your personal data.",
+  "intro": "In accordance with Personal Data Protection Law No. 6698 (KVKK), SY Hotels Luxury Belek attaches great importance to the security of your personal data.",
   "explanation": "Accordingly, your personal data is processed, stored and protected in compliance with applicable laws and regulations, in accordance with the principles of fairness, accuracy and, where necessary, keeping data up to date, for specified, explicit and legitimate purposes.",
   "listIntro": "Your data is processed for purposes including:",
   "purposes": {
@@ -1001,7 +1001,7 @@
 
 "flightsEyebrow": "SY HOTELS • YOUR JOURNEY",
 "flightsTitle": "Fly to Antalya",
-"flightsDescription": "Your holiday begins with the journey. Discover flights to Antalya and plan your SY Hotels Belek experience.",
+"flightsDescription": "Your holiday begins with the journey. Discover flights to Antalya and plan your SY Hotels Luxury Belek experience.",
 "flightsArrival": "Your Destination",
 "flightsPartners": "Choose Your Flight Partner",
 "flightsSearch": "Explore Flights",
@@ -1023,7 +1023,7 @@
 
   "OffersBenefits": {
     "title": "Exclusive Offers",
-    "description": "Experience a holiday filled with comfort and exclusive privileges at SY Hotels Belek.",
+    "description": "Experience a holiday filled with comfort and exclusive privileges at SY Hotels Luxury Belek.",
     "imageHeading": "Every Moment, An Exceptional Experience",
     "guestRating": "Guest Rating",
 
@@ -1060,5 +1060,21 @@
     "title": "{room} - 360° Virtual Tour",
     "description": "Explore your room in detail with our immersive 360° virtual tour.",
     "openTour": "Open Virtual Tour in New Tab"
-  }
+  },
+
+  "BackToTop": {
+  "label": "Back to top"
+},
+
+"GastronomyCard": {
+  "bars": "Bars",
+  "snack": "Snacks",
+  "restaurants": "Restaurants",
+  "alacarte": "À La Carte"
+},
+
+"MobileBookingBar": {
+  "callHotel": "Call hotel",
+  "bookNow": "Book Now"
+}
 }

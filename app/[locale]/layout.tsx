@@ -30,10 +30,10 @@ export const metadata: Metadata = {
    metadataBase: new URL("https://syhotels.com"),
    
   title: {
-    default: "SY Hotels Belek",
-    template: "%s | SY Hotels Belek",
+    default: "SY Hotels Luxury Belek",
+    template: "%s | SY Hotels Luxury Belek",
   },
-  description: "SY Hotels Belek - Luxury Hotel Experience",
+  description: "SY Hotels Luxury Belek - Luxury Hotel Experience",
  icons: {
   icon: [
     {
@@ -83,10 +83,7 @@ export default async function LocaleLayout({
           <Suspense fallback={null}>
             <MarketLiveChat />
           </Suspense>
-          <MobileBookingBar
-            phoneNumber="+902422054787"
-            bookNowText="Book Now"
-          />
+          <MobileBookingBar phoneNumber="+902422054787" />
           <CookieConsent />
         </NextIntlClientProvider>
       </body>

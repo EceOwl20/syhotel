@@ -58,7 +58,7 @@ export default function OffersContact({
         <div className="relative min-h-[420px] overflow-hidden bg-[#5c554e] lg:min-h-[650px]">
           <Image
             src={img1}
-            alt="SY Hotels Belek swim-up accommodation"
+            alt="SY Hotels Luxury Belek swim-up accommodation"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"

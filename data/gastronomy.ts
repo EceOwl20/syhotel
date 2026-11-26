@@ -1,28 +1,37 @@
-
 import type { GastronomyItem } from "@/components/HomeComponents/GastronomyCard";
 
-export const gastronomyItems: GastronomyItem[] = [
+type GastronomyTitleKey =
+  | "bars"
+  | "snack"
+  | "restaurants"
+  | "alacarte";
+
+type GastronomyItemConfig = Omit<GastronomyItem, "title"> & {
+  titleKey: GastronomyTitleKey;
+};
+
+export const gastronomyItems: GastronomyItemConfig[] = [
   {
     id: "bars",
-    title: "Barlar",
+    titleKey: "bars",
     image: "/images/homepage/gastronomy/bars.jpg",
     href: "/bars/ruby-lobby-bar",
   },
   {
     id: "snack",
-    title: "Snack",
+    titleKey: "snack",
     image: "/images/homepage/gastronomy/snack.jpg",
     href: "/restaurants/nova-food-court",
   },
   {
     id: "restaurants",
-    title: "Restoranlar",
+    titleKey: "restaurants",
     image: "/images/homepage/gastronomy/restaurants.jpg",
     href: "/restaurants/sirius-restaurant",
   },
   {
     id: "alacarte",
-    title: "Alakartlar",
+    titleKey: "alacarte",
     image: "/images/homepage/gastronomy/alacarte.jpg",
     href: "",
   },

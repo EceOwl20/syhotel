@@ -52,6 +52,18 @@ export default async function Home({
   title: tRooms(`roomNames.${room.id}`),
 }));
 
+const tGastronomyCard = await getTranslations({
+  locale,
+  namespace: "GastronomyCard",
+});
+
+const localizedGastronomyItems = gastronomyItems.map(
+  ({ titleKey, ...item }) => ({
+    ...item,
+    title: tGastronomyCard(titleKey),
+  }),
+);
+
 const newYearImages: Record<
   Locale,
   {
@@ -133,7 +145,7 @@ const slides = [
 
       {/* Gastronomy */}
       <GastronomySection
-        items={gastronomyItems}
+        items={localizedGastronomyItems}
         title={t("gastronomy.title")}
         description={t("gastronomy.description")}
       />

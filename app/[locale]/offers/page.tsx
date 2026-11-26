@@ -117,7 +117,7 @@ const showcaseOffers = [
 
       <OffersMomentsCarousel
   slides={momentSlides}
-  eyebrow="SY HOTELS BELEK"
+  eyebrow="SY Hotels Luxury Belek"
   heading={t("momentsTitle")}
   description={t("momentsDescription")}
 />

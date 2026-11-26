@@ -1,23 +1,24 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { FiPhone } from "react-icons/fi";
 import ReservationLink from "./ReservationLink";
 
 type MobileBookingBarProps = {
   phoneNumber: string;
-  bookNowText?: string;
 };
 
 export default function MobileBookingBar({
   phoneNumber,
-  bookNowText = "Book Now",
 }: MobileBookingBarProps) {
+  const t = useTranslations("MobileBookingBar");
+
   return (
     <div className="pointer-events-none fixed bottom-3 left-0 z-40 w-full md:hidden">
       {/* Phone Button */}
       <a
         href={`tel:${phoneNumber}`}
-        aria-label="Call hotel"
+        aria-label={t("callHotel")}
         className="
           pointer-events-auto
           absolute bottom-0 left-[5px]
@@ -28,7 +29,11 @@ export default function MobileBookingBar({
           shadow-[0_4px_18px_rgba(0,0,0,0.2)]
         "
       >
-        <FiPhone size={24} className="animate-phone-ring" />
+        <FiPhone
+          size={24}
+          className="animate-phone-ring"
+          aria-hidden="true"
+        />
       </a>
 
       {/* Book Now Button */}
@@ -46,7 +51,7 @@ export default function MobileBookingBar({
             active:scale-[0.97]
           "
         >
-          {bookNowText}
+          {t("bookNow")}
         </ReservationLink>
       </div>
     </div>

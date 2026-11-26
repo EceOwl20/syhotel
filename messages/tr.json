@@ -110,7 +110,7 @@
     "entertainment": {
       "span": "",
       "title": "AKTİVİTE & EĞLENCE",
-      "description": "Gün boyu süren aktiviteler, heyecan verici spor etkinlikleri ve her akşam sahnelenen canlı gösterilerle SY Hotels Belek, tüm misafirlere unutulmaz bir deneyim yaşatmayı amaçlıyor. Hotelde hem dinlenmek hem de sınırsız eğlenceyi keşfetmek mümkün.",
+      "description": "Gün boyu süren aktiviteler, heyecan verici spor etkinlikleri ve her akşam sahnelenen canlı gösterilerle SY Hotels Luxury Belek, tüm misafirlere unutulmaz bir deneyim yaşatmayı amaçlıyor. Hotelde hem dinlenmek hem de sınırsız eğlenceyi keşfetmek mümkün.",
       "button": "Keşfet"
     },
     "aquapark": {
@@ -524,7 +524,7 @@
       "blocks": [
         {
           "lines": [
-            {"label": "Hotel Adı", "text": "SY Hotels Belek"},
+            {"label": "Hotel Adı", "text": "SY Hotels Luxury Belek"},
             {"label": "Kategori", "text": "Boutique Luxury"}
           ]
         },
@@ -681,7 +681,7 @@
   "address": "Kadriye Mah. Atatürk Cad. Kır Mevkii, 07500 Belek / Antalya, Türkiye",
   "reservation": "Rezervasyon",
   "hotelPhone": "Otel İletişim",
-  "mapTitle": "SY Hotels Belek Konum Haritası"
+  "mapTitle": "SY Hotels Luxury Belek Konum Haritası"
 },
 
 
@@ -690,7 +690,7 @@
   "description1": "Sizlerle iş birliğimizi daha verimli hale getirebilmek ve misafirlerinize en iyi şekilde hizmet sunmanıza destek olmak adına, otelimize ait görseller, factsheet dosyaları ve sunum materyallerine kolayca erişebilmeniz için gerekli kaynakları sizlerle paylaşıyoruz.",
   "description2": "Aşağıdaki bağlantılardan otelimize ait logo tipleri, yüksek çözünürlüklü fotoğrafları, güncel factsheet bilgilerini ve sunum dosyalarını indirebilir, her türlü sorunuz veya ihtiyaç duyduğunuz ek materyaller için bizimle iletişime geçebilirsiniz.",
   "signature": "Saygılarımızla,",
-  "team": "SY Hotels Belek\nSatış ve Pazarlama Ekibi",
+  "team": "SY Hotels Luxury Belek\nSatış ve Pazarlama Ekibi",
   "resources": {
     "logo": "Logo",
     "factSheet": "Fact Sheet",
@@ -703,7 +703,7 @@
 "KVKK": {
   "eyebrow": "KVKK",
   "title": "KİŞİSEL VERİLERİN KORUMA KANUNU",
-  "intro": "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, SY Hotels Belek olarak kişisel verilerinizin güvenliğine büyük önem vermekteyiz.",
+  "intro": "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, SY Hotels Luxury Belek olarak kişisel verilerinizin güvenliğine büyük önem vermekteyiz.",
   "explanation": "Bu doğrultuda, sizlere ait kişisel veriler; kanunlara ve ilgili mevzuata uygun olarak, dürüstlük kurallarına bağlı, doğru ve gerektiğinde güncel olacak şekilde, belirli, açık ve meşru amaçlar doğrultusunda işlenmekte, saklanmakta ve korunmaktadır.",
   "listIntro": "Verileriniz;",
   "purposes": {
@@ -992,7 +992,7 @@
 
   "flightsEyebrow": "SY HOTELS • YOLCULUĞUNUZ",
 "flightsTitle": "Antalya'ya Uçun",
-"flightsDescription": "Tatiliniz yolculukla başlar. Antalya uçuşlarını keşfedin ve SY Hotels Belek deneyiminizi planlayın.",
+"flightsDescription": "Tatiliniz yolculukla başlar. Antalya uçuşlarını keşfedin ve SY Hotels Luxury Belek deneyiminizi planlayın.",
 "flightsArrival": "Varış Noktanız",
 "flightsPartners": "Uçuş Partnerinizi Seçin",
 "flightsSearch": "Uçuşları İncele",
@@ -1002,7 +1002,7 @@
 
   "OffersBenefits": {
   "title": "Ayrıcalıklı Fırsatlar",
-  "description": "SY Hotels Belek'te konfor ve ayrıcalıklarla dolu bir tatil deneyimi.",
+  "description": "SY Hotels Luxury Belek'te konfor ve ayrıcalıklarla dolu bir tatil deneyimi.",
   "imageHeading": "Her Anı Özel Bir Deneyim",
   "guestRating": "Misafir Puanı",
 
@@ -1036,5 +1036,21 @@
     "title": "{room} - 360° Sanal Tur",
     "description": "Odanızı 360° sanal tur deneyimiyle yakından keşfedin.",
     "openTour": "Sanal Turu Yeni Sekmede Aç"
-  }
+  },
+
+  "BackToTop": {
+  "label": "Sayfanın başına dön"
+},
+
+"GastronomyCard": {
+  "bars": "Barlar",
+  "snack": "Atıştırmalıklar",
+  "restaurants": "Restoranlar",
+  "alacarte": "Alakart"
+},
+
+"MobileBookingBar": {
+  "callHotel": "Oteli ara",
+  "bookNow": "Hemen Rezervasyon Yap"
+}
 }

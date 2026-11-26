@@ -16,7 +16,7 @@ export default function OffersHero({
 
       <Image
         src="/images/homepage/acik-havuz.webp"
-        alt="SY Hotels Belek swimming pool"
+        alt="SY Hotels Luxury Belek swimming pool"
         fill
         priority
         sizes="100vw"
@@ -27,7 +27,7 @@ export default function OffersHero({
 
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
         <p className="mb-6 text-xs uppercase tracking-[0.45em] text-white/85">
-          SY HOTELS BELEK
+          SY Hotels Luxury Belek
         </p>
 
         <h1 className="text-5xl font-extralight uppercase leading-tight tracking-[0.12em] sm:text-6xl lg:text-7xl">

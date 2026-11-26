@@ -6,7 +6,7 @@ import AsisiaWidget from "@/components/reservation/AsisiaWidget";
 export const metadata: Metadata = {
   title: "Online Rezervasyon | SY Hotels",
   description:
-    "SY Hotels Belek Luxury için online rezervasyon yapın. Tarihlerinizi ve odanızı seçerek konaklamanızı planlayın.",
+    "SY Hotels Luxury Belek Luxury için online rezervasyon yapın. Tarihlerinizi ve odanızı seçerek konaklamanızı planlayın.",
 };
 
 type ReservationPageProps = {

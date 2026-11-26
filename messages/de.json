@@ -110,7 +110,7 @@
     "entertainment": {
       "span": "",
       "title": "AKTIVITÄTEN & UNTERHALTUNG",
-      "description": "Mit abwechslungsreichen Tagesaktivitäten, spannenden Sportveranstaltungen und beeindruckenden Live-Shows am Abend möchte SY Hotels Belek seinen Gästen unvergessliche Erlebnisse bieten. Genießen Sie die perfekte Kombination aus Erholung und grenzenloser Unterhaltung.",
+      "description": "Mit abwechslungsreichen Tagesaktivitäten, spannenden Sportveranstaltungen und beeindruckenden Live-Shows am Abend möchte SY Hotels Luxury Belek seinen Gästen unvergessliche Erlebnisse bieten. Genießen Sie die perfekte Kombination aus Erholung und grenzenloser Unterhaltung.",
       "button": "Entdecken"
     },
     "aquapark": {
@@ -531,7 +531,7 @@
     "blocks": [
       {
         "lines": [
-          {"label": "Hotelname", "text": "SY Hotels Belek"},
+          {"label": "Hotelname", "text": "SY Hotels Luxury Belek"},
           {"label": "Kategorie", "text": "Boutique Luxury"}
         ]
       },
@@ -687,7 +687,7 @@
   "address": "Kadriye Mah., Atatürk Cad., Kır Mevkii, 07500 Belek / Antalya, Türkei",
   "reservation": "Reservierung",
   "hotelPhone": "Hotelkontakt",
-  "mapTitle": "Standortkarte von SY Hotels Belek"
+  "mapTitle": "Standortkarte von SY Hotels Luxury Belek"
 },
 
 
@@ -696,7 +696,7 @@
   "description1": "Um unsere Zusammenarbeit noch effizienter zu gestalten und Sie dabei zu unterstützen, Ihren Gästen den bestmöglichen Service zu bieten, stellen wir Ihnen Materialien zur Verfügung, die einen einfachen Zugang zu Bildern, Fact Sheets und Präsentationsunterlagen unseres Hotels ermöglichen.",
   "description2": "Über die folgenden Links können Sie unsere Hotellogos, hochauflösende Fotos, aktuelle Fact Sheets und Präsentationsdateien abrufen. Bei Fragen oder wenn Sie weitere Materialien benötigen, können Sie uns jederzeit kontaktieren.",
   "signature": "Mit freundlichen Grüßen,",
-  "team": "SY Hotels Belek\nVertriebs- und Marketingteam",
+  "team": "SY Hotels Luxury Belek\nVertriebs- und Marketingteam",
   "resources": {
     "logo": "Logo",
     "factSheet": "Fact Sheet",
@@ -709,7 +709,7 @@
 "KVKK": {
   "eyebrow": "DATENSCHUTZ",
   "title": "GESETZ ZUM SCHUTZ PERSONENBEZOGENER DATEN",
-  "intro": "Gemäß dem türkischen Gesetz Nr. 6698 zum Schutz personenbezogener Daten (KVKK) legt SY Hotels Belek großen Wert auf die Sicherheit Ihrer personenbezogenen Daten.",
+  "intro": "Gemäß dem türkischen Gesetz Nr. 6698 zum Schutz personenbezogener Daten (KVKK) legt SY Hotels Luxury Belek großen Wert auf die Sicherheit Ihrer personenbezogenen Daten.",
   "explanation": "Ihre personenbezogenen Daten werden im Einklang mit den geltenden Gesetzen und Vorschriften nach den Grundsätzen der Rechtmäßigkeit, Fairness, Richtigkeit und gegebenenfalls Aktualität für festgelegte, eindeutige und rechtmäßige Zwecke verarbeitet, gespeichert und geschützt.",
   "listIntro": "Ihre Daten werden insbesondere für folgende Zwecke verarbeitet:",
   "purposes": {
@@ -1000,7 +1000,7 @@
 
 "flightsEyebrow": "SY HOTELS • IHRE REISE",
 "flightsTitle": "Fliegen Sie nach Antalya",
-"flightsDescription": "Ihr Urlaub beginnt mit der Reise. Entdecken Sie Flüge nach Antalya und planen Sie Ihren Aufenthalt im SY Hotels Belek.",
+"flightsDescription": "Ihr Urlaub beginnt mit der Reise. Entdecken Sie Flüge nach Antalya und planen Sie Ihren Aufenthalt im SY Hotels Luxury Belek.",
 "flightsArrival": "Ihr Reiseziel",
 "flightsPartners": "Wählen Sie Ihren Fluganbieter",
 "flightsSearch": "Flüge Entdecken",
@@ -1010,7 +1010,7 @@
 
    "OffersBenefits": {
     "title": "Exklusive Angebote",
-    "description": "Erleben Sie einen Urlaub voller Komfort und exklusiver Vorteile im SY Hotels Belek.",
+    "description": "Erleben Sie einen Urlaub voller Komfort und exklusiver Vorteile im SY Hotels Luxury Belek.",
     "imageHeading": "Jeder Moment ein besonderes Erlebnis",
     "guestRating": "Gästebewertung",
 
@@ -1047,5 +1047,21 @@
     "title": "{room} - 360° Virtueller Rundgang",
     "description": "Entdecken Sie Ihr Zimmer bei einem interaktiven 360°-Rundgang.",
     "openTour": "Virtuellen Rundgang in neuem Tab öffnen"
-  }
+  },
+
+  "BackToTop": {
+  "label": "Nach oben scrollen"
+},
+
+"GastronomyCard": {
+  "bars": "Bars",
+  "snack": "Snacks",
+  "restaurants": "Restaurants",
+  "alacarte": "À-la-carte-Restaurants"
+},
+
+"MobileBookingBar": {
+  "callHotel": "Hotel anrufen",
+  "bookNow": "Jetzt buchen"
+}
 }

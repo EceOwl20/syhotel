@@ -18,7 +18,7 @@ export default async function ContactPage() {
 
       <HalfImageBanner
         image="/images/general/genel-gorunum-1.webp"
-        imageAlt="SY Hotels Belek"
+        imageAlt="SY Hotels Luxury Belek"
         logo="/logo/logo_favicon-beyaz.webp"
         overlayOpacity={0.5}
       />

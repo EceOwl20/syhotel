@@ -41,7 +41,7 @@ export default async function OffersBenefits({ locale }: Props) {
             <div className="group relative min-h-[480px] flex-1 overflow-hidden md:min-h-[550px]">
               <Image
                 src={getOfferImage(1, locale)}
-                alt="SY Hotels Belek campaign"
+                alt="SY Hotels Luxury Belek campaign"
                 fill
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="object-contain transition-transform duration-[1500ms] ease-out group-hover:scale-[1.02]"

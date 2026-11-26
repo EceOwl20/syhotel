@@ -197,7 +197,7 @@ export default function OffersGallery({
               <div className="flex shrink-0 items-center justify-between border-b border-[#e4d8ce] px-5 py-4 md:px-8">
                 <div>
                   <span className="text-[10px] uppercase tracking-[0.2em] text-[#948475]">
-                    SY HOTELS BELEK
+                    SY Hotels Luxury Belek
                   </span>
 
                   <h2 className="mt-1 text-lg font-extralight uppercase tracking-[0.08em] text-[#745444]">

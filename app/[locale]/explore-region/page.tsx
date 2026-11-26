@@ -36,7 +36,7 @@ export default async function ExploreRegionPage() {
     <main className="min-h-screen bg-white">
       <HalfImageBanner
         image="/images/general/genel-gorunum-1.webp"
-        imageAlt="SY Hotels Belek"
+        imageAlt="SY Hotels Luxury Belek"
         overlayOpacity={0.5}
       />
 

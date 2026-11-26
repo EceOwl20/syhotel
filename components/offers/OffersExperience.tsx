@@ -16,7 +16,7 @@ export default function OffersExperience({
 
       <Image
         src="/images/homepage/acik-havuz.webp"
-        alt="SY Hotels Belek pool experience"
+        alt="SY Hotels Luxury Belek pool experience"
         fill
         sizes="100vw"
         className="object-cover"

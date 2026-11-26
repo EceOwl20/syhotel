@@ -15,7 +15,7 @@
     },
     "aquapark": {
       "title": "Mega Splash Aquapark",
-      "description": "14 farklı kaydırak, dalga havuzu ve çocuklara özel alanlarla Mega Splash Aquapark'ta ailece su ve eğlence dolu bir gün yaşayın."
+      "description": "16 farklı kaydırak, dalga havuzu ve çocuklara özel alanlarla Mega Splash Aquapark'ta ailece su ve eğlence dolu bir gün yaşayın."
     },
     "beach": {
       "title": "Özel Sahil ve Plaj",
@@ -225,6 +225,14 @@
   "subtitle": "SEVDİKLERİNİZLE BİRLİKTE",
   "description": "Ara kapılı 2 odadan oluşmakta olup rahat bir yaşam alanı sunar. Aileler ve arkadaş grupları için ideal olan bu odalar, hem özel alanınızı koruyup hem de sevdiklerinizle bir arada olmanızı sağlar.",
   "galleryAlt": "Aile Odası fotoğrafı",
+  "familyHoliday": {
+    "title": "Belek'te Ailece Konforlu Bir Tatil",
+    "description": "Bağlantılı iki odası ve aile bireylerine özel alan sağlayan düzeniyle bu oda, Belek'te konforlu bir aile tatili için ideal bir başlangıç noktasıdır. Çocuk kulübü, aile havuzları ve Mega Splash Aquapark ile gün boyu farklı yaşlara hitap eden deneyimlerin keyfini çıkarabilirsiniz."
+  },
+  "metadata": {
+    "title": "Belek Aile Odası ve Aile Tatili",
+    "description": "Bağlantılı iki odalı Aile Odası'nda konforlu bir Belek aile tatili yaşayın; çocuk kulübü, havuzlar ve aquapark ayrıcalıklarını keşfedin."
+  },
   "features": {
     "area": "43 m²",
     "guests": "4+1 Bebek",
@@ -257,6 +265,14 @@
   "subtitle": "YENİ BİR YAŞAM TARZI SİZLERİ BEKLİYOR",
   "description": "Odanızdan çıkar çıkmaz suya adım atabilirsiniz! Swim-Up özelliği sayesinde hiçbir yere gitmeden havuzun keyfini çıkarmak mümkün. Özellikle çocuklu aileler için havuz başında geçirilen anlar daha keyifli ve güvenli hale geliyor.",
   "galleryAlt": "Swim-Up Aile Odası fotoğrafı",
+  "familyHoliday": {
+    "title": "Swim-Up Ayrıcalığıyla Aile Tatili",
+    "description": "Geniş yerleşimi ve havuza doğrudan erişimiyle Swim-Up Aile Odası, birlikte geçirilen zamanı tatilin merkezine taşır. Ailenizle odanızın hemen önünde havuz keyfi yapabilir; çocuk kulübü ve aquapark etkinlikleriyle tatilinize eğlence katabilirsiniz."
+  },
+  "metadata": {
+    "title": "Belek Swim-Up Aile Odası",
+    "description": "Havuza doğrudan erişimli Swim-Up Aile Odası ile Belek'te konforlu bir aile tatili planlayın; çocuk kulübü ve aquaparkı keşfedin."
+  },
   "features": {
     "area": "57 m²",
     "guests": "4+2+1 Bebek",
@@ -307,6 +323,14 @@
   "subtitle": "SEVDİKLERİNİZLE BİRLİKTE",
   "description": "İç merdivenli tasarımıyla ailelere geniş ve konforlu bir yaşam alanı sunar. Alt ve üst kata yayılan yerleşimi sayesinde hem birlikte vakit geçirebileceğiniz hem de özel alanınızı koruyabileceğiniz ideal bir konaklama deneyimi sağlar.",
   "galleryAlt": "Dubleks Aile Odası fotoğrafı",
+  "familyHoliday": {
+    "title": "İki Kata Yayılan Ferah Bir Aile Tatili",
+    "description": "Alt ve üst kata yayılan yaşam alanı, ailece bir arada olmanın keyfini kişisel alan konforuyla buluşturur. Dubleks Aile Odası'nda dinlenirken çocuk kulübü, havuzlar ve Mega Splash Aquapark ile Belek tatilinizi hareketli ve keyifli anlarla tamamlayabilirsiniz."
+  },
+  "metadata": {
+    "title": "Belek Dubleks Aile Odası",
+    "description": "İki katlı Dubleks Aile Odası'nda ferah ve konforlu bir Belek aile tatili yaşayın; çocuk kulübü, havuzlar ve aquaparkı keşfedin."
+  },
   "features": {
     "area": "39 m²",
     "guests": "4+1 Bebek",
@@ -506,7 +530,7 @@
     },
     "aquapark": {
       "title": "Mega Splash Aquapark",
-      "subtitle": "14 Kaydırak",
+      "subtitle": "16 Kaydırak",
       "description": ""
     },
     "indoor": {
@@ -523,7 +547,7 @@
 
   "Aquapark": {
     "title": "MEGA SPLASH AQUAPARK",
-    "description": "14 Farklı kaydırak seçeneğiyle adrenalin tutkunları ve eğlence severler için vazgeçilmez bir deneyim sunuyor. Hem çocuklar hem de yetişkinler için ayrı alanları bulunan aquaparkta, her yaştan misafir suyun heyecan verici dünyasına kendini bırakabilir. Hızlı kaydıraklar, dalga havuzu ve özel etkinlik alanları ile aquapark, aileniz ve sevdiklerinizle gün boyu keyif dolu saatler geçirmenizi sağlar.",
+    "description": "16 farklı kaydırak seçeneğiyle adrenalin tutkunları ve eğlence severler için vazgeçilmez bir deneyim sunuyor. Hem çocuklar hem de yetişkinler için ayrı alanları bulunan aquaparkta, her yaştan misafir suyun heyecan verici dünyasına kendini bırakabilir. Hızlı kaydıraklar, dalga havuzu ve özel etkinlik alanları ile aquapark, aileniz ve sevdiklerinizle gün boyu keyif dolu saatler geçirmenizi sağlar.",
     "slides": [
       "Hill Slide – 1 adet / 35,96 m",
       "Body Slide – Combo – 1 adet / 36,90 m",
@@ -699,7 +723,7 @@
         {
           "title": "Mega Splash Aquapark",
           "lines": [
-            {"text": "4.000 m² alan üzerine kurulu, tam 14 kaydıraktan oluşan ve farklı yaş gruplarına ve zevklere hitap eden kaydıraklarıyla adrenalin tutkunları, çocuklar ve aileler için ideal bir eğlence merkezi."}
+            {"text": "4.000 m² alan üzerine kurulu, tam 16 kaydıraktan oluşan ve farklı yaş gruplarına ve zevklere hitap eden kaydıraklarıyla adrenalin tutkunları, çocuklar ve aileler için ideal bir eğlence merkezi."}
           ]
         }
       ]

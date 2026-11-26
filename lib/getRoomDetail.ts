@@ -10,6 +10,12 @@ import type { RoomDetail } from "@/data/roomTypes";
 import type { RoomService } from "@/components/rooms/RoomServices";
 import type { RoomServiceId } from "@/data/roomServices";
 
+const familyRoomSlugs = new Set([
+  "deluxe-family-rooms",
+  "deluxe-swimup-family-rooms",
+  "deluxe-duplex-family-rooms",
+]);
+
 export async function getRoomDetail(
   slug: string,
   locale: string,
@@ -35,6 +41,14 @@ export async function getRoomDetail(
     ...room.features.map(
       (feature) => `${roomKey}.features.${feature.id}`,
     ),
+    ...(familyRoomSlugs.has(room.slug)
+      ? [
+          `${roomKey}.familyHoliday.title`,
+          `${roomKey}.familyHoliday.description`,
+          `${roomKey}.metadata.title`,
+          `${roomKey}.metadata.description`,
+        ]
+      : []),
   ];
 
   const missingKeys = requiredKeys.filter(
@@ -75,6 +89,20 @@ export async function getRoomDetail(
     title: t(`${roomKey}.title`),
     subtitle: t(`${roomKey}.subtitle`),
     description: t(`${roomKey}.description`),
+
+    familyHoliday: familyRoomSlugs.has(room.slug)
+      ? {
+          title: t(`${roomKey}.familyHoliday.title`),
+          description: t(`${roomKey}.familyHoliday.description`),
+        }
+      : undefined,
+
+    metadata: familyRoomSlugs.has(room.slug)
+      ? {
+          title: t(`${roomKey}.metadata.title`),
+          description: t(`${roomKey}.metadata.description`),
+        }
+      : undefined,
 
     features: room.features.map((feature) => ({
       id: feature.id,

@@ -13,6 +13,14 @@ export type RoomDetail = {
   title: string;
   subtitle: string;
   description: string;
+  familyHoliday?: {
+    title: string;
+    description: string;
+  };
+  metadata?: {
+    title: string;
+    description: string;
+  };
   features: RoomFeature[];
   gallery: GalleryImage[];
   freeServices: RoomService[];

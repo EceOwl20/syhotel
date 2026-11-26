@@ -32,8 +32,10 @@ export async function generateMetadata({
 
   return room
     ? {
-        title: room.title,
-        description: createMetadataDescription(room.description),
+        title: room.metadata?.title ?? room.title,
+        description: createMetadataDescription(
+          room.metadata?.description ?? room.description,
+        ),
         alternates: createRoomSeoAlternates(slug, locale),
       }
     : {};

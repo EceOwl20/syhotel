@@ -15,7 +15,7 @@
     },
     "aquapark": {
       "title": "Mega Splash Aquapark",
-      "description": "Enjoy a fun-filled family day at Mega Splash Aquapark with 14 water slides, a wave pool and dedicated areas for children."
+      "description": "Enjoy a fun-filled family day at Mega Splash Aquapark with 16 water slides, a wave pool and dedicated areas for children."
     },
     "beach": {
       "title": "Private Beach",
@@ -227,6 +227,14 @@
   "subtitle": "TOGETHER WITH YOUR LOVED ONES",
   "description": "Consisting of two connecting rooms, our Family Room offers a comfortable living space. Ideal for families and groups of friends, this room allows you to enjoy time together with your loved ones while maintaining your privacy.",
   "galleryAlt": "Family Room photo",
+  "familyHoliday": {
+    "title": "A Comfortable Family Holiday in Belek",
+    "description": "With two connecting rooms and space for every family member, this room is an ideal base for a comfortable family holiday in Belek. Enjoy experiences for different ages throughout the day with the kids club, family pools and Mega Splash Aquapark."
+  },
+  "metadata": {
+    "title": "Family Room in Belek",
+    "description": "Enjoy a comfortable family holiday in Belek in a two-room Family Room, with a kids club, family pools and Mega Splash Aquapark nearby."
+  },
   "features": {
     "area": "43 m²",
     "guests": "4+1 (Infant)",
@@ -260,6 +268,14 @@
   "subtitle": "A NEW LIFESTYLE AWAITS YOU",
   "description": "You can step into the water as soon as you leave your room! Thanks to the swim-up feature, you can enjoy the pool without having to go anywhere. Especially for families with children, spending time by the pool becomes even more enjoyable and safer.",
   "galleryAlt": "Family Swim-Up Room photo",
+  "familyHoliday": {
+    "title": "A Family Holiday with Swim-Up Comfort",
+    "description": "The spacious layout and direct pool access of the Family Swim-Up Room place shared moments at the heart of your holiday. Enjoy the pool just outside your room and add more fun to your stay with the kids club and aquapark activities."
+  },
+  "metadata": {
+    "title": "Family Swim-Up Room in Belek",
+    "description": "Plan a comfortable family holiday in Belek with direct pool access from a Family Swim-Up Room, plus a kids club and aquapark experiences."
+  },
   "features": {
     "area": "57 m²",
     "guests": "4+2+1 (Infant)",
@@ -311,6 +327,14 @@
   "subtitle": "WITH YOUR LOVED ONES",
   "description": "With its internal staircase design, it offers families a spacious and comfortable living area. Its layout spread over upper and lower floors provides an ideal accommodation experience where you can enjoy time together while also preserving your private space.",
   "galleryAlt": "Duplex Family Room photo",
+  "familyHoliday": {
+    "title": "A Spacious Family Holiday Across Two Floors",
+    "description": "Living areas across two floors combine quality family time with the comfort of personal space. Relax in the Duplex Family Room and complete your Belek holiday with memorable moments at the kids club, pools and Mega Splash Aquapark."
+  },
+  "metadata": {
+    "title": "Duplex Family Room in Belek",
+    "description": "Enjoy a spacious family holiday in Belek in a two-storey Duplex Family Room, with access to the kids club, pools and Mega Splash Aquapark."
+  },
   "features": {
     "area": "39 m²",
     "guests": "4+1 (Infant)",
@@ -510,7 +534,7 @@
     },
     "aquapark": {
       "title": "Mega Splash Aquapark",
-      "subtitle": "14 Water Slides",
+      "subtitle": "16 Water Slides",
       "description": ""
     },
     "indoor": {
@@ -527,7 +551,7 @@
 
   "Aquapark": {
     "title": "MEGA SPLASH AQUAPARK",
-    "description": "With 14 different slide options, it offers an indispensable experience for adrenaline enthusiasts and entertainment lovers. With separate areas for both children and adults, guests of all ages can abandon themselves to the exciting world of water in the aquapark. With its fast slides, wave pool and special activity areas, the aquapark allows you to spend enjoyable hours with your family and loved ones all day long.",
+    "description": "With 16 different slide options, it offers an indispensable experience for adrenaline enthusiasts and entertainment lovers. With separate areas for both children and adults, guests of all ages can abandon themselves to the exciting world of water in the aquapark. With its fast slides, wave pool and special activity areas, the aquapark allows you to spend enjoyable hours with your family and loved ones all day long.",
     "slides": [
       "Hill Slide – 1 piece / 35.96 m",
       "Body Slide – Combo – 1 piece / 36.90 m",
@@ -705,7 +729,7 @@
       {
         "title": "Mega Splash Aquapark",
         "lines": [
-          {"text": "Spread across 4,000 m² and featuring 14 water slides designed for different age groups and preferences, Mega Splash Aquapark is an ideal entertainment destination for thrill-seekers, children and families."}
+          {"text": "Spread across 4,000 m² and featuring 16 water slides designed for different age groups and preferences, Mega Splash Aquapark is an ideal entertainment destination for thrill-seekers, children and families."}
         ]
       }
     ]

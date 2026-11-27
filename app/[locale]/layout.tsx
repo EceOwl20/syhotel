@@ -16,6 +16,7 @@ import GoogleTagManager from "@/components/generalComponents/GoogleTagManager";
 import MobileBookingBar from "@/components/generalComponents/MobileBookingBar";
 import CampaignPopup from "@/components/generalComponents/CampaignPopup";
 
+import "../../public/fonts/flaticon/flaticon_hotel.min.css";
 import "../globals.css";
 import BackToTop from "@/components/generalComponents/BackToTop";
 
@@ -65,13 +66,6 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <head>
-        <link
-          rel="stylesheet"
-          href="/fonts/flaticon/flaticon_hotel.min.css"
-        />
-      </head>
-
       <body className={montserrat.variable}>
         <GoogleTagManager />
         <NextIntlClientProvider>

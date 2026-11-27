@@ -34,7 +34,9 @@ export default function CampaignPopup() {
     width: 1600,
     height: 900,
     sizes:
-      "(max-width: 767px) 92vw, (min-aspect-ratio: 16/9) 85vw, calc(100vw - 32px)",
+      "(max-width: 767px) min(92vw, 50.625dvh), min(calc(100vw - 32px), 151dvh, 1600px)",
+    loading: "eager",
+    fetchPriority: "high",
   });
 
   const { props: mobileImage } = getImageProps({
@@ -42,7 +44,9 @@ export default function CampaignPopup() {
     alt: "SY Hotels kampanya duyurusu",
     width: 900,
     height: 1600,
-    sizes: "92vw",
+    sizes: "min(92vw, 50.625dvh)",
+    loading: "eager",
+    fetchPriority: "high",
   });
 
   // Modal interactions
@@ -104,10 +108,10 @@ export default function CampaignPopup() {
         role="dialog"
         aria-modal="true"
         aria-label="SY Hotels kampanya duyurusu"
-        className="relative flex max-h-[90dvh] max-w-full items-center justify-center"
+        className="relative flex aspect-[9/16] w-[92vw] max-w-[50.625dvh] items-center justify-center md:aspect-[16/9] md:w-[calc(100vw-2rem)] md:max-w-[min(151dvh,1600px)]"
       >
         {/* RESPONSIVE IMAGE */}
-        <picture>
+        <picture className="block h-full w-full">
           <source
             media="(max-width: 767px)"
             srcSet={mobileImage.srcSet}
@@ -120,13 +124,9 @@ export default function CampaignPopup() {
             {...desktopImage}
             alt="SY Hotels kampanya duyurusu"
             className="
-  block h-auto w-[92vw]
-  max-h-[90dvh]
+  block h-full w-full
   object-contain
   shadow-[0_25px_80px_rgba(0,0,0,0.35)]
-  md:h-auto md:w-auto
-  md:max-h-[85dvh]
-  md:max-w-[calc(100vw-2rem)]
 "
           />
         </picture>

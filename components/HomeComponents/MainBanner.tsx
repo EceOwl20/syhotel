@@ -1,8 +1,12 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { getImageProps, type StaticImageData } from "next/image";
+
+const subscribeToHydration = () => () => {};
+const getClientHydrationState = () => true;
+const getServerHydrationState = () => false;
 
 type Slide = {
   src: string | StaticImageData;
@@ -15,29 +19,34 @@ type MainBannerProps = {
 };
 
 export default function MainBanner({ slides = [] }: MainBannerProps) {
+  const isHydrated = useSyncExternalStore(
+    subscribeToHydration,
+    getClientHydrationState,
+    getServerHydrationState,
+  );
   const [activeIndex, setActiveIndex] = useState(0);
   const [pendingIndex, setPendingIndex] = useState<number | null>(null);
-  const [loadedIndexes, setLoadedIndexes] = useState<Set<number>>(
-    () => new Set([0]),
-  );
+  const [loadedIndexes, setLoadedIndexes] = useState<number[]>([0]);
 
   useEffect(() => {
-    if (slides.length <= 1 || pendingIndex !== null) return;
+    if (!isHydrated || slides.length <= 1 || pendingIndex !== null) return;
 
     const timeout = window.setTimeout(() => {
       const nextIndex = (activeIndex + 1) % slides.length;
 
-      if (loadedIndexes.has(nextIndex)) {
+      if (loadedIndexes.includes(nextIndex)) {
         setActiveIndex(nextIndex);
         return;
       }
 
-      setLoadedIndexes((current) => new Set(current).add(nextIndex));
+      setLoadedIndexes((current) =>
+        current.includes(nextIndex) ? current : [...current, nextIndex],
+      );
       setPendingIndex(nextIndex);
     }, 5000);
 
     return () => window.clearTimeout(timeout);
-  }, [activeIndex, loadedIndexes, pendingIndex, slides.length]);
+  }, [activeIndex, isHydrated, loadedIndexes, pendingIndex, slides.length]);
 
   // Prevent an invalid index if the slide count changes
   const currentIndex = slides.length > 0 ? activeIndex % slides.length : 0;
@@ -50,7 +59,10 @@ export default function MainBanner({ slides = [] }: MainBannerProps) {
       className="relative h-[70vh] md:h-[80vh] lg:h-screen w-full overflow-hidden"
     >
       {slides.map((slide, index) => {
-        if (!loadedIndexes.has(index)) return null;
+        const shouldRender =
+          index === 0 || (isHydrated && loadedIndexes.includes(index));
+
+        if (!shouldRender) return null;
 
         const isFirstSlide = index === 0;
         const imageLoading = isFirstSlide ? "eager" : "lazy";

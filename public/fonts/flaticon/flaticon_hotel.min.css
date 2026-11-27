@@ -1,6 +1,7 @@
 @font-face {
     font-family: "flaticon_hotel";
-    src: url("./flaticon_hotel.woff2?79e34b91035e190b1408b2d19c6d8031") format("woff2"), url("./flaticon_hotel.woff?79e34b91035e190b1408b2d19c6d8031") format("woff"), url("./flaticon_hotel.eot?79e34b91035e190b1408b2d19c6d8031#iefix") format("embedded-opentype"), url("./flaticon_hotel.ttf?79e34b91035e190b1408b2d19c6d8031") format("truetype"), url("./flaticon_hotel.svg?79e34b91035e190b1408b2d19c6d8031#flaticon_hotel") format("svg")
+    src: url("./flaticon_hotel.woff2") format("woff2");
+    font-display: block;
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {

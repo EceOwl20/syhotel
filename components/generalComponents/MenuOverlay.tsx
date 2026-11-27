@@ -29,11 +29,15 @@ const roomLinks = [
 
 // Bar navigation
 const barLinks = [
-  { key: "ruby", slug: "ruby-lobby-bar" },
-  { key: "lal", slug: "lal-terrace-bar" },
-  { key: "marin", slug: "marin-shallow-bar" },
-  { key: "aquarius", slug: "aquarius-pool-bar" },
-  { key: "larimar", slug: "larimar-beach-restaurant" },
+  { key: "ruby", pathname: "/bars/[slug]", slug: "ruby-lobby-bar" },
+  { key: "lal", pathname: "/bars/[slug]", slug: "lal-terrace-bar" },
+  { key: "marin", pathname: "/bars/[slug]", slug: "marin-shallow-bar" },
+  { key: "aquarius", pathname: "/bars/[slug]", slug: "aquarius-pool-bar" },
+  {
+    key: "larimar",
+    pathname: "/restaurants/[slug]",
+    slug: "larimar-beach-restaurant",
+  },
 ] as const;
 
 // Gastronomy navigation
@@ -183,7 +187,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                       <li key={item.slug}>
                         <Link
                           href={{
-                            pathname: "/bars/[slug]",
+                            pathname: item.pathname,
                             params: { slug: item.slug },
                           }}
                           onClick={onClose}

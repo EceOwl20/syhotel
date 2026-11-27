@@ -15,6 +15,16 @@ type GoogleConsent = Record<
   ConsentValue
 >;
 
+const DEFAULT_CONSENT: GoogleConsent = {
+  analytics_storage: "denied",
+  ad_storage: "denied",
+  ad_user_data: "denied",
+  ad_personalization: "denied",
+  functionality_storage: "denied",
+  personalization_storage: "denied",
+  security_storage: "denied",
+};
+
 declare global {
   interface Window {
     dataLayer?: unknown[];
@@ -26,16 +36,16 @@ declare global {
 }
 
 function toGoogleConsent(
-  preferences: CookiePreferences | null,
+  preferences: CookiePreferences,
 ): GoogleConsent {
-  const marketing = preferences?.marketing ? "granted" : "denied";
+  const marketing = preferences.marketing ? "granted" : "denied";
 
   return {
-    analytics_storage: preferences?.analytics ? "granted" : "denied",
+    analytics_storage: preferences.analytics ? "granted" : "denied",
     ad_storage: marketing,
     ad_user_data: marketing,
     ad_personalization: marketing,
-    functionality_storage: preferences?.functional ? "granted" : "denied",
+    functionality_storage: preferences.functional ? "granted" : "denied",
     personalization_storage: marketing,
     security_storage: "granted",
   };
@@ -53,32 +63,20 @@ export function syncGoogleTagManager(preferences: CookiePreferences | null) {
   };
 
   if (!window.__syTagManager) {
-    const consent = toGoogleConsent(null);
+    const consent = DEFAULT_CONSENT;
     gtag("consent", "default", consent);
     window.__syTagManager = { consent, started: false };
   }
 
   const state = window.__syTagManager;
-  const consent = toGoogleConsent(preferences);
-  const keys = Object.keys(consent) as (keyof GoogleConsent)[];
-  const revoked = keys.some(
-    (key) => state.consent[key] === "granted" && consent[key] === "denied",
-  );
 
-  if (keys.some((key) => state.consent[key] !== consent[key])) {
+  if (preferences) {
+    const consent = toGoogleConsent(preferences);
     gtag("consent", "update", consent);
     state.consent = consent;
   }
 
-  if (state.started && revoked) {
-    // Removing a script cannot unload its tags. A fresh document applies the
-    // saved choices before any tags can run again.
-    window.location.reload();
-    return;
-  }
-
-  // Basic consent mode: this analytics container loads only after opt-in.
-  if (!preferences?.analytics || state.started) return;
+  if (state.started) return;
 
   state.started = true;
   dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });

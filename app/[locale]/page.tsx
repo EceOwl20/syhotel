@@ -17,6 +17,8 @@ import backgroundImageKids4 from "@/public/images/kids/mini-kulup-4.webp";
 import backgroundImageKids6 from "@/public/images/kids/mini-kulup-6.webp";
 import { routing } from "@/i18n/routing";
 import { createTranslatedMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { buildHomeJsonLd } from "@/lib/structureData/home";
 
 type Locale = (typeof routing.locales)[number];
 
@@ -31,10 +33,16 @@ export default async function Home({
 }: {
   params: Promise<{ locale: Locale }>;
 }) {
-  const { locale } = await params;
-  const t = await getTranslations("HomePage");
+const { locale } = await params;
+const t = await getTranslations("HomePage");
 
-  const tRooms = await getTranslations("HomeRooms");
+const homeJsonLd = buildHomeJsonLd({
+  locale,
+  title: t("hero.title"),
+  description: t("hero.description"),
+});
+
+const tRooms = await getTranslations("HomeRooms");
   
   const translatedRooms = roomConfigs.map((room) => ({
   ...room,
@@ -107,6 +115,8 @@ const slides = [
 
   return (
     <main className="flex w-full flex-col items-center justify-center lg:gap-10 bg-[#f0eae5] pb-0 lg:pb-20">
+      {/* Structured Data */}
+    <JsonLd data={homeJsonLd} />
 
       {/* Main Banner */}
       <MainBanner slides={slides} />

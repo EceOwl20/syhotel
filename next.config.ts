@@ -8,6 +8,13 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source:
+          "/:locale(tr|en|de|ru)/bars/larimar-beach-restaurant",
+        destination:
+          "/:locale/restaurants/larimar-beach-restaurant",
+        permanent: true,
+      },
+      {
   source: "/:path*",
   has: [
     {

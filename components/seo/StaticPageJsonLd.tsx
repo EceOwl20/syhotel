@@ -9,17 +9,22 @@ import {
   type StaticPath,
   getLocalizedUrl,
 } from "@/lib/structureData/config";
-import { buildWebPageGraph } from "@/lib/structureData/webPage";
+import {
+  type WebPageSchemaType,
+  buildWebPageGraph,
+} from "@/lib/structureData/webPage";
 import JsonLd from "./JsonLd";
 
 type StaticPageJsonLdProps = {
   metadataPage: MetadataPage;
   pathname: StaticPath;
+  pageType?: WebPageSchemaType;
 };
 
 export default async function StaticPageJsonLd({
   metadataPage,
   pathname,
+  pageType,
 }: StaticPageJsonLdProps) {
   const locale = await getRootLocale();
 
@@ -38,6 +43,7 @@ export default async function StaticPageJsonLd({
     pageUrl,
     title,
     description: tMetadata(`${metadataPage}.description`),
+    pageType,
     breadcrumbs: [
       {
         name: tHeader("home"),

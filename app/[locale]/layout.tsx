@@ -15,8 +15,8 @@ import CookieConsent from "@/components/generalComponents/CookieConsent";
 import GoogleTagManager from "@/components/generalComponents/GoogleTagManager";
 import MobileBookingBar from "@/components/generalComponents/MobileBookingBar";
 import CampaignPopup from "@/components/generalComponents/CampaignPopup";
+import WebVitalsReporter from "@/components/analytics/WebVitalsReporter";
 
-import "../../public/fonts/flaticon/flaticon_hotel.min.css";
 import "../globals.css";
 import BackToTop from "@/components/generalComponents/BackToTop";
 
@@ -68,6 +68,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={montserrat.variable}>
         <GoogleTagManager />
+        <WebVitalsReporter />
         <NextIntlClientProvider>
           <Header />
           {children}

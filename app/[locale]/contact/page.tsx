@@ -18,6 +18,7 @@ export default async function ContactPage() {
       <StaticPageJsonLd
         metadataPage="contact"
         pathname="/contact"
+        pageType="ContactPage"
       />
 
       <HalfImageBanner

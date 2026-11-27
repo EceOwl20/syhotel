@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import GeneralInformationDetails from "./GeneralInformationDetails";
 import GeneralInformationServices from "./GeneralInformationServices";
+import "../../public/fonts/flaticon/flaticon_hotel.min.css";
 
 import {
   serviceGroups,

@@ -15,11 +15,17 @@ import {
 import { buildHotelJsonLd } from "./hotel";
 import { buildWebsiteJsonLd } from "./website";
 
+export type WebPageSchemaType =
+  | "WebPage"
+  | "ContactPage"
+  | "AboutPage";
+
 type WebPageGraphProps = {
   locale: Locale;
   pageUrl: string;
   title: string;
   description: string;
+  pageType?: WebPageSchemaType;
   breadcrumbs?: BreadcrumbEntry[];
   mainEntityId?: string;
   additionalNodes?: JsonLdNode[];
@@ -30,6 +36,7 @@ export function buildWebPageGraph({
   pageUrl,
   title,
   description,
+  pageType = "WebPage",
   breadcrumbs,
   mainEntityId,
   additionalNodes = [],
@@ -42,7 +49,7 @@ export function buildWebPageGraph({
     : null;
 
   const webPage = {
-    "@type": "WebPage",
+    "@type": pageType,
     "@id": createSchemaId(pageUrl, "webpage"),
     url: pageUrl,
     name: title,

@@ -1,6 +1,7 @@
 
 import BarGallery from "./BarGallery";
 import type { GalleryImage } from "@/components/rooms/RoomGallery";
+import "../../public/fonts/flaticon/flaticon_hotel.min.css";
 
 type BarDetailSectionProps = {
   title: string;

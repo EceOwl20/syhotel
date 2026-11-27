@@ -15,6 +15,7 @@ export default function GeneralInformationPage() {
       <StaticPageJsonLd
         metadataPage="generalInformation"
         pathname="/general-information"
+        pageType="AboutPage"
       />
 
       <HalfImageBanner

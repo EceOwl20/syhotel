@@ -5,6 +5,7 @@ import RoomGallery from "./RoomGallery";
 import RoomServices from "./RoomServices";
 import RoomFeatures from "./RoomFeatures";
 import MainBanner from "../HomeComponents/MainBanner";
+import "../../public/fonts/flaticon/flaticon_hotel.min.css";
 
 type Props = {
   room: RoomDetail;

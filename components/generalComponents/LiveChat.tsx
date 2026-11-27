@@ -142,8 +142,6 @@ setImportantStyle(
   isOpen ? "none" : "circle(28px at 50% 50%)",
 );
 
-setImportantStyle("z-index", isOpen ? "10001" : "9998");
-setIsMessengerOpen(isOpen);
         setImportantStyle("z-index", isOpen ? "10001" : "9998");
         setIsMessengerOpen(isOpen);
         if (isOpen) setIsWelcomeVisible(false);

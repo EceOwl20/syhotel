@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image, { type StaticImageData } from "next/image";
 
 type BackgroundSlideshowProps = {
@@ -15,19 +15,43 @@ export default function BackgroundSlideshow({
   transitionDuration = 500,
 }: BackgroundSlideshowProps) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (images.length <= 1) return;
+    const container = containerRef.current;
+    if (!container) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        setIsVisible(true);
+        observer.disconnect();
+      },
+      { threshold: 0.1 },
+    );
+
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible || images.length <= 1) return;
 
     const timer = window.setInterval(() => {
       setActiveIndex((current) => (current + 1) % images.length);
     }, interval);
 
     return () => window.clearInterval(timer);
-  }, [images.length, interval]);
+  }, [images.length, interval, isVisible]);
 
   return (
-    <div aria-hidden="true" className="absolute inset-0">
+    <div
+      ref={containerRef}
+      aria-hidden="true"
+      className="absolute inset-0 z-0"
+    >
       {images.map((image, index) => (
         <Image
           key={typeof image === "string" ? image : image.src}

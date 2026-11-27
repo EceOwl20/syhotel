@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type ParticleLogoProps = {
   src: string;
@@ -61,8 +61,37 @@ export default function ParticleLogo({
 
 }: ParticleLogoProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [shouldInitialize, setShouldInitialize] = useState(false);
 
   useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      const animationId = globalThis.requestAnimationFrame(() => {
+        setShouldInitialize(true);
+      });
+
+      return () => globalThis.cancelAnimationFrame(animationId);
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        setShouldInitialize(true);
+        observer.disconnect();
+      },
+      { threshold: 0.1 },
+    );
+
+    observer.observe(canvas);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!shouldInitialize) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -72,6 +101,8 @@ export default function ParticleLogo({
     let particles: Particle[] = [];
     let animationId = 0;
     let destroyed = false;
+    let isCanvasVisible = true;
+    let lastFrameTime = 0;
 
     let entranceStartTime: number | null = null;
 
@@ -136,6 +167,20 @@ for (const p of particles) {
 
 const animate = (timestamp: number) => {
   if (destroyed) return;
+
+  animationId = window.requestAnimationFrame(animate);
+
+  const frameInterval = 1000 / 30;
+
+  if (
+    document.hidden ||
+    !isCanvasVisible ||
+    timestamp - lastFrameTime < frameInterval
+  ) {
+    return;
+  }
+
+  lastFrameTime = timestamp;
 
   const time = timestamp * 0.001;
 
@@ -222,8 +267,6 @@ const easedProgress = easeOutCubic(progress);
   }
 
   draw(time);
-
-  animationId = window.requestAnimationFrame(animate);
 };
 
 
@@ -400,6 +443,12 @@ mouse.y =
     canvas.addEventListener("pointermove", handlePointerMove);
     canvas.addEventListener("pointerleave", handlePointerLeave);
 
+    const visibilityObserver = new IntersectionObserver(([entry]) => {
+      isCanvasVisible = entry.isIntersecting;
+    });
+
+    visibilityObserver.observe(canvas);
+
     return () => {
       destroyed = true;
 
@@ -407,11 +456,13 @@ mouse.y =
 
       canvas.removeEventListener("pointermove", handlePointerMove);
       canvas.removeEventListener("pointerleave", handlePointerLeave);
+      visibilityObserver.disconnect();
 
       image.onload = null;
       image.onerror = null;
     };
 }, [
+  shouldInitialize,
   src,
   width,
   height,

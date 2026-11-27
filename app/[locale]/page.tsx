@@ -15,7 +15,6 @@ import backgroundImageKids from "@/public/images/kids/mini-kulup-1.webp";
 import backgroundImageKids2 from "@/public/images/kids/mini-kulup-2.webp";
 import backgroundImageKids4 from "@/public/images/kids/mini-kulup-4.webp";
 import backgroundImageKids6 from "@/public/images/kids/mini-kulup-6.webp";
-import { getImageProps } from "next/image";
 import { routing } from "@/i18n/routing";
 import { createTranslatedMetadata } from "@/lib/metadata";
 

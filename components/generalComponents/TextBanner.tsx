@@ -1,6 +1,6 @@
 
 import { Link } from "@/i18n/navigation";
-import type { StaticImageData } from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import type { StaticPath } from "@/lib/seo";
 import BackgroundSlideshow from "./BackgroundSlideshow";
 
@@ -42,34 +42,33 @@ export default function MainBanner({
   overlayVariant = "sage",
   backgroundPosition = "center",
 }: MainBannerProps) {
-  const imageUrl =
-    typeof backgroundImage === "string"
-      ? backgroundImage
-      : backgroundImage.src;
-
   return (
    <section
-  className="relative flex h-[470px] w-full items-center justify-center bg-cover px-[3px] md:h-[70vh] md:px-6"
-  style={{
-    backgroundImage: slideshowImages?.length
-      ? undefined
-      : `url("${imageUrl}")`,
-    backgroundPosition,
-  }}
+  className="relative flex h-[470px] w-full items-center justify-center overflow-hidden px-[3px] md:h-[70vh] md:px-6"
 >
       {slideshowImages?.length ? (
         <BackgroundSlideshow images={slideshowImages} />
-      ) : null}
+      ) : (
+        <Image
+          src={backgroundImage}
+          alt=""
+          fill
+          loading="lazy"
+          sizes="100vw"
+          className="z-0 object-cover"
+          style={{ objectPosition: backgroundPosition }}
+        />
+      )}
 
       {/* Background color overlay */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-0"
+        className="pointer-events-none absolute inset-0 z-10"
         style={overlayStyles[overlayVariant]}
       />
 
       {/* Banner content */}
-      <div className="relative z-10 flex w-full max-w-[1440px] flex-col items-center justify-center gap-4 text-center text-[#F3F3F0]">
+      <div className="relative z-20 flex w-full max-w-[1440px] flex-col items-center justify-center gap-4 text-center text-[#F3F3F0]">
         {span && (
           <span className="text-xs leading-[1.2] font-medium tracking-[0.1em] uppercase">
             {span}

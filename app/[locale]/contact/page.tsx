@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import ContactSection from "@/components/contact/ContactSection";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
@@ -14,6 +15,10 @@ export default async function ContactPage() {
 
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
+      <StaticPageJsonLd
+        metadataPage="contact"
+        pathname="/contact"
+      />
 
       <HalfImageBanner
         image="/images/general/genel-gorunum-1.webp"

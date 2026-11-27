@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import VideoBanner from "@/components/generalComponents/VideoBanner";
 import RestaurantTextBanner from "@/components/restaurants/RestaurantTextBanner";
 import ActivityGallerySection from "@/components/activities/ActivityGallerySection";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 
 import {
   activitiesVideo,
@@ -21,6 +22,11 @@ export default async function ActivitiesPage() {
 
   return (
     <main className="min-h-screen bg-black">
+      <StaticPageJsonLd
+        metadataPage="activities"
+        pathname="/activities"
+      />
+
       {/* 1. VIDEO BANNER */}
       <VideoBanner
         youtubeUrl={activitiesVideo.youtubeUrl}

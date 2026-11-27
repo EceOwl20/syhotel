@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import MainBanner from "@/components/HomeComponents/MainBanner";
 import BeachDetailSection from "@/components/beach/BeachDetailSection";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 
 import { beach } from "@/data/beach";
 import { createTranslatedMetadata } from "@/lib/metadata";
@@ -22,6 +23,10 @@ export default async function BeachPage() {
 
   return (
     <main className="min-h-screen ">
+      <StaticPageJsonLd
+        metadataPage="beach"
+        pathname="/beach"
+      />
 
       {/* MAIN BANNER */}
       <MainBanner slides={slides} />

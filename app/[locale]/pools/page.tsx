@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import MainBanner from "@/components/HomeComponents/MainBanner";
 import InfoTextSection from "@/components/generalComponents/InfoTextSection";
 import PoolImageTextSection from "@/components/generalComponents/PoolImageTextSection";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 
 import { pools, poolBannerSlides } from "@/data/pools";
 import { createTranslatedMetadata } from "@/lib/metadata";
@@ -18,6 +19,10 @@ export default async function PoolsPage() {
 
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
+      <StaticPageJsonLd
+        metadataPage="pools"
+        pathname="/pools"
+      />
 
       {/* MAIN BANNER */}
       <MainBanner slides={poolBannerSlides} />

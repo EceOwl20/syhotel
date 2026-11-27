@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import ExploreRegionSection from "@/components/explore-region/ExploreRegionSection";
 import RegionInformationSection from "@/components/explore-region/RegionInformationSection";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 
 import { exploreRegionItems } from "@/data/exploreRegion";
 import { createTranslatedMetadata } from "@/lib/metadata";
@@ -33,6 +34,11 @@ export default async function ExploreRegionPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <StaticPageJsonLd
+        metadataPage="exploreRegion"
+        pathname="/explore-region"
+      />
+
       <HalfImageBanner
         image="/images/general/genel-gorunum-1.webp"
         imageAlt="SY Hotels Luxury Belek"

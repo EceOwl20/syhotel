@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import SustainabilityContent from "@/components/sustainability/SustainabilityContent";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
@@ -21,6 +22,11 @@ export default async function SustainabilityPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <StaticPageJsonLd
+        metadataPage="sustainability"
+        pathname="/sustainability"
+      />
+
       <HalfImageBanner
         image="/images/general/genel-gorunum-1.webp"
         imageAlt="SY Hotels Luxury Belek"

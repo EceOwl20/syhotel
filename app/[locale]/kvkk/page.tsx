@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import KVKKContent from "@/components/kvkk/KVKKContent";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
 export const generateMetadata = createTranslatedMetadata(
@@ -21,6 +22,11 @@ export default async function KVKKPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <StaticPageJsonLd
+        metadataPage="kvkk"
+        pathname="/kvkk"
+      />
+
       <HalfImageBanner
         image="/images/general/genel-gorunum-1.webp"
         imageAlt="SY Hotels Luxury Belek"

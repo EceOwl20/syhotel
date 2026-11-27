@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import HalfImageBanner from "@/components/generalComponents/HalfImageBanner";
 import AgencyResourcesSection from "@/components/agencies/AgencyResourcesSection";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 import { agencyResources } from "@/data/agencyResources";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
@@ -20,6 +21,10 @@ export default async function AgenciesPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <StaticPageJsonLd
+        metadataPage="agencies"
+        pathname="/agencies"
+      />
  
       <HalfImageBanner
   image="/images/general/aquarius-havuz-bar-6.webp"

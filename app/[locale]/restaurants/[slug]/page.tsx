@@ -9,13 +9,22 @@ import MainBanner from "@/components/HomeComponents/MainBanner";
 import ParticleLogo from "@/components/generalComponents/ParticleLogo";
 import RestaurantTextBanner from "@/components/restaurants/RestaurantTextBanner";
 import RestaurantDetailSection from "@/components/restaurants/RestaurantDetailSection";
-import RelatedContent from "@/components/generalComponents/RelatedContent";
+import JsonLd from "@/components/seo/JsonLd";
 import { getTranslations } from "next-intl/server";
 import {
   createRestaurantSeoAlternates,
   type Locale,
 } from "@/lib/seo";
 import { createMetadataDescription } from "@/lib/metadata";
+import {
+  getLocalizedRestaurantUrl,
+  getLocalizedUrl,
+} from "@/lib/structureData/config";
+import {
+  buildGastronomyJsonLd,
+  getRestaurantSchemaType,
+} from "@/lib/structureData/gastronomy";
+import { buildWebPageGraph } from "@/lib/structureData/webPage";
 
 type PageProps = {
   params: Promise<{
@@ -35,7 +44,7 @@ export async function generateMetadata({
   if (!restaurant) return {};
 
   return {
-    title: `${restaurant.title} ${restaurant.subtitle}`,
+    title: `${restaurant.title} ${restaurant.subtitle}`.trim(),
     description: createMetadataDescription(
       restaurant.description,
     ),
@@ -66,24 +75,10 @@ export default async function RestaurantDetailPage({
     notFound();
   }
 
-  const tRestaurants = await getTranslations({
+  const tHeader = await getTranslations({
     locale,
-    namespace: "Restaurants",
+    namespace: "Header",
   });
-  const tRelated = await getTranslations({
-    locale,
-    namespace: "RelatedContent",
-  });
-
-  const relatedRestaurants = restaurants
-    .filter((item) => item.slug !== slug)
-    .map((item) => ({
-      id: item.slug,
-      title: tRestaurants(`${item.slug}.title`),
-      subtitle: tRestaurants(`${item.slug}.subtitle`),
-      image: item.gallery[0].src,
-      href: `/restaurants/${item.slug}`,
-    }));
 
   const slides = (
     restaurant.bannerImages ?? restaurant.gallery
@@ -91,9 +86,46 @@ export default async function RestaurantDetailPage({
     src: image.src,
     alt: image.alt,
   }));
+  const pageUrl = getLocalizedRestaurantUrl(locale, slug);
+  const pageTitle = `${restaurant.title} ${restaurant.subtitle}`.trim();
+  const pageDescription = createMetadataDescription(
+    restaurant.description,
+  );
+  const venue = buildGastronomyJsonLd({
+    schemaType: getRestaurantSchemaType(slug),
+    pageUrl,
+    name: restaurant.title,
+    description: restaurant.description,
+    images: [
+      ...restaurant.gallery,
+      ...restaurant.buffetGallery,
+    ].map((image) =>
+      typeof image.src === "string" ? image.src : image.src.src,
+    ),
+    logo: restaurant.logo,
+  });
+  const structuredData = buildWebPageGraph({
+    locale,
+    pageUrl,
+    title: pageTitle,
+    description: pageDescription,
+    breadcrumbs: [
+      {
+        name: tHeader("home"),
+        url: getLocalizedUrl(locale),
+      },
+      {
+        name: restaurant.title,
+        url: pageUrl,
+      },
+    ],
+    mainEntityId: venue["@id"],
+    additionalNodes: [venue],
+  });
 
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
+      <JsonLd data={structuredData} />
 
       {/* Main banner and optional particle logo */}
       {slides.length > 0 && (

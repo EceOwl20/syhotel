@@ -264,7 +264,7 @@ export const rooms: RoomConfig[] = [
     { id: "bath", icon: "flaticon-shower-2" },
   ],
 
-     gallery: Array.from({ length: 15 }, (_, index) => {
+     gallery: Array.from({ length: 11 }, (_, index) => {
   const number = index + 1;
   return {
     id: `shallow-pool-${number}`,

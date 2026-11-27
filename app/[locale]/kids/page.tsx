@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import VideoBanner from "@/components/generalComponents/VideoBanner";
 import InfoTextSection from "@/components/generalComponents/InfoTextSection";
 import ImageTextSection from "@/components/generalComponents/ImageTextSection";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 
 import { kidsGalleries, kidsVideo } from "@/data/kids";
 import { createTranslatedMetadata } from "@/lib/metadata";
@@ -25,6 +26,10 @@ export default async function KidsPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <StaticPageJsonLd
+        metadataPage="kids"
+        pathname="/kids"
+      />
 
       {/* FULLSCREEN VIDEO */}
       <VideoBanner

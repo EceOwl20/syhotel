@@ -8,13 +8,19 @@ import { getBarDetail } from "@/lib/getBarDetail";
 import BarDetailSection from "@/components/bars/BarDetailSection";
 import MainBanner from "@/components/HomeComponents/MainBanner";
 import ParticleLogo from "@/components/generalComponents/ParticleLogo";
-import RelatedContent from "@/components/generalComponents/RelatedContent";
+import JsonLd from "@/components/seo/JsonLd";
 import { getTranslations } from "next-intl/server";
 import {
   createBarSeoAlternates,
   type Locale,
 } from "@/lib/seo";
 import { createMetadataDescription } from "@/lib/metadata";
+import {
+  getLocalizedBarUrl,
+  getLocalizedUrl,
+} from "@/lib/structureData/config";
+import { buildGastronomyJsonLd } from "@/lib/structureData/gastronomy";
+import { buildWebPageGraph } from "@/lib/structureData/webPage";
 
 type PageProps = {
   params: Promise<{
@@ -34,7 +40,7 @@ export async function generateMetadata({
   if (!bar) return {};
 
   return {
-    title: `${bar.title} ${bar.subtitle}`,
+    title: `${bar.title} ${bar.subtitle}`.trim(),
     description: createMetadataDescription(bar.description),
     alternates: createBarSeoAlternates(slug, locale),
   };
@@ -57,29 +63,50 @@ export default async function BarDetailPage({
     notFound();
   }
 
-  const tBars = await getTranslations({ locale, namespace: "Bars" });
-  const tRelated = await getTranslations({
+  const tHeader = await getTranslations({
     locale,
-    namespace: "RelatedContent",
+    namespace: "Header",
   });
-
-  const relatedBars = bars
-    .filter((item) => item.slug !== slug)
-    .map((item) => ({
-      id: item.slug,
-      title: tBars(`${item.slug}.title`),
-      subtitle: tBars(`${item.slug}.subtitle`),
-      image: item.gallery[0].src,
-      href: `/bars/${item.slug}`,
-    }));
 
   const slides = (bar.bannerImages ?? bar.gallery).map((image) => ({
     src: image.src,
     alt: image.alt,
   }));
+  const pageUrl = getLocalizedBarUrl(locale, slug);
+  const pageTitle = `${bar.title} ${bar.subtitle}`.trim();
+  const pageDescription = createMetadataDescription(bar.description);
+  const venue = buildGastronomyJsonLd({
+    schemaType: "BarOrPub",
+    pageUrl,
+    name: bar.title,
+    description: bar.description,
+    images: bar.gallery.map((image) =>
+      typeof image.src === "string" ? image.src : image.src.src,
+    ),
+    logo: bar.logo,
+  });
+  const structuredData = buildWebPageGraph({
+    locale,
+    pageUrl,
+    title: pageTitle,
+    description: pageDescription,
+    breadcrumbs: [
+      {
+        name: tHeader("home"),
+        url: getLocalizedUrl(locale),
+      },
+      {
+        name: bar.title,
+        url: pageUrl,
+      },
+    ],
+    mainEntityId: venue["@id"],
+    additionalNodes: [venue],
+  });
 
   return (
     <main className="min-h-screen bg-[#f7f7f5]">
+      <JsonLd data={structuredData} />
 
       {/* Dynamic bar banner */}
      

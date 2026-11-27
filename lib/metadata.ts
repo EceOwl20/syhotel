@@ -14,7 +14,7 @@ export type LocalePageProps = {
   }>;
 };
 
-type MetadataPage =
+export type MetadataPage =
   | "home"
   | "activities"
   | "agencies"

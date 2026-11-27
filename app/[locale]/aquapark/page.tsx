@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import VideoBanner from "@/components/generalComponents/VideoBanner";
 import AquaparkDetailSection from "@/components/aquapark/AquaparkDetailSection";
+import StaticPageJsonLd from "@/components/seo/StaticPageJsonLd";
 
 import { aquaparkVideo, aquaparkGallery } from "@/data/aquapark";
 import { createTranslatedMetadata } from "@/lib/metadata";
@@ -19,6 +20,10 @@ export default async function AquaparkPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <StaticPageJsonLd
+        metadataPage="aquapark"
+        pathname="/aquapark"
+      />
 
       {/* YOUTUBE VIDEO BANNER */}
       {aquaparkVideo.youtubeUrl && (

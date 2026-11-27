@@ -1,5 +1,13 @@
 
 {
+  "GalleryControls": {
+    "galleryLabel": "Фотогалерея",
+    "close": "Закрыть галерею",
+    "previous": "Предыдущее фото",
+    "next": "Следующее фото",
+    "enlargePhoto": "Увеличить: {alt}",
+    "imageNumber": "{title}: изображение {number}"
+  },
   "Metadata": {
     "home": {
       "title": "SY Hotels Luxury Belek | Ультра всё включено",

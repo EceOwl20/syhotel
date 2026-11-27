@@ -4,6 +4,10 @@
   --font-sans: var(--font-montserrat);
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: var(--font-montserrat), Arial, sans-serif;
 }

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image, { type StaticImageData } from "next/image";
+import { useTranslations } from "next-intl";
 import RoomGalleryLightbox from "./RoomGalleryLightbox";
 
 export type GalleryImage = {
@@ -29,6 +30,7 @@ function GalleryItem({
   image: GalleryImage;
   onClick: () => void;
 }) {
+  const t = useTranslations("GalleryControls");
   const [loaded, setLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const itemRef = useRef<HTMLButtonElement>(null);
@@ -69,7 +71,7 @@ function GalleryItem({
       ref={itemRef}
       type="button"
       onClick={onClick}
-      aria-label={`${image.alt} fotoğrafını büyüt`}
+      aria-label={t("enlargePhoto", { alt: image.alt })}
       className="
         group relative block
         aspect-[3/2] w-full

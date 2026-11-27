@@ -2,7 +2,7 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
 import {
-  EXTERNAL_BOOKING_URL,
+  getExternalBookingUrl,
   getVisitorCountry,
   isTurkeyTurkishMarket,
 } from "@/lib/visitorMarket";
@@ -12,7 +12,7 @@ export function GET(request: NextRequest) {
   const country = getVisitorCountry(request.headers);
   const destination = isTurkeyTurkishMarket(country, locale)
     ? new URL("/tr/rezervasyon", request.url)
-    : new URL(EXTERNAL_BOOKING_URL);
+    : new URL(getExternalBookingUrl(locale));
 
   const response = NextResponse.redirect(destination, 307);
 

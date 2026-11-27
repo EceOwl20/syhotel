@@ -3,6 +3,7 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { IoClose } from "react-icons/io5";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import type { GalleryImage } from "./RoomGallery";
@@ -20,8 +21,14 @@ export default function RoomGalleryLightbox({
   onChange,
   onClose,
 }: RoomGalleryLightboxProps) {
+  const t = useTranslations("GalleryControls");
   const touchStartX = useRef<number | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLElement | null>(null);
+  const onCloseRef = useRef(onClose);
+  const previousRef = useRef<() => void>(() => undefined);
+  const nextRef = useRef<() => void>(() => undefined);
 
   const total = images.length;
 
@@ -34,13 +41,59 @@ export default function RoomGalleryLightbox({
   }, [activeIndex, total, onChange]);
 
   useEffect(() => {
+    onCloseRef.current = onClose;
+    previousRef.current = previous;
+    nextRef.current = next;
+  }, [next, onClose, previous]);
+
+  useEffect(() => {
     const previousOverflow = document.body.style.overflow;
+    triggerRef.current = document.activeElement as HTMLElement | null;
     document.body.style.overflow = "hidden";
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
-      if (event.key === "ArrowRight" && total > 1) next();
-      if (event.key === "ArrowLeft" && total > 1) previous();
+      if (event.key === "Escape") {
+        onCloseRef.current();
+        return;
+      }
+
+      if (event.key === "ArrowRight" && total > 1) {
+        nextRef.current();
+      }
+
+      if (event.key === "ArrowLeft" && total > 1) {
+        previousRef.current();
+      }
+
+      if (event.key === "Tab" && dialogRef.current) {
+        const focusable = Array.from(
+          dialogRef.current.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+          ),
+        );
+
+        if (focusable.length === 0) {
+          event.preventDefault();
+          dialogRef.current.focus();
+          return;
+        }
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        const activeElement = document.activeElement;
+        const focusIsOutside = !dialogRef.current.contains(activeElement);
+
+        if (event.shiftKey && (activeElement === first || focusIsOutside)) {
+          event.preventDefault();
+          last.focus();
+        } else if (
+          !event.shiftKey &&
+          (activeElement === last || focusIsOutside)
+        ) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
     };
 
     window.addEventListener("keydown", handleKeyDown);
@@ -49,8 +102,9 @@ export default function RoomGalleryLightbox({
     return () => {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener("keydown", handleKeyDown);
+      triggerRef.current?.focus();
     };
-  }, [next, previous, onClose, total]);
+  }, [total]);
 
   const activeImage = images[activeIndex];
 
@@ -58,9 +112,11 @@ export default function RoomGalleryLightbox({
 
   return (
     <div
+      ref={dialogRef}
       role="dialog"
       aria-modal="true"
-      aria-label="Oda fotoğraf galerisi"
+      aria-label={t("galleryLabel")}
+      tabIndex={-1}
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/95"
       onTouchStart={(event) => {
         touchStartX.current = event.touches[0]?.clientX ?? null;
@@ -91,7 +147,7 @@ export default function RoomGalleryLightbox({
           ref={closeButtonRef}
           type="button"
           onClick={onClose}
-          aria-label="Galeriyi kapat"
+          aria-label={t("close")}
           className="flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-60"
         >
           <IoClose size={26} strokeWidth={1.5} />
@@ -118,7 +174,7 @@ export default function RoomGalleryLightbox({
           <button
             type="button"
             onClick={previous}
-            aria-label="Önceki fotoğraf"
+            aria-label={t("previous")}
             className="absolute top-1/2 left-2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center text-white transition-opacity hover:opacity-60 md:left-6"
           >
             <FaChevronLeft size={34} strokeWidth={1.5} />
@@ -127,7 +183,7 @@ export default function RoomGalleryLightbox({
           <button
             type="button"
             onClick={next}
-            aria-label="Sonraki fotoğraf"
+            aria-label={t("next")}
             className="absolute top-1/2 right-2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center text-white transition-opacity hover:opacity-60 md:right-6"
           >
             <FaChevronRight size={34} strokeWidth={1.5} />

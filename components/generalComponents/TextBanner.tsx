@@ -1,6 +1,7 @@
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import type { StaticImageData } from "next/image";
+import type { StaticPath } from "@/lib/seo";
 import BackgroundSlideshow from "./BackgroundSlideshow";
 
 type MainBannerProps = {
@@ -9,7 +10,7 @@ type MainBannerProps = {
   header: string;
   text?: string;
   buttonText?: string;
-  buttonLink?: string;
+  buttonLink?: StaticPath;
   slideshowImages?: Array<StaticImageData | string>;
   overlayVariant?: "sage" | "taupe" | "black";
   backgroundPosition?: "center" | "start" | "end" | "top" | "bottom";

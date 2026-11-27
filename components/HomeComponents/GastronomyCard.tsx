@@ -1,11 +1,21 @@
 import Image, { type StaticImageData } from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+
+export type GastronomyHref =
+  | {
+      pathname: "/bars/[slug]";
+      params: { slug: string };
+    }
+  | {
+      pathname: "/restaurants/[slug]";
+      params: { slug: string };
+    };
 
 export type GastronomyItem = {
   id: string;
   title: string;
   image: StaticImageData | string;
-  href: string;
+  href: GastronomyHref | null;
 };
 
 type GastronomyCardProps = {
@@ -15,8 +25,7 @@ type GastronomyCardProps = {
 export default function GastronomyCard({
   item,
 }: GastronomyCardProps) {
-  const href = item.href.trim();
-  const hasLink = href.length > 0;
+  const hasLink = item.href !== null;
 
   const cardClassName =
     "relative block aspect-[2/3] w-full overflow-hidden";
@@ -64,7 +73,7 @@ export default function GastronomyCard({
     </>
   );
 
-  if (!hasLink) {
+  if (!item.href) {
     return (
       <div className={cardClassName}>
         {content}
@@ -74,7 +83,7 @@ export default function GastronomyCard({
 
   return (
     <Link
-      href={href}
+      href={item.href}
       aria-label={item.title}
       className={`group ${cardClassName}`}
     >

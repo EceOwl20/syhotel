@@ -1,5 +1,13 @@
 
 {
+  "GalleryControls": {
+    "galleryLabel": "Fotoğraf galerisi",
+    "close": "Galeriyi kapat",
+    "previous": "Önceki fotoğraf",
+    "next": "Sonraki fotoğraf",
+    "enlargePhoto": "{alt} fotoğrafını büyüt",
+    "imageNumber": "{title}: {number}. görsel"
+  },
   "Metadata": {
     "home": {
       "title": "SY Hotels Luxury Belek | Belek Ultra Her Şey Dahil Otel",

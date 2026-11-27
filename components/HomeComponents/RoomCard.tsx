@@ -1,13 +1,14 @@
 
 import Image, { type StaticImageData } from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import type { StaticPath } from "@/lib/seo";
 
 export type Room = {
   id: string;
   title: string;
   area: number;
   image: StaticImageData | string;
-  href: string;
+  href: StaticPath;
 };
 
 type RoomCardProps = {

@@ -1,14 +1,30 @@
 
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { getImageProps } from "next/image";
 import { FiX } from "react-icons/fi";
 
 const POPUP_STORAGE_KEY = "sy-hotels-campaign-popup-v1";
+const subscribeToPopupState = () => () => {};
+const getServerPopupState = () => false;
+
+function getClientPopupState() {
+  try {
+    return !sessionStorage.getItem(POPUP_STORAGE_KEY);
+  } catch {
+    return true;
+  }
+}
 
 export default function CampaignPopup() {
-  const [isOpen, setIsOpen] = useState(false);
+  const shouldShowPopup = useSyncExternalStore(
+    subscribeToPopupState,
+    getClientPopupState,
+    getServerPopupState,
+  );
+  const [isDismissed, setIsDismissed] = useState(false);
+  const isOpen = shouldShowPopup && !isDismissed;
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   // Responsive image sources
@@ -17,7 +33,8 @@ export default function CampaignPopup() {
     alt: "SY Hotels kampanya duyurusu",
     width: 1600,
     height: 900,
-    sizes: "100vw",
+    sizes:
+      "(max-width: 767px) 92vw, (min-aspect-ratio: 16/9) 85vw, calc(100vw - 32px)",
   });
 
   const { props: mobileImage } = getImageProps({
@@ -25,24 +42,8 @@ export default function CampaignPopup() {
     alt: "SY Hotels kampanya duyurusu",
     width: 900,
     height: 1600,
-    sizes: "100vw",
+    sizes: "92vw",
   });
-
-  // Show on first visit of the tab session
-  useEffect(() => {
-    try {
-      const hasSeenPopup = sessionStorage.getItem(
-        POPUP_STORAGE_KEY
-      );
-
-      if (!hasSeenPopup) {
-        setIsOpen(true);
-      }
-    } catch {
-      // Still display the popup if storage is unavailable
-      setIsOpen(true);
-    }
-  }, []);
 
   // Modal interactions
   useEffect(() => {
@@ -85,7 +86,7 @@ export default function CampaignPopup() {
       // Storage may be disabled
     }
 
-    setIsOpen(false);
+    setIsDismissed(true);
   }
 
   if (!isOpen) return null;

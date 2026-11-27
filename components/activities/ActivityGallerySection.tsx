@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import {
   IoIosArrowBack,
@@ -27,6 +27,9 @@ export default function ActivityGallerySection({
 }: ActivityGallerySectionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const triggerRef = useRef<HTMLElement | null>(null);
 
   const hasMultipleImages = images.length > 1;
 
@@ -40,11 +43,17 @@ export default function ActivityGallerySection({
     );
   };
 
+  const openLightbox = () => {
+    triggerRef.current = document.activeElement as HTMLElement | null;
+    setIsLightboxOpen(true);
+  };
+
   useEffect(() => {
     if (!isLightboxOpen || images.length === 0) return;
 
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    closeButtonRef.current?.focus();
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -60,6 +69,36 @@ export default function ActivityGallerySection({
           (index) => (index - 1 + images.length) % images.length,
         );
       }
+
+      if (event.key === "Tab" && dialogRef.current) {
+        const focusable = Array.from(
+          dialogRef.current.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+          ),
+        );
+
+        if (focusable.length === 0) {
+          event.preventDefault();
+          dialogRef.current.focus();
+          return;
+        }
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        const activeElement = document.activeElement;
+        const focusIsOutside = !dialogRef.current.contains(activeElement);
+
+        if (event.shiftKey && (activeElement === first || focusIsOutside)) {
+          event.preventDefault();
+          last.focus();
+        } else if (
+          !event.shiftKey &&
+          (activeElement === last || focusIsOutside)
+        ) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
     };
 
     window.addEventListener("keydown", onKeyDown);
@@ -67,6 +106,7 @@ export default function ActivityGallerySection({
     return () => {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener("keydown", onKeyDown);
+      triggerRef.current?.focus();
     };
   }, [isLightboxOpen, images.length]);
 
@@ -104,7 +144,7 @@ export default function ActivityGallerySection({
             <button
               type="button"
               aria-label="Open image gallery"
-              onClick={() => setIsLightboxOpen(true)}
+              onClick={openLightbox}
               className="absolute inset-0 z-0 cursor-zoom-in"
             >
               {images.map((src, index) => (
@@ -167,12 +207,15 @@ export default function ActivityGallerySection({
       {/* LIGHTBOX */}
       {isLightboxOpen && (
         <div
+          ref={dialogRef}
           role="dialog"
           aria-modal="true"
           aria-label="Activity image gallery"
+          tabIndex={-1}
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4"
         >
           <button
+            ref={closeButtonRef}
             type="button"
             onClick={() => setIsLightboxOpen(false)}
             aria-label="Close gallery"

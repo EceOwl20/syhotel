@@ -1,9 +1,11 @@
 
+import type { StaticPath } from "@/lib/seo";
+
 export type HomeRoom = {
   id: string;
   area: number;
   image: string;
-  href: string;
+  href: StaticPath;
 };
 
 export const rooms: HomeRoom[] = [

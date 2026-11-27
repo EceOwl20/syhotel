@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 import { routing } from "./i18n/routing";
 import {
-  EXTERNAL_BOOKING_URL,
+  getExternalBookingUrl,
   getVisitorCountry,
   isTurkeyTurkishMarket,
 } from "./lib/visitorMarket";
@@ -31,7 +31,7 @@ export default function proxy(request: NextRequest) {
 
     if (!isTurkeyTurkishMarket(country, locale)) {
       const response = NextResponse.redirect(
-        new URL(EXTERNAL_BOOKING_URL),
+        new URL(getExternalBookingUrl(locale)),
         307,
       );
 

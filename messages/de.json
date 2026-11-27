@@ -1,5 +1,13 @@
 
 {
+  "GalleryControls": {
+    "galleryLabel": "Fotogalerie",
+    "close": "Galerie schließen",
+    "previous": "Vorheriges Foto",
+    "next": "Nächstes Foto",
+    "enlargePhoto": "{alt} vergrößern",
+    "imageNumber": "{title}: Bild {number}"
+  },
   "Metadata": {
     "home": {
       "title": "SY Hotels Luxury Belek | Ultra-All-inclusive-Hotel",
@@ -460,13 +468,13 @@
     "sirius-restaurant": {
       "title": "SIRIUS",
       "subtitle": "RESTAURANT",
-      "slogan": "Wır Fugen Ihrem Urlaub Geschmack Hınzu",
+      "slogan": "Wir fügen Ihrem Urlaub Geschmack hinzu",
       "description": "Das Restaurant, das seinen Gästen von Frühstück bis Abendessen frische, köstliche und gesunde Alternativen bietet, macht Ihren Urlaub mit sorgfältig ausgewählten Gerichten aus der internationalen und türkischen Küche besonders. Außerdem bietet es seinen Gästen an verschiedenen Themenabenden jeden Abend ein anderes Geschmackserlebnis."
     },
     "nova-food-court": {
       "title": "NOVA",
       "subtitle": "FOOD COURT",
-      "slogan": "Kostliche Snacks",
+      "slogan": "Köstliche Snacks",
       "description": "Direkt am Pool und Strand gelegen, ist der Nova Food Court die ideale Adresse für schnelle und köstliche Snacks. Mit warmen und kalten Sandwiches, verschiedenen Pizzen, frischen Salaten und Eiscreme bietet er den ganzen Tag über eine praktische und genussvolle Verpflegung."
     },
     "bettelglow-patisserie": {

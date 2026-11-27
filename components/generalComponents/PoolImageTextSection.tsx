@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { FiChevronRight } from "react-icons/fi";
 
@@ -30,6 +31,7 @@ export default function PoolImageTextSection({
   discoverHref,
   className = "",
 }: PoolImageTextSectionProps) {
+  const tGallery = useTranslations("GalleryControls");
   const [activeIndex, setActiveIndex] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(
     null,
@@ -103,7 +105,10 @@ export default function PoolImageTextSection({
                       key={index}
                       type="button"
                       onClick={() => setActiveIndex(index)}
-                      aria-label={`${title}: ${index + 1}. görsel`}
+                      aria-label={tGallery("imageNumber", {
+                        title,
+                        number: index + 1,
+                      })}
                       aria-current={
                         index === activeIndex
                           ? "true"

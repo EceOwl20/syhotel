@@ -5,6 +5,7 @@ import {
   SITE_NAME,
   SCHEMA_IDS,
 } from "./config";
+import { createSchemaReference } from "./graph";
 
 export function buildWebsiteJsonLd() {
   return {
@@ -14,8 +15,6 @@ export function buildWebsiteJsonLd() {
     name: SITE_NAME,
     alternateName: "SY Hotels",
     inLanguage: [...routing.locales],
-    publisher: {
-      "@id": SCHEMA_IDS.hotel,
-    },
+    publisher: createSchemaReference(SCHEMA_IDS.hotel),
   };
 }

@@ -3,9 +3,7 @@ import {
   SCHEMA_IDS,
   getLocalizedUrl,
 } from "./config";
-
-import { buildHotelJsonLd } from "./hotel";
-import { buildWebsiteJsonLd } from "./website";
+import { buildWebPageGraph } from "./webPage";
 
 type HomeJsonLdProps = {
   locale: Locale;
@@ -20,32 +18,11 @@ export function buildHomeJsonLd({
 }: HomeJsonLdProps) {
   const pageUrl = getLocalizedUrl(locale);
 
-  return {
-    "@context": "https://schema.org",
-
-    "@graph": [
-      buildHotelJsonLd(),
-      buildWebsiteJsonLd(),
-      {
-        "@type": "WebPage",
-        "@id": `${pageUrl}#webpage`,
-        url: pageUrl,
-        name: title,
-        description,
-        inLanguage: locale,
-        isPartOf: {
-          "@id": SCHEMA_IDS.website,
-        },
-        about: {
-          "@id": SCHEMA_IDS.hotel,
-        },
-        mainEntity: {
-          "@id": SCHEMA_IDS.hotel,
-        },
-        publisher: {
-          "@id": SCHEMA_IDS.hotel,
-        },
-      },
-    ],
-  };
+  return buildWebPageGraph({
+    locale,
+    pageUrl,
+    title,
+    description,
+    mainEntityId: SCHEMA_IDS.hotel,
+  });
 }

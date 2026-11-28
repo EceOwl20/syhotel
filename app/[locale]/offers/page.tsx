@@ -1,13 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { createTranslatedMetadata } from "@/lib/metadata";
 
-import OffersHero from "@/components/offers/OffersHero";
 import OfferShowcase from "@/components/offers/OfferShowcase";
 import OffersExperience from "@/components/offers/OffersExperience";
 import OffersContact from "@/components/offers/OffersContact";
 import OffersBenefits from "@/components/offers/OffersBenefits";
 import OffersMomentsCarousel from "@/components/offers/OffersMomentsCarousel";
-import OffersFlights from "@/components/offers/OffersFlights";
 import OffersFlights2 from "@/components/offers/OffersFlights2";
 
 type Props = {

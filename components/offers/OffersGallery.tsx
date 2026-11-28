@@ -27,7 +27,6 @@ export default function OffersGallery({
     null
   );
   const [activeImage, setActiveImage] = useState(0);
-  const [mounted, setMounted] = useState(false);
 
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const triggerRef = useRef<HTMLElement | null>(null);
@@ -63,10 +62,6 @@ export default function OffersGallery({
         : 0
     );
   }, [images.length]);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     if (!activeCategory) return;
@@ -173,8 +168,7 @@ export default function OffersGallery({
       </div>
 
       {/* LIGHTBOX */}
-      {mounted &&
-        activeCategory &&
+      {activeCategory &&
         currentCategory &&
         images.length > 0 &&
         createPortal(
